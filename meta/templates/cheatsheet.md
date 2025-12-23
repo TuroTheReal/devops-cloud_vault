@@ -1,15 +1,15 @@
-# [Outil] - Cheatsheet
+# [Tool] - Cheatsheet
 
-## 📋 Métadonnées
+## 📋 Metadata
 
 ```yaml
-tags: [cheatsheet, [techno]]
+tags: [cheatsheet, [tech]]
 created: YYYY-MM-DD
 version: X.Y.Z
 ```
 
-**Doc officielle** : [URL]
-**Concepts liés** : [[concept-1]]
+**Official docs**: [URL]
+**Related concepts**: [[concept-1]]
 
 ---
 
@@ -17,56 +17,56 @@ version: X.Y.Z
 
 ```bash
 # macOS
-brew install [outil]
+brew install [tool]
 
 # Ubuntu
-apt install [outil]
+apt install [tool]
 
-# Vérification
-[outil] --version
+# Verification
+[tool] --version
 ```
 
 ---
 
-## 📚 Commandes Essentielles
+## 📚 Essential Commands
 
-### Liste / Get
+### List / Get
 ```bash
-# Lister tout
-[outil] get [resource]
+# List all
+[tool] get [resource]
 
-# Avec détails
-[outil] get [resource] -o wide
+# With details
+[tool] get [resource] -o wide
 
-# Format YAML
-[outil] get [resource] -o yaml
+# YAML format
+[tool] get [resource] -o yaml
 ```
 
-### Créer
+### Create
 ```bash
-# Depuis fichier
-[outil] create -f file.yaml
+# From file
+[tool] create -f file.yaml
 
-# Impératif
-[outil] create [resource] [name] [options]
+# Imperative
+[tool] create [resource] [name] [options]
 ```
 
-### Modifier
+### Modify
 ```bash
-# Appliquer changements
-[outil] apply -f file.yaml
+# Apply changes
+[tool] apply -f file.yaml
 
-# Éditer interactif
-[outil] edit [resource] [name]
+# Interactive edit
+[tool] edit [resource] [name]
 ```
 
-### Supprimer
+### Delete
 ```bash
-# Par nom
-[outil] delete [resource] [name]
+# By name
+[tool] delete [resource] [name]
 
-# Par selector
-[outil] delete [resource] -l [label]
+# By selector
+[tool] delete [resource] -l [label]
 ```
 
 ---
@@ -75,32 +75,32 @@ apt install [outil]
 
 ### Logs
 ```bash
-# Voir logs
-[outil] logs [resource]
+# View logs
+[tool] logs [resource]
 
 # Follow logs
-[outil] logs [resource] -f
+[tool] logs [resource] -f
 
-# Filtrer
-[outil] logs [resource] | grep ERROR
+# Filter
+[tool] logs [resource] | grep ERROR
 ```
 
 ### Describe / Info
 ```bash
-# Détails complets
-[outil] describe [resource] [name]
+# Full details
+[tool] describe [resource] [name]
 
 # Status
-[outil] get [resource] [name] -o wide
+[tool] get [resource] [name] -o wide
 ```
 
 ### Shell / Exec
 ```bash
-# Shell dans ressource
-[outil] exec -it [resource] -- /bin/bash
+# Shell into resource
+[tool] exec -it [resource] -- /bin/bash
 
-# Commande one-shot
-[outil] exec [resource] -- [command]
+# One-shot command
+[tool] exec [resource] -- [command]
 ```
 
 ---
@@ -110,56 +110,56 @@ apt install [outil]
 ### Output Formats
 ```bash
 # Wide
-[outil] get [resource] -o wide
+[tool] get [resource] -o wide
 
 # JSON
-[outil] get [resource] -o json
+[tool] get [resource] -o json
 
 # Custom columns
-[outil] get [resource] -o custom-columns=NAME:.metadata.name
+[tool] get [resource] -o custom-columns=NAME:.metadata.name
 ```
 
 ### Filtering
 ```bash
-# Par label
-[outil] get [resource] -l key=value
+# By label
+[tool] get [resource] -l key=value
 
-# Par field
-[outil] get [resource] --field-selector status=Running
+# By field
+[tool] get [resource] --field-selector status=Running
 ```
 
 ---
 
-## 🎯 One-Liners Utiles
+## 🎯 Useful One-Liners
 
 ```bash
 # [Description 1]
-[commande complexe 1]
+[complex command 1]
 
 # [Description 2]
-[commande avec pipe 2]
+[command with pipe 2]
 
 # [Description 3]
-[commande loop 3]
+[loop command 3]
 ```
 
 ---
 
 ## 🆘 Troubleshooting
 
-### Problème 1 : [Symptôme]
+### Problem 1: [Symptom]
 ```bash
 # Diagnostic
-[commande check]
+[check command]
 
 # Fix
-[commande fix]
+[fix command]
 ```
 
-### Problème 2 : [Symptôme]
+### Problem 2: [Symptom]
 ```bash
 # Check + Fix
-[commandes]
+[commands]
 ```
 
 ---
@@ -167,7 +167,7 @@ apt install [outil]
 ## 📝 Config File
 
 ```yaml
-# [Description fichier]
+# [File description]
 apiVersion: [version]
 kind: [type]
 metadata:
@@ -177,25 +177,25 @@ spec:
   [field]: [value]
 ```
 
-**Champs obligatoires** :
-- `field1` : [Description]
-- `field2` : [Description]
+**Required fields**:
+- `field1`: [Description]
+- `field2`: [Description]
 
 ---
 
 ## 🔗 Aliases
 
 ```bash
-# ~/.bashrc ou ~/.zshrc
+# ~/.bashrc or ~/.zshrc
 
-alias k='[outil]'
-alias kg='[outil] get'
-alias kd='[outil] describe'
-alias kl='[outil] logs'
+alias k='[tool]'
+alias kg='[tool] get'
+alias kd='[tool] describe'
+alias kl='[tool] logs'
 
-# Fonction utile
+# Useful function
 function [name]() {
-    [commandes avec $1, $2]
+    [commands with $1, $2]
 }
 ```
 
@@ -203,46 +203,46 @@ function [name]() {
 
 ## ✅ Best Practices
 
-### À FAIRE
-- **[Practice 1]** : [Pourquoi]
+### DO
+- **[Practice 1]**: [Why]
   ```bash
-  # ✅ Bon
-  [commande]
+  # ✅ Good
+  [command]
   ```
 
-- **[Practice 2]** : [Pourquoi]
+- **[Practice 2]**: [Why]
 
-### À ÉVITER
-- **[Anti-pattern 1]** : [Pourquoi mal]
+### DON'T
+- **[Anti-pattern 1]**: [Why bad]
   ```bash
-  # ❌ Mauvais
-  [commande dangereuse]
+  # ❌ Bad
+  [dangerous command]
 
-  # ✅ Bon
-  [commande safe]
+  # ✅ Good
+  [safe command]
   ```
 
 ---
 
-## 📖 Ressources
+## 📖 Resources
 
 - [Official Docs](URL)
-- [[concept-fondamental]]
-- [[troubleshooting-[outil]]]
+- [[fundamental-concept]]
+- [[troubleshooting-[tool]]]
 
 ---
 
-## 💡 Tips Personnels
+## 💡 Personal Tips
 
-### Workflow quotidien
+### Daily workflow
 ```bash
-# Routine typique
-[commandes que j'utilise souvent]
+# Typical routine
+[commands I use often]
 ```
 
-### Erreurs faites
-- **[Erreur 1]** → Fix : [Solution]
-- **[Erreur 2]** → Fix : [Solution]
+### Mistakes made
+- **[Error 1]** → Fix: [Solution]
+- **[Error 2]** → Fix: [Solution]
 
 ---
 
@@ -250,14 +250,14 @@ function [name]() {
 
 ```
 ┌────────────────────────────────────┐
-│     [OUTIL] - ESSENTIALS           │
+│     [TOOL] - ESSENTIALS            │
 ├────────────────────────────────────┤
-│ LIST       [commande]              │
-│ CREATE     [commande]              │
-│ UPDATE     [commande]              │
-│ DELETE     [commande]              │
-│ LOGS       [commande]              │
-│ DEBUG      [commande]              │
+│ LIST       [command]               │
+│ CREATE     [command]               │
+│ UPDATE     [command]               │
+│ DELETE     [command]               │
+│ LOGS       [command]               │
+│ DEBUG      [command]               │
 │                                    │
 │ Flags:                             │
 │   -o [format]                      │
@@ -268,5 +268,5 @@ function [name]() {
 
 ---
 
-**Dernière update** : YYYY-MM-DD
-**Version outil** : X.Y.Z
+**Last update**: YYYY-MM-DD
+**Tool version**: X.Y.Z

@@ -1,178 +1,178 @@
-# [Concept] - [Technologie]
+# [Concept] - [Technology]
 
-## 📋 Métadonnées
+## 📋 Metadata
 
 ```yaml
-tags: [concept, [techno], status/learning]
+tags: [concept, [tech], status/learning]
 created: YYYY-MM-DD
 updated: YYYY-MM-DD
 difficulty: ⭐⭐ (2/5)
 time-to-master: 4h
 ```
 
-**Prérequis** : [[concept-1]], [[concept-2]]
-**Lié à** : [[concept-3]], [[concept-4]]
+**Prerequisites**: [[concept-1]], [[concept-2]]
+**Related to**: [[concept-3]], [[concept-4]]
 
 ---
 
-## 🎯 TL;DR (30 secondes)
+## 🎯 TL;DR (30 seconds)
 
-[Explication ultra-concise en 2-3 phrases]
+[Ultra-concise explanation in 2-3 sentences]
 
-**Analogie** : [Comparaison pour comprendre intuitivement]
-
----
-
-## 🤔 Quand l'utiliser ?
-
-### ✅ Bon pour
-1. **[Use case 1]** : [Pourquoi]
-2. **[Use case 2]** : [Pourquoi]
-3. **[Use case 3]** : [Pourquoi]
-
-### ❌ Mauvais pour
-- **[Anti-pattern 1]** → Utiliser [[alternative]] à la place
-- **[Anti-pattern 2]** → [Pourquoi éviter]
+**Analogy**: [Comparison for intuitive understanding]
 
 ---
 
-## 📚 Concepts Clés (Avec Mes Mots)
+## 🤔 When to Use?
 
-### 1. [Concept Fondamental 1]
+### ✅ Good for
+1. **[Use case 1]**: [Why]
+2. **[Use case 2]**: [Why]
+3. **[Use case 3]**: [Why]
 
-**Ma compréhension** :
-[Explication personnelle, pas copie de doc]
-
-**Pourquoi important** :
-[Le "pourquoi" derrière]
-
-**Mental model** :
-[Comment je visualise ça]
+### ❌ Bad for
+- **[Anti-pattern 1]** → Use [[alternative]] instead
+- **[Anti-pattern 2]** → [Why to avoid]
 
 ---
 
-### 2. [Concept Fondamental 2]
+## 📚 Key Concepts (In My Own Words)
 
-[Même structure]
+### 1. [Fundamental Concept 1]
 
-**Différence avec [Alternative]** :
-[Comparaison explicite]
+**My understanding**:
+[Personal explanation, not copied from docs]
+
+**Why important**:
+[The "why" behind it]
+
+**Mental model**:
+[How I visualize this]
 
 ---
 
-## 💻 Exemple Minimal
+### 2. [Fundamental Concept 2]
 
-### Contexte
-[Quel problème cet exemple résout]
+[Same structure]
+
+**Difference with [Alternative]**:
+[Explicit comparison]
+
+---
+
+## 💻 Minimal Example
+
+### Context
+[What problem this example solves]
 
 ### Code
 ```[language]
-# [Titre exemple]
+# [Example title]
 
-# Configuration de base
+# Basic configuration
 [code...]
 
-# Logique principale (commentaires FR)
+# Main logic (with comments)
 [code...]
 ```
 
-### Explication Ligne par Ligne
+### Line-by-Line Explanation
 ```
-Line 1: [Ce que fait cette ligne]
-Line 2: [Pourquoi nécessaire]
-Line 5: [Alternative possible]
+Line 1: [What this line does]
+Line 2: [Why necessary]
+Line 5: [Possible alternative]
 ```
 
 ---
 
-## ⚠️ Pièges Vécus
+## ⚠️ Pitfalls Experienced
 
-### Piège 1 : [Nom]
+### Pitfall 1: [Name]
 
-**Symptôme** :
+**Symptom**:
 ```
-[Message d'erreur ou comportement]
+[Error message or behavior]
 ```
 
-**Ce que j'ai fait de mal** :
+**What I did wrong**:
 ```[language]
-# ❌ Code erroné
+# ❌ Wrong code
 [code...]
 ```
 
-**Pourquoi faux** : [Cause]
+**Why wrong**: [Cause]
 
-**Solution** :
+**Solution**:
 ```[language]
-# ✅ Code corrigé
+# ✅ Corrected code
 [code...]
 ```
 
-**Temps perdu** : [X min/h]
-**Leçon** : [Takeaway]
+**Time wasted**: [X min/h]
+**Lesson**: [Takeaway]
 
 ---
 
-### Piège 2 : [Nom]
+### Pitfall 2: [Name]
 
-[Même structure]
+[Same structure]
 
 ---
 
-## 🔧 Commandes Essentielles
+## 🔧 Essential Commands
 
 ```bash
 # [Action 1]
-[commande] [options]
+[command] [options]
 
 # [Action 2]
-[commande] [options]
+[command] [options]
 
 # Debug
-[commande debug]
+[debug command]
 ```
 
 ---
 
-## 🧪 Tests Faits
+## 🧪 Tests Done
 
-### Compréhension
-- [x] Expliqué à voix haute (2 min)
-- [x] 3 cas d'usage identifiés
-- [x] Comparé avec [[alternative]]
+### Understanding
+- [x] Explained out loud (2 min)
+- [x] 3 use cases identified
+- [x] Compared with [[alternative]]
 
 ### Practice
-- [x] **Lab 1** : [Description] - ✅ Success (Xh)
-- [x] **Lab 2** : [Description] - ✅ Success (Xh)
-- [ ] **TODO** : [À faire]
+- [x] **Lab 1**: [Description] - ✅ Success (Xh)
+- [x] **Lab 2**: [Description] - ✅ Success (Xh)
+- [ ] **TODO**: [To do]
 
-### Rétention (J+7)
-- Date : YYYY-MM-DD
-- Résultat : ✅ / ⚠️ / ❌
-- Score : X/100
-
----
-
-## ❓ Questions Non Résolues
-
-1. **[Question 1]** - Bloquant : Oui/Non
-2. **[Question 2]** - À investiguer : [[concept-lié]]
+### Retention (Day+7)
+- Date: YYYY-MM-DD
+- Result: ✅ / ⚠️ / ❌
+- Score: X/100
 
 ---
 
-## 📊 Timeline Apprentissage
+## ❓ Unresolved Questions
+
+1. **[Question 1]** - Blocking: Yes/No
+2. **[Question 2]** - To investigate: [[related-concept]]
+
+---
+
+## 📊 Learning Timeline
 
 ```
-YYYY-MM-DD : Discovery (1h avec Claude)
+YYYY-MM-DD : Discovery (1h assisted)
 YYYY-MM-DD : Deep dive (2h docs + practice)
-YYYY-MM-DD : Practice (2h autonome)
-YYYY-MM-DD : Test rétention ✅ (90%)
+YYYY-MM-DD : Practice (2h autonomous)
+YYYY-MM-DD : Retention test ✅ (90%)
 ```
 
-### Temps Investi
+### Time Invested
 
-| Phase | Avec Claude | Sans Claude | Total |
-|-------|-------------|-------------|-------|
+| Phase | Assisted | Autonomous | Total |
+|-------|----------|------------|-------|
 | Discovery | 1h | - | 1h |
 | Deep dive | - | 2h | 2h |
 | Practice | - | 2h | 2h |
@@ -180,63 +180,63 @@ YYYY-MM-DD : Test rétention ✅ (90%)
 | Doc | - | 1h | 1h |
 | **TOTAL** | **1h30 (25%)** | **5h (75%)** | **6h30** |
 
-**Ratio** : 25% ✅ (target <30%)
+**Ratio**: 25% ✅ (target <30%)
 
 ---
 
 ## 📝 Status
 
 ```
-⏳ En découverte
-🟡 Compréhension partielle
-🟠 Practice en cours
-✅ Maîtrisé
-🔄 À revoir
+⏳ Discovering   - Initial exploration
+🟡 Learning      - Partial understanding
+🟠 Practicing    - Practice in progress
+✅ Mastered      - Fully understood
+🔄 Review        - Needs refresh
 ```
 
-**Status actuel** : [Emoji] [Status]
+**Current status**: [Emoji] [Status]
 
 ---
 
-## 🔗 Ressources
+## 🔗 Resources
 
-### Officiel
-- [Doc officielle](URL) - [Section pertinente]
+### Official
+- [Official docs](URL) - [Relevant section]
 
-### Tutoriels
-- [Titre](URL) - [Pourquoi bon]
+### Tutorials
+- [Title](URL) - [Why good]
 
-### Personnel
-- [[cheatsheet-[techno]]]
-- Conversation Claude : [lien si sauvegardé]
-- Lab code : `~/projects/YYYY-MM-[concept]/`
+### Personal
+- [[cheatsheet-[tech]]]
+- Conversations/notes: [link if saved]
+- Lab code: `~/projects/YYYY-MM-[concept]/`
 
 ---
 
-## ✅ Checklist Maîtrise
+## ✅ Mastery Checklist
 
-### Compréhension
-- [ ] Expliquer 2 min sans notes
-- [ ] 3 cas d'usage concrets
-- [ ] 2 pièges courants
-- [ ] Comparer avec alternative
+### Understanding
+- [ ] Explain 2 min without notes
+- [ ] 3 concrete use cases
+- [ ] 2 common pitfalls
+- [ ] Compare with alternative
 
 ### Application
-- [ ] Code exemple (20 min max)
-- [ ] Debug problème artificiel
-- [ ] Adapter nouveau use case
-- [ ] Expliquer chaque ligne
+- [ ] Example code (20 min max)
+- [ ] Debug artificial problem
+- [ ] Adapt to new use case
+- [ ] Explain each line
 
 ### Solidification
-- [ ] Note complète avec liens
-- [ ] Cheatsheet si pertinent
-- [ ] Lab perso
-- [ ] Test rétention J+7 : ✅
+- [ ] Complete note with links
+- [ ] Cheatsheet if relevant
+- [ ] Personal lab
+- [ ] Retention test Day+7: ✅
 
-**Date validation** : YYYY-MM-DD
-**Temps total** : Xh
+**Validation date**: YYYY-MM-DD
+**Total time**: Xh
 
 ---
 
-**Dernière update** : YYYY-MM-DD
-**Prochaine révision** : YYYY-MM-DD (+1 mois)
+**Last update**: YYYY-MM-DD
+**Next review**: YYYY-MM-DD (+1 month)
