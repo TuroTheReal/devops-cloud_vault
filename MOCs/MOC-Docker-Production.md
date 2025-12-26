@@ -80,7 +80,7 @@ Master Docker from fundamentals to production orchestration. You'll understand w
 
 **Goal**: Add reverse proxy and monitoring for production-ready setup
 
-11. **[[traefik-swarm-integration]]** ⭐⭐⭐ (2h)
+11. **[[traefik-integration]]** ⭐⭐⭐ (2h)
     - **Why now**: Production apps need HTTPS, routing, SSL termination - Traefik automates this
     - **You'll learn**: Automatic service discovery, Let's Encrypt SSL, path-based routing, load balancing
 

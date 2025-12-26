@@ -11,7 +11,7 @@ time-to-master: 6h
 ```
 
 **Prerequisites**: [[docker-containers-lifecycle]]
-**Related to**: [[traefik-swarm-integration]]
+**Related to**: [[traefik-integration]]
 
 ---
 

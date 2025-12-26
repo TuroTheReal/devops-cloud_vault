@@ -61,7 +61,7 @@ Fast extraction (2-3h max) of DevOps concepts, patterns, and learnings from two 
    - Difficulty: ⭐⭐⭐ (3/5)
    - **Key insight**: `monitor` period must exceed `start_period` for automatic rollback to work; `start-first` requires N+1 resources
 
-4. **Traefik Swarm Integration** [[concepts/traefik/traefik-swarm-integration]]
+4. **Traefik Swarm Integration** [[concepts/traefik/traefik-integration]]
    - Time to extract: 1h30
    - Difficulty: ⭐⭐⭐⭐ (4/5)
    - **Key insight**: Use `mode: host` for ports to preserve client IPs; separate HTTP/HTTPS routers needed
@@ -133,7 +133,7 @@ Fast extraction (2-3h max) of DevOps concepts, patterns, and learnings from two 
 - [x] [[concepts/docker/docker-compose-healthchecks]]
 - [x] [[concepts/docker/docker-swarm-overlay-networks]]
 - [x] [[concepts/docker/docker-swarm-deployment-strategies]]
-- [x] [[concepts/traefik/traefik-swarm-integration]]
+- [x] [[concepts/traefik/traefik-integration]]
 - [x] [[concepts/monitoring/elk-stack-basics]]
 - [x] [[concepts/monitoring/prometheus-grafana-basics]]
 

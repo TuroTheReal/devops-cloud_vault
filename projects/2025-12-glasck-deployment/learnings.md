@@ -92,7 +92,7 @@ This project uses Docker Compose for development/single-node deployment with an 
    - Difficulty: ⭐⭐⭐ (3/5)
    - **Key insight**: `monitor` period must exceed `start_period` for automatic rollback
 
-3. **Traefik Swarm Integration** [[concepts/traefik/traefik-swarm-integration]]
+3. **Traefik Swarm Integration** [[concepts/traefik/traefik-integration]]
    - Time to learn: 8h (5h configuration + 3h debugging routing)
    - Difficulty: ⭐⭐⭐⭐ (4/5)
    - **Key insight**: `traefik.docker.network` label CRITICAL for multi-network services
@@ -173,7 +173,7 @@ services:
 **Lesson Learned**: When service connects to multiple networks, ALWAYS specify `traefik.docker.network` label.
 
 **Knowledge Base Update**:
-→ Added to: [[concepts/traefik/traefik-swarm-integration]]
+→ Added to: [[concepts/traefik/traefik-integration]]
 
 ---
 
@@ -343,7 +343,7 @@ docker service ps glasck_front-website --filter "desired-state=running"
 ### Already Completed ✅
 - [x] Extract [[concepts/docker/docker-swarm-overlay-networks]] (6h) - MTU, attachable networks
 - [x] Extract [[concepts/docker/docker-swarm-deployment-strategies]] (4h) - Rolling updates, automatic rollback
-- [x] Extract [[concepts/traefik/traefik-swarm-integration]] (8h) - Dynamic routing, multi-network labels
+- [x] Extract [[concepts/traefik/traefik-integration]] (8h) - Dynamic routing, multi-network labels
 - [x] Extract [[concepts/docker/docker-network-isolation]] (3h) - Zero-trust architecture
 - [x] Update [[cheatsheets/docker/docker-swarm-commands]] with stack management (included in concept)
 - [x] Update [[cheatsheets/traefik/traefik-commands]] with label patterns (included in concept)

@@ -148,7 +148,7 @@ Obsidian transforme ton vault en **Personal Knowledge Management (PKM)** avec:
 
 3. Lier aux concepts
    [[docker-swarm-overlay-networks]] utilisé ici
-   [[traefik-swarm-integration]] maîtrisé
+   [[traefik-integration]] maîtrisé
    [[docker-network-isolation]] appliqué
 ```
 
@@ -230,7 +230,7 @@ Obsidian transforme ton vault en **Personal Knowledge Management (PKM)** avec:
 ### Scénario 2: "Quel projet a utilisé X?"
 
 ```
-1. Ouvre concept [[traefik-swarm-integration]]
+1. Ouvre concept [[traefik-integration]]
 2. Scroll en bas → Backlinks panel
 3. Vois: project-glasck-deployment
 4. Click → Détails du projet

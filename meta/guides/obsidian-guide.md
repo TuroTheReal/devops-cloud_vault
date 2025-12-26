@@ -532,7 +532,7 @@ Diagram or description
 ## 🛠️ Technologies Utilisées
 
 - [[docker-swarm-overlay-networks]]
-- [[traefik-swarm-integration]]
+- [[traefik-integration]]
 - [[technology-3]]
 
 ---
