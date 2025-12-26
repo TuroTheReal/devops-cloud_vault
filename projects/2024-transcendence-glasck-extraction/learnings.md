@@ -127,21 +127,24 @@ Fast extraction (2-3h max) of DevOps concepts, patterns, and learnings from two 
 
 ---
 
-## 🔗 Knowledge Base Updates
+## 📝 Extractions TODO
 
-### Concepts Created
-- [x] [[concepts/docker/docker-compose-healthchecks]]
-- [x] [[concepts/docker/docker-swarm-overlay-networks]]
-- [x] [[concepts/docker/docker-swarm-deployment-strategies]]
-- [x] [[concepts/traefik/traefik-swarm-integration]]
-- [x] [[concepts/monitoring/elk-stack-basics]]
-- [x] [[concepts/monitoring/prometheus-grafana-basics]]
+### Already Completed ✅
+- [x] Extract [[concepts/docker/docker-compose-healthchecks]] (1h) - Healthcheck strategies
+- [x] Extract [[concepts/docker/docker-swarm-overlay-networks]] (1h30) - MTU, multi-network routing
+- [x] Extract [[concepts/docker/docker-swarm-deployment-strategies]] (1h) - Rolling updates, rollback
+- [x] Extract [[concepts/traefik/traefik-swarm-integration]] (1h30) - Dynamic routing, Swarm provider
+- [x] Extract [[concepts/monitoring/elk-stack-basics]] (30min) - Elasticsearch, Logstash, Kibana
+- [x] Extract [[concepts/monitoring/prometheus-grafana-basics]] (30min) - Metrics, dashboards
 
-### Cheatsheets Updated
-- [ ] [[cheatsheets/docker/docker-compose]]
-- [ ] [[cheatsheets/docker/docker-swarm]]
-- [ ] [[cheatsheets/traefik/traefik]]
-- [ ] [[cheatsheets/taskfile/taskfile]]
+### Pending Cheatsheet Updates
+- [ ] Update [[cheatsheets/docker/docker-compose]] with healthcheck commands (15 min)
+- [ ] Update [[cheatsheets/docker/docker-swarm]] with stack deployment commands (15 min)
+- [ ] Update [[cheatsheets/traefik/traefik]] with label patterns (15 min)
+- [ ] Create [[cheatsheets/taskfile/taskfile]] from Glasck examples (30 min)
+
+**Extraction completed**: 6h30 (concepts)
+**Pending time**: 1h15 (cheatsheets)
 
 ---
 

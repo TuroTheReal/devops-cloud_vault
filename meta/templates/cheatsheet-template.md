@@ -9,26 +9,25 @@ version: X.Y.Z
 ```
 
 **Official docs**: [URL]
-**Related concepts**: [[concept-1]]
+**Related concepts**: [[concept-1]], [[concept-2]]
 
 ---
 
-## 🚀 Installation
+## 🚀 Quick Start
 
 ```bash
-# macOS
-brew install [tool]
+# Installation
+[install commands for macOS, Ubuntu, etc.]
 
-# Ubuntu
-apt install [tool]
-
-# Verification
-[tool] --version
+# Basic usage (3-5 essential commands)
+[tool] [command1]
+[tool] [command2]
+[tool] [command3]
 ```
 
 ---
 
-## 📚 Essential Commands
+## 📚 Commands by Operation
 
 ### List / Get
 ```bash
@@ -38,8 +37,8 @@ apt install [tool]
 # With details
 [tool] get [resource] -o wide
 
-# YAML format
-[tool] get [resource] -o yaml
+# Filter
+[tool] get [resource] -l key=value
 ```
 
 ### Create
@@ -51,12 +50,12 @@ apt install [tool]
 [tool] create [resource] [name] [options]
 ```
 
-### Modify
+### Update / Modify
 ```bash
 # Apply changes
 [tool] apply -f file.yaml
 
-# Interactive edit
+# Edit interactively
 [tool] edit [resource] [name]
 ```
 
@@ -67,6 +66,9 @@ apt install [tool]
 
 # By selector
 [tool] delete [resource] -l [label]
+
+# Force delete
+[tool] delete [resource] [name] --force
 ```
 
 ---
@@ -81,8 +83,8 @@ apt install [tool]
 # Follow logs
 [tool] logs [resource] -f
 
-# Filter
-[tool] logs [resource] | grep ERROR
+# Last N lines
+[tool] logs [resource] --tail=100
 ```
 
 ### Describe / Info
@@ -96,7 +98,7 @@ apt install [tool]
 
 ### Shell / Exec
 ```bash
-# Shell into resource
+# Interactive shell
 [tool] exec -it [resource] -- /bin/bash
 
 # One-shot command
@@ -105,42 +107,17 @@ apt install [tool]
 
 ---
 
-## 🎨 Formatting
-
-### Output Formats
-```bash
-# Wide
-[tool] get [resource] -o wide
-
-# JSON
-[tool] get [resource] -o json
-
-# Custom columns
-[tool] get [resource] -o custom-columns=NAME:.metadata.name
-```
-
-### Filtering
-```bash
-# By label
-[tool] get [resource] -l key=value
-
-# By field
-[tool] get [resource] --field-selector status=Running
-```
-
----
-
 ## 🎯 Useful One-Liners
 
 ```bash
-# [Description 1]
-[complex command 1]
+# [Description of what this does]
+[complex command from real usage]
 
-# [Description 2]
-[command with pipe 2]
+# [Description]
+[command with pipe]
 
-# [Description 3]
-[loop command 3]
+# [Description]
+[loop or advanced command]
 ```
 
 ---
@@ -164,106 +141,29 @@ apt install [tool]
 
 ---
 
-## 📝 Config File
+## 💡 Personal Notes
+
+**Mistakes made**:
+- **[Error 1]** → Fix: [Solution]
+- **[Error 2]** → Fix: [Solution]
+
+**Daily workflow** (commands I actually use):
+```bash
+[Your typical routine commands]
+```
+
+---
+
+## 📝 Config Example (optional)
 
 ```yaml
-# [File description]
+# [Common config file structure]
 apiVersion: [version]
 kind: [type]
 metadata:
   name: [name]
 spec:
-  # Configuration
-  [field]: [value]
-```
-
-**Required fields**:
-- `field1`: [Description]
-- `field2`: [Description]
-
----
-
-## 🔗 Aliases
-
-```bash
-# ~/.bashrc or ~/.zshrc
-
-alias k='[tool]'
-alias kg='[tool] get'
-alias kd='[tool] describe'
-alias kl='[tool] logs'
-
-# Useful function
-function [name]() {
-    [commands with $1, $2]
-}
-```
-
----
-
-## ✅ Best Practices
-
-### DO
-- **[Practice 1]**: [Why]
-  ```bash
-  # ✅ Good
-  [command]
-  ```
-
-- **[Practice 2]**: [Why]
-
-### DON'T
-- **[Anti-pattern 1]**: [Why bad]
-  ```bash
-  # ❌ Bad
-  [dangerous command]
-
-  # ✅ Good
-  [safe command]
-  ```
-
----
-
-## 📖 Resources
-
-- [Official Docs](URL)
-- [[fundamental-concept]]
-- [[troubleshooting-[tool]]]
-
----
-
-## 💡 Personal Tips
-
-### Daily workflow
-```bash
-# Typical routine
-[commands I use often]
-```
-
-### Mistakes made
-- **[Error 1]** → Fix: [Solution]
-- **[Error 2]** → Fix: [Solution]
-
----
-
-## 📌 Quick Reference Card
-
-```
-┌────────────────────────────────────┐
-│     [TOOL] - ESSENTIALS            │
-├────────────────────────────────────┤
-│ LIST       [command]               │
-│ CREATE     [command]               │
-│ UPDATE     [command]               │
-│ DELETE     [command]               │
-│ LOGS       [command]               │
-│ DEBUG      [command]               │
-│                                    │
-│ Flags:                             │
-│   -o [format]                      │
-│   -l [label]                       │
-│   -f [file]                        │
-└────────────────────────────────────┘
+  [key fields with comments]
 ```
 
 ---

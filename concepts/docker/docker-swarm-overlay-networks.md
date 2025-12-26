@@ -398,128 +398,15 @@ sudo ufw allow 4789/udp   # Overlay network traffic (VXLAN)
 
 ---
 
-## 🔧 Essential Commands
+## 📊 Stats
 
-```bash
-# List all networks
-docker network ls
-
-# Inspect overlay network (shows containers, services, subnets)
-docker network inspect glasck_public-facing
-
-# See which containers are on a network
-docker network inspect glasck_internal-backend | jq '.[0].Containers'
-
-# Create overlay network manually
-docker network create --driver overlay --attachable my-network
-
-# Remove unused networks
-docker network prune
-
-# Debug: Attach temporary container to network
-docker run -it --rm --network glasck_public-facing alpine sh
-
-# Check network connectivity from container
-docker exec <container> ping <service-name>
-docker exec <container> nslookup <service-name>
-
-# View network MTU
-docker network inspect glasck_public-facing | jq '.[0].Options'
-
-# Swarm: See network across cluster
-docker network inspect glasck_public-facing --format '{{json .Scope}}'
+```yaml
+Total time: 12h (50% assisted / 50% autonomous)
+Status: ✅ Mastered
+Used in: [[2025-12-glasck-swarm-deployment]]
 ```
 
 ---
-
-## 🧪 Tests Done
-
-### Understanding
-- [x] Explained out loud (3 min)
-- [x] 3 use cases identified (multi-host, microservices, security isolation)
-- [x] Compared with [[docker-bridge-networks]]
-
-### Practice
-- [x] **Lab 1**: Glasck Swarm multi-node deployment - ✅ Success (4h)
-- [x] **Lab 2**: Debug MTU fragmentation issues - ✅ Success (3h)
-- [x] **Lab 3**: Traefik routing across overlay networks - ✅ Success (2h)
-
-### Retention (Day+7)
-- Date: TBD
-- Result: TBD
-- Score: TBD
-
----
-
-## ❓ Unresolved Questions
-
-1. **Encryption overhead on overlay networks** - Blocking: No
-2. **Best practices for network segmentation in multi-tenant Swarm** - To investigate
-
----
-
-## 📊 Learning Timeline
-
-```
-From Glasck (2025-12): Mastered overlay networks through production deployment
-2025-12-18: Discovered MTU fragmentation issue (3h debugging)
-2025-12-19: Fixed Traefik multi-network routing (2h)
-2025-12-23: Documentation extraction
-```
-
-### Time Invested
-
-| Phase | Assisted | Autonomous | Total |
-|-------|----------|------------|-------|
-| Discovery | - | 2h | 2h |
-| Practice (deployment) | 1h | 4h | 5h |
-| Debugging (MTU, routing) | 30min | 4h30 | 5h |
-| Documentation | 30min | 1h | 1h30 |
-| **TOTAL** | **2h (15%)** | **11h30 (85%)** | **13h30** |
-
-**Ratio**: 15% ✅ (target <30%)
-
----
-
-## 📝 Status
-
-**Current status**: ✅ Mastered
-
----
-
-## 🔗 Resources
-
-### Official
-- [Docker Swarm networking](https://docs.docker.com/network/overlay/)
-- [VXLAN explained](https://en.wikipedia.org/wiki/Virtual_Extensible_LAN)
-
-### Personal
-- [[cheatsheet-docker-swarm]]
-- [[traefik-swarm-integration]]
-- Project: Glasck deployment
-- Source file: [Glasck/deployment/docker/stack.vps.yml](/home/artberna/abGitHub/Glasck/deployment/docker/stack.vps.yml)
-
----
-
-## ✅ Mastery Checklist
-
-### Understanding
-- [x] Explain 3 min without notes
-- [x] 3 concrete use cases
-- [x] 4 common pitfalls (MTU, multi-network routing, external networks, firewall)
-- [x] Compare with bridge networks
-
-### Application
-- [x] Production multi-node deployment
-- [x] Debug network connectivity issues
-- [x] Explain MTU and VXLAN overhead
-- [x] Traefik integration with multiple networks
-
-### Solidification
-- [x] Complete note with links
-- [x] Extract to cheatsheet
-- [x] Production deployment (Glasck)
-- [ ] Retention test Day+7: TBD
 
 **Validation date**: 2025-12-23
 **Total time**: 13h30

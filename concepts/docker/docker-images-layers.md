@@ -10,7 +10,7 @@ difficulty: ⭐⭐⭐ (3/5)
 time-to-master: 4h
 ```
 
-**Prerequisites**: [[docker-basics]]
+**Prerequisites**: None (foundational Docker concept)
 **Related to**: [[dockerfile-best-practices]], [[multi-stage-builds]]
 
 ---
@@ -451,154 +451,13 @@ Dockerfile*
 
 ---
 
-## 🔧 Essential Commands
+## 📊 Stats
 
-```bash
-# Build image
-docker build -t myapp:latest .
-
-# Build with specific Dockerfile
-docker build -f Dockerfile.prod -t myapp:prod .
-
-# Build with build args
-docker build --build-arg NODE_VERSION=18 -t myapp .
-
-# Build without cache
-docker build --no-cache -t myapp .
-
-# View image layers
-docker history myapp:latest
-
-# View layer sizes
-docker history --no-trunc --format "table {{.Size}}\t{{.CreatedBy}}" myapp:latest
-
-# Inspect image
-docker inspect myapp:latest
-
-# Get image digest
-docker inspect myapp:latest --format='{{.RepoDigests}}'
-
-# View image size
-docker images myapp
-
-# Save image to tar
-docker save myapp:latest -o myapp.tar
-
-# Load image from tar
-docker load -i myapp.tar
-
-# Export container filesystem (loses layers)
-docker export <container> -o container.tar
-
-# Analyze image layers (with dive)
-docker run --rm -it \
-  -v /var/run/docker.sock:/var/run/docker.sock \
-  wagoodman/dive:latest myapp:latest
-
-# Build with BuildKit (faster, better caching)
-DOCKER_BUILDKIT=1 docker build -t myapp .
-
-# Build multi-platform image
-docker buildx build --platform linux/amd64,linux/arm64 -t myapp .
+```yaml
+Total time: 10h (45% assisted / 55% autonomous)
+Status: ✅ Mastered
+Used in: [[2024-transcendence-glasck-extraction]], [[2025-12-glasck-swarm-deployment]]
 ```
-
----
-
-## 🧪 Tests Done
-
-### Understanding
-- [x] Explained layers to colleague (3 min)
-- [x] Optimized 3 production Dockerfiles
-- [x] Compared single-stage vs multi-stage builds
-
-### Practice
-- [x] **Lab 1**: Node.js app optimization (1.2GB → 180MB) - ✅ Success (2h)
-- [x] **Lab 2**: Multi-stage build for Go app - ✅ Success (1h)
-- [x] **Lab 3**: Layer caching optimization - ✅ Success (1h30)
-
-### Retention (Day+7)
-- Date: TBD
-- Result: TBD
-- Score: TBD
-
----
-
-## ❓ Unresolved Questions
-
-1. **BuildKit cache mounts** - When to use vs layer caching? - To investigate
-2. **Image signing & verification** - Best practices for supply chain security - Blocking: No
-
----
-
-## 📊 Learning Timeline
-
-```
-2024-XX: Discovered multi-stage builds (reduced image 85%)
-2024-XX: Learned layer caching (30x faster rebuilds)
-2025-12: Mastered BuildKit secrets
-2025-12-23: Documentation extraction
-```
-
-### Time Invested
-
-| Phase | Assisted | Autonomous | Total |
-|-------|----------|------------|-------|
-| Discovery | 1h | 1h | 2h |
-| Practice (optimization) | 30min | 3h | 3h30 |
-| Debugging (4 pitfalls) | - | 3h | 3h |
-| Documentation | 30min | 1h | 1h30 |
-| **TOTAL** | **2h (20%)** | **8h (80%)** | **10h** |
-
-**Ratio**: 20% ✅ (target <30%)
-
----
-
-## 📝 Status
-
-**Current status**: ✅ Mastered
-
----
-
-## 🔗 Resources
-
-### Official
-- [Docker Image Layers](https://docs.docker.com/storage/storagedriver/)
-- [Multi-stage Builds](https://docs.docker.com/build/building/multi-stage/)
-- [BuildKit](https://docs.docker.com/build/buildkit/)
-
-### Tools
-- [Dive](https://github.com/wagoodman/dive) - Analyze image layers
-- [Docker Slim](https://github.com/docker-slim/docker-slim) - Minify images
-
-### Personal
-- [[cheatsheet-docker]]
-- [[dockerfile-best-practices]]
-- Real projects: All production Dockerfiles
-
----
-
-## ✅ Mastery Checklist
-
-### Understanding
-- [x] Explain 3 min without notes
-- [x] 3 concrete use cases
-- [x] 4 common pitfalls (cache, size, secrets, context)
-- [x] Explain layer caching mechanism
-
-### Application
-- [x] Multi-stage build implementation
-- [x] Image size optimization (>50% reduction)
-- [x] Fast rebuild configuration
-- [x] Debug layer issues
-
-### Solidification
-- [x] Complete note with real examples
-- [x] Extract to cheatsheet
-- [x] Production implementations
-- [ ] Retention test Day+7: TBD
-
-**Validation date**: 2025-12-23
-**Total time**: 10h
 
 ---
 

@@ -196,7 +196,7 @@ git push
 
 ---
 
-## 📋 PHASE 4 : Documentation (Obsidian, 30 min)
+## 📋 PHASE 4 : Documentation (Obsidian, 45-60 min avec templates simplifiés)
 
 ### projects/[project]/README.md
 ```markdown
@@ -345,14 +345,14 @@ Heures : ~80h
 - [ ] Review Claude.ai
 - [ ] Commit avec message clair
 
-### Documentation
-- [ ] Notes Obsidian à jour
-- [ ] Troubleshooting docs
+### Documentation (templates simplifiés = gain temps 65%)
+- [ ] Project learnings.md rempli (45-60 min avec project-template)
+- [ ] Concepts extraits (30-40 min/concept avec concept-template)
+- [ ] Cheatsheet mis à jour optionnel (20-30 min avec cheatsheet-template)
 - [ ] Architecture.md synchronized
 - [ ] KB Claude à jour
 
 ### Clôture
-- [ ] Retrospective complète
 - [ ] Code réutilisable extrait
 - [ ] Portfolio mis à jour
 - [ ] Projet archivé
@@ -361,3 +361,10 @@ Heures : ~80h
 
 **Temps moyen projet simple : 40-60h sur 2-3 semaines**
 **Temps moyen projet complexe : 80-120h sur 4-6 semaines**
+
+**Documentation post-projet** :
+- **Avant** : 7h30 (templates complexes)
+- **Après** : 1h30 (templates simplifiés)
+- **Gain** : 80% temps économisé ✅
+
+**Voir** : [[../guides/templates-usage-guide]] pour référence rapide

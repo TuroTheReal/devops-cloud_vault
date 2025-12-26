@@ -188,35 +188,13 @@ From Transcendence implementation:
 
 ---
 
-## 📊 Learning Timeline
+## 📊 Stats
 
+```yaml
+Total time: 12h (60% assisted / 40% autonomous)
+Status: ✅ Mastered
+Used in: [[2024-transcendence-glasck-extraction]]
 ```
-From Transcendence (2024): Full monitoring stack implementation
-2024-XX: Prometheus setup and scraping (2h)
-2024-XX: Grafana dashboards (2h)
-2024-XX: Alerting rules (1h30)
-2025-12-23: Documentation extraction
-```
-
-### Time Invested
-- **Total**: ~6h (Discovery: 1h30, Implementation: 3h, Dashboards: 1h30)
-- **Ratio**: 25% assisted, 75% autonomous ✅
-
----
-
-## 📝 Status
-
-**Current status**: 🟠 Practiced
-
----
-
-## 🔗 Resources
-
-- [Prometheus Docs](https://prometheus.io/docs/)
-- [Grafana Docs](https://grafana.com/docs/)
-- [[cheatsheet-prometheus]]
-- Project: Transcendence
-- Source: [Transcendence/.devcontainer/docker-compose.yml](/home/artberna/abGitHub/Transcendence/.devcontainer/docker-compose.yml)
 
 ---
 

@@ -10,7 +10,7 @@ difficulty: ⭐⭐ (2/5)
 time-to-master: 3h
 ```
 
-**Prerequisites**: [[docker-basics]], [[docker-images-layers]]
+**Prerequisites**: [[docker-images-layers]]
 **Related to**: [[container-orchestration]], [[process-isolation]]
 
 ---
@@ -483,115 +483,13 @@ CMD ["node", "server.js"]
 
 ---
 
-## 🔧 Essential Commands
+## 📊 Stats
 
-```bash
-# Container lifecycle
-docker create --name myapp myapp:latest   # Create (not started)
-docker start myapp                        # Start created container
-docker run -d --name myapp myapp:latest   # Create + start
-docker pause myapp                        # Pause (freeze)
-docker unpause myapp                      # Resume
-docker stop myapp                         # Graceful stop (SIGTERM)
-docker stop -t 30 myapp                   # Stop with 30s timeout
-docker kill myapp                         # Force stop (SIGKILL)
-docker restart myapp                      # Stop + start
-docker rm myapp                           # Remove stopped container
-docker rm -f myapp                        # Force remove (stop + rm)
-
-# Inspection
-docker ps                                 # Running containers
-docker ps -a                              # All containers (including stopped)
-docker inspect myapp                      # Full details
-docker inspect --format='{{.State.Status}}' myapp
-docker inspect --format='{{.State.ExitCode}}' myapp
-docker inspect --format='{{.State.OOMKilled}}' myapp
-docker logs myapp                         # View logs
-docker logs -f myapp                      # Follow logs
-docker stats myapp                        # Resource usage
-docker top myapp                          # Processes inside container
-
-# Execute commands
-docker exec myapp ls /app                 # Run command
-docker exec -it myapp sh                  # Interactive shell
-docker exec -u root myapp apt update     # As specific user
-
-# File operations
-docker cp myapp:/app/logs/app.log ./     # Copy from container
-docker cp config.json myapp:/app/        # Copy to container
-
-# Cleanup
-docker container prune                    # Remove stopped containers
-docker rm $(docker ps -aq)               # Remove all containers
-docker stop $(docker ps -q)              # Stop all running
+```yaml
+Total time: 7h (40% assisted / 60% autonomous)
+Status: ✅ Mastered
+Used in: [[2025-12-glasck-swarm-deployment]], [[2024-transcendence-glasck-extraction]]
 ```
-
----
-
-## 📊 Learning Timeline
-
-```
-2024-XX: Learned container lifecycle
-2024-XX: Discovered volumes for persistence
-2025-12: Mastered signal handling & graceful shutdown
-2025-12-23: Documentation extraction
-```
-
-### Time Invested
-
-| Phase | Assisted | Autonomous | Total |
-|-------|----------|------------|-------|
-| Discovery | 30min | 1h | 1h30 |
-| Practice | - | 2h | 2h |
-| Debugging (4 pitfalls) | - | 2h30 | 2h30 |
-| Documentation | 30min | 30min | 1h |
-| **TOTAL** | **1h (14%)** | **6h (86%)** | **7h** |
-
-**Ratio**: 14% ✅ (target <30%)
-
----
-
-## 📝 Status
-
-**Current status**: ✅ Mastered
-
----
-
-## 🔗 Resources
-
-### Official
-- [Container Lifecycle](https://docs.docker.com/engine/reference/run/)
-- [Container Signals](https://docs.docker.com/engine/reference/commandline/stop/)
-
-### Personal
-- [[cheatsheet-docker]]
-- [[docker-images-layers]]
-- Production experience: 100+ containers managed
-
----
-
-## ✅ Mastery Checklist
-
-### Understanding
-- [x] Explain lifecycle states
-- [x] Understand writable layer vs volumes
-- [x] Debug exit codes
-- [x] Handle signals properly
-
-### Application
-- [x] Proper volume usage
-- [x] Resource limits configuration
-- [x] Graceful shutdown implementation
-- [x] Regular cleanup automation
-
-### Solidification
-- [x] Complete note with real examples
-- [x] Extract to cheatsheet
-- [x] Production implementations
-- [ ] Retention test Day+7: TBD
-
-**Validation date**: 2025-12-23
-**Total time**: 7h
 
 ---
 

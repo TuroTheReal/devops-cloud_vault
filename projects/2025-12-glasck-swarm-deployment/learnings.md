@@ -331,24 +331,27 @@ docker service ps glasck_front-website --filter "desired-state=running"
 
 ---
 
-## 🔗 Knowledge Base Updates
+## 📝 Extractions TODO
 
-### Concepts Created
-- [x] [[concepts/docker/docker-swarm-overlay-networks]] - MTU, multi-network, attachable
-- [x] [[concepts/docker/docker-swarm-deployment-strategies]] - Rolling updates, rollback
-- [x] [[concepts/traefik/traefik-swarm-integration]] - Dynamic routing, labels, providers
-- [x] [[concepts/docker/docker-network-isolation]] - Zero-trust architecture
+### Already Completed ✅
+- [x] Extract [[concepts/docker/docker-swarm-overlay-networks]] (6h) - MTU, attachable networks
+- [x] Extract [[concepts/docker/docker-swarm-deployment-strategies]] (4h) - Rolling updates, automatic rollback
+- [x] Extract [[concepts/traefik/traefik-swarm-integration]] (8h) - Dynamic routing, multi-network labels
+- [x] Extract [[concepts/docker/docker-network-isolation]] (3h) - Zero-trust architecture
+- [x] Update [[cheatsheets/docker/docker-swarm]] with stack management (included in concept)
+- [x] Update [[cheatsheets/traefik/traefik]] with label patterns (included in concept)
+- [x] Create [[cheatsheets/taskfile/taskfile]] with Glasck automation (4h)
 
-### Cheatsheets Updated
-- [x] [[cheatsheets/docker/docker-swarm]] - Stack management, network commands
-- [x] [[cheatsheets/traefik/traefik]] - Label configuration, middleware patterns
-- [x] [[cheatsheets/taskfile/taskfile]] - Real Glasck examples, automation patterns
+### Pending Troubleshooting Entries
+- [ ] Create [[troubleshooting/docker-swarm-mtu-fragmentation]] (20 min)
+  - Connection hangs on large transfers, VXLAN overhead solution
+- [ ] Create [[troubleshooting/traefik-multi-network-502]] (15 min)
+  - 502 errors when service on multiple networks, traefik.docker.network label fix
+- [ ] Create [[troubleshooting/swarm-rollback-not-working]] (15 min)
+  - Automatic rollback failure, monitor vs start_period issue
 
-### Troubleshooting Guides
-- [x] MTU fragmentation (overlay networks)
-- [x] Traefik multi-network routing
-- [x] Automatic rollback configuration
-- [x] Git automation with Taskfile
+**Extraction completed**: 25h (concepts + cheatsheets)
+**Pending time**: 50 min (troubleshooting guides)
 
 ---
 

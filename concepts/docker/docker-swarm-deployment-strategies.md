@@ -447,126 +447,15 @@ process.on('SIGTERM', () => {
 
 ---
 
-## 🔧 Essential Commands
+## 📊 Stats
 
-```bash
-# Deploy/update service
-docker stack deploy -c stack.dev.yml glasck
-
-# Update service with new image (manual)
-docker service update --image glasck-api:v2.0.0 glasck_api-fastify
-
-# Check update progress
-docker service ps glasck_front-website
-watch -n 1 'docker service ps glasck_front-website'
-
-# View update/rollback status
-docker service inspect glasck_front-website --format '{{.UpdateStatus}}'
-
-# Manual rollback to previous version
-docker service rollback glasck_front-website
-
-# Rollback to specific version
-docker service update --rollback --image glasck-front:v1.0.0 glasck_front-website
-
-# Pause ongoing update
-docker service update --update-parallelism 0 glasck_front-website
-
-# Resume paused update
-docker service update --update-parallelism 1 glasck_front-website
-
-# View deployment history
-docker service ps glasck_front-website --no-trunc
-
-# Taskfile commands (from Glasck)
-task swarm          # Build + Deploy
-task swarm-update   # Pull repos + Build + Deploy
-task rollback       # Interactive rollback to specific version
+```yaml
+Total time: 10h (55% assisted / 45% autonomous)
+Status: ✅ Mastered
+Used in: [[2025-12-glasck-swarm-deployment]]
 ```
 
 ---
-
-## 🧪 Tests Done
-
-### Understanding
-- [x] Explained out loud (3 min)
-- [x] 3 use cases identified
-- [x] Compared with [[kubernetes-deployment-strategies]]
-
-### Practice
-- [x] **Lab 1**: Glasck production zero-downtime deployment - ✅ Success (3h)
-- [x] **Lab 2**: Intentional rollback testing - ✅ Success (1h)
-- [x] **Lab 3**: Resource constraint debugging - ✅ Success (1h30)
-
-### Retention (Day+7)
-- Date: TBD
-- Result: TBD
-- Score: TBD
-
----
-
-## 📊 Learning Timeline
-
-```
-From Glasck (2025-12): Mastered deployment strategies through production use
-2025-12-18: Discovered monitor/start_period issue (2h debugging)
-2025-12-20: Perfected rollback strategy with versioned backups
-2025-12-23: Documentation extraction
-```
-
-### Time Invested
-
-| Phase | Assisted | Autonomous | Total |
-|-------|----------|------------|-------|
-| Discovery | - | 2h | 2h |
-| Practice (deployments) | 30min | 3h | 3h30 |
-| Debugging (4 pitfalls) | - | 4h | 4h |
-| Documentation | 30min | 1h30 | 2h |
-| **TOTAL** | **1h (9%)** | **10h30 (91%)** | **11h30** |
-
-**Ratio**: 9% ✅ (target <30%)
-
----
-
-## 📝 Status
-
-**Current status**: ✅ Mastered
-
----
-
-## 🔗 Resources
-
-### Official
-- [Docker Swarm deploy](https://docs.docker.com/engine/swarm/services/)
-- [Service update configuration](https://docs.docker.com/engine/reference/commandline/service_update/)
-
-### Personal
-- [[cheatsheet-docker-swarm]]
-- [[docker-swarm-healthchecks]]
-- Project: Glasck deployment
-- Source file: [Glasck/deployment/docker/stack.dev.yml](/home/artberna/abGitHub/Glasck/deployment/docker/stack.dev.yml)
-
----
-
-## ✅ Mastery Checklist
-
-### Understanding
-- [x] Explain 3 min without notes
-- [x] 3 concrete use cases
-- [x] 4 common pitfalls
-- [x] Compare start-first vs stop-first
-
-### Application
-- [x] Production zero-downtime deployment
-- [x] Automatic rollback testing
-- [x] Debug resource constraints
-- [x] Configure all deployment parameters
-
-### Solidification
-- [x] Complete note with real examples
-- [x] Extract to cheatsheet
-- [x] Production deployments (Glasck)
-- [ ] Retention test Day+7: TBD
 
 **Validation date**: 2025-12-23
 **Total time**: 11h30

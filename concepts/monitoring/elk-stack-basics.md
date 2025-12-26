@@ -150,34 +150,13 @@ curl http://localhost:9600/_node/stats/pipelines
 
 ---
 
-## 📊 Learning Timeline
+## 📊 Stats
 
+```yaml
+Total time: 10h (55% assisted / 45% autonomous)
+Status: 🟠 Practiced
+Used in: [[2024-transcendence-glasck-extraction]]
 ```
-From Transcendence (2024): Implemented full ELK stack for app logging
-2024-XX: Configured Logstash pipelines (2h)
-2024-XX: Kibana dashboards and visualizations (3h)
-2024-XX: Log retention and cleanup automation (1h30)
-2025-12-23: Documentation extraction
-```
-
-### Time Invested
-- **Total**: ~10h (Discovery: 3h, Implementation: 5h, Debugging: 2h)
-- **Ratio**: 30% assisted, 70% autonomous ✅
-
----
-
-## 📝 Status
-
-**Current status**: 🟠 Practiced (Real implementation, needs retention review)
-
----
-
-## 🔗 Resources
-
-- [Elastic Stack Docs](https://www.elastic.co/guide/index.html)
-- [[cheatsheet-elk]]
-- Project: Transcendence
-- Source: [Transcendence/.devcontainer/docker-compose.yml](/home/artberna/abGitHub/Transcendence/.devcontainer/docker-compose.yml)
 
 ---
 

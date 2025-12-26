@@ -108,27 +108,26 @@ Obsidian transforme ton vault en **Personal Knowledge Management (PKM)** avec:
 
 ---
 
-### Phase 4: Maîtrise (30-60 min)
+### Phase 4: Maîtrise (15-20 min)
 
 ```
-1. Compléter Mastery Checklist
-   ├─ Peux expliquer sans notes? ✅
-   ├─ Connais use cases? ✅
-   ├─ Debuggé erreurs communes? ✅
-   └─ Tag: status/mastered
+1. Finaliser Stats
+   ├─ Total time: Xh (X% assisted / X% autonomous)
+   ├─ Status: ✅ Mastered
+   └─ Used in: [[project-1]], [[project-2]]
 
-2. Extraire vers cheatsheet
+2. Extraire vers cheatsheet (optionnel)
    ├─ Commandes fréquentes
-   ├─ Flags importants
-   └─ Debugging tips
+   ├─ Debugging tips découverts
+   └─ ~20 min avec cheatsheet-template simplifié
 
-3. Planifier révision
-   ├─ next-review: +1 mois
-   ├─ retention-check-1: +7 jours
-   └─ retention-check-2: +30 jours
+3. Planifier next review
+   └─ Next review: +1 mois
 ```
 
-**Output** : Concept maîtrisé + cheatsheet + révisions planifiées
+**Output** : Concept maîtrisé + stats + optionnel cheatsheet
+
+**Temps total documentation concept** : **30-40 min** ✅
 
 ---
 

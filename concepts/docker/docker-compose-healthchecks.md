@@ -10,7 +10,7 @@ difficulty: ⭐⭐ (2/5)
 time-to-master: 2h
 ```
 
-**Prerequisites**: [[docker-basics]], [[docker-compose-basics]]
+**Prerequisites**: [[docker-containers-lifecycle]], [[docker-images-layers]]
 **Related to**: [[docker-swarm-healthchecks]], [[container-orchestration]]
 
 ---
@@ -248,126 +248,13 @@ front-website:
 
 ---
 
-## 🔧 Essential Commands
+## 📊 Stats
 
-```bash
-# Check container health status
-docker ps --format "table {{.Names}}\t{{.Status}}\t{{.Health}}"
-
-# View healthcheck logs for specific container
-docker inspect --format='{{json .State.Health}}' <container> | jq
-
-# See last 5 healthcheck results
-docker inspect <container> | jq '.[0].State.Health.Log[-5:]'
-
-# Force healthcheck now (useful for debugging)
-docker exec <container> <healthcheck-command>
-
-# Swarm: View service health
-docker service ps <service> --format "table {{.Name}}\t{{.CurrentState}}\t{{.Error}}"
+```yaml
+Total time: 6h30 (60% assisted / 40% autonomous)
+Status: ✅ Mastered
+Used in: [[2024-transcendence-glasck-extraction]], [[2025-12-glasck-swarm-deployment]]
 ```
-
----
-
-## 🧪 Tests Done
-
-### Understanding
-- [x] Explained out loud (2 min)
-- [x] 3 use cases identified (DB, API, dependent services)
-- [x] Compared with [[container-restart-policies]]
-
-### Practice
-- [x] **Lab 1**: Transcendence monitoring stack - ✅ Success (2h)
-- [x] **Lab 2**: Glasck Swarm deployment - ✅ Success (1h30)
-- [x] **Lab 3**: Debug unhealthy containers - ✅ Success (45min)
-
-### Retention (Day+7)
-- Date: TBD
-- Result: TBD
-- Score: TBD
-
----
-
-## ❓ Unresolved Questions
-
-1. **Best practice for healthcheck frequency in Swarm** - To investigate: [[docker-swarm-best-practices]]
-2. **Healthcheck impact on performance** - Blocking: No, works well with current settings
-
----
-
-## 📊 Learning Timeline
-
-```
-From Transcendence (2024): Discovered healthchecks through ELK stack
-From Glasck (2025-12): Mastered Swarm healthchecks with Redis/Traefik
-2025-12-23: Documentation extraction
-```
-
-### Time Invested
-
-| Phase | Assisted | Autonomous | Total |
-|-------|----------|------------|-------|
-| Discovery (Transcendence) | 30min | 1h | 1h30 |
-| Practice (Glasck) | - | 2h | 2h |
-| Debugging pitfalls | - | 2h | 2h |
-| Documentation | 30min | 30min | 1h |
-| **TOTAL** | **1h (17%)** | **5h30 (83%)** | **6h30** |
-
-**Ratio**: 17% ✅ (target <30%)
-
----
-
-## 📝 Status
-
-```
-⏳ Discovering   - Initial exploration
-🟡 Learning      - Partial understanding
-🟠 Practicing    - Practice in progress
-✅ Mastered      - Fully understood
-🔄 Review        - Needs refresh
-```
-
-**Current status**: ✅ Mastered
-
----
-
-## 🔗 Resources
-
-### Official
-- [Docker Compose healthcheck](https://docs.docker.com/compose/compose-file/compose-file-v3/#healthcheck)
-- [Dockerfile HEALTHCHECK](https://docs.docker.com/engine/reference/builder/#healthcheck)
-
-### Personal
-- [[cheatsheet-docker-compose]]
-- Projects: Transcendence (ELK), Glasck (Swarm)
-- Source files:
-  - [Transcendence/.devcontainer/docker-compose.yml](/home/artberna/abGitHub/Transcendence/.devcontainer/docker-compose.yml)
-  - [Glasck/deployment/docker/stack.vps.yml](/home/artberna/abGitHub/Glasck/deployment/docker/stack.vps.yml)
-
----
-
-## ✅ Mastery Checklist
-
-### Understanding
-- [x] Explain 2 min without notes
-- [x] 3 concrete use cases (DB, API, orchestration)
-- [x] 3 common pitfalls (start_period, missing curl, aggressive timing)
-- [x] Compare with restart policies
-
-### Application
-- [x] Example code from real projects
-- [x] Debug unhealthy containers
-- [x] Adapt to new use case (Swarm)
-- [x] Explain each parameter
-
-### Solidification
-- [x] Complete note with links
-- [x] Extract to cheatsheet
-- [x] Real production deployments
-- [ ] Retention test Day+7: TBD
-
-**Validation date**: 2025-12-23
-**Total time**: 6h30
 
 ---
 

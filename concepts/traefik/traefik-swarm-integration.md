@@ -538,121 +538,15 @@ reverse-proxy:
 
 ---
 
-## 🔧 Essential Commands
+## 📊 Stats
 
-```bash
-# View Traefik dashboard
-http://localhost:8082/dashboard/
-
-# Check if service discovered by Traefik
-docker service logs glasck_reverse-proxy | grep frontend
-
-# Debug routing
-curl -v http://localhost -H "Host: glasck.com"
-
-# View Traefik configuration in dashboard
-# Dashboard → HTTP → Routers/Services/Middlewares
-
-# Force Traefik to reload config (provider change)
-docker service update --force glasck_reverse-proxy
-
-# Check which network Traefik is using
-docker service inspect glasck_reverse-proxy | jq '.[0].Spec.TaskTemplate.Networks'
-
-# View service labels
-docker service inspect glasck_front-website | jq '.[0].Spec.Labels'
-
-# Test rate limiting
-ab -n 1000 -c 10 https://glasck.com/
+```yaml
+Total time: 6h (50% assisted / 50% autonomous)
+Status: ✅ Mastered
+Used in: [[2025-12-glasck-swarm-deployment]]
 ```
 
 ---
-
-## 🧪 Tests Done
-
-### Understanding
-- [x] Explained out loud (3 min)
-- [x] 3 use cases identified
-- [x] Compared with [[nginx-reverse-proxy]]
-
-### Practice
-- [x] **Lab 1**: Glasck production Traefik setup - ✅ Success (5h)
-- [x] **Lab 2**: Multi-network routing debugging - ✅ Success (2h)
-- [x] **Lab 3**: Rate limiting and middlewares - ✅ Success (2h)
-
-### Retention (Day+7)
-- Date: TBD
-- Result: TBD
-- Score: TBD
-
----
-
-## 📊 Learning Timeline
-
-```
-From Glasck (2025-12): Mastered Traefik Swarm integration
-2025-12-17: Discovered multi-network issue (2h debugging)
-2025-12-19: Perfected middleware chaining and rate limiting
-2025-12-23: Documentation extraction
-```
-
-### Time Invested
-
-| Phase | Assisted | Autonomous | Total |
-|-------|----------|------------|-------|
-| Discovery | 1h | 2h | 3h |
-| Practice (Glasck setup) | 1h | 5h | 6h |
-| Debugging (4 pitfalls) | - | 5h | 5h |
-| Documentation | 1h | 1h30 | 2h30 |
-| **TOTAL** | **3h (18%)** | **13h30 (82%)** | **16h30** |
-
-**Ratio**: 18% ✅ (target <30%)
-
----
-
-## 📝 Status
-
-**Current status**: ✅ Mastered
-
----
-
-## 🔗 Resources
-
-### Official
-- [Traefik Docs](https://doc.traefik.io/traefik/)
-- [Traefik Docker Provider](https://doc.traefik.io/traefik/providers/docker/)
-- [Traefik Swarm Provider](https://doc.traefik.io/traefik/providers/swarm/)
-
-### Personal
-- [[cheatsheet-traefik]]
-- [[docker-swarm-overlay-networks]]
-- Project: Glasck deployment
-- Source files:
-  - [Glasck/deployment/config/traefik/traefik.yml](/home/artberna/abGitHub/Glasck/deployment/config/traefik/traefik.yml)
-  - [Glasck/deployment/docker/stack.vps.yml](/home/artberna/abGitHub/Glasck/deployment/docker/stack.vps.yml)
-  - [Glasck/deployment/docker/stack.dev.yml](/home/artberna/abGitHub/Glasck/deployment/docker/stack.dev.yml)
-
----
-
-## ✅ Mastery Checklist
-
-### Understanding
-- [x] Explain 3 min without notes
-- [x] 3 concrete use cases
-- [x] 4 common pitfalls
-- [x] Compare with traditional reverse proxies
-
-### Application
-- [x] Production Swarm deployment
-- [x] Multi-network routing configuration
-- [x] Middleware chaining (redirects, rate limiting)
-- [x] Debug routing issues
-
-### Solidification
-- [x] Complete note with real examples
-- [x] Extract to cheatsheet
-- [x] Production deployment (Glasck)
-- [ ] Retention test Day+7: TBD
 
 **Validation date**: 2025-12-23
 **Total time**: 16h30
