@@ -1,9 +1,9 @@
-# Glasck - Production Docker Swarm Deployment
+# Glasck - Production Docker Deployment
 
 ## 📋 Metadata
 
 ```yaml
-tags: [project, docker-swarm, traefik, production, automation, 2025-12]
+tags: [project, docker, docker-compose, traefik, production, automation, 2025-12]
 started: 2025-12-01
 completed: 2025-12-20
 duration: ~40h total (15h infrastructure, 10h debugging, 10h automation, 5h optimization)
@@ -11,7 +11,7 @@ real-repo: https://github.com/Glasck-int (private)
 status: production
 ```
 
-**Technologies used**: Docker Swarm, Traefik v3, Redis, Taskfile, Git automation
+**Technologies used**: Docker Compose (with Swarm evolution path), Traefik v3, Redis, Taskfile, Git automation
 **Goal**: Deploy scalable web application with zero-downtime updates, automated workflows, and production-grade infrastructure
 
 ---
@@ -23,7 +23,7 @@ Build production-ready deployment infrastructure for Glasck web application with
 - **Zero-downtime deployments**: Rolling updates with automatic rollback
 - **Network isolation**: Public-facing Traefik, private backend services
 - **Automation**: Taskfile-based workflows for deployment, rollback, monitoring
-- **Scalability**: Docker Swarm orchestration ready for multi-node
+- **Scalability**: Docker Compose orchestration (Swarm-ready architecture for future scaling)
 
 ### Architecture
 
@@ -57,17 +57,24 @@ Build production-ready deployment infrastructure for Glasck web application with
                      └─────────────────┘
 
 Networks:
-• public-facing (overlay): Traefik + Frontend + API
-• internal-backend (overlay): Frontend + API + Redis
+• public-facing (bridge): Traefik + Frontend + API
+• internal-backend (bridge): Frontend + API + Redis
 ```
 
 ### Tech Stack
-- **Orchestration**: Docker Swarm (single-node ready for multi-node)
-- **Reverse Proxy**: Traefik v3 with Swarm provider
+- **Orchestration**: Docker Compose (designed for easy Swarm migration)
+- **Reverse Proxy**: Traefik v3 with Docker provider
 - **Cache/Session**: Redis 7 Alpine with persistence
 - **Automation**: Taskfile (YAML-based task runner)
 - **Deployment**: Multi-stage Dockerfiles, versioned images
-- **Networks**: Overlay networks with MTU 1450, zero-trust isolation
+- **Networks**: Bridge networks with MTU 1450, zero-trust isolation
+
+### Evolution Path to Production Swarm
+
+This project uses Docker Compose for development/single-node deployment with an architecture designed for seamless Swarm migration:
+- **Current**: Docker Compose with bridge networks, manual scaling
+- **Future**: Docker Swarm with overlay networks, automatic scaling, multi-node HA
+- **Migration**: Stack files already compatible, just change driver from bridge to overlay
 
 ---
 
@@ -95,7 +102,7 @@ Networks:
    - Difficulty: ⭐⭐⭐ (3/5)
    - **Key insight**: Zero-trust architecture - Redis never on public network
 
-5. **Taskfile Automation** [[cheatsheets/taskfile/taskfile]]
+5. **Taskfile Automation** [[cheatsheets/taskfile/taskfile-commands]]
    - Time to learn: 4h (2h learning + 2h building workflows)
    - Difficulty: ⭐⭐ (2/5)
    - **Key insight**: YAML > Makefile for readability, cross-platform support
@@ -239,7 +246,7 @@ tasks:
 **Lesson Learned**: Automate repetitive multi-repo operations. Taskfile better than bash scripts for readability.
 
 **Knowledge Base Update**:
-→ Added to: [[cheatsheets/taskfile/taskfile]]
+→ Added to: [[cheatsheets/taskfile/taskfile-commands]]
 
 ---
 
@@ -295,7 +302,7 @@ docker service inspect glasck_api --format '{{.UpdateStatus}}'
 docker service ps glasck_front-website --filter "desired-state=running"
 ```
 
-**Added to Cheatsheet**: [[cheatsheets/docker/docker-swarm]]
+**Added to Cheatsheet**: [[cheatsheets/docker/docker-swarm-commands]]
 
 ---
 
@@ -338,20 +345,11 @@ docker service ps glasck_front-website --filter "desired-state=running"
 - [x] Extract [[concepts/docker/docker-swarm-deployment-strategies]] (4h) - Rolling updates, automatic rollback
 - [x] Extract [[concepts/traefik/traefik-swarm-integration]] (8h) - Dynamic routing, multi-network labels
 - [x] Extract [[concepts/docker/docker-network-isolation]] (3h) - Zero-trust architecture
-- [x] Update [[cheatsheets/docker/docker-swarm]] with stack management (included in concept)
-- [x] Update [[cheatsheets/traefik/traefik]] with label patterns (included in concept)
-- [x] Create [[cheatsheets/taskfile/taskfile]] with Glasck automation (4h)
-
-### Pending Troubleshooting Entries
-- [ ] Create [[troubleshooting/docker-swarm-mtu-fragmentation]] (20 min)
-  - Connection hangs on large transfers, VXLAN overhead solution
-- [ ] Create [[troubleshooting/traefik-multi-network-502]] (15 min)
-  - 502 errors when service on multiple networks, traefik.docker.network label fix
-- [ ] Create [[troubleshooting/swarm-rollback-not-working]] (15 min)
-  - Automatic rollback failure, monitor vs start_period issue
+- [x] Update [[cheatsheets/docker/docker-swarm-commands]] with stack management (included in concept)
+- [x] Update [[cheatsheets/traefik/traefik-commands]] with label patterns (included in concept)
+- [x] Create [[cheatsheets/taskfile/taskfile-commands]] with Glasck automation (4h)
 
 **Extraction completed**: 25h (concepts + cheatsheets)
-**Pending time**: 50 min (troubleshooting guides)
 
 ---
 

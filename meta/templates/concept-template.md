@@ -33,7 +33,7 @@ time-to-master: 4h
 
 ---
 
-## 📚 Key Concepts (In My Own Words)
+## 📚 Key Concepts
 
 ### 1. [Fundamental Concept 1]
 
@@ -107,6 +107,32 @@ time-to-master: 4h
 ### Pitfall 2: [Name]
 
 [Same structure - only if you EXPERIENCED it]
+
+---
+
+## 🧠 Retrieval Practice
+
+Test your understanding without looking back:
+
+<details>
+<summary><strong>Q1:</strong> [Question testing KEY concept, not trivia]</summary>
+
+**Answer**: [Concise answer, 1-3 sentences or bullet points]
+</details>
+
+<details>
+<summary><strong>Q2:</strong> [Question testing common pitfall or "why"]</summary>
+
+**Answer**: [Concise answer]
+</details>
+
+<details>
+<summary><strong>Q3:</strong> [Question testing practical application]</summary>
+
+**Answer**: [Concise answer]
+</details>
+
+<!-- Add Q4 only if necessary - keep it SHORT (3-4 questions max) -->
 
 ---
 

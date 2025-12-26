@@ -3,7 +3,7 @@
 ## 📋 Metadata
 
 ```yaml
-tags: [concept, networking, fundamentals, tcp-ip, ports, status/learning]
+tags: [concept, networking, fundamentals, tcp-ip, ports, status/learned]
 created: 2025-12-26
 updated: 2025-12-26
 difficulty: ⭐⭐ (2/5)
@@ -17,40 +17,40 @@ time-to-master: 2h
 
 ## 🎯 TL;DR (30 seconds)
 
-> Lien entre machine/docker ou toutes entites necessitant un communication, securise ou non selon la couche OSI
+> Link between machine/docker or all entities requiring communication, secured or not depending on OSI layer
 >
-> Networking = communication entre machines via protocoles (TCP/IP). IP = adresse, Port = porte d'entrée, Firewall = contrôle accès.
+> Networking = communication between machines via protocols (TCP/IP). IP = address, Port = entry door, Firewall = access control.
 >
-> **Analogy**: [IP = Hotel, Port = numéro de chambre]
+> **Analogy**: IP = Hotel, Port = room number
 
 ---
 
 ## 🤔 When to Use?
 
 ### ✅ Good for
-- **Server administration**: Comprendre SSH, HTTP, services réseau
+- **Server administration**: Understanding SSH, HTTP, network services
 - **DevOps**: Docker networks, load balancing, reverse proxy
 - **Debugging**: Troubleshoot connection issues
 
 ---
 
-## 📚 Key Concepts (In My Own Words)
+## 📚 Key Concepts
 
 ### 1. IP Addresses
 
 **My understanding**:
-IP = Identifiant unique machine sur réseau
+IP = Unique identifier for machine on network
 - IPv4: 192.168.1.10 (4 octets, 32 bits)
 - IPv6: 2001:0db8::1 (128 bits)
 - Private ranges: 192.168.x.x, 10.x.x.x (LAN)
-- Public IP: Accessible depuis Internet
+- Public IP: Accessible from Internet
 
 ---
 
 ### 2. Ports and Protocols
 
 **My understanding**:
-Port = Point d'entrée service sur machine
+Port = Entry point for service on machine
 - Range: 0-65535
 - Well-known: 22 (SSH), 80 (HTTP), 443 (HTTPS), 3306 (MySQL)
 - TCP: Connection-oriented (HTTP, SSH)
@@ -61,18 +61,18 @@ Port = Point d'entrée service sur machine
 ### 3. DNS (Domain Name System)
 
 **My understanding**:
-DNS = Traduction nom domaine → IP
+DNS = Translation of domain name → IP
 - `google.com` → `142.250.185.46`
-- Évite mémoriser IPs
-- Hiérarchie: Root → TLD (.com) → Domain (google)
+- Avoids memorizing IPs
+- Hierarchy: Root → TLD (.com) → Domain (google)
 
 ---
 
 ### 4. Firewall Basics
 
 **My understanding**:
-Firewall = Filtre trafic réseau
-- Allow/Deny rules par IP, port, protocol
+Firewall = Filter network traffic
+- Allow/Deny rules by IP, port, protocol
 - Stateful (track connections) vs Stateless
 - Host-based (UFW) vs Network-based (router)
 
@@ -125,12 +125,36 @@ curl PUBLIC_IP:22          # Timeout
 
 ---
 
+## 🧠 Retrieval Practice
+
+Test your understanding without looking back:
+
+<details>
+<summary><strong>Q1:</strong> What's the difference between TCP and UDP, and when would you use each?</summary>
+
+**Answer**: TCP is connection-oriented with guaranteed delivery (HTTP, SSH) - slower but reliable. UDP is connectionless without delivery guarantee (DNS, streaming) - faster but packets can be lost. Use TCP when you need reliability, UDP when speed matters more than occasional packet loss.
+</details>
+
+<details>
+<summary><strong>Q2:</strong> Why might a service be running but not accessible from the internet?</summary>
+
+**Answer**: Firewall blocking the port from external IPs. The service might work on localhost but be blocked by host firewall (UFW) or cloud provider firewall. Always check both `systemctl status` to verify service is running AND firewall rules (`ufw status`, cloud console) to verify port is allowed.
+</details>
+
+<details>
+<summary><strong>Q3:</strong> What's the purpose of DNS and why is it important for system administration?</summary>
+
+**Answer**: DNS translates human-readable domain names to IP addresses (google.com → 142.250.185.46), avoiding the need to memorize IPs. Essential for administration because it allows service references by name instead of IP, makes configurations more maintainable, and enables services to move to different IPs without reconfiguration.
+</details>
+
+---
+
 ## 📊 Stats
 
 ```yaml
 Total time: 2h (25% assisted / 75% autonomous)
 Status: 🟡 Learning
-Used in: [[2025-12-vps-hetzner-init-setup]]
+Used in: [[2025-12-vps-hetzner-init-setup/learnings]]
 ```
 
 ---

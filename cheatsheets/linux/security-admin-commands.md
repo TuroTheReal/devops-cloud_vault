@@ -8,7 +8,7 @@ created: 2025-12-26
 updated: 2025-12-26
 ```
 
-**Related**: [[ssh-hardening]], [[ufw-firewall]], [[fail2ban]]
+**Related**: [[linux-ssh-hardening]], [[linux-firewall-ufw]], [[linux-fail2ban]]
 
 ---
 

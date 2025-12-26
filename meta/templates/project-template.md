@@ -90,7 +90,7 @@ status: completed
 [useful command you discovered]
 ```
 
-**Updated**: [[cheatsheets/tech/tool]]
+**Updated**: [[cheatsheets/tech/tool-commands]]
 
 ---
 
@@ -132,7 +132,7 @@ status: completed
 ## 📝 Extractions TODO
 
 - [ ] Extract [[concepts/tech/concept-1]] (30 min)
-- [ ] Update [[cheatsheets/tech/tool]] with commands
+- [ ] Update [[cheatsheets/tech/tool-commands]] with commands
 - [ ] Create [[troubleshooting/issue-name]] if needed
 
 ---

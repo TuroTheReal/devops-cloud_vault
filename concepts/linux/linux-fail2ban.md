@@ -37,7 +37,7 @@ time-to-master: 1h
 
 ---
 
-## 📚 Key Concepts (In My Own Words)
+## 📚 Key Concepts
 
 ### 1. How Fail2Ban Works
 
@@ -415,12 +415,42 @@ sudo fail2ban-client status sshd
 
 ---
 
+## 🧠 Retrieval Practice
+
+Test your understanding without looking back:
+
+<details>
+<summary><strong>Q1:</strong> How do the three ban parameters (maxretry, findtime, bantime) work together, and what happens if you set them incorrectly?</summary>
+
+**Answer**: maxretry sets failure threshold, findtime defines the time window to count failures, bantime sets ban duration. Example: maxretry=3, findtime=600, bantime=3600 means "3 failures within 10 minutes = 1 hour ban". If set too aggressively (like maxretry=2, findtime=300), you risk banning yourself during legitimate troubleshooting. Too lenient allows more brute-force attempts.
+</details>
+
+<details>
+<summary><strong>Q2:</strong> Why should you configure Fail2Ban to use UFW action instead of the default iptables action?</summary>
+
+**Answer**: If you manage your firewall via UFW, using iptables action bypasses UFW - banned IPs won't appear in `ufw status`, making it invisible and confusing. Using the UFW action integrates properly so banned IPs are visible in UFW and management is consistent. Set `banaction = ufw` in jail.local.
+</details>
+
+<details>
+<summary><strong>Q3:</strong> What's the danger of testing Fail2Ban with wrong passwords, and how do you recover from banning yourself?</summary>
+
+**Answer**: Fail2Ban doesn't distinguish you from attackers - any IP that fails authentication gets banned automatically. Recovery options: 1) Wait for bantime to expire, 2) Access via VPS console and unban manually (`fail2ban-client set sshd unbanip YOUR_IP`), or 3) Prevention: whitelist your IP in jail.local with `ignoreip = YOUR_HOME_IP`.
+</details>
+
+<details>
+<summary><strong>Q4:</strong> Why might Fail2Ban not be banning IPs despite multiple failed logins?</summary>
+
+**Answer**: Most likely monitoring wrong log path - different distros use different locations. Verify with `tail -f /var/log/auth.log` that you see "Failed password" entries when testing SSH. Check Fail2Ban is monitoring correct file with `fail2ban-client get sshd logpath`. Fix by updating logpath in jail.local if wrong.
+</details>
+
+---
+
 ## 📊 Stats
 
 ```yaml
 Total time: 45min (45% assisted / 55% autonomous)
 Status: 🟡 Learning
-Used in: [[2025-12-vps-hetzner-init-setup]]
+Used in: [[2025-12-vps-hetzner-init-setup/learnings]]
 ```
 
 ---

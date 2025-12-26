@@ -8,7 +8,7 @@ created: 2025-12-23
 updated: 2025-12-23
 ```
 
-**Related**: [[concepts/traefik/traefik-swarm-integration]], [[docker-swarm]]
+**Related**: [[concepts/traefik/traefik-swarm-integration]], [[docker-swarm-basics]]
 
 ---
 

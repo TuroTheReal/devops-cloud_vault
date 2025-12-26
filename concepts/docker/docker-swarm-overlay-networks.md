@@ -3,15 +3,15 @@
 ## 📋 Metadata
 
 ```yaml
-tags: [concept, docker, swarm, networking, overlay, status/mastered]
+tags: [concept, docker, swarm, networking, overlay, status/learning]
 created: 2025-12-23
 updated: 2025-12-23
 difficulty: ⭐⭐⭐⭐ (4/5)
 time-to-master: 6h
 ```
 
-**Prerequisites**: [[docker-networking-basics]], [[docker-swarm-basics]]
-**Related to**: [[traefik-swarm]], [[service-discovery]]
+**Prerequisites**: [[docker-containers-lifecycle]]
+**Related to**: [[traefik-swarm-integration]]
 
 ---
 
@@ -37,7 +37,7 @@ Overlay networks in Docker Swarm create virtual networks that span multiple host
 
 ---
 
-## 📚 Key Concepts (In My Own Words)
+## 📚 Key Concepts
 
 ### 1. Overlay vs Bridge Networks
 
@@ -403,13 +403,43 @@ sudo ufw allow 4789/udp   # Overlay network traffic (VXLAN)
 ```yaml
 Total time: 12h (50% assisted / 50% autonomous)
 Status: ✅ Mastered
-Used in: [[2025-12-glasck-swarm-deployment]]
+Used in: [[2025-12-glasck-deployment/learnings]]
 ```
 
 ---
 
 **Validation date**: 2025-12-23
 **Total time**: 13h30
+
+---
+
+## 🧠 Retrieval Practice
+
+Test your understanding without looking back:
+
+<details>
+<summary><strong>Q1:</strong> Why do you need to set MTU to 1450 for overlay networks, and what happens without it?</summary>
+
+**Answer**: VXLAN encapsulation adds 50 bytes overhead. Default 1500 MTU means packets larger than 1450 bytes get fragmented when encapsulated. Fragmentation often fails across networks causing silent drops. Symptoms: small requests work, large requests (uploads, big JSON) hang indefinitely. Setting MTU to 1450 prevents fragmentation.
+</details>
+
+<details>
+<summary><strong>Q2:</strong> What's the difference between overlay and bridge networks, and when do you need overlay?</summary>
+
+**Answer**: Bridge networks work on single Docker host - containers connect via virtual switch. Overlay networks span multiple hosts using VXLAN to create virtual Layer 2 network across cluster. Need overlay for Swarm when services have replicas on different nodes that must communicate directly.
+</details>
+
+<details>
+<summary><strong>Q3:</strong> Why might services fail to communicate across Swarm nodes, and what ports need to be open?</summary>
+
+**Answer**: Overlay networks require specific firewall ports for inter-node communication. Need TCP/UDP 7946 (container network discovery), UDP 4789 (VXLAN overlay traffic), TCP 2377 (Swarm management). Without these, services work on same node but get "No route to host" across nodes. Open on all node firewalls.
+</details>
+
+<details>
+<summary><strong>Q4:</strong> What does `attachable: true` do on an overlay network, and why is it useful?</summary>
+
+**Answer**: By default only Swarm services can connect to overlay networks. `attachable: true` allows standalone containers (docker run) to also join. Useful for mixed environments (services + standalone containers) and debugging - you can spin up temporary container on network to test connectivity.
+</details>
 
 ---
 

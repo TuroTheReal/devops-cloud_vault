@@ -355,12 +355,36 @@ systemctl is-active ssh.socket
 
 ---
 
+## 🧠 Retrieval Practice
+
+Test your understanding without looking back:
+
+<details>
+<summary><strong>Q1:</strong> Why does changing the SSH port in sshd_config sometimes not work, and how do you fix it?</summary>
+
+**Answer**: Socket activation overrides service config - if ssh.socket is active (check with `systemctl status ssh` for "TriggeredBy: ssh.socket"), the socket's hardcoded port (ListenStream=22) takes precedence over sshd_config. Fix by disabling socket activation: `systemctl disable ssh.socket`, `systemctl enable ssh.service`, then restart.
+</details>
+
+<details>
+<summary><strong>Q2:</strong> What's the benefit of socket activation, and why might it not be useful for SSH in production?</summary>
+
+**Answer**: Socket activation saves resources for infrequently used services - systemd listens on port, starts service only when connection arrives. But for SSH in production it's unnecessary overhead because SSH runs 24/7 anyway, and custom port configuration becomes more complex. Simpler is better for security-critical services.
+</details>
+
+<details>
+<summary><strong>Q3:</strong> How does socket activation actually work at the technical level?</summary>
+
+**Answer**: systemd creates and binds the listening socket, monitors for connections. When connection arrives, systemd starts the service and passes the already-connected socket file descriptor via environment variables. The service receives ready-to-use socket instead of creating its own. Socket persists in systemd even if service stops.
+</details>
+
+---
+
 ## 📊 Stats
 
 ```yaml
 Total time: 1h (45% assisted / 55% autonomous)
 Status: 🟡 Learning
-Used in: [[2025-12-vps-hetzner-init-setup]]
+Used in: [[2025-12-vps-hetzner-init-setup/learnings]]
 ```
 
 ---

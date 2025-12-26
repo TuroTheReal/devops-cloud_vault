@@ -3,15 +3,15 @@
 ## 📋 Metadata
 
 ```yaml
-tags: [concept, docker, network, security, isolation, zero-trust, status/mastered]
+tags: [concept, docker, network, security, isolation, zero-trust, status/learned]
 created: 2025-12-23
 updated: 2025-12-23
 difficulty: ⭐⭐⭐ (3/5)
 time-to-master: 3h
 ```
 
-**Prerequisites**: [[docker-networking-basics]]
-**Related to**: [[docker-swarm-overlay-networks]], [[microservices-security]]
+**Prerequisites**: [[docker-containers-lifecycle]]
+**Related to**: [[docker-swarm-overlay-networks]]
 
 ---
 
@@ -37,7 +37,7 @@ Network isolation in Docker means segregating services into separate networks so
 
 ---
 
-## 📚 Key Concepts (In My Own Words)
+## 📚 Key Concepts
 
 ### 1. Zero-Trust Network Architecture
 
@@ -597,13 +597,43 @@ docker network ls --filter name=${STACK_NAME}_ -q | xargs -r docker network rm
 ```yaml
 Total time: 8h (40% assisted / 60% autonomous)
 Status: ✅ Mastered
-Used in: [[2024-transcendence-glasck-extraction]], [[2025-12-glasck-swarm-deployment]]
+Used in: [[2024-transcendence-glasck-extraction/learnings]], [[2025-12-glasck-deployment/learnings]]
 ```
 
 ---
 
 **Validation date**: 2025-12-23
 **Total time**: 8h
+
+---
+
+## 🧠 Retrieval Practice
+
+Test your understanding without looking back:
+
+<details>
+<summary><strong>Q1:</strong> Why is zero-trust network architecture important, and how does it differ from traditional perimeter security?</summary>
+
+**Answer**: Traditional approach trusts everything inside the perimeter - if attacker compromises one service, they can access everything. Zero-trust assumes "trust nothing, verify everything" - each service gets ONLY the network access it needs. If frontend is compromised, attacker still can't reach database because they're on different networks.
+</details>
+
+<details>
+<summary><strong>Q2:</strong> What's the purpose of having services connect to multiple networks, and which services typically do this?</summary>
+
+**Answer**: Bridge services connect to both public and private networks to route traffic between isolated zones. Frontend/API connect to public-facing (for Traefik routing) AND internal-backend (to access databases). This creates controlled entry points while keeping sensitive services (databases, Redis) completely isolated from internet.
+</details>
+
+<details>
+<summary><strong>Q3:</strong> What does `internal: true` network flag do, and when should you use it?</summary>
+
+**Answer**: Prevents external connectivity - containers on this network can talk to each other but CANNOT reach internet and internet CANNOT reach them (even with published ports). Use for database networks that don't need internet access. Provides extra security layer - even accidental port publishing won't expose service.
+</details>
+
+<details>
+<summary><strong>Q4:</strong> Why might Traefik show 502 Bad Gateway for a service on multiple networks?</summary>
+
+**Answer**: Service on two networks but missing `traefik.docker.network` label. Traefik doesn't know which network to use for backend routing, may choose wrong one (private network where Traefik isn't connected). Always set `traefik.docker.network=stackname_public-facing` label to explicitly specify routing network.
+</details>
 
 ---
 

@@ -3,15 +3,15 @@
 ## 📋 Metadata
 
 ```yaml
-tags: [concept, traefik, reverse-proxy, docker-swarm, dynamic-routing, status/mastered]
+tags: [concept, traefik, reverse-proxy, docker-swarm, dynamic-routing, status/learned]
 created: 2025-12-23
 updated: 2025-12-23
 difficulty: ⭐⭐⭐⭐ (4/5)
 time-to-master: 8h
 ```
 
-**Prerequisites**: [[docker-swarm-basics]], [[docker-overlay-networks]], [[http-basics]]
-**Related to**: [[nginx-reverse-proxy]], [[load-balancing]]
+**Prerequisites**: [[docker-swarm-overlay-networks]]
+**Related to**: None
 
 ---
 
@@ -37,7 +37,7 @@ Traefik is a dynamic reverse proxy that automatically discovers Docker Swarm ser
 - **PERMISSION** Need access to "unix:///var/run/docker.sock"
 ---
 
-## 📚 Key Concepts (In My Own Words)
+## 📚 Key Concepts
 
 ### 1. Traefik Architecture in Swarm
 
@@ -543,13 +543,43 @@ reverse-proxy:
 ```yaml
 Total time: 6h (50% assisted / 50% autonomous)
 Status: ✅ Mastered
-Used in: [[2025-12-glasck-swarm-deployment]]
+Used in: [[2025-12-glasck-deployment/learnings]]
 ```
 
 ---
 
 **Validation date**: 2025-12-23
 **Total time**: 16h30
+
+---
+
+## 🧠 Retrieval Practice
+
+Test your understanding without looking back:
+
+<details>
+<summary><strong>Q1:</strong> Why is Traefik called "dynamic" and how does this differ from traditional reverse proxies?</summary>
+
+**Answer**: Traefik automatically discovers services by watching Docker API and configures routing based on labels - configuration as data. Traditional proxies (Nginx, Apache) require manual config file edits + reload for each service change. With Traefik, you declare routing rules as Docker labels and it auto-updates without restart.
+</details>
+
+<details>
+<summary><strong>Q2:</strong> What's the critical label needed when a service connects to multiple networks, and why?</summary>
+
+**Answer**: `traefik.docker.network=stackname_public-facing` explicitly tells Traefik which network to use for backend communication. Without it, Traefik guesses wrong network (often private where Traefik isn't connected), causing 502 Bad Gateway. Always set when service on multiple networks.
+</details>
+
+<details>
+<summary><strong>Q3:</strong> Why must Traefik use port mode: host, and what's the tradeoff?</summary>
+
+**Answer**: Host mode preserves client IP addresses - without it, ingress routing mesh makes all requests appear from internal gateway IP, breaking rate limiting and access logs. Tradeoff: requires fixed node placement (can't use full Swarm load balancing), must run on specific node with placement constraint.
+</details>
+
+<details>
+<summary><strong>Q4:</strong> Why do HTTP and HTTPS routers need to be separate, and what happens if you add TLS to HTTP router?</summary>
+
+**Answer**: Port 80 is HTTP (plaintext), port 443 is HTTPS (TLS). Adding `tls=true` to HTTP router (web entrypoint) makes Traefik try to negotiate TLS on plaintext port, causing certificate errors. Need separate routers: HTTP router for redirect only (no TLS), HTTPS router with TLS enabled.
+</details>
 
 ---
 

@@ -3,15 +3,15 @@
 ## 📋 Metadata
 
 ```yaml
-tags: [concept, docker, swarm, deployment, zero-downtime, status/mastered]
+tags: [concept, docker, swarm, deployment, zero-downtime, status/learning]
 created: 2025-12-23
 updated: 2025-12-23
 difficulty: ⭐⭐⭐ (3/5)
 time-to-master: 4h
 ```
 
-**Prerequisites**: [[docker-swarm-basics]], [[docker-swarm-healthchecks]]
-**Related to**: [[kubernetes-rolling-updates]], [[blue-green-deployment]]
+**Prerequisites**: [[docker-swarm-overlay-networks]], [[docker-compose-healthchecks]]
+**Related to**: None
 
 ---
 
@@ -37,7 +37,7 @@ Swarm deployment strategies control HOW service updates happen - rolling updates
 
 ---
 
-## 📚 Key Concepts (In My Own Words)
+## 📚 Key Concepts
 
 ### 1. Rolling Update Workflow
 
@@ -452,13 +452,43 @@ process.on('SIGTERM', () => {
 ```yaml
 Total time: 10h (55% assisted / 45% autonomous)
 Status: ✅ Mastered
-Used in: [[2025-12-glasck-swarm-deployment]]
+Used in: [[2025-12-glasck-deployment/learnings]]
 ```
 
 ---
 
 **Validation date**: 2025-12-23
 **Total time**: 11h30
+
+---
+
+## 🧠 Retrieval Practice
+
+Test your understanding without looking back:
+
+<details>
+<summary><strong>Q1:</strong> Why must the monitor period be longer than start_period for automatic rollback to work?</summary>
+
+**Answer**: Healthcheck has start_period grace before failures count. If monitor window ends while container is still in grace period (monitor=30s, start_period=120s), Swarm finishes monitoring while status is "starting", declares success, and moves on. Monitor must be LONGER than start_period to actually catch health failures (e.g., monitor=180s for start_period=120s).
+</details>
+
+<details>
+<summary><strong>Q2:</strong> What's the difference between start-first and stop-first update order, and when would you use each?</summary>
+
+**Answer**: start-first starts new replica BEFORE stopping old (temporarily N+1 replicas, zero downtime, needs extra resources). stop-first stops old BEFORE starting new (always N replicas, brief capacity reduction, saves resources). Use start-first for production (availability > resources), stop-first when constrained by resources or exact replica count matters.
+</details>
+
+<details>
+<summary><strong>Q3:</strong> Why might automatic rollback restore a broken version, and what's the solution?</summary>
+
+**Answer**: Swarm rolls back to "previous image" not "last working image". If you deployed multiple broken versions (v1.1.0 broken, v1.2.0 broken), rollback goes from v1.2.0 to v1.1.0 (still broken). Solutions: test thoroughly before deploying, keep manual rollback commands ready, tag working versions as "stable", or use deployment backups.
+</details>
+
+<details>
+<summary><strong>Q4:</strong> What's the purpose of stop_grace_period and what happens without it?</summary>
+
+**Answer**: Gives container time to finish existing requests before SIGKILL (default 10s). Without adequate period, during updates old container gets immediately killed, abruptly terminating connections causing "ECONNRESET" errors and 502s. Set to 30s+ for web servers, ensure app handles SIGTERM gracefully to close connections cleanly.
+</details>
 
 ---
 

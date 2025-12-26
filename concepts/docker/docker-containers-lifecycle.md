@@ -3,7 +3,7 @@
 ## 📋 Metadata
 
 ```yaml
-tags: [concept, docker, containers, lifecycle, runtime, status/mastered]
+tags: [concept, docker, containers, lifecycle, runtime, status/learned]
 created: 2025-12-23
 updated: 2025-12-23
 difficulty: ⭐⭐ (2/5)
@@ -11,7 +11,7 @@ time-to-master: 3h
 ```
 
 **Prerequisites**: [[docker-images-layers]]
-**Related to**: [[container-orchestration]], [[process-isolation]]
+**Related to**: None
 
 ---
 
@@ -37,7 +37,7 @@ A Docker container is a running instance of an image - a lightweight, isolated p
 
 ---
 
-## 📚 Key Concepts (In My Own Words)
+## 📚 Key Concepts
 
 ### 1. Container Lifecycle States
 
@@ -483,12 +483,42 @@ CMD ["node", "server.js"]
 
 ---
 
+## 🧠 Retrieval Practice
+
+Test your understanding without looking back:
+
+<details>
+<summary><strong>Q1:</strong> Why do containers lose data when removed, and what's the solution?</summary>
+
+**Answer**: Container writable layer is ephemeral - all file modifications (logs, uploads, app data) exist only in this layer and are lost when container is removed. This is by design for stateless applications. Solution: use volumes for data that must persist across container recreations.
+</details>
+
+<details>
+<summary><strong>Q2:</strong> What does exit code 137 mean, and how do you diagnose it?</summary>
+
+**Answer**: Exit code 137 = SIGKILL, usually from OOM (Out Of Memory) Killer when container exceeds memory limit. Diagnose with `docker inspect --format='{{.State.OOMKilled}}' container` (returns true if OOM). Fix by increasing memory limit, checking for memory leaks, or investigating actual memory usage with `docker stats`.
+</details>
+
+<details>
+<summary><strong>Q3:</strong> Why do stopped containers still consume disk space, and what should you do?</summary>
+
+**Answer**: Stopped containers retain their writable layer (logs, temp files, changes) on disk until explicitly removed. They accumulate over time. Solutions: use `--rm` flag for temporary containers, run `docker container prune -f` regularly, or set up automated cleanup cron jobs.
+</details>
+
+<details>
+<summary><strong>Q4:</strong> Why might `docker stop` take 10+ seconds and kill containers forcefully?</summary>
+
+**Answer**: Shell form CMD (`CMD npm start`) wraps command in `/bin/sh -c`, making shell PID 1. SIGTERM goes to shell which doesn't forward to app, causing timeout then SIGKILL. Fix with exec form (`CMD ["node", "server.js"]`) so app is PID 1 and receives signals directly, or handle SIGTERM in app code.
+</details>
+
+---
+
 ## 📊 Stats
 
 ```yaml
 Total time: 7h (40% assisted / 60% autonomous)
 Status: ✅ Mastered
-Used in: [[2025-12-glasck-swarm-deployment]], [[2024-transcendence-glasck-extraction]]
+Used in: [[2025-12-glasck-deployment/learnings]], [[2024-transcendence-glasck-extraction/learnings]]
 ```
 
 ---

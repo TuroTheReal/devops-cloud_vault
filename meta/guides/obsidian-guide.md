@@ -316,7 +316,7 @@ Brief explanation of the concept (2-3 sentences).
 
 ---
 
-## 📚 Key Concepts (In My Own Words)
+## 📚 Key Concepts
 
 ### 1. Concept Name
 

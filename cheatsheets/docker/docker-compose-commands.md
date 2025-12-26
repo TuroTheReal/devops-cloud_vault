@@ -8,7 +8,7 @@ created: 2025-12-23
 updated: 2025-12-23
 ```
 
-**Related**: [[docker]], [[docker-swarm]], [[concepts/docker/docker-compose-healthchecks]]
+**Related**: [[docker-commands]], [[docker-swarm-basics]], [[concepts/docker/docker-compose-healthchecks]]
 
 ---
 

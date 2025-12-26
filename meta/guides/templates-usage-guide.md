@@ -159,7 +159,7 @@ Après le lab:
 **Exemples** :
 - `[[docker-containers-lifecycle]]`
 - `[[concepts/docker/docker-networking]]`
-- `[[cheatsheets/docker/docker]]`
+- `[[cheatsheets/docker/docker-commands]]`
 - `[[projects/2025-12-vps-hetzner-init-setup/learnings]]`
 
 **Bénéfices** :

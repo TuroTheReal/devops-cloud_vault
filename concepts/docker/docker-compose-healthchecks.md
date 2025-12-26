@@ -3,7 +3,7 @@
 ## 📋 Metadata
 
 ```yaml
-tags: [concept, docker, docker-compose, healthcheck, status/mastered]
+tags: [concept, docker, docker-compose, healthcheck, status/learned]
 created: 2025-12-23
 updated: 2025-12-23
 difficulty: ⭐⭐ (2/5)
@@ -36,7 +36,7 @@ Healthchecks are automated tests that Docker runs periodically to verify if a co
 
 ---
 
-## 📚 Key Concepts (In My Own Words)
+## 📚 Key Concepts
 
 ### 1. Healthcheck vs Container Status
 
@@ -248,12 +248,42 @@ front-website:
 
 ---
 
+## 🧠 Retrieval Practice
+
+Test your understanding without looking back:
+
+<details>
+<summary><strong>Q1:</strong> What's the difference between container status and health status, and why is this distinction important?</summary>
+
+**Answer**: Container status shows if process is running/stopped. Health status shows if service is actually functioning. A container can be "running" but "unhealthy" - process alive but not working correctly. Without healthchecks, orchestrators send traffic to broken containers that are technically running but can't serve requests.
+</details>
+
+<details>
+<summary><strong>Q2:</strong> Why is start_period critical, and what happens if it's too short?</summary>
+
+**Answer**: start_period gives container grace time before failures count toward retries. If too short (app needs 60s to start but start_period=10s), healthcheck starts counting failures before app is ready, marking container unhealthy and restarting it in a loop. Set to 2-3x normal startup time, especially for Java apps.
+</details>
+
+<details>
+<summary><strong>Q3:</strong> What's a common pitfall with Alpine-based images and healthchecks, and how do you fix it?</summary>
+
+**Answer**: Alpine images don't include curl by default, causing "curl: not found" healthcheck failures. Solutions: use wget (available in Alpine), install curl in Dockerfile (`RUN apk add --no-cache curl`), or use application-specific tools (node healthcheck.js).
+</details>
+
+<details>
+<summary><strong>Q4:</strong> How do you balance detection speed vs false positives in healthcheck configuration?</summary>
+
+**Answer**: Aggressive settings (interval=5s, timeout=2s, retries=2) detect failures quickly but risk false positives during load spikes. Production needs tolerance: longer timeout (5s), more retries (10), reasonable interval (10s). Balance quick detection with avoiding unnecessary restarts during temporary slowness.
+</details>
+
+---
+
 ## 📊 Stats
 
 ```yaml
 Total time: 6h30 (60% assisted / 40% autonomous)
 Status: ✅ Mastered
-Used in: [[2024-transcendence-glasck-extraction]], [[2025-12-glasck-swarm-deployment]]
+Used in: [[2024-transcendence-glasck-extraction/learnings]], [[2025-12-glasck-deployment/learnings]]
 ```
 
 ---

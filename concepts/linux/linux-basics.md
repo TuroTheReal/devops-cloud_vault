@@ -3,7 +3,7 @@
 ## 📋 Metadata
 
 ```yaml
-tags: [concept, linux, fundamentals, cli, filesystem, status/learning]
+tags: [concept, linux, fundamentals, cli, filesystem, status/learned]
 created: 2025-12-26
 updated: 2025-12-26
 difficulty: ⭐⭐ (2/5)
@@ -36,7 +36,7 @@ time-to-master: 2h
 
 ---
 
-## 📚 Key Concepts (In My Own Words)
+## 📚 Key Concepts
 
 ### 1. Everything is a File
 
@@ -145,12 +145,36 @@ sudo rm -rf /important/data  # Typo, deletes everything!
 
 ---
 
+## 🧠 Retrieval Practice
+
+Test your understanding without looking back:
+
+<details>
+<summary><strong>Q1:</strong> Why is the "everything is a file" philosophy important in Linux administration?</summary>
+
+**Answer**: It provides a uniform interface for interacting with different system components. Hardware devices, processes, and network sockets can all be accessed using standard file operations (read, write, permissions), making system administration more consistent and scriptable.
+</details>
+
+<details>
+<summary><strong>Q2:</strong> What's the danger of running commands with sudo, and how should you approach it?</summary>
+
+**Answer**: Running commands as root bypasses all safety checks - a single typo can wipe your entire system with no undo. Always double-check sudo commands (especially destructive ones like rm, mv, chmod) and verify paths before executing. Use sudo only when necessary.
+</details>
+
+<details>
+<summary><strong>Q3:</strong> Why should you use separate users for different purposes rather than running everything as root or your personal user?</summary>
+
+**Answer**: Following the principle of least privilege - each user should have only the minimum permissions needed. A personal user shouldn't run background apps, and apps shouldn't have full root access. This limits damage if a service is compromised and prevents security failures.
+</details>
+
+---
+
 ## 📊 Stats
 
 ```yaml
 Total time: 2h (30% assisted / 70% autonomous)
 Status: 🟡 Learning
-Used in: [[2025-12-vps-hetzner-init-setup]]
+Used in: [[2025-12-vps-hetzner-init-setup/learnings]]
 ```
 
 ---

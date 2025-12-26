@@ -3,15 +3,15 @@
 ## 📋 Metadata
 
 ```yaml
-tags: [concept, monitoring, prometheus, grafana, metrics, status/practiced]
+tags: [concept, monitoring, prometheus, grafana, metrics, status/learned]
 created: 2025-12-23
 updated: 2025-12-23
 difficulty: ⭐⭐⭐ (3/5)
 time-to-master: 6h
 ```
 
-**Prerequisites**: [[docker-compose]], [[time-series-basics]]
-**Related to**: [[elk-stack]], [[alertmanager]]
+**Prerequisites**: None
+**Related to**: [[elk-stack-basics]]
 
 ---
 
@@ -193,8 +193,38 @@ From Transcendence implementation:
 ```yaml
 Total time: 12h (60% assisted / 40% autonomous)
 Status: ✅ Mastered
-Used in: [[2024-transcendence-glasck-extraction]]
+Used in: [[2024-transcendence-glasck-extraction/learnings]]
 ```
+
+---
+
+## 🧠 Retrieval Practice
+
+Test your understanding without looking back:
+
+<details>
+<summary><strong>Q1:</strong> What's the difference between Prometheus and Grafana, and why do you need both?</summary>
+
+**Answer**: Prometheus collects and stores numeric metrics via HTTP scraping (the data engine), Grafana visualizes metrics with dashboards and charts (the presentation layer). Prometheus handles data collection/storage, Grafana makes it human-readable. Together they form complete monitoring: collection + visualization.
+</details>
+
+<details>
+<summary><strong>Q2:</strong> Why must evaluation_interval be less than or equal to scrape_interval?</summary>
+
+**Answer**: evaluation_interval determines how often alert rules are evaluated, scrape_interval determines how often metrics are collected. If evaluation > scrape (e.g., evaluate every 60s but scrape every 15s), alerts fire with old stale data causing delays. Keep evaluation <= scrape for timely alerts with fresh data.
+</details>
+
+<details>
+<summary><strong>Q3:</strong> What's the purpose of node-exporter and why does it need special host access?</summary>
+
+**Answer**: node-exporter collects system-level metrics (CPU, memory, disk). Needs to mount host /proc, /sys, and / as read-only plus `pid: host` to access actual host metrics instead of container metrics. Without this, shows container stats not host stats, giving wrong monitoring data.
+</details>
+
+<details>
+<summary><strong>Q4:</strong> Why should you use Grafana provisioning instead of manual dashboard creation?</summary>
+
+**Answer**: Manual dashboards reset on container restart - all customization lost. Provisioning defines datasources and dashboards as code (YAML/JSON files), persisted across restarts. Enables version control, reproducibility, and infrastructure-as-code approach. Configure via /etc/grafana/provisioning directory.
+</details>
 
 ---
 

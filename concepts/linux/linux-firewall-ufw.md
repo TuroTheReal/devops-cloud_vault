@@ -3,7 +3,7 @@
 ## 📋 Metadata
 
 ```yaml
-tags: [concept, linux, security, firewall, ufw, iptables, status/learning]
+tags: [concept, linux, security, firewall, ufw, iptables, status/learned]
 created: 2025-12-26
 updated: 2025-12-26
 difficulty: ⭐⭐ (2/5)
@@ -37,7 +37,7 @@ time-to-master: 1h
 
 ---
 
-## 📚 Key Concepts (In My Own Words)
+## 📚 Key Concepts
 
 ### 1. UFW = iptables Frontend
 
@@ -342,12 +342,42 @@ docker run -p 127.0.0.1:5432:5432 postgres
 
 ---
 
+## 🧠 Retrieval Practice
+
+Test your understanding without looking back:
+
+<details>
+<summary><strong>Q1:</strong> Why is the default-deny policy critical for firewall security, and what would happen without it?</summary>
+
+**Answer**: Default-deny (block all incoming traffic unless explicitly allowed) implements the zero-trust principle and minimizes attack surface. Without it, every service on your system would be exposed to the internet by default, including services you didn't intend to make public or don't know about.
+</details>
+
+<details>
+<summary><strong>Q2:</strong> Why do you need BOTH a cloud firewall (like Hetzner Firewall) AND UFW on your VPS?</summary>
+
+**Answer**: Defense-in-depth with two independent layers. Cloud firewall filters BEFORE packets reach your VPS (DDoS protection, persists even if VPS compromised). UFW provides granular control and is scriptable, but can be disabled if attacker gets root. Together they provide redundancy and complementary protection.
+</details>
+
+<details>
+<summary><strong>Q3:</strong> What's the most critical mistake when enabling UFW for the first time, and how do you prevent it?</summary>
+
+**Answer**: Enabling UFW before allowing your SSH port causes immediate lockout - you can't reconnect because port 22 is blocked. Always allow SSH port FIRST (`ufw allow 2222/tcp`), verify the rule is added, THEN enable UFW. Test in a new terminal while keeping current session open.
+</details>
+
+<details>
+<summary><strong>Q4:</strong> Why does Docker bypass UFW rules, and what should you do about it?</summary>
+
+**Answer**: Docker modifies iptables directly, bypassing UFW's rules. Published ports (like `-p 5432:5432`) are accessible from internet even without UFW allow rules. Solution: bind to localhost only (`-p 127.0.0.1:5432:5432`), configure Docker to respect UFW, or use Docker networks with reverse proxy instead of publishing ports.
+</details>
+
+---
+
 ## 📊 Stats
 
 ```yaml
 Total time: 1h (45% assisted / 55% autonomous)
 Status: 🟡 Learning
-Used in: [[2025-12-vps-hetzner-init-setup]]
+Used in: [[2025-12-vps-hetzner-init-setup/learnings]]
 ```
 
 ---

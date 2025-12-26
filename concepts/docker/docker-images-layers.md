@@ -3,7 +3,7 @@
 ## 📋 Metadata
 
 ```yaml
-tags: [concept, docker, images, layers, optimization, status/mastered]
+tags: [concept, docker, images, layers, optimization, status/learned]
 created: 2025-12-23
 updated: 2025-12-23
 difficulty: ⭐⭐⭐ (3/5)
@@ -11,7 +11,7 @@ time-to-master: 4h
 ```
 
 **Prerequisites**: None (foundational Docker concept)
-**Related to**: [[dockerfile-best-practices]], [[multi-stage-builds]]
+**Related to**: None
 
 ---
 
@@ -37,7 +37,7 @@ Docker images are built from layers - each Dockerfile instruction creates a new 
 
 ---
 
-## 📚 Key Concepts (In My Own Words)
+## 📚 Key Concepts
 
 ### 1. Image Layers Architecture
 
@@ -451,12 +451,42 @@ Dockerfile*
 
 ---
 
+## 🧠 Retrieval Practice
+
+Test your understanding without looking back:
+
+<details>
+<summary><strong>Q1:</strong> Why should you copy package.json before copying application code, and what happens if you don't?</summary>
+
+**Answer**: Layer caching breaks when any instruction or context changes. If you `COPY . .` first, every code change invalidates cache for npm install layer, rebuilding dependencies every time (5+ minutes). Copying package.json first means npm install is only rebuilt when dependencies change, not on every code change.
+</details>
+
+<details>
+<summary><strong>Q2:</strong> How do multi-stage builds reduce image size, and why is this important?</summary>
+
+**Answer**: Build stage contains compilers and build tools (large, 800MB+). Production stage only has runtime dependencies (150MB). Final image contains ONLY last stage - build artifacts are copied but build tools aren't. Massive size reduction (85%+) means faster deployments, less storage cost, smaller attack surface.
+</details>
+
+<details>
+<summary><strong>Q3:</strong> Why should you NEVER put secrets in Dockerfile layers, even if you delete them later?</summary>
+
+**Answer**: Each RUN creates an immutable layer. Even if you delete the secret in a subsequent layer, it's permanently stored in the earlier layer and visible in `docker history`. Anyone with image access can extract the secret. Use BuildKit secrets, build args carefully, or runtime injection instead.
+</details>
+
+<details>
+<summary><strong>Q4:</strong> What causes "Sending build context to Docker daemon: 2.5GB" and how do you fix it?</summary>
+
+**Answer**: Missing .dockerignore file means Docker sends entire directory to daemon, including node_modules (500MB), .git (200MB), old builds. Create .dockerignore excluding node_modules, .git, dist, coverage, logs, IDE files. Reduces context from 2.5GB to 50MB, build time from 5min to 5sec.
+</details>
+
+---
+
 ## 📊 Stats
 
 ```yaml
 Total time: 10h (45% assisted / 55% autonomous)
 Status: ✅ Mastered
-Used in: [[2024-transcendence-glasck-extraction]], [[2025-12-glasck-swarm-deployment]]
+Used in: [[2024-transcendence-glasck-extraction/learnings]], [[2025-12-glasck-deployment/learnings]]
 ```
 
 ---

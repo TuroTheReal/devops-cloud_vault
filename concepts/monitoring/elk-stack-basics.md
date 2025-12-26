@@ -3,15 +3,15 @@
 ## 📋 Metadata
 
 ```yaml
-tags: [concept, monitoring, elk, elasticsearch, logstash, kibana, logs, status/practiced]
+tags: [concept, monitoring, elk, elasticsearch, logstash, kibana, logs, status/learned]
 created: 2025-12-23
 updated: 2025-12-23
 difficulty: ⭐⭐⭐⭐ (4/5)
 time-to-master: 10h
 ```
 
-**Prerequisites**: [[docker-compose]], [[logging-basics]]
-**Related to**: [[prometheus-grafana]], [[distributed-tracing]]
+**Prerequisites**: None
+**Related to**: [[prometheus-grafana-basics]]
 
 ---
 
@@ -155,8 +155,32 @@ curl http://localhost:9600/_node/stats/pipelines
 ```yaml
 Total time: 10h (55% assisted / 45% autonomous)
 Status: 🟠 Practiced
-Used in: [[2024-transcendence-glasck-extraction]]
+Used in: [[2024-transcendence-glasck-extraction/learnings]]
 ```
+
+---
+
+## 🧠 Retrieval Practice
+
+Test your understanding without looking back:
+
+<details>
+<summary><strong>Q1:</strong> What's the role of each component in the ELK stack, and how do they work together?</summary>
+
+**Answer**: Elasticsearch stores and indexes logs (searchable database), Logstash collects, transforms, and forwards logs to Elasticsearch (like a librarian organizing books), Kibana visualizes logs with dashboards (search interface). Flow: App → Logstash → Elasticsearch → Kibana for visualization.
+</details>
+
+<details>
+<summary><strong>Q2:</strong> Why does Elasticsearch need specific JVM heap configuration, and what's the rule of thumb?</summary>
+
+**Answer**: Elasticsearch runs on JVM and can crash with OOM errors if heap too small. Rule of thumb: set heap to 50% of container memory limit via ES_JAVA_OPTS, max 32GB. Example: container with 1GB RAM → heap 512MB. Too little = crashes, too much = system memory starvation.
+</details>
+
+<details>
+<summary><strong>Q3:</strong> What are the two main pitfalls with ELK stack startup, and how do you solve them?</summary>
+
+**Answer**: 1) Startup dependency - Kibana/Logstash start before Elasticsearch ready, fail to connect. Solution: use depends_on + healthchecks. 2) Security misconfiguration - xpack.security enabled but SSL misconfigured. Solution: for dev disable SSL (xpack.security.http.ssl.enabled=false), for prod properly configure certificates.
+</details>
 
 ---
 

@@ -8,7 +8,7 @@ created: 2025-12-23
 updated: 2025-12-23
 ```
 
-**Related**: [[docker-compose]], [[docker-swarm]], [[concepts/docker/*]]
+**Related**: [[docker-compose-basics]], [[docker-swarm-basics]], [[concepts/docker/*]]
 
 ---
 

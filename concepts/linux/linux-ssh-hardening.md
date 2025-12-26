@@ -3,7 +3,7 @@
 ## 📋 Metadata
 
 ```yaml
-tags: [concept, linux, security, ssh, hardening, status/learning]
+tags: [concept, linux, security, ssh, hardening, status/learned]
 created: 2025-12-26
 updated: 2025-12-26
 difficulty: ⭐⭐⭐ (3/5)
@@ -37,7 +37,7 @@ time-to-master: 1h30
 
 ---
 
-## 📚 Key Concepts (In My Own Words)
+## 📚 Key Concepts
 
 ### 1. Multi-Layer SSH Security
 
@@ -316,12 +316,53 @@ sudo ufw delete allow 22/tcp
 
 ---
 
+## 🧠 Retrieval Practice
+
+Test your understanding without looking back:
+
+<details>
+<summary><strong>Q1:</strong> Why change SSH port from 22 to 2222 if port scanners can find it anyway?</summary>
+
+**Answer**: Reduces 90%+ of automated bot attacks (they scan port 22 only). Not real security but reduces noise in logs and CPU load. Fewer attack attempts = fewer risks of zero-day exploits.
+</details>
+
+<details>
+<summary><strong>Q2:</strong> What's the correct workflow to change SSH port without getting locked out?</summary>
+
+**Answer**:
+1. `ufw allow 2222/tcp` (FIRST - open new port in firewall)
+2. Edit `sshd_config` → `Port 2222`
+3. `systemctl restart ssh`
+4. Test in NEW terminal (keep old one open!)
+5. Only after success: `ufw delete allow 22/tcp`
+</details>
+
+<details>
+<summary><strong>Q3:</strong> Why does changing Port in sshd_config sometimes not work? How to detect this?</summary>
+
+**Answer**: systemd socket activation - `ssh.socket` has `ListenStream=22` which overrides `sshd_config`.
+**Detection**: `systemctl status ssh | grep TriggeredBy` shows `ssh.socket`.
+**Fix**: Disable socket, enable direct service.
+</details>
+
+<details>
+<summary><strong>Q4:</strong> Why "PermitRootLogin no" instead of just using strong password for root?</summary>
+
+**Answer**:
+- Root = all permissions (compromise = game over)
+- Normal user + sudo = audit trail (logs who did what)
+- Isolation (can't accidentally `rm -rf /`)
+Workflow: SSH as user → sudo for admin tasks
+</details>
+
+---
+
 ## 📊 Stats
 
 ```yaml
 Total time: 1h30 (45% assisted / 55% autonomous)
 Status: 🟡 Learning
-Used in: [[2025-12-vps-hetzner-init-setup]]
+Used in: [[2025-12-vps-hetzner-init-setup/learnings]]
 ```
 
 ---
