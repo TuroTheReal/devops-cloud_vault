@@ -65,7 +65,7 @@ Networks:
 ### Tech Stack
 - **Orchestration**: Docker Compose (production deployment)
 - **Reverse Proxy**: Traefik v3 with Docker provider
-- **Cache/Session**: Redis 7 Alpine with persistence
+- **Cache/Session**: Redis with persistence
 - **Automation**: Taskfile (YAML-based task runner)
 - **Deployment**: Multi-stage Dockerfiles, versioned images
 - **Networks**: Bridge networks, zero-trust isolation

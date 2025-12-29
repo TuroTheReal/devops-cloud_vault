@@ -72,7 +72,7 @@ App → Prometheus (scraping) → Grafana (dashboards)
 ### New Concepts Mastered
 
 1. **ELK Stack Configuration** [[concepts/monitoring/elk-stack-basics]]
-   - Time to learn: 10h (4h setup + 4h configuration + 2h debugging)
+   - Time to learn: 12h (4h setup + 4h configuration + 4h debugging)
    - Difficulty: ⭐⭐⭐⭐ (4/5)
    - **Key insight**: JVM heap must be exactly 50% of container memory, no more. Use `ES_JAVA_OPTS=-Xms512m -Xmx512m` for 1GB container.
 
