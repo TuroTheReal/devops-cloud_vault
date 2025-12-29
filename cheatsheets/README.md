@@ -1,3 +1,7 @@
+---
+aliases: [cheatsheets, cheatsheets-index]
+---
+
 # CHEATSHEETS
 
 <p align="center">

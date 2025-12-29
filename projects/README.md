@@ -1,3 +1,7 @@
+---
+aliases: [projects, projects-index]
+---
+
 # PROJECTS
 
 <p align="center">

@@ -1,3 +1,7 @@
+---
+aliases: [troubleshooting, troubleshooting-index]
+---
+
 # TROUBLESHOOTING
 
 <p align="center">

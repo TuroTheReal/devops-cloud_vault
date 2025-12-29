@@ -1,3 +1,7 @@
+---
+aliases: [concepts, concepts-index]
+---
+
 # CONCEPTS
 
 <p align="center">

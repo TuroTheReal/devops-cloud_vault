@@ -3,15 +3,16 @@
 ## 📋 Metadata
 
 ```yaml
-tags: [concept, networking, fundamentals, tcp-ip, ports, status/learned]
+tags: [concept, networking, fundamentals, tcp-ip, ports, osi-model, icmp, status/learned]
 created: 2025-12-26
-updated: 2025-12-26
-difficulty: ⭐⭐ (2/5)
-time-to-master: 2h
+updated: 2025-12-29
+difficulty: ⭐⭐⭐ (3/5)
+time-to-master: 10h
 ```
 
 **Prerequisites**: None (foundational)
-**Related to**: [[docker-swarm-overlay-networks]], [[linux-firewall-ufw]]
+**Related to**: [[docker-swarm-overlay-networks]], [[linux-firewall-ufw]], [[ft-ping-traceroute-learnings]]
+**Learned from**: ft_ping, ft_traceroute (42 School projects)
 
 ---
 
@@ -75,6 +76,68 @@ Firewall = Filter network traffic
 - Allow/Deny rules by IP, port, protocol
 - Stateful (track connections) vs Stateless
 - Host-based (UFW) vs Network-based (router)
+
+---
+
+### 5. OSI Model (The 7 Layers)
+
+**My understanding** (learned from ft_ping/ft_traceroute):
+
+OSI Model = 7 couches qui décrivent comment les données voyagent sur le réseau. Chaque couche a un rôle précis.
+
+**Analogy**: Sending a package via courier
+- **L7 - Application**: Package content (what you want to send)
+- **L4 - Transport**: Delivery method (express with tracking vs standard mail)
+- **L3 - Network**: Routing between cities (postal codes, street addresses)
+- **L2 - Data Link**: Delivery in your neighborhood (mailbox to mailbox)
+- **L1 - Physical**: The truck/van that physically moves the package
+
+#### The 3 Layers That Matter for DevOps
+
+**Layer 3 - Network** ⭐:
+- **IP addresses** (who) + **routing** (path between machines)
+- ICMP protocol = ping, traceroute
+- What I learned from **ft_ping**:
+  - ICMP Echo Request/Reply = "Are you alive?"
+  - TTL (Time To Live) = max hops before packet dies
+  - Round Trip Time (RTT) = latency measurement
+- What I learned from **ft_traceroute**:
+  - TTL tricks to reveal each hop in the path
+  - ICMP Time Exceeded = "TTL reached 0, packet stopped here"
+- **DevOps use**: AWS VPC, Kubernetes pod networking, subnet routing
+
+**Layer 4 - Transport**:
+- **TCP** (reliable, slow) vs **UDP** (fast, lossy)
+- **Ports** = which service to reach (22=SSH, 80=HTTP, 443=HTTPS)
+- **DevOps use**: Load balancers (L4=port forwarding), K8s Services
+
+**Layer 7 - Application**:
+- **HTTP**, **DNS**, **SSH** = protocols users interact with
+- **DevOps use**: Application load balancers (L7=HTTP path routing), Ingress controllers
+
+#### When Each Layer Matters
+
+| Layer | What breaks | How to check | DevOps example |
+|-------|-------------|--------------|----------------|
+| L3 | IP routing fails | `ping`, `traceroute` | VPC misconfiguration |
+| L4 | Port blocked | `nc -zv host 80` | Security Group rules |
+| L7 | HTTP error | `curl -v` | Application bug, Ingress misconfigured |
+
+#### Real Example from ft_ping
+
+```bash
+# ping = Layer 3 (ICMP)
+ping 8.8.8.8
+# Sends ICMP Echo Request (Type 8)
+# Receives ICMP Echo Reply (Type 0)
+# TTL shows hops remaining
+
+# traceroute = Layer 3 (ICMP + TTL manipulation)
+traceroute google.com
+# Sends packets with TTL=1, 2, 3...
+# Each router sends back ICMP Time Exceeded (Type 11)
+# Reveals the path to destination
+```
 
 ---
 
@@ -152,12 +215,13 @@ Test your understanding without looking back:
 ## 📊 Stats
 
 ```yaml
-Total time: 2h (25% assisted / 75% autonomous)
-Status: 🟡 Learning
-Used in: [[2025-12-vps-hetzner-init-setup/learnings]]
+Total time: 10h (40% assisted / 60% autonomous)
+Status: ✅ Learned (from ft_ping/ft_traceroute projects)
+Used in: [[2025-12-vps-hetzner-init-setup/learnings]], [[2024-11-ft-ping-traceroute/learnings]]
 ```
 
 ---
 
-**Last update**: 2025-12-26
-**Next review**: 2026-01-26 (+1 month)
+**Last update**: 2025-12-29
+**Next review**: 2026-01-29 (+1 month)
+**Added**: OSI Model section with real examples from ft_ping/ft_traceroute
