@@ -81,7 +81,7 @@ During this project, I studied Docker Swarm concepts (overlay networks, deployme
 ### New Concepts Mastered
 
 1. **Docker Compose Production Setup** [[concepts/docker/docker-compose-basics]]
-   - Time to learn: 12h (6h configuration + 4h optimization + 2h debugging)
+   - Time to learn: 13h (6h configuration + 4h optimization + 3h debugging)
    - Difficulty: ⭐⭐⭐ (3/5)
    - **Key insight**: Compose is production-ready for single-node deployments with proper healthchecks and resource limits
    - **Applied in production**: Multi-container orchestration with Traefik, frontend, API, Redis

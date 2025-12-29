@@ -77,7 +77,7 @@ App → Prometheus (scraping) → Grafana (dashboards)
    - **Key insight**: JVM heap must be exactly 50% of container memory, no more. Use `ES_JAVA_OPTS=-Xms512m -Xmx512m` for 1GB container.
 
 2. **Prometheus & Grafana Integration** [[concepts/monitoring/prometheus-grafana-basics]]
-   - Time to learn: 8h (3h Prometheus + 4h Grafana + 1h integration)
+   - Time to learn: 9h (3h Prometheus + 4h Grafana + 2h integration)
    - Difficulty: ⭐⭐⭐ (3/5)
    - **Key insight**: Use Grafana provisioning (YAML configs) instead of manual dashboard creation for persistence across container restarts.
 
