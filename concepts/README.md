@@ -1,7 +1,3 @@
----
-aliases: [concepts, concepts-index]
----
-
 # CONCEPTS
 
 <p align="center">
@@ -12,6 +8,10 @@ aliases: [concepts, concepts-index]
 
 <p align="center">
   <i>Deep understanding of DevOps and Cloud concepts - theory, mental models, and real-world applications</i>
+</p>
+
+<p align="center">
+  aliases: [concepts, concepts-index]
 </p>
 
 ---

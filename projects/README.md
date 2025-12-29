@@ -1,7 +1,3 @@
----
-aliases: [projects, projects-index]
----
-
 # PROJECTS
 
 <p align="center">
@@ -12,6 +8,10 @@ aliases: [projects, projects-index]
 
 <p align="center">
   <i>Learning reports from real DevOps and Cloud projects - extracting knowledge from hands-on experience</i>
+</p>
+
+<p align="center">
+  aliases: [projects, projects-index]
 </p>
 
 ---

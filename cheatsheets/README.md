@@ -1,7 +1,3 @@
----
-aliases: [cheatsheets, cheatsheets-index]
----
-
 # CHEATSHEETS
 
 <p align="center">
@@ -12,6 +8,10 @@ aliases: [cheatsheets, cheatsheets-index]
 
 <p align="center">
   <i>Quick reference guides for DevOps and Cloud technologies - commands, patterns, and best practices at your fingertips</i>
+</p>
+
+<p align="center">
+  aliases: [cheatsheets, cheatsheets-index]
 </p>
 
 ---

@@ -10,6 +10,10 @@
   <i>[Brief description of this section's purpose]</i>
 </p>
 
+<p align="center">
+  aliases: [section-name, section-index]
+</p>
+
 ---
 
 ## Table of Contents

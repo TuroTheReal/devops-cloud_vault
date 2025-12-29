@@ -1,7 +1,3 @@
----
-aliases: [troubleshooting, troubleshooting-index]
----
-
 # TROUBLESHOOTING
 
 <p align="center">
@@ -12,6 +8,10 @@ aliases: [troubleshooting, troubleshooting-index]
 
 <p align="center">
   <i>Debug guides, common errors, and solutions for DevOps and Cloud technologies - fix issues fast</i>
+</p>
+
+<p align="center">
+  aliases: [troubleshooting, troubleshooting-index]
 </p>
 
 ---

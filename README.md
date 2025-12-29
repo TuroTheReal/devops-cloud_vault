@@ -11,6 +11,10 @@
   <i>A comprehensive knowledge vault for DevOps and Cloud technologies - from fundamentals to production-ready skills</i>
 </p>
 
+<p align="center">
+  aliases: [devops-cloud-vault, vault-index]
+</p>
+
 ---
 
 ## Table of Contents
