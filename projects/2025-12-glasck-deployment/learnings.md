@@ -11,7 +11,8 @@ real-repo: https://github.com/Glasck-int (private)
 status: production
 ```
 
-**Technologies used**: Docker Compose (with Swarm evolution path), Traefik v3, Redis, Taskfile, Git automation
+**Technologies used**: Docker Compose, Traefik v3, Redis, Taskfile, Git automation
+**Learning**: Docker Compose production setup + Docker Swarm discovery (learning only, not in production)
 **Goal**: Deploy scalable web application with zero-downtime updates, automated workflows, and production-grade infrastructure
 
 ---
@@ -20,10 +21,10 @@ status: production
 
 ### Objective
 Build production-ready deployment infrastructure for Glasck web application with:
-- **Zero-downtime deployments**: Rolling updates with automatic rollback
+- **Docker Compose mastery**: Multi-container orchestration in production
 - **Network isolation**: Public-facing Traefik, private backend services
 - **Automation**: Taskfile-based workflows for deployment, rollback, monitoring
-- **Scalability**: Docker Compose orchestration (Swarm-ready architecture for future scaling)
+- **Swarm discovery**: Learned Docker Swarm concepts (overlay networks, deployment strategies) but NOT deployed in production - Docker Compose only
 
 ### Architecture
 
@@ -62,19 +63,16 @@ Networks:
 ```
 
 ### Tech Stack
-- **Orchestration**: Docker Compose (designed for easy Swarm migration)
+- **Orchestration**: Docker Compose (production deployment)
 - **Reverse Proxy**: Traefik v3 with Docker provider
 - **Cache/Session**: Redis 7 Alpine with persistence
 - **Automation**: Taskfile (YAML-based task runner)
 - **Deployment**: Multi-stage Dockerfiles, versioned images
-- **Networks**: Bridge networks with MTU 1450, zero-trust isolation
+- **Networks**: Bridge networks, zero-trust isolation
 
-### Evolution Path to Production Swarm
+### Learning Note: Docker Swarm (Discovery Only)
 
-This project uses Docker Compose for development/single-node deployment with an architecture designed for seamless Swarm migration:
-- **Current**: Docker Compose with bridge networks, manual scaling
-- **Future**: Docker Swarm with overlay networks, automatic scaling, multi-node HA
-- **Migration**: Stack files already compatible, just change driver from bridge to overlay
+During this project, I studied Docker Swarm concepts (overlay networks, deployment strategies, rolling updates) to understand container orchestration at scale. However, **Glasck production uses Docker Compose only** - Swarm knowledge was acquired for learning purposes and documented in concepts/ for future use.
 
 ---
 
@@ -82,30 +80,35 @@ This project uses Docker Compose for development/single-node deployment with an 
 
 ### New Concepts Mastered
 
-1. **Docker Swarm Overlay Networks** [[concepts/docker/docker-swarm-overlay-networks]]
-   - Time to learn: 6h (4h practice + 2h debugging)
-   - Difficulty: ⭐⭐⭐⭐ (4/5)
-   - **Key insight**: MTU 1450 prevents VXLAN fragmentation, `attachable: true` allows debug containers
-
-2. **Docker Swarm Deployment Strategies** [[concepts/docker/docker-swarm-deployment-strategies]]
-   - Time to learn: 4h (2h implementation + 2h testing rollback)
+1. **Docker Compose Production Setup** [[concepts/docker/docker-compose-basics]]
+   - Time to learn: 12h (6h configuration + 4h optimization + 2h debugging)
    - Difficulty: ⭐⭐⭐ (3/5)
-   - **Key insight**: `monitor` period must exceed `start_period` for automatic rollback
+   - **Key insight**: Compose is production-ready for single-node deployments with proper healthchecks and resource limits
+   - **Applied in production**: Multi-container orchestration with Traefik, frontend, API, Redis
 
-3. **Traefik Swarm Integration** [[concepts/traefik/traefik-integration]]
+2. **Docker Swarm Concepts** [[concepts/docker/docker-swarm-overlay-networks]] [[concepts/docker/docker-swarm-deployment-strategies]]
+   - Time to learn: 10h (6h study + 4h experiments - NOT in production)
+   - Difficulty: ⭐⭐⭐⭐ (4/5)
+   - **Key insight**: Overlay networks, rolling updates, automatic rollback - documented for future use
+   - **Status**: Learning only, Glasck uses Compose in production
+
+3. **Traefik Dynamic Routing** [[concepts/traefik/traefik-integration]]
    - Time to learn: 8h (5h configuration + 3h debugging routing)
    - Difficulty: ⭐⭐⭐⭐ (4/5)
    - **Key insight**: `traefik.docker.network` label CRITICAL for multi-network services
+   - **Applied in production**: Automatic SSL, load balancing, middleware chains
 
 4. **Docker Network Isolation** [[concepts/docker/docker-network-isolation]]
    - Time to learn: 3h (1h design + 2h implementation)
    - Difficulty: ⭐⭐⭐ (3/5)
    - **Key insight**: Zero-trust architecture - Redis never on public network
+   - **Applied in production**: Bridge networks for service isolation
 
 5. **Taskfile Automation** [[cheatsheets/taskfile/taskfile-commands]]
    - Time to learn: 4h (2h learning + 2h building workflows)
    - Difficulty: ⭐⭐ (2/5)
    - **Key insight**: YAML > Makefile for readability, cross-platform support
+   - **Applied in production**: 15+ deployment automation tasks
 
 ### Skills Applied Successfully
 - **Infrastructure as Code**: All configuration in Git (stack files, Traefik config)
