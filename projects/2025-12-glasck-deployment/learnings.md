@@ -447,7 +447,7 @@ docker service ps glasck_front-website --filter "desired-state=running"
   - [traefik.yml](/home/artberna/abGitHub/Glasck/deployment/config/traefik/traefik.yml)
 
 ### Related Projects
-- [[projects/2024-transcendence-glasck-extraction]] - Knowledge extraction session
+- [[projects/2024-XX-transcendence-monitoring]] - Monitoring stack (ELK, Prometheus, Grafana)
 - Future: Multi-node cluster deployment
 - Future: CI/CD integration
 

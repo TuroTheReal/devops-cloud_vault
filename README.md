@@ -54,46 +54,45 @@ In the rapidly evolving DevOps landscape, having organized, searchable, and acti
 devops-cloud_vault/
 │
 ├── 📖 cheatsheets/           # Quick reference guides
-│   ├── docker/
-│   ├── docker-compose/
-│   ├── kubernetes/
-│   ├── terraform/
-│   └── ansible/
+│   ├── docker/               # Docker, Compose, Swarm commands ✅
+│   ├── linux/                # Linux basics & security ✅
+│   ├── traefik/              # Reverse proxy ✅
+│   └── taskfile/             # Task automation ✅
 │
 ├── 💡 concepts/              # Deep dives and theory
-│   ├── docker/
-│   ├── kubernetes/
-│   ├── terraform/
-│   ├── ansible/
-│   └── aws/
+│   ├── docker/               # 10 concepts (containers, networks, swarm) ✅
+│   ├── networking/           # Fundamentals, OSI Model, ICMP ✅
+│   ├── linux/                # Security, firewall ✅
+│   ├── traefik/              # Reverse proxy concepts ✅
+│   └── monitoring/           # Observability basics ✅
 │
-├── 🚀 projects/              # Hands-on practical work
-│   ├── beginner/
-│   ├── intermediate/
-│   └── advanced/
+├── 🚀 projects/              # Real-world learning reports
+│   ├── 2024-11-ft-ping-traceroute/      # Network programming (C, ICMP) ✅
+│   ├── 2024-XX-transcendence-monitoring/# Observability (ELK, Prometheus, Grafana) ✅
+│   ├── 2025-12-glasck-deployment/       # Docker Swarm production deployment ✅
+│   └── 2025-12-vps-hetzner-init-setup/  # VPS setup & hardening ✅
 │
-├── 🔧 troubleshooting/       # Debug guides and solutions
-│   ├── docker/
-│   ├── kubernetes/
-│   ├── terraform/
-│   ├── ansible/
-│   └── cloud/
+├── 🗺️ MOCs/                   # Maps of Content (learning paths)
+│   ├── MOC-Docker-Production.md         # Container orchestration ✅
+│   ├── MOC-Linux-Security.md            # System hardening ✅
+│   └── MOC-Networking-Fundamentals.md   # OSI, ICMP, Docker networks ✅
+│
+├── 🔧 troubleshooting/       # Debug guides (planned)
 │
 └── 📋 meta/                  # Templates and guides
-    ├── templates/            # Document templates
-    ├── guides/               # Usage guides
-    ├── workflows/            # Learning workflows
-    └── roadmap.md           # Learning roadmap
+    ├── templates/            # Document templates ✅
+    ├── guides/               # Usage guides ✅
+    └── workflows/            # Learning workflows ✅
 ```
 
 ### Section Overview
 
 | Section | Purpose | Use When |
 |---------|---------|----------|
+| [**MOCs**](MOCs/) | Structured learning paths | Starting a new topic, need roadmap |
+| [**Concepts**](concepts/) | Deep understanding | Learning how things work internally |
 | [**Cheatsheets**](cheatsheets/) | Quick command reference | Need syntax fast, daily operations |
-| [**Concepts**](concepts/) | Deep understanding | Learning new tech, interview prep |
-| [**Projects**](projects/) | Hands-on practice | Building skills, portfolio work |
-| [**Troubleshooting**](troubleshooting/) | Problem solving | Debugging, fixing errors |
+| [**Projects**](projects/) | Real-world learnings | Want to see practical applications |
 | [**Meta**](meta/) | Templates & guides | Creating new content |
 
 ## Getting Started
@@ -101,14 +100,20 @@ devops-cloud_vault/
 ### 1. Choose Your Path
 
 ```bash
-# New to DevOps?
-Start with: concepts/docker/ → cheatsheets/docker/ → projects/beginner/
+# New to DevOps / Starting with containers?
+Start with: MOCs/MOC-Docker-Production.md
+Then explore: concepts/docker/ + cheatsheets/docker/
 
-# Have some experience?
-Start with: concepts/kubernetes/ → projects/intermediate/
+# Want to understand networking?
+Start with: MOCs/MOC-Networking-Fundamentals.md
+Then explore: concepts/networking/ + projects/ft-ping-traceroute/
 
-# Ready for advanced?
-Start with: projects/advanced/ → Build your own projects
+# Setting up a VPS / Linux hardening?
+Start with: MOCs/MOC-Linux-Security.md
+Then explore: concepts/linux/ + projects/vps-hetzner-init/
+
+# Learning from real projects?
+Browse: projects/ folder for real-world learning reports
 ```
 
 ### 2. Set Up Your Environment
@@ -158,166 +163,111 @@ cat concepts/docker/containerization.md  # (coming soon)
 
 ## Learning Paths
 
-### 🐣 Path 1: Container Fundamentals (2-3 weeks)
+### 🐳 Path 1: Docker Production (Completed ✅)
 
-**Goal**: Master containerization and orchestration basics
+**Goal**: Master containerization from basics to production
 
-```
-Week 1: Docker Basics
-  ├─ Day 1-2: concepts/docker/basics
-  ├─ Day 3-4: cheatsheets/docker/
-  ├─ Day 5-7: projects/beginner/docker-webapp
+**Completed learnings**:
+- Docker fundamentals (containers, images, layers, volumes)
+- Multi-container orchestration with Docker Compose
+- Production clustering
+- Overlay networks, service discovery, rolling updates
+- Traefik reverse proxy with automatic SSL
 
-Week 2: Docker Compose
-  ├─ Day 1-2: concepts/docker/compose
-  ├─ Day 3-4: cheatsheets/docker-compose/
-  ├─ Day 5-7: projects/beginner/compose-stack
-
-Week 3: Practice & Review
-  ├─ Day 1-3: Build personal project
-  ├─ Day 4-5: troubleshooting/docker/
-  ├─ Day 6-7: Retention test & documentation
-```
-
-**Time Investment**: ~40-50 hours
-**Outcome**: Containerize applications, manage multi-container apps
+**Time Invested**: ~50h
+**Projects**: [Glasck Deployment](projects/2025-12-glasck-deployment/), [Docker concepts](concepts/docker/)
+**MOC**: [MOC-Docker-Production](MOCs/MOC-Docker-Production.md)
 
 ---
 
-### ☸️ Path 2: Kubernetes Journey (3-4 weeks)
+### 🌐 Path 2: Networking Fundamentals (Completed ✅)
 
-**Goal**: Deploy and manage containerized applications at scale
+**Goal**: Understand network protocols from Layer 3 to application layer
 
-**Prerequisites**: Complete Path 1 or equivalent experience
+**Completed learnings**:
+- OSI Model (Layer 3, 4, 7)
+- ICMP protocol implementation (ping, traceroute)
+- TCP/IP, DNS, ports, firewalls
+- Docker networking (bridge, overlay, service mesh)
 
-```
-Week 1: K8s Fundamentals
-  ├─ concepts/kubernetes/architecture
-  ├─ concepts/kubernetes/pods-services
-  ├─ cheatsheets/kubernetes/
-
-Week 2-3: Core Concepts
-  ├─ Deployments, StatefulSets, DaemonSets
-  ├─ ConfigMaps, Secrets, Volumes
-  ├─ Networking, Services, Ingress
-  ├─ projects/intermediate/k8s-deployment
-
-Week 4: Advanced & Practice
-  ├─ RBAC, Security
-  ├─ Monitoring, Logging
-  ├─ projects/advanced/microservices-k8s
-```
-
-**Time Investment**: ~60-80 hours
-**Outcome**: Deploy production-grade applications on Kubernetes
+**Time Invested**: ~90h (including C implementation of ping/traceroute)
+**Projects**: [ft_ping & ft_traceroute](projects/2024-11-ft-ping-traceroute/)
+**MOC**: [MOC-Networking-Fundamentals](MOCs/MOC-Networking-Fundamentals.md)
 
 ---
 
-### 🏗️ Path 3: Infrastructure as Code (2-3 weeks)
+### 🔐 Path 3: Linux Security (Completed ✅)
 
-**Goal**: Automate infrastructure provisioning and configuration
+**Goal**: Secure and harden Linux VPS for production use
 
-```
-Week 1: Terraform
-  ├─ concepts/terraform/basics
-  ├─ concepts/terraform/state-management
-  ├─ cheatsheets/terraform/
-  ├─ projects/intermediate/terraform-aws
+**Completed learnings**:
+- SSH hardening (key-based auth, fail2ban)
+- UFW firewall configuration
+- User management and sudo hardening
+- System monitoring and log analysis
+- VPS initial setup (Hetzner)
 
-Week 2: Ansible
-  ├─ concepts/ansible/playbooks
-  ├─ concepts/ansible/roles
-  ├─ cheatsheets/ansible/
-  ├─ projects/intermediate/ansible-config
-
-Week 3: Integration
-  ├─ Terraform + Ansible workflow
-  ├─ Multi-environment setup
-  ├─ projects/advanced/multi-cloud-iac
-```
-
-**Time Investment**: ~50-60 hours
-**Outcome**: Provision and configure infrastructure as code
+**Time Invested**: ~15h
+**Projects**: [VPS Hetzner Init Setup](projects/2025-12-vps-hetzner-init-setup/)
+**MOC**: [MOC-Linux-Security](MOCs/MOC-Linux-Security.md)
 
 ---
 
-### ☁️ Path 4: Cloud Mastery (4-6 weeks)
+### 📋 Planned Paths (Not Yet Started)
 
-**Goal**: Master cloud platforms and services
+**☸️ Kubernetes** (planned):
+- Pod networking, Services, Ingress
+- StatefulSets, ConfigMaps, Secrets
+- Helm charts, operators
 
-**Prerequisites**: Paths 1-3 or equivalent
+**☁️ Cloud Platforms** (AWS focus):
+- VPC, EC2, S3, RDS
+- ECS, EKS (container orchestration)
+- IAM, CloudFormation
 
-```
-Week 1-2: AWS Fundamentals
-  ├─ EC2, VPC, Security Groups
-  ├─ S3, CloudFront, Route53
-  ├─ RDS, DynamoDB
-  ├─ IAM, Organizations
+**🏗️ Infrastructure as Code**:
+- Terraform (state management, modules)
+- Ansible (playbooks, roles)
 
-Week 3-4: Advanced AWS
-  ├─ ECS, EKS, Lambda
-  ├─ CloudFormation, CDK
-  ├─ Monitoring, Cost optimization
-
-Week 5-6: Multi-Cloud (Optional)
-  ├─ Azure fundamentals
-  ├─ GCP fundamentals
-  ├─ Multi-cloud strategies
-```
-
-**Time Investment**: ~80-120 hours
-**Outcome**: Design and deploy cloud-native architectures
-
----
-
-### 🎯 Path 5: Full Stack DevOps (8-12 weeks)
-
-**Goal**: Complete DevOps skillset for production environments
-
-**Combines all previous paths plus:**
-- CI/CD pipelines (GitHub Actions, GitLab CI, Jenkins)
-- Monitoring & Observability (Prometheus, Grafana, ELK)
-- Security & Compliance (Vault, security scanning)
-- GitOps workflows (ArgoCD, Flux)
-
-**Time Investment**: ~200-300 hours
-**Outcome**: Production-ready DevOps engineer
+**🔄 CI/CD & GitOps**:
+- GitHub Actions
+- ArgoCD for GitOps
 
 ## Technologies Covered
 
-### 🐳 Containerization
-- **Docker**: Container runtime, images, networking, volumes
-- **Docker Compose**: Multi-container orchestration
+### 🐳 Containerization & Orchestration ✅
+- **Docker**: Container lifecycle, images, layers, volumes, networks
+- **Docker Compose**: Multi-container apps, healthchecks
+- **Docker Swarm**: Discovering : clustering, overlay networks, rolling updates, secrets
 - **Best Practices**: Security, optimization, multi-stage builds
 
-### ☸️ Orchestration
-- **Kubernetes**: Pods, Services, Deployments, StatefulSets
-- **Networking**: CNI, Service mesh (Istio, Linkerd)
-- **Storage**: PV, PVC, StorageClasses
-- **Security**: RBAC, Policies, Secrets management
+### 🌐 Networking ✅
+- **Fundamentals**: TCP/IP, DNS, ports, firewalls
+- **OSI Model**: Layer 3 (ICMP), Layer 4 (TCP/UDP), Layer 7 (HTTP)
+- **Network Programming**: Raw sockets, ICMP protocol (ping, traceroute)
+- **Docker Networking**: Bridge, overlay, service discovery, routing mesh
 
-### 🏗️ Infrastructure as Code
-- **Terraform**: Providers, modules, state management
-- **Ansible**: Playbooks, roles, dynamic inventory
-- **CloudFormation**: AWS native IaC (planned)
-- **Pulumi**: Modern IaC (planned)
+### 🔐 Linux & Security ✅
+- **System Administration**: UFW firewall, SSH hardening, Fail2ban
+- **User Management**: Permissions, sudo configuration
+- **Monitoring**: System metrics, log analysis
+- **VPS Setup**: Hetzner deployment, security baseline
 
-### ☁️ Cloud Platforms
-- **AWS**: EC2, S3, VPC, ECS, EKS, Lambda, RDS
-- **Azure**: VMs, Storage, AKS (planned)
-- **GCP**: Compute Engine, GKE, Cloud Storage (planned)
+### 🔄 Reverse Proxy & Load Balancing ✅
+- **Traefik**: Automatic SSL (Let's Encrypt), service discovery, path-based routing
+- **Layer 7 routing**: HTTP load balancing across containers
 
-### 🔄 CI/CD
-- **GitHub Actions**: Workflows, actions (planned)
-- **GitLab CI**: Pipelines, runners (planned)
-- **Jenkins**: Jobs, pipelines (planned)
-- **ArgoCD**: GitOps deployment (planned)
+### 📝 Learning & Documentation ✅
+- **MOCs**: Structured learning paths for complex topics
+- **Project Learnings**: Real-world experience extraction
+- **Templates**: Reusable documentation patterns
 
-### 📊 Observability
-- **Prometheus**: Metrics collection (planned)
-- **Grafana**: Visualization (planned)
-- **ELK Stack**: Logging (planned)
-- **Jaeger**: Distributed tracing (planned)
+### 📋 Planned (Not Yet Started)
+- ☁️ **Cloud Platforms**: AWS VPC, EC2, S3 (planned)
+- ☸️ **Kubernetes**: Pod networking, Services, Ingress (planned)
+- 🏗️ **IaC**: Terraform, Ansible (planned)
+- 🔄 **CI/CD**: GitHub Actions, GitOps (planned)
+- 📊 **Observability**: Prometheus, Grafana (planned)
 
 ## How to Use This Vault
 
@@ -466,45 +416,52 @@ cp meta/templates/cheatsheet.md cheatsheets/tool/new-tool.md
 
 ## Roadmap
 
-### Current Status (v1.0)
-- ✅ Repository structure established
-- ✅ Documentation templates created
-- ✅ Section READMEs completed
-- 🚧 Docker cheatsheets (in progress)
-- 📝 Kubernetes content (planned)
-- 📝 Terraform guides (planned)
+### Current Status (v2.0 - December 2025)
+- ✅ Repository structure with MOCs
+- ✅ 3 complete learning paths (Docker, Networking, Linux Security)
+- ✅ 20 concept documents across 5 categories
+- ✅ 7 cheatsheets for daily operations
+- ✅ 4 real-world project learning reports (~300h documented)
+- ✅ Obsidian-compatible with aliases and backlinks
 
-### Short Term (Q1 2025)
-- [ ] Complete Docker cheatsheets and concepts
-- [ ] Add 3 beginner projects
-- [ ] Start Kubernetes section
-- [ ] Create troubleshooting guides for Docker
-- [ ] Add learning progress tracking templates
+### Completed (2024-2025)
+- ✅ Docker Production path (Swarm, Compose, networking)
+- ✅ Networking fundamentals (OSI Model, ICMP, TCP/IP)
+- ✅ Linux security hardening (SSH, UFW, fail2ban)
+- ✅ Traefik reverse proxy with SSL
+- ✅ Low-level network programming (ft_ping, ft_traceroute in C)
 
-### Medium Term (Q2 2025)
-- [ ] Complete Kubernetes fundamentals
-- [ ] Terraform and Ansible content
-- [ ] 5+ intermediate projects
-- [ ] AWS basics documentation
-- [ ] CI/CD integration guides
+### Short Term (Q1 2026)
+- [ ] Add troubleshooting guides for Docker/networking issues
+- [ ] Create Kubernetes learning path MOC
+- [ ] Start AWS VPC networking concepts
+- [ ] Add CI/CD concepts (GitHub Actions)
+- [ ] Monitoring basics (Prometheus/Grafana concepts)
 
-### Long Term (2025-2026)
-- [ ] Advanced Kubernetes topics
-- [ ] Multi-cloud strategies
-- [ ] GitOps workflows
-- [ ] Monitoring and observability
-- [ ] Security best practices
-- [ ] 10+ advanced projects
+### Medium Term (Q2-Q3 2026)
+- [ ] Complete Kubernetes fundamentals (pod networking, services)
+- [ ] Terraform and Ansible IaC content
+- [ ] AWS cloud platform concepts (EC2, S3, RDS)
+- [ ] GitOps workflows (ArgoCD)
+- [ ] 5+ additional project learning reports
+
+### Long Term (2026+)
+- [ ] Advanced Kubernetes (operators, CRDs, service mesh)
+- [ ] Multi-cloud strategies (AWS + Azure/GCP)
+- [ ] Full observability stack (metrics, logs, traces)
+- [ ] Security deep dives (secrets management, scanning)
+- [ ] Build 10+ portfolio-ready projects
 
 ## Statistics
 
-- **Total Documents**: 5 READMEs + Templates
-- **Cheatsheets**: 2 (Docker, Docker Compose)
-- **Concepts**: 0 (planned: 30+)
-- **Projects**: 0 (planned: 15+)
-- **Troubleshooting**: 0 (planned: 25+)
-- **Last Updated**: 2025-12-23
-- **Completion**: ~5%
+- **Total Documents**: 40+ active documents
+- **Cheatsheets**: 7 (Docker, Docker Compose, Swarm, Linux, Traefik, Taskfile)
+- **Concepts**: 20 (Docker ecosystem, Networking, Linux security)
+- **Projects**: 4 real-world learning reports (~300h documented)
+- **MOCs**: 3 learning paths (Docker Production, Linux Security, Networking)
+- **Troubleshooting**: Planned for future
+- **Last Updated**: 2025-12-29
+- **Completion**: ~30% (foundation solidly established)
 
 ## Resources
 
@@ -569,6 +526,7 @@ cp meta/templates/cheatsheet.md cheatsheets/tool/new-tool.md
 ---
 
 **License**: MIT
-**Version**: 1.0
-**Last Updated**: 2025-12-23
+**Version**: 2.0
+**Last Updated**: 2025-12-29
 **Philosophy**: Learn by doing, document everything, share knowledge
+**Progress**: 3 learning paths completed, ~300h documented, foundation established

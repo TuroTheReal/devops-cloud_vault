@@ -193,7 +193,7 @@ From Transcendence implementation:
 ```yaml
 Total time: 12h (60% assisted / 40% autonomous)
 Status: ✅ Mastered
-Used in: [[2024-transcendence-glasck-extraction/learnings]]
+Used in: [[2024-XX-transcendence-monitoring/learnings]]
 ```
 
 ---

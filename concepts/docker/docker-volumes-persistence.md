@@ -359,7 +359,7 @@ Test your understanding without looking back:
 ```yaml
 Total time: 1h (30% assisted / 70% autonomous)
 Status: 🟡 Learning
-Used in: [[2025-12-glasck-deployment/learnings]], [[2024-transcendence-glasck-extraction/learnings]]
+Used in: [[2025-12-glasck-deployment/learnings]]
 ```
 
 ---

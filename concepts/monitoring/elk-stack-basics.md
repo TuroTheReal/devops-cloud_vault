@@ -155,7 +155,7 @@ curl http://localhost:9600/_node/stats/pipelines
 ```yaml
 Total time: 10h (55% assisted / 45% autonomous)
 Status: 🟠 Practiced
-Used in: [[2024-transcendence-glasck-extraction/learnings]]
+Used in: [[2024-XX-transcendence-monitoring/learnings]]
 ```
 
 ---

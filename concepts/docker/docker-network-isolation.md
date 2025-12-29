@@ -597,7 +597,7 @@ docker network ls --filter name=${STACK_NAME}_ -q | xargs -r docker network rm
 ```yaml
 Total time: 8h (40% assisted / 60% autonomous)
 Status: ✅ Mastered
-Used in: [[2024-transcendence-glasck-extraction/learnings]], [[2025-12-glasck-deployment/learnings]]
+Used in: [[2025-12-glasck-deployment/learnings]]
 ```
 
 ---
