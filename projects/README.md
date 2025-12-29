@@ -11,7 +11,7 @@
 </p>
 
 <p align="center">
-  aliases: [projects, projects-index]
+  aliases: [projects]
 </p>
 
 ---

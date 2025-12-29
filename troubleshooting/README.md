@@ -11,7 +11,7 @@
 </p>
 
 <p align="center">
-  aliases: [troubleshooting, troubleshooting-index]
+  aliases: [troubleshooting]
 </p>
 
 ---

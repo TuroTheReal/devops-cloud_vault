@@ -11,7 +11,7 @@
 </p>
 
 <p align="center">
-  aliases: [concepts, concepts-index]
+  aliases: [concepts]
 </p>
 
 ---

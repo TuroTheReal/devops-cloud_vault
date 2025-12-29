@@ -11,7 +11,7 @@
 </p>
 
 <p align="center">
-  aliases: [section-name, section-index]
+  aliases: [section-name]
 </p>
 
 ---

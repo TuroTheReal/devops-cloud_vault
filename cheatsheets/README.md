@@ -11,7 +11,7 @@
 </p>
 
 <p align="center">
-  aliases: [cheatsheets, cheatsheets-index]
+  aliases: [cheatsheets]
 </p>
 
 ---

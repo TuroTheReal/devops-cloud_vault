@@ -12,7 +12,7 @@
 </p>
 
 <p align="center">
-  aliases: [devops-cloud-vault, vault-index]
+  aliases: [devops-cloud-vault]
 </p>
 
 ---
