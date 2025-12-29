@@ -11,7 +11,7 @@ real-repo: https://github.com/Glasck-int (private)
 status: production
 ```
 
-**Technologies used**: Docker Compose, Traefik v3, Redis, Taskfile, Git automation
+**Technologies used**: Docker Compose, Traefik v3, Redis, Taskfile
 **Learning**: Docker Compose production setup + Docker Swarm discovery (learning only, not in production)
 **Goal**: Deploy scalable web application with zero-downtime updates, automated workflows, and production-grade infrastructure
 

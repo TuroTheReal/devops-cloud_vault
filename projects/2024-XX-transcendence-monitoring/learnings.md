@@ -24,6 +24,7 @@ Add production-grade observability to Transcendence web application:
 - **Metrics & Dashboards**: Prometheus + Grafana for application and infrastructure monitoring
 - **Health Monitoring**: Real-time service health tracking
 - **Debugging Support**: Structured logs with correlation IDs for distributed tracing
+- **Alerting**: Triggered alert on event with Alertmanager
 
 ### Architecture
 
