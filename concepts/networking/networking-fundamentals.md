@@ -216,7 +216,6 @@ Test your understanding without looking back:
 
 ```yaml
 Total time: 10h (40% assisted / 60% autonomous)
-Status: ✅ Learned (from ft_ping/ft_traceroute projects)
 Used in: [[2025-12-vps-hetzner-init-setup/learnings]], [[2024-11-ft-ping-traceroute/learnings]]
 ```
 

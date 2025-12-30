@@ -1,89 +1,89 @@
-# Roadmap DevOps/Cloud : École 42 → Cloud Architect
+# DevOps/Cloud Roadmap: École 42 → Cloud Architect
 
 ## 🎯 Vision
 
-**Départ** : Étudiant 42, tronc commun validé
-**Arrivée** : Cloud Architect Freelance (18-24 mois)
-**Motivation** : Remote, indépendance, 70-120k€+/an
+**Starting point**: 42 student, common core validated
+**Destination**: Cloud Architect Freelance (18-24 months)
+**Motivation**: Remote, independence, 70-120k€+/year
 
 ---
 
-## 📅 Timeline & Objectifs
+## 📅 Timeline & Goals
 
-| Phase | Durée | Objectif | Salaire potentiel |
+| Phase | Duration | Goal | Potential salary |
 |-------|-------|----------|-------------------|
-| **Phase 1** | Mois 1-3 (300h) | Fondamentaux solides | - |
-| **Phase 2** | Mois 4-6 (300h) | DevOps Intermediate | 40-50k€ Junior |
-| **Phase 3** | Mois 7-9 (250h) | SRE Ready | 50-65k€ |
-| **Phase 4** | Mois 10-12 (200h) | Cloud Engineer | 65-80k€ + AWS SA Associate |
-| **Phase 5** | Mois 13-18 (300h) | Cloud Architect | 90-120k€ + Freelance viable |
+| **Phase 1** | Months 1-3 (300h) | Solid fundamentals | - |
+| **Phase 2** | Months 4-6 (300h) | DevOps Intermediate | 40-50k€ Junior |
+| **Phase 3** | Months 7-9 (250h) | SRE Ready | 50-65k€ |
+| **Phase 4** | Months 10-12 (200h) | Cloud Engineer | 65-80k€ + AWS SA Associate |
+| **Phase 5** | Months 13-18 (300h) | Cloud Architect | 90-120k€ + Viable freelance |
 
-**Total : ~1350h sur 18 mois** (≈20h/semaine)
+**Total: ~1350h over 18 months** (≈20h/week)
 
 ---
 
-## 📚 PHASE 1 : Fondamentaux (Mois 1-3)
+## 📚 PHASE 1: Fundamentals (Months 1-3)
 
 ### Linux & Shell (60h)
 ```
-✅ Compétences clés
-- Bash scripting avancé (loops, functions, error handling)
+✅ Key skills
+- Advanced Bash scripting (loops, functions, error handling)
 - Networking (TCP/IP, DNS, firewall)
 - Systemd, cron, logs
 
 🎯 Validation
-Script backup automatisé avec rotation, logs, alertes
+Automated backup script with rotation, logs, alerts
 ```
 
 ### Git & CI/CD (40h)
 ```
-✅ Compétences clés
-- Git avancé (rebase, cherry-pick, submodules)
-- GitLab CI : stages, artifacts, cache, environments
+✅ Key skills
+- Advanced Git (rebase, cherry-pick, submodules)
+- GitLab CI: stages, artifacts, cache, environments
 
 🎯 Validation
-Pipeline fonctionnel : build → test → deploy
+Working pipeline: build → test → deploy
 ```
 
 ### Docker (80h)
 ```
-✅ Compétences clés
-- Dockerfile multi-stage optimisé
-- Docker Compose pour stack complète
+✅ Key skills
+- Optimized multi-stage Dockerfile
+- Docker Compose for complete stack
 - Security (scan, rootless, secrets)
 
 🎯 Validation
-App microservices (3+ services) containerisée
+Containerized microservices app (3+ services)
 ```
 
 ### AWS Basics (80h)
 ```
-✅ Services essentiels
+✅ Essential services
 EC2, VPC, S3, IAM, RDS, ALB, CloudWatch
 
-✅ Concepts clés
+✅ Key concepts
 - Networking (subnets, SG, routing)
 - High Availability (Multi-AZ)
 - Security (IAM, encryption)
 
 🎯 Validation
-App 3-tier déployée : ALB + EC2 + RDS
+3-tier app deployed: ALB + EC2 + RDS
 ```
 
 ### Python DevOps (40h)
 ```
-✅ Compétences clés
+✅ Key skills
 - Scripting (subprocess, argparse)
 - AWS SDK (boto3)
-- APIs REST
+- REST APIs
 
 🎯 Validation
-Script automation AWS (EC2 + S3 + IAM)
+AWS automation script (EC2 + S3 + IAM)
 ```
 
 ---
 
-## 🚀 PHASE 2 : DevOps Intermediate (Mois 4-6)
+## 🚀 PHASE 2: DevOps Intermediate (Months 4-6)
 
 ### Kubernetes (120h) ⭐
 ```
@@ -94,54 +94,54 @@ Pods, Deployments, Services, ConfigMaps, Secrets, Ingress
 StatefulSets, DaemonSets, RBAC, Helm
 
 ✅ Labs
-- App complète sur K8s (3+ microservices)
-- Monitoring Prometheus/Grafana
+- Complete app on K8s (3+ microservices)
+- Prometheus/Grafana monitoring
 - Ingress + TLS
 
 🎯 Validation
-CKA certification (optionnel, fortement recommandé)
+CKA certification (optional, strongly recommended)
 ```
 
 ### Terraform (100h) ⭐
 ```
-✅ Compétences
+✅ Skills
 - Providers, Resources, Modules
 - Remote State (S3 + DynamoDB)
 - Workspaces (dev/staging/prod)
 
 ✅ Lab
-Infrastructure AWS complète en Terraform
+Complete AWS infrastructure in Terraform
 (VPC, EKS, RDS, monitoring)
 
 🎯 Validation
-Module réutilisable production-ready
+Production-ready reusable module
 ```
 
 ### Ansible (50h)
 ```
-✅ Compétences
+✅ Skills
 - Playbooks, Roles, Handlers
 - Ansible Vault (secrets)
 - Idempotence
 
 🎯 Validation
-Configuration serveurs automatisée
+Automated server configuration
 ```
 
-### CI/CD Avancé (30h)
+### Advanced CI/CD (30h)
 ```
-✅ Compétences
+✅ Skills
 - GitOps (ArgoCD)
 - Blue/Green, Canary deployments
 - Environments (dev/staging/prod)
 
 🎯 Validation
-Pipeline complet vers K8s via ArgoCD
+Complete pipeline to K8s via ArgoCD
 ```
 
 ---
 
-## 📊 PHASE 3 : Observabilité & SRE (Mois 7-9)
+## 📊 PHASE 3: Observability & SRE (Months 7-9)
 
 ### Monitoring (80h)
 ```
@@ -154,7 +154,7 @@ Prometheus, Grafana, Alertmanager
 - Error budgets
 
 🎯 Validation
-Stack complète pour app K8s
+Complete stack for K8s app
 ```
 
 ### Logging (60h)
@@ -166,19 +166,19 @@ Loki, Promtail, Grafana
 ELK (concepts)
 
 🎯 Validation
-Logs centralisés cluster K8s
+Centralized logs K8s cluster
 ```
 
 ### SRE Practices (70h)
 ```
-✅ Compétences
+✅ Skills
 - Incident management
 - Runbooks, Post-mortems
 - Chaos Engineering
 - Capacity planning
 
 🎯 Validation
-Post-mortem complet incident simulé
+Complete post-mortem simulated incident
 ```
 
 ### Tracing (40h)
@@ -187,14 +187,14 @@ Post-mortem complet incident simulé
 Jaeger, OpenTelemetry
 
 🎯 Validation
-Tracing application microservices
+Microservices application tracing
 ```
 
 ---
 
-## ☁️ PHASE 4 : Cloud Multi-Environnement (Mois 10-12)
+## ☁️ PHASE 4: Multi-Environment Cloud (Months 10-12)
 
-### AWS Avancé (100h) ⭐
+### Advanced AWS (100h) ⭐
 ```
 ✅ Services
 EKS, ECS/Fargate, ElastiCache, Lambda, CloudFormation
@@ -205,7 +205,7 @@ EKS, ECS/Fargate, ElastiCache, Lambda, CloudFormation
 - Security (KMS, Secrets Manager, GuardDuty)
 
 🎯 Validation
-AWS Solutions Architect Associate (certification obligatoire)
+AWS Solutions Architect Associate (mandatory certification)
 ```
 
 ### Multi-Cloud (50h)
@@ -214,7 +214,7 @@ AWS Solutions Architect Associate (certification obligatoire)
 Azure (AKS, VMs), GCP (GKE, GCE)
 
 🎯 Validation
-Même app déployée AWS + Azure
+Same app deployed AWS + Azure
 ```
 
 ### Architecture Patterns (50h)
@@ -226,16 +226,16 @@ Même app déployée AWS + Azure
 - Service Mesh (concepts)
 
 🎯 Validation
-Documentation architecture complète avec diagrammes
+Complete architecture documentation with diagrams
 ```
 
 ---
 
-## 🏗️ PHASE 5 : Cloud Architect (Mois 13-18)
+## 🏗️ PHASE 5: Cloud Architect (Months 13-18)
 
-### Architecture Avancée (120h)
+### Advanced Architecture (120h)
 ```
-✅ Compétences
+✅ Skills
 - Solution Design
 - FinOps / Cost Optimization
 - Security Architecture (Compliance, Audit)
@@ -243,164 +243,164 @@ Documentation architecture complète avec diagrammes
 
 🎯 Validation
 AWS Solutions Architect Professional (certification)
-3+ architectures complexes documentées
+3+ documented complex architectures
 ```
 
 ### DevSecOps (80h)
 ```
-✅ Compétences
+✅ Skills
 - Security scanning (Trivy, Snyk)
 - SAST/DAST
 - Secrets management (Vault)
 - Compliance (CIS, PCI-DSS)
 
 🎯 Validation
-Pipeline avec security gates intégrés
+Pipeline with integrated security gates
 ```
 
 ### Soft Skills & Business (100h)
 ```
-✅ Compétences
-- Communication technique
+✅ Skills
+- Technical communication
 - Architecture Decision Records
 - Estimation (time, cost)
 - Freelance basics
 
 ✅ Output
-- Blog technique (5+ articles)
-- Portfolio GitHub professionnel
-- LinkedIn optimisé
+- Technical blog (5+ articles)
+- Professional GitHub portfolio
+- Optimized LinkedIn
 
 🎯 Validation
-Premier contrat freelance ou CDI Senior
+First freelance contract or Senior CDI
 ```
 
 ---
 
-## 🎓 Certifications Recommandées
+## 🎓 Recommended Certifications
 
-| Certification | Quand | Prix | Importance |
+| Certification | When | Price | Importance |
 |---------------|-------|------|------------|
-| **CKA** (Kubernetes) | Mois 6 | ~$395 | ⭐⭐⭐ Fortement recommandé |
-| **AWS SA Associate** | Mois 12 | ~$150 | ⭐⭐⭐ Obligatoire |
-| **Terraform Associate** | Mois 6-12 | Gratuit | ⭐⭐ Nice to have |
-| **AWS SA Professional** | Mois 18 | ~$300 | ⭐⭐⭐ Pour freelance |
+| **CKA** (Kubernetes) | Month 6 | ~$395 | ⭐⭐⭐ Strongly recommended |
+| **AWS SA Associate** | Month 12 | ~$150 | ⭐⭐⭐ Mandatory |
+| **Terraform Associate** | Months 6-12 | Free | ⭐⭐ Nice to have |
+| **AWS SA Professional** | Month 18 | ~$300 | ⭐⭐⭐ For freelance |
 
-**Total certifications : ~$850** (excellent ROI)
+**Total certifications: ~$850** (excellent ROI)
 
 ---
 
-## 💰 Projection Salaire France
+## 💰 Salary Projection France
 
-| Niveau | XP | CDI | Freelance (TJM) |
+| Level | XP | CDI | Freelance (TJM) |
 |--------|-----|-----|-----------------|
-| Junior DevOps | 0-2 ans | 38-50k€ | 350-450€ |
-| DevOps Engineer | 2-4 ans | 50-70k€ | 450-600€ |
-| Senior DevOps | 4-6 ans | 70-90k€ | 600-800€ |
-| Cloud Architect | 6+ ans | 90-120k€ | 800-1200€ |
+| Junior DevOps | 0-2 years | 38-50k€ | 350-450€ |
+| DevOps Engineer | 2-4 years | 50-70k€ | 450-600€ |
+| Senior DevOps | 4-6 years | 70-90k€ | 600-800€ |
+| Cloud Architect | 6+ years | 90-120k€ | 800-1200€ |
 
-**Remote** : Possible dès Junior
-**Freelance viable** : Dès 2 ans d'XP (Mois 12-18 de ce roadmap)
+**Remote**: Possible from Junior
+**Viable freelance**: From 2 years XP (Months 12-18 of this roadmap)
 
 ---
 
-## 📋 Milestones Clés
+## 📋 Key Milestones
 
-### ✅ Mois 3 : Fondamentaux
-- App containerisée sur AWS
-- Pipeline CI/CD fonctionnel
-- 3+ projets GitHub
+### ✅ Month 3: Fundamentals
+- Containerized app on AWS
+- Working CI/CD pipeline
+- 3+ GitHub projects
 
-### ✅ Mois 6 : Intermediate
-- App sur Kubernetes prod-ready
-- Infrastructure Terraform
-- Monitoring opérationnel
-- (CKA optionnel)
+### ✅ Month 6: Intermediate
+- Prod-ready app on Kubernetes
+- Terraform infrastructure
+- Operational monitoring
+- (Optional CKA)
 
-### ✅ Mois 9 : SRE Ready
-- Stack observabilité complète
+### ✅ Month 9: SRE Ready
+- Complete observability stack
 - Runbooks + post-mortems
-- Application production-ready
+- Production-ready application
 
-### ✅ Mois 12 : Cloud Engineer
-- Multi-environnements (dev/staging/prod)
+### ✅ Month 12: Cloud Engineer
+- Multi-environments (dev/staging/prod)
 - **AWS SA Associate** ✅
-- Portfolio 5+ projets
-- Premiers entretiens DevOps
+- Portfolio 5+ projects
+- First DevOps interviews
 
-### ✅ Mois 18 : Cloud Architect
-- 3+ architectures complexes
+### ✅ Month 18: Cloud Architect
+- 3+ complex architectures
 - **AWS SA Professional** ✅
-- Blog actif
-- **Freelance viable**
+- Active blog
+- **Viable freelance**
 
 ---
 
-## 🎯 Plan Action Immédiat
+## 🎯 Immediate Action Plan
 
-### Cette semaine
-- [ ] Setup Ubuntu VM ou WSL2
-- [ ] Compte AWS Free Tier
-- [ ] Install : Docker, kubectl, terraform
-- [ ] Démarrer Linux basics
+### This week
+- [ ] Setup Ubuntu VM or WSL2
+- [ ] AWS Free Tier account
+- [ ] Install: Docker, kubectl, terraform
+- [ ] Start Linux basics
 
-### Ce mois
+### This month
 - [ ] Linux & Shell (60h)
 - [ ] Docker basics (40h/80h)
-- [ ] Premier script Bash complexe sur GitHub
+- [ ] First complex Bash script on GitHub
 
-### Dans 3 mois
-- [ ] Phase 1 complétée
-- [ ] App déployée AWS
-- [ ] 10+ notes Obsidian
-- [ ] 3 projets GitHub publics
+### In 3 months
+- [ ] Phase 1 completed
+- [ ] App deployed AWS
+- [ ] 10+ Obsidian notes
+- [ ] 3 public GitHub projects
 
 ---
 
-## 📚 Ressources Essentielles
+## 📚 Essential Resources
 
-### Livres (gratuits/payants)
+### Books (free/paid)
 - **The Phoenix Project** (DevOps mindset)
-- **Site Reliability Engineering** (Google, gratuit online)
+- **Site Reliability Engineering** (Google, free online)
 - **Kubernetes Up & Running**
 - **Terraform: Up & Running**
 
-### Plateformes
-- **AWS Skill Builder** (gratuit)
-- **KodeKloud** (K8s, Terraform - ~$15/mois)
-- **A Cloud Guru** (certifications - ~$30/mois)
+### Platforms
+- **AWS Skill Builder** (free)
+- **KodeKloud** (K8s, Terraform - ~$15/month)
+- **A Cloud Guru** (certifications - ~$30/month)
 
-### Coût total apprentissage
-- Plateformes : ~$500 (12 mois)
-- Certifications : ~$850
-- AWS labs : ~$100
-**Total : ~$1500** sur 18 mois
+### Total learning cost
+- Platforms: ~$500 (12 months)
+- Certifications: ~$850
+- AWS labs: ~$100
+**Total: ~$1500** over 18 months
 
-**ROI** : Premier salaire DevOps = 40k€+
+**ROI**: First DevOps salary = 40k€+
 
 ---
 
 ## 📊 Tracking Progress
 
-### Metrics hebdomadaires
+### Weekly metrics
 ```markdown
-Semaine du [date] :
-- Heures : __/20h
-- Concepts maîtrisés : __
-- Labs complétés : __
-- Commits GitHub : __
+Week of [date]:
+- Hours: __/20h
+- Concepts mastered: __
+- Labs completed: __
+- GitHub commits: __
 ```
 
-### Review mensuelle
+### Monthly review
 ```markdown
-Mois [X] :
-- ✅ Objectifs atteints : __/__
-- ⚠️ Difficultés : __
-- 📝 Ajustements : __
+Month [X]:
+- ✅ Goals achieved: __/__
+- ⚠️ Difficulties: __
+- 📝 Adjustments: __
 ```
 
 ---
 
-**Status actuel** : Phase 0 (Setup)
-**Prochaine action** : Setup environnement + démarrer Linux
-**Dernière update** : 2025-12-23
+**Current status**: Phase 0 (Setup)
+**Next action**: Environment setup + start Linux
+**Last update**: 2025-12-23

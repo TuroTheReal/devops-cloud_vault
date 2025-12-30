@@ -188,16 +188,6 @@ From Transcendence implementation:
 
 ---
 
-## 📊 Stats
-
-```yaml
-Total time: 12h (60% assisted / 40% autonomous)
-Status: ✅ Mastered
-Used in: [[2024-XX-transcendence-monitoring/learnings]]
-```
-
----
-
 ## 🧠 Retrieval Practice
 
 Test your understanding without looking back:
@@ -225,6 +215,15 @@ Test your understanding without looking back:
 
 **Answer**: Manual dashboards reset on container restart - all customization lost. Provisioning defines datasources and dashboards as code (YAML/JSON files), persisted across restarts. Enables version control, reproducibility, and infrastructure-as-code approach. Configure via /etc/grafana/provisioning directory.
 </details>
+
+---
+
+## 📊 Stats
+
+```yaml
+Total time: 12h (60% assisted / 40% autonomous)
+Used in: [[2024-XX-transcendence-monitoring/learnings]]
+```
 
 ---
 

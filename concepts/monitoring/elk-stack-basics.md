@@ -150,16 +150,6 @@ curl http://localhost:9600/_node/stats/pipelines
 
 ---
 
-## 📊 Stats
-
-```yaml
-Total time: 10h (55% assisted / 45% autonomous)
-Status: 🟠 Practiced
-Used in: [[2024-XX-transcendence-monitoring/learnings]]
-```
-
----
-
 ## 🧠 Retrieval Practice
 
 Test your understanding without looking back:
@@ -181,6 +171,15 @@ Test your understanding without looking back:
 
 **Answer**: 1) Startup dependency - Kibana/Logstash start before Elasticsearch ready, fail to connect. Solution: use depends_on + healthchecks. 2) Security misconfiguration - xpack.security enabled but SSL misconfigured. Solution: for dev disable SSL (xpack.security.http.ssl.enabled=false), for prod properly configure certificates.
 </details>
+
+---
+
+## 📊 Stats
+
+```yaml
+Total time: 10h (55% assisted / 45% autonomous)
+Used in: [[2024-XX-transcendence-monitoring/learnings]]
+```
 
 ---
 

@@ -12,6 +12,20 @@ updated: 2025-12-23
 
 ---
 
+## 📚 Table of Contents
+
+1. [Quick Start](#-quick-start)
+2. [Basic Syntax](#-basic-syntax)
+3. [Variables](#-variables)
+4. [Advanced Task Features](#-advanced-task-features)
+5. [Real-World Example from Glasck](#-real-world-example-from-glasck)
+6. [Common Patterns](#-common-patterns)
+7. [Useful Commands](#️-useful-commands)
+8. [Best Practices](#-best-practices)
+9. [Common Patterns from Glasck](#-common-patterns-from-glasck)
+
+---
+
 ## 🚀 Quick Start
 
 ```yaml

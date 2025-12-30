@@ -12,6 +12,25 @@ updated: 2025-12-26
 
 ---
 
+## 📚 Table of Contents
+
+1. [SSH Security](#-ssh-security)
+2. [Firewall (UFW)](#️-firewall-ufw)
+3. [Fail2Ban](#-fail2ban)
+4. [User Management](#-user-management)
+5. [Security Auditing](#-security-auditing)
+6. [Package Management Security](#-package-management-security)
+7. [File Permissions & Security](#-file-permissions--security)
+8. [Process Security](#-process-security)
+9. [Network Security](#-network-security)
+10. [System Monitoring](#-system-monitoring)
+11. [Service Management (systemd)](#-service-management-systemd)
+12. [Emergency & Recovery](#-emergency--recovery)
+13. [Security Best Practices](#-security-best-practices)
+14. [Quick Security Checklist](#-quick-security-checklist)
+
+---
+
 ## 🔐 SSH Security
 
 ### SSH Connection

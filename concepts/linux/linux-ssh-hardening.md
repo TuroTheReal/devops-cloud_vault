@@ -361,7 +361,6 @@ Workflow: SSH as user → sudo for admin tasks
 
 ```yaml
 Total time: 1h30 (45% assisted / 55% autonomous)
-Status: 🟡 Learning
 Used in: [[2025-12-vps-hetzner-init-setup/learnings]]
 ```
 

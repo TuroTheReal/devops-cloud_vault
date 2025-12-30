@@ -13,6 +13,18 @@ version: X.Y.Z
 
 ---
 
+## 📚 Table of Contents
+
+1. [Quick Start](#quick-start)
+2. [Commands by Operation](#commands-by-operation)
+3. [Debug / Inspection](#debug--inspection)
+4. [Useful One-Liners](#useful-one-liners)
+5. [Troubleshooting](#troubleshooting)
+6. [Personal Notes](#personal-notes)
+7. [Config Example](#config-example)
+
+---
+
 ## 🚀 Quick Start
 
 ```bash

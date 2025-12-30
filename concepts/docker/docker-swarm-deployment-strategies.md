@@ -447,21 +447,6 @@ process.on('SIGTERM', () => {
 
 ---
 
-## 📊 Stats
-
-```yaml
-Total time: 10h (55% assisted / 45% autonomous)
-Status: ✅ Mastered
-Used in: [[2025-12-glasck-deployment/learnings]]
-```
-
----
-
-**Validation date**: 2025-12-23
-**Total time**: 11h30
-
----
-
 ## 🧠 Retrieval Practice
 
 Test your understanding without looking back:
@@ -489,6 +474,16 @@ Test your understanding without looking back:
 
 **Answer**: Gives container time to finish existing requests before SIGKILL (default 10s). Without adequate period, during updates old container gets immediately killed, abruptly terminating connections causing "ECONNRESET" errors and 502s. Set to 30s+ for web servers, ensure app handles SIGTERM gracefully to close connections cleanly.
 </details>
+
+---
+
+
+## 📊 Stats
+
+```yaml
+Total time: 10h (55% assisted / 45% autonomous)
+Used in: [[2025-12-glasck-deployment/learnings]]
+```
 
 ---
 

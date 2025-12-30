@@ -1,393 +1,393 @@
 # 🔄 Obsidian Daily Workflow
 
-## 🎯 Objectif
+## 🎯 Goal
 
-Workflow quotidien pour maximiser rétention et organisation avec Obsidian.
+Daily workflow to maximize retention and organization with Obsidian.
 
-**Prerequisites**: [[obsidian-setup]] completé
-
----
-
-## 🧠 Pourquoi ce Workflow?
-
-Obsidian transforme ton vault en **Personal Knowledge Management (PKM)** avec:
-- **Liens bidirectionnels** : Vois toutes les notes qui référencent un concept
-- **Graph view** : Visualise connexions entre technologies
-- **Recherche puissante** : Trouve info en <30s dans 100+ notes
-- **Tags & filtres** : Organise par statut, difficulté, technologie
+**Prerequisites**: [[obsidian-setup]] completed
 
 ---
 
-## 📖 Atomisation des Notes : Règle d'Or
+## 🧠 Why This Workflow?
 
-### ❓ Une Note = Un Concept Maîtrisable en 1 Session
-
-**Principe** : **"1 Note = 1 Idée Maîtrisable en 5-10 minutes"**
-
-### ✅ Créer Note Séparée Si :
-
-1. **Concept réutilisable** : Utilisé dans multiple contextes
-   - Exemple: "Healthchecks" dans Docker, Compose, Swarm
-2. **Temps d'apprentissage > 2h** : Assez substantiel
-3. **Peut référencer dans plusieurs projets** : "Overlay networks" dans Glasck + futurs
-4. **A ses propres pitfalls** : Assez de contenu pour section dédiée
-5. **Complexité 3+/5** : Mérite explication approfondie
-
-### ❌ Garder dans Même Note Si :
-
-1. **Trop petit** : Un seul commande/flag → va dans cheatsheet
-2. **Trop lié** : "FROM instruction" séparé de "Dockerfile" = inutile
-3. **Pas réutilisable** : Spécifique à un projet → va dans `projects/`
-4. **< 30min pour maîtriser** : Juste une section dans note parente
+Obsidian transforms your vault into **Personal Knowledge Management (PKM)** with:
+- **Bidirectional links**: See all notes that reference a concept
+- **Graph view**: Visualize connections between technologies
+- **Powerful search**: Find info in <30s across 100+ notes
+- **Tags & filters**: Organize by status, difficulty, technology
 
 ---
 
-## 🎓 Workflow : Apprendre Nouveau Concept
+## 📖 Note Atomization: Golden Rule
 
-### Phase 1: Découverte (30-60 min)
+### ❓ One Note = One Concept Masterable in 1 Session
+
+**Principle**: **"1 Note = 1 Idea Masterable in 5-10 minutes"**
+
+### ✅ Create Separate Note If:
+
+1. **Reusable concept**: Used in multiple contexts
+   - Example: "Healthchecks" in Docker, Compose, Swarm
+2. **Learning time > 2h**: Substantial enough
+3. **Can reference in multiple projects**: "Overlay networks" in Glasck + future ones
+4. **Has its own pitfalls**: Enough content for dedicated section
+5. **Complexity 3+/5**: Deserves thorough explanation
+
+### ❌ Keep in Same Note If:
+
+1. **Too small**: Single command/flag → goes in cheatsheet
+2. **Too coupled**: "FROM instruction" separate from "Dockerfile" = useless
+3. **Not reusable**: Specific to one project → goes in `projects/`
+4. **< 30min to master**: Just a section in parent note
+
+---
+
+## 🎓 Workflow: Learning New Concept
+
+### Phase 1: Discovery (30-60 min)
 
 ```
-1. Conversation avec Claude
-   ├─ Pose questions
-   ├─ Demande exemples
-   └─ NE PAS prendre notes pendant (focus compréhension)
+1. Conversation with Claude
+   ├─ Ask questions
+   ├─ Request examples
+   └─ DON'T take notes during (focus on understanding)
 
-2. Créer note après compréhension
+2. Create note after understanding
    ├─ concepts/technology/concept-name.md
-   ├─ Utiliser template concept.md
+   ├─ Use concept.md template
    └─ Tag: status/discovering
 ```
 
-**Output** : Note avec TL;DR + When to Use remplis
+**Output**: Note with TL;DR + When to Use filled in
 
 ---
 
-### Phase 2: Apprentissage Actif (2-4h)
+### Phase 2: Active Learning (2-4h)
 
 ```
-1. Remplir Key Concepts
-   ├─ AVEC TES MOTS (pas copier-coller!)
-   ├─ Expliquer comme à un ami
+1. Fill in Key Concepts
+   ├─ IN YOUR OWN WORDS (don't copy-paste!)
+   ├─ Explain like to a friend
    └─ Tag: status/learning
 
-2. Créer Minimal Example
-   ├─ Code testé qui fonctionne
-   ├─ Contexte du problème résolu
-   └─ Commentaires explicatifs
+2. Create Minimal Example
+   ├─ Tested code that works
+   ├─ Problem context solved
+   └─ Explanatory comments
 
-3. Lier aux concepts connexes
+3. Link to related concepts
    ├─ Prerequisites: [[prerequisite-1]]
    ├─ Related to: [[related-1]]
-   └─ Graph view se construit automatiquement
+   └─ Graph view builds automatically
 ```
 
-**Output** : Note complète avec exemples fonctionnels
+**Output**: Complete note with working examples
 
 ---
 
 ### Phase 3: Application (2-8h)
 
 ```
-1. Appliquer dans vrai projet
-   ├─ Créer projects/YYYY-MM-project-name/
-   ├─ Documenter en temps réel
+1. Apply in real project
+   ├─ Create projects/YYYY-MM-project-name/
+   ├─ Document in real-time
    └─ Tag concept: status/practiced
 
-2. Documenter Pitfalls
-   ├─ Symptômes rencontrés
-   ├─ Ce que tu as essayé (wrong)
-   ├─ Solution qui a fonctionné (correct)
-   └─ Temps perdu + Lesson learned
+2. Document Pitfalls
+   ├─ Symptoms encountered
+   ├─ What you tried (wrong)
+   ├─ Solution that worked (correct)
+   └─ Time wasted + Lesson learned
 
-3. Créer liens bidirectionnels
-   ├─ Dans concept: "Utilisé dans [[project-glasck]]"
-   └─ Dans projet: "Utilise [[docker-swarm-overlay-networks]]"
+3. Create bidirectional links
+   ├─ In concept: "Used in [[project-glasck]]"
+   └─ In project: "Uses [[docker-swarm-overlay-networks]]"
 ```
 
-**Output** : Concept appliqué + pitfalls documentés + projet lié
+**Output**: Applied concept + documented pitfalls + linked project
 
 ---
 
-### Phase 4: Maîtrise (15-20 min)
+### Phase 4: Mastery (15-20 min)
 
 ```
-1. Finaliser Stats
+1. Finalize Stats
    ├─ Total time: Xh (X% assisted / X% autonomous)
    ├─ Status: ✅ Mastered
    └─ Used in: [[project-1]], [[project-2]]
 
-2. Extraire vers cheatsheet (optionnel)
-   ├─ Commandes fréquentes
-   ├─ Debugging tips découverts
-   └─ ~20 min avec cheatsheet-template simplifié
+2. Extract to cheatsheet (optional)
+   ├─ Frequent commands
+   ├─ Discovered debugging tips
+   └─ ~20 min with simplified cheatsheet-template
 
-3. Planifier next review
-   └─ Next review: +1 mois
+3. Plan next review
+   └─ Next review: +1 month
 ```
 
-**Output** : Concept maîtrisé + stats + optionnel cheatsheet
+**Output**: Mastered concept + stats + optional cheatsheet
 
-**Temps total documentation concept** : **30-40 min** ✅
+**Total concept documentation time**: **30-40 min** ✅
 
 ---
 
-## 🔧 Workflow : Nouveau Projet
+## 🔧 Workflow: New Project
 
-### Pendant le Projet
+### During Project
 
 ```
-1. Créer structure
+1. Create structure
    projects/YYYY-MM-project-name/
-   └── learnings.md (template project.md)
+   └── learnings.md (project.md template)
 
-2. Documenter en temps réel
-   ├─ Challenges rencontrés
-   ├─ Solutions trouvées
-   ├─ Temps investi par phase
-   └─ Technologies utilisées
+2. Document in real-time
+   ├─ Challenges encountered
+   ├─ Solutions found
+   ├─ Time invested by phase
+   └─ Technologies used
 
-3. Lier aux concepts
-   [[docker-swarm-overlay-networks]] utilisé ici
-   [[traefik-integration]] maîtrisé
-   [[docker-network-isolation]] appliqué
+3. Link to concepts
+   [[docker-swarm-overlay-networks]] used here
+   [[traefik-integration]] mastered
+   [[docker-network-isolation]] applied
 ```
 
 ---
 
-### Après le Projet
+### After Project
 
 ```
-1. Compléter learning report
-   ├─ Architecture finale
+1. Complete learning report
+   ├─ Final architecture
    ├─ Key learnings (3-5 points)
    └─ Metrics (time, complexity)
 
-2. Extraire nouveaux concepts
-   ├─ Si pattern réutilisable → créer concept
-   ├─ Si spécifique projet → garder dans project
-   └─ Utiliser règles d'atomisation
+2. Extract new concepts
+   ├─ If reusable pattern → create concept
+   ├─ If project-specific → keep in project
+   └─ Use atomization rules
 
-3. Mettre à jour cheatsheets
-   ├─ Nouvelles commandes utiles
-   └─ Debugging tips découverts
+3. Update cheatsheets
+   ├─ New useful commands
+   └─ Discovered debugging tips
 
 4. Graph check
-   ├─ Ouvrir graph view
-   ├─ Vérifier connexions logiques
-   └─ Trouver notes orphelines
+   ├─ Open graph view
+   ├─ Verify logical connections
+   └─ Find orphan notes
 ```
 
 ---
 
-## 🔄 Workflow : Résoudre Problème
+## 🔄 Workflow: Solving Problem
 
-### Pendant Debugging
+### During Debugging
 
 ```
-1. Créer troubleshooting/YYYY-MM-DD-issue-name.md
+1. Create troubleshooting/YYYY-MM-DD-issue-name.md
    ├─ Tag: troubleshooting, TECHNOLOGY
-   └─ Documenter en résolvant
+   └─ Document while solving
 
 2. Structure
-   ├─ Symptômes observés
-   ├─ Hypothèses testées
-   ├─ Tentatives échouées (avec raison)
-   ├─ Solution qui a fonctionné
-   └─ Temps total debug
+   ├─ Observed symptoms
+   ├─ Tested hypotheses
+   ├─ Failed attempts (with reason)
+   ├─ Solution that worked
+   └─ Total debug time
 ```
 
 ---
 
-### Après Résolution
+### After Resolution
 
 ```
-1. Extraire learnings
-   ├─ Mettre à jour concept lié
-   ├─ Ajouter pitfall dans concept
-   └─ Si récurrent → créer concept dédié
+1. Extract learnings
+   ├─ Update related concept
+   ├─ Add pitfall in concept
+   └─ If recurring → create dedicated concept
 
-2. Lier aux concepts
-   Utilisait [[docker-swarm-deployment-strategies]]
+2. Link to concepts
+   Was using [[docker-swarm-deployment-strategies]]
    Solution: [[docker-swarm-healthchecks]]
 ```
 
 ---
 
-## 🔍 Workflow : Retrouver Info Rapidement
+## 🔍 Workflow: Finding Info Quickly
 
-### Scénario 1: "Comment faire X?"
+### Scenario 1: "How to do X?"
 
 ```
 1. Ctrl+O → Quick switcher
-2. Tape mot-clé: "health"
-3. Choix: docker-compose-healthchecks.md
-4. Section spécifique
-5. ✅ Trouvé en 10 secondes
+2. Type keyword: "health"
+3. Choose: docker-compose-healthchecks.md
+4. Specific section
+5. ✅ Found in 10 seconds
 ```
 
 ---
 
-### Scénario 2: "Quel projet a utilisé X?"
+### Scenario 2: "Which project used X?"
 
 ```
-1. Ouvre concept [[traefik-integration]]
-2. Scroll en bas → Backlinks panel
-3. Vois: project-glasck-deployment
-4. Click → Détails du projet
-5. ✅ Contexte retrouvé
+1. Open concept [[traefik-integration]]
+2. Scroll to bottom → Backlinks panel
+3. See: project-glasck-deployment
+4. Click → Project details
+5. ✅ Context retrieved
 ```
 
 ---
 
-### Scénario 3: "Commande pour Y?"
+### Scenario 3: "Command for Y?"
 
 ```
 1. Ctrl+O → "swarm cheat"
 2. [[cheatsheet-docker-swarm]]
 3. Ctrl+F → "logs"
 4. docker service logs myapp
-5. ✅ Commande copiée
+5. ✅ Command copied
 ```
 
 ---
 
-### Scénario 4: "Pourquoi erreur Z?"
+### Scenario 4: "Why error Z?"
 
 ```
 1. Ctrl+Shift+F → "hang" (global search)
-2. Résultat: docker-swarm-overlay-networks
+2. Result: docker-swarm-overlay-networks
 3. Section: Pitfall - MTU fragmentation
 4. Solution: MTU 1450
-5. ✅ Bug fixé
+5. ✅ Bug fixed
 ```
 
 ---
 
-## 🔗 Système de Liens
+## 🔗 Link System
 
-### 1. Liens Hiérarchiques (Dépendances)
+### 1. Hierarchical Links (Dependencies)
 
 ```markdown
 **Prerequisites**: [[docker-basics]], [[docker-images-layers]]
 **Related to**: [[kubernetes-basics]], [[docker-swarm-basics]]
 ```
 
-**Usage** : Graph view montre learning path
+**Usage**: Graph view shows learning path
 
 ---
 
-### 2. Liens Conceptuels (Connexions Logiques)
+### 2. Conceptual Links (Logical Connections)
 
 ```markdown
-## Docker Swarm utilise
+## Docker Swarm uses
 
-- [[docker-images-layers]] pour déployer services
-- [[docker-network-isolation]] pour sécuriser communications
-- [[docker-volumes]] pour persistance données
+- [[docker-images-layers]] to deploy services
+- [[docker-network-isolation]] to secure communications
+- [[docker-volumes]] for data persistence
 ```
 
-**Usage** : Comprendre architecture complète
+**Usage**: Understand complete architecture
 
 ---
 
-### 3. Liens de Référence (Pratique)
+### 3. Reference Links (Practice)
 
 ```markdown
-Voir aussi:
-- [[cheatsheet-docker-swarm]] pour commandes rapides
-- [[project-glasck-deployment]] pour exemple réel
+See also:
+- [[cheatsheet-docker-swarm]] for quick commands
+- [[project-glasck-deployment]] for real example
 ```
 
-**Usage** : Navigation rapide vers ressources pratiques
+**Usage**: Quick navigation to practical resources
 
 ---
 
-## 📊 Maintenance Quotidienne
+## 📊 Daily Maintenance
 
-### Matin (5 min)
+### Morning (5 min)
 
 ```
-1. Daily note (optionnel)
-   ├─ Objectif du jour
-   └─ Concepts à pratiquer
+1. Daily note (optional)
+   ├─ Day's objective
+   └─ Concepts to practice
 
-2. Check révisions
+2. Check reviews
    ├─ Search: next-review < today
-   └─ Réviser 1-2 concepts
+   └─ Review 1-2 concepts
 ```
 
 ---
 
-### Pendant Travail
+### During Work
 
 ```
-1. Documenter en temps réel
-   ├─ Pitfalls rencontrés
-   ├─ Solutions trouvées
-   └─ Temps investi
+1. Document in real-time
+   ├─ Pitfalls encountered
+   ├─ Solutions found
+   └─ Time invested
 
-2. Créer liens au fur et à mesure
-   ├─ Concept → Projet
+2. Create links as you go
+   ├─ Concept → Project
    ├─ Concept → Concept
-   └─ Graph view se construit
+   └─ Graph view builds itself
 ```
 
 ---
 
-### Fin de Journée (5 min)
+### End of Day (5 min)
 
 ```
 1. Update notes
-   ├─ Compléter sections en cours
-   └─ Update tags si statut changé
+   ├─ Complete sections in progress
+   └─ Update tags if status changed
 
-2. Git commit (auto si plugin)
-   ├─ Changes sauvegardées
-   └─ Sync entre machines
+2. Git commit (auto if plugin)
+   ├─ Changes saved
+   └─ Sync between machines
 ```
 
 ---
 
-## 📅 Maintenance Hebdomadaire
+## 📅 Weekly Maintenance
 
-### Vendredi Après-Midi (30 min)
+### Friday Afternoon (30 min)
 
 ```
 1. Review statuses
    ├─ Search: tag:#status/learning
-   ├─ Quels concepts maîtrisés?
+   ├─ Which concepts mastered?
    └─ Update tags → status/mastered
 
 2. Graph check
    ├─ Ctrl+G → Graph view
-   ├─ Notes orphelines?
-   └─ Connexions manquantes?
+   ├─ Orphan notes?
+   └─ Missing connections?
 
 3. Update cheatsheets
-   ├─ Nouvelles commandes apprises?
-   └─ Ajouter aux cheatsheets
+   ├─ New commands learned?
+   └─ Add to cheatsheets
 ```
 
 ---
 
-## 🗓️ Maintenance Mensuelle
+## 🗓️ Monthly Maintenance
 
-### Dernier Jour du Mois (1-2h)
+### Last Day of Month (1-2h)
 
 ```
-1. Review global
+1. Global review
    ├─ Dataview: status/learning vs mastered
    ├─ Technologies progress
-   └─ Projets completed
+   └─ Completed projects
 
 2. Consolidation
-   ├─ Notes similaires à merger?
-   ├─ Concepts trop fragmentés?
-   └─ Cleanup notes obsolètes
+   ├─ Similar notes to merge?
+   ├─ Concepts too fragmented?
+   └─ Cleanup obsolete notes
 
 3. Graph cleanup
-   ├─ Notes orphelines importantes?
-   ├─ Créer MOC si nécessaire
+   ├─ Important orphan notes?
+   ├─ Create MOC if necessary
    └─ Fix broken links
 
 4. Metrics update
@@ -400,16 +400,16 @@ Voir aussi:
 
 ## 📊 Map of Content (MOC)
 
-Si ton vault dépasse 50+ notes, crée des MOCs (index par technologie).
+If your vault exceeds 50+ notes, create MOCs (index by technology).
 
-### Exemple: MOC Docker
+### Example: Docker MOC
 
 **File**: `meta/moc-docker.md`
 
 ```markdown
 # 📁 Docker - Map of Content
 
-## Concepts Fondamentaux
+## Core Concepts
 - [[docker-images-layers]] ⭐⭐⭐ (mastered)
 - [[docker-containers-lifecycle]] ⭐⭐ (mastered)
 - [[docker-network-isolation]] ⭐⭐⭐ (mastered)
@@ -419,7 +419,7 @@ Si ton vault dépasse 50+ notes, crée des MOCs (index par technologie).
 - [[docker-swarm-overlay-networks]] ⭐⭐⭐⭐ (mastered)
 - [[docker-swarm-deployment-strategies]] ⭐⭐⭐ (mastered)
 
-## Projets Utilisant Docker
+## Projects Using Docker
 - [[project-transcendence]] (monitoring focus)
 - [[project-glasck-deployment]] (swarm focus)
 
@@ -428,7 +428,7 @@ Si ton vault dépasse 50+ notes, crée des MOCs (index par technologie).
 - [[cheatsheet-docker-compose]]
 - [[cheatsheet-docker-swarm]]
 
-## Troubleshooting Commun
+## Common Troubleshooting
 - MTU fragmentation → [[docker-swarm-overlay-networks#pitfall-1]]
 - OOM kills → [[docker-containers-lifecycle#pitfall-2]]
 - Healthcheck failures → [[docker-compose-healthchecks#pitfalls]]
@@ -436,75 +436,75 @@ Si ton vault dépasse 50+ notes, crée des MOCs (index par technologie).
 
 ---
 
-## 🎯 Système de Révision Espacée
+## 🎯 Spaced Repetition System
 
-### Rétention Long-Terme
+### Long-Term Retention
 
 ```yaml
-# Dans metadata de concept
+# In concept metadata
 created: 2025-12-23
-next-review: 2026-01-23          # +1 mois
-retention-check-1: 2025-12-30    # +7 jours
-retention-check-2: 2026-01-23    # +30 jours
-retention-check-3: 2026-04-23    # +3 mois
+next-review: 2026-01-23          # +1 month
+retention-check-1: 2025-12-30    # +7 days
+retention-check-2: 2026-01-23    # +30 days
+retention-check-3: 2026-04-23    # +3 months
 ```
 
-### Workflow de Révision
+### Review Workflow
 
 ```
 Day +7 (retention-check-1):
-├─ Relis note sans regarder code
-├─ Peux expliquer concept? ✅
-├─ Peux lister use cases? ✅
-└─ Update tag si nécessaire
+├─ Reread note without looking at code
+├─ Can explain concept? ✅
+├─ Can list use cases? ✅
+└─ Update tag if needed
 
 Day +30 (retention-check-2):
-├─ Explique concept à voix haute (sans notes!)
-├─ Liste pitfalls de mémoire
-└─ Recherche commandes dans cheatsheet
+├─ Explain concept out loud (no notes!)
+├─ List pitfalls from memory
+└─ Search commands in cheatsheet
 
 Day +90 (retention-check-3):
-├─ Applique dans nouveau projet
-├─ Vérifier si info manquante
-└─ Update concept avec nouvelles learnings
+├─ Apply in new project
+├─ Check for missing info
+└─ Update concept with new learnings
 ```
 
 ---
 
-## 🔍 Recherche Avancée
+## 🔍 Advanced Search
 
-### Syntaxe Obsidian Search
+### Obsidian Search Syntax
 
 ```
-# Tous les concepts Docker
+# All Docker concepts
 path:concepts/docker
 
-# Notes non maîtrisées
+# Non-mastered notes
 tag:#status/learning
 
-# Pitfalls documentés
+# Documented pitfalls
 "Pitfall" path:concepts
 
-# Projets avec Swarm
+# Projects with Swarm
 tag:#swarm path:projects
 
-# Notes créées cette semaine
+# Notes created this week
 created:7d
 
-# Combinaisons
+# Combinations
 path:concepts tag:#docker tag:#status/mastered
 ```
 
 ---
 
-## 📊 Dashboard Personnel (Optionnel)
+## 📊 Personal Dashboard (Optional)
 
 **File**: `meta/dashboard.md`
 
 ```markdown
 # 📊 DevOps Knowledge Dashboard
 
-## 📈 Statistiques
+## 📈 Statistics
 
 ### Concepts
 - **Total**: 9
@@ -517,23 +517,23 @@ path:concepts tag:#docker tag:#status/mastered
 - **Traefik**: ⭐⭐⭐⭐ (4/5) - 20h invested
 - **Kubernetes**: ⭐⭐ (2/5) - 8h invested
 
-### Projets
+### Projects
 - **Completed**: 2 (Transcendence, Glasck)
 - **In Progress**: 0
 - **Planned**: 1 (Multi-node Swarm)
 
 ---
 
-## 🎯 Cette Semaine
+## 🎯 This Week
 
-### Apprendre
-- [ ] Réviser [[docker-swarm-overlay-networks]]
-- [ ] Finir [[kubernetes-basics]]
+### Learn
+- [ ] Review [[docker-swarm-overlay-networks]]
+- [ ] Finish [[kubernetes-basics]]
 
-### Appliquer
-- [ ] Projet: Deploy multi-node Swarm cluster
+### Apply
+- [ ] Project: Deploy multi-node Swarm cluster
 
-### Révisions Planifiées
+### Planned Reviews
 \`\`\`dataview
 TABLE next-review
 FROM "concepts"
@@ -543,7 +543,7 @@ SORT next-review ASC
 
 ---
 
-## 📚 En Cours
+## 📚 In Progress
 
 \`\`\`dataview
 LIST
@@ -558,50 +558,50 @@ WHERE contains(tags, "status/learning")
 
 ---
 
-## ✅ Checklist : Bon Workflow
+## ✅ Checklist: Good Workflow
 
 ### Daily
-- [ ] Documenter learnings en temps réel
-- [ ] Créer liens entre concepts
-- [ ] Update tags si statut changé
-- [ ] Git commit (auto ou manuel)
+- [ ] Document learnings in real-time
+- [ ] Create links between concepts
+- [ ] Update tags if status changed
+- [ ] Git commit (auto or manual)
 
 ### Weekly
 - [ ] Review status/learning → mastered
 - [ ] Graph view check
 - [ ] Update cheatsheets
-- [ ] Plan prochaine semaine
+- [ ] Plan next week
 
 ### Monthly
 - [ ] Dataview metrics review
-- [ ] Consolidation notes similaires
-- [ ] Graph cleanup (orphelines)
+- [ ] Consolidate similar notes
+- [ ] Graph cleanup (orphans)
 - [ ] Dashboard update
 
 ---
 
-## 🎓 Résumé : Les 3 Règles d'Or
+## 🎓 Summary: The 3 Golden Rules
 
-### 1. **1 Note = 1 Concept Maîtrisable**
-- Peux-tu l'expliquer en 5-10 min? ✅
-- Est-ce réutilisable? ✅
-- → Alors c'est une bonne note atomique
+### 1. **1 Note = 1 Masterable Concept**
+- Can you explain it in 5-10 min? ✅
+- Is it reusable? ✅
+- → Then it's a good atomic note
 
-### 2. **Liens > Hiérarchie**
-- Ne te perds pas dans structure dossiers complexe
-- Utilise [[liens]] pour connexions
-- Graph view montrera organisation naturelle
+### 2. **Links > Hierarchy**
+- Don't get lost in complex folder structure
+- Use [[links]] for connections
+- Graph view will show natural organization
 
-### 3. **Simple > Complexe**
-- Commence minimal
-- Ajoute complexité si besoin (MOC, Dataview)
-- Objectif = retrouver info en <30s
+### 3. **Simple > Complex**
+- Start minimal
+- Add complexity if needed (MOC, Dataview)
+- Goal = find info in <30s
 
 ---
 
-## 📖 Exemples Réels
+## 📖 Real Examples
 
-### Bien Atomisé (Ton Vault Actuel ✅)
+### Well Atomized (Your Current Vault ✅)
 
 ```
 docker/
@@ -610,32 +610,32 @@ docker/
 ├── docker-network-isolation.md     # 1 concept = network security
 └── docker-swarm-overlay-networks.md # 1 concept = Swarm networking
 
-Pourquoi? Chaque note = concept maîtrisable séparément,
-réutilisable dans différents projets.
+Why? Each note = concept masterable separately,
+reusable in different projects.
 ```
 
-### Trop Fragmenté (À Éviter ❌)
+### Too Fragmented (Avoid ❌)
 
 ```
 docker/
 ├── docker-image-layers.md
-├── docker-image-caching.md      # Trop séparé!
-├── docker-image-buildkit.md     # Même concept
-└── docker-multi-stage-1.md      # Trop fragmenté
+├── docker-image-caching.md      # Too separated!
+├── docker-image-buildkit.md     # Same concept
+└── docker-multi-stage-1.md      # Too fragmented
 ```
 
-### Pas Assez Atomisé (À Éviter ❌)
+### Not Atomic Enough (Avoid ❌)
 
 ```
 docker/
-└── docker-complete-guide.md  # 10,000 lignes! Ingérable
+└── docker-complete-guide.md  # 10,000 lines! Unmanageable
 ```
 
 ---
 
-**Time investment**: 10-20 min/jour pour workflow optimal
+**Time investment**: 10-20 min/day for optimal workflow
 
-**ROI**: Knowledge capitalisé à vie, retrieval <30s
+**ROI**: Knowledge capitalized for life, retrieval <30s
 
 **Next**: Start with templates in [[obsidian-setup]]
 

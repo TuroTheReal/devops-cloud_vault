@@ -538,21 +538,6 @@ reverse-proxy:
 
 ---
 
-## 📊 Stats
-
-```yaml
-Total time: 6h (50% assisted / 50% autonomous)
-Status: ✅ Mastered
-Used in: [[2025-12-glasck-deployment/learnings]]
-```
-
----
-
-**Validation date**: 2025-12-23
-**Total time**: 16h30
-
----
-
 ## 🧠 Retrieval Practice
 
 Test your understanding without looking back:
@@ -580,6 +565,15 @@ Test your understanding without looking back:
 
 **Answer**: Port 80 is HTTP (plaintext), port 443 is HTTPS (TLS). Adding `tls=true` to HTTP router (web entrypoint) makes Traefik try to negotiate TLS on plaintext port, causing certificate errors. Need separate routers: HTTP router for redirect only (no TLS), HTTPS router with TLS enabled.
 </details>
+
+---
+
+## 📊 Stats
+
+```yaml
+Total time: 6h (50% assisted / 50% autonomous)
+Used in: [[2025-12-glasck-deployment/learnings]]
+```
 
 ---
 

@@ -5,7 +5,7 @@
 ```yaml
 tags: [concept, docker, containers, virtualization, status/learned]
 created: 2025-12-26
-difficulty: ⭐ (1/5)
+difficulty: ⭐⭐ (2/5)
 time-to-master: 30min
 ```
 
@@ -280,7 +280,6 @@ Test your understanding without looking back:
 
 ```yaml
 Total time: 30min (20% assisted / 80% autonomous)
-Status: 🟡 Learning
 Used in: [[2025-12-glasck-deployment/learnings]]
 ```
 

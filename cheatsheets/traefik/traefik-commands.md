@@ -12,6 +12,21 @@ updated: 2025-12-23
 
 ---
 
+## 📚 Table of Contents
+
+1. [Quick Start](#-quick-start)
+2. [Router Configuration](#-router-configuration)
+3. [Middleware Configuration](#-middleware-configuration)
+4. [Service (Load Balancer) Configuration](#️-service-load-balancer-configuration)
+5. [TLS / HTTPS Configuration](#-tls--https-configuration)
+6. [Complete Examples](#-complete-examples)
+7. [Traefik Container Configuration](#-traefik-container-configuration)
+8. [Debugging & Testing](#-debugging--testing)
+9. [Common Issues & Solutions](#-common-issues--solutions)
+10. [Best Practices](#-best-practices)
+
+---
+
 ## 🚀 Quick Start
 
 ```yaml

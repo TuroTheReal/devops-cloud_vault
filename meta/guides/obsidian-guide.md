@@ -1,33 +1,33 @@
 # 🔧 Obsidian Setup Guide
 
-## 🎯 Objectif
+## 🎯 Goal
 
-Configurer Obsidian pour transformer ton vault markdown en base de connaissances interconnectée.
+Configure Obsidian to transform your markdown vault into an interconnected knowledge base.
 
 ---
 
-## 📁 Structure du Vault
+## 📁 Vault Structure
 
 ```
 devops-cloud_vault/
 │
-├── concepts/              # Théorie (comment ça marche)
+├── concepts/              # Theory (how it works)
 │   ├── docker/
 │   ├── traefik/
 │   └── monitoring/
 │
-├── cheatsheets/           # Pratique (commandes rapides)
+├── cheatsheets/           # Practice (quick commands)
 │   ├── docker/
 │   ├── traefik/
 │   └── taskfile/
 │
-├── projects/              # Expérience (ce que tu as fait)
+├── projects/              # Experience (what you did)
 │   └── YYYY-MM-project-name/
 │       └── learnings.md
 │
-├── troubleshooting/       # Problèmes & solutions
+├── troubleshooting/       # Problems & solutions
 │
-└── meta/                  # Métadonnées & guides
+└── meta/                  # Metadata & guides
     ├── templates/
     ├── guides/
     └── workflows/
@@ -37,7 +37,7 @@ devops-cloud_vault/
 
 ## 🔧 Installation
 
-### 1. Installer Obsidian
+### 1. Install Obsidian
 ```bash
 # macOS
 brew install --cask obsidian
@@ -51,7 +51,7 @@ chmod +x Obsidian-1.5.3.AppImage
 # Download from https://obsidian.md
 ```
 
-### 2. Ouvrir le Vault
+### 2. Open the Vault
 ```
 File → Open vault → Open folder as vault
 Select: ~/abGitHub/devops-cloud_vault
@@ -59,24 +59,24 @@ Select: ~/abGitHub/devops-cloud_vault
 
 ---
 
-## 🎨 Configuration de Base
+## 🎨 Basic Configuration
 
-### Core Plugins (Activés par Défaut)
+### Core Plugins (Enabled by Default)
 ```
 Settings → Core Plugins
-✅ Graph view           # Visualiser connexions
-✅ Backlinks            # Voir références inverses
-✅ Quick switcher       # Ctrl+O navigation rapide
-✅ Search               # Ctrl+Shift+F recherche globale
-✅ Templates            # Utiliser meta/templates/
+✅ Graph view           # Visualize connections
+✅ Backlinks            # See reverse references
+✅ Quick switcher       # Ctrl+O quick navigation
+✅ Search               # Ctrl+Shift+F global search
+✅ Templates            # Use meta/templates/
 ```
 
-### Paramètres Recommandés
+### Recommended Settings
 ```
 Settings → Editor
 ✅ Strict line breaks
 ✅ Show line number
-✅ Readable line length: OFF (pour code blocks)
+✅ Readable line length: OFF (for code blocks)
 
 Settings → Files & Links
 ✅ Default location for new notes: Same folder as current file
@@ -86,7 +86,7 @@ Settings → Files & Links
 
 ---
 
-## 📦 Plugins Essentiels
+## 📦 Essential Plugins
 
 ### Must-Have Plugins
 
@@ -103,53 +103,53 @@ Configuration:
 - Auto push interval: 10 minutes
 ```
 
-#### 2. **Dataview** (Requêtes dynamiques)
+#### 2. **Dataview** (Dynamic queries)
 ```
 Search: "Dataview"
 Install + Enable
 
-Permet créer vues comme:
-- Tous les concepts status/learning
-- Projets par technologie
-- Notes à réviser
+Lets you create views like:
+- All concepts with status/learning
+- Projects by technology
+- Notes to review
 ```
 
-#### 3. **Advanced Tables** (Édition tables)
+#### 3. **Advanced Tables** (Table editing)
 ```
 Search: "Advanced Tables"
 Install + Enable
 
-Facilite édition des tables markdown
+Makes markdown table editing easier
 ```
 
 ---
 
-## 🏷️ Système de Tags
+## 🏷️ Tag System
 
-### Tags de Statut
+### Status Tags
 ```yaml
-tags: [status/discovering]   # Découverte initiale
-tags: [status/learning]      # En apprentissage
-tags: [status/practiced]     # Appliqué dans projet
-tags: [status/mastered]      # Maîtrisé
-tags: [status/review]        # À réviser
+tags: [status/discovering]   # Initial discovery
+tags: [status/learning]      # Learning in progress
+tags: [status/practiced]     # Applied in project
+tags: [status/mastered]      # Mastered
+tags: [status/review]        # Needs review
 ```
 
-### Tags de Type
+### Type Tags
 ```yaml
 tags: [concept, docker]
 tags: [cheatsheet, traefik]
 tags: [project, swarm]
 ```
 
-### Tags de Difficulté
+### Difficulty Tags
 ```yaml
-difficulty: ⭐ (1/5)     # Basique
-difficulty: ⭐⭐⭐ (3/5)  # Intermédiaire
+difficulty: ⭐ (1/5)     # Basic
+difficulty: ⭐⭐⭐ (3/5)  # Intermediate
 difficulty: ⭐⭐⭐⭐⭐ (5/5) # Expert
 ```
 
-### Exemple Complet
+### Complete Example
 ```yaml
 ---
 tags: [concept, docker, swarm, networking, status/mastered]
@@ -163,9 +163,9 @@ next-review: 2026-01-23
 
 ---
 
-## 📊 Dataview - Requêtes Utiles
+## 📊 Dataview - Useful Queries
 
-### Concepts à Réviser
+### Concepts to Review
 ```dataview
 TABLE difficulty, time-to-master, next-review
 FROM "concepts"
@@ -173,7 +173,7 @@ WHERE contains(tags, "status/learning")
 SORT next-review ASC
 ```
 
-### Projets par Technologie
+### Projects by Technology
 ```dataview
 LIST
 FROM "projects"
@@ -181,7 +181,7 @@ WHERE contains(tags, "docker-swarm")
 SORT file.ctime DESC
 ```
 
-### Troubleshooting Récent
+### Recent Troubleshooting
 ```dataview
 TABLE file.ctime as "Date"
 FROM "troubleshooting"
@@ -189,7 +189,7 @@ WHERE file.ctime > date(today) - dur(7 days)
 SORT file.ctime DESC
 ```
 
-### Technologies Maîtrisées
+### Mastered Technologies
 ```dataview
 TABLE difficulty, time-to-master
 FROM "concepts"
@@ -205,11 +205,11 @@ SORT difficulty DESC
 ```bash
 cd ~/abGitHub/devops-cloud_vault
 
-# Si pas déjà fait
+# If not already done
 git init
 git remote add origin <your-repo-url>
 
-# Premier commit
+# First commit
 git add .
 git commit -m "Initial vault setup"
 git push -u origin main
@@ -238,27 +238,27 @@ git push -u origin main
 
 ## 🎨 Graph View Configuration
 
-### Ouvrir Graph View
+### Open Graph View
 ```
-Ctrl+G ou View → Graph view
+Ctrl+G or View → Graph view
 ```
 
-### Filtres Utiles
+### Useful Filters
 ```
-# Montrer seulement concepts
+# Show only concepts
 path:concepts
 
-# Montrer seulement Docker
+# Show only Docker
 tag:#docker
 
-# Exclure cheatsheets
+# Exclude cheatsheets
 -path:cheatsheets
 
-# Seulement notes maîtrisées
+# Only mastered notes
 tag:#status/mastered
 ```
 
-### Groupes de Couleurs
+### Color Groups
 ```
 Settings → Graph view → Groups
 
@@ -272,7 +272,7 @@ Group 4: tag:#status/learning → Red
 
 ## 🗂️ Templates
 
-### Créer Template Folder
+### Create Template Folder
 ```
 Settings → Core Plugins → Templates
 Template folder location: meta/templates
@@ -584,41 +584,41 @@ Key takeaway.
 
 ---
 
-## 🔍 Raccourcis Obsidian Essentiels
+## 🔍 Essential Obsidian Shortcuts
 
 ```
-Ctrl+N         : Nouvelle note
-Ctrl+O         : Quick switcher (ouvrir note par nom)
-Ctrl+P         : Palette de commandes
-Ctrl+Shift+F   : Recherche globale
+Ctrl+N         : New note
+Ctrl+O         : Quick switcher (open note by name)
+Ctrl+P         : Command palette
+Ctrl+Shift+F   : Global search
 Ctrl+G         : Graph view
-Ctrl+Click     : Ouvrir lien dans nouveau pane
+Ctrl+Click     : Open link in new pane
 Ctrl+E         : Toggle edit/preview
-[[             : Créer lien (auto-complétion)
-Ctrl+K         : Insérer lien
+[[             : Create link (auto-complete)
+Ctrl+K         : Insert link
 ```
 
 ---
 
-## ✅ Checklist Setup
+## ✅ Setup Checklist
 
 ### Installation
-- [ ] Installer Obsidian
-- [ ] Ouvrir vault existant
-- [ ] Activer core plugins (Graph, Backlinks, Templates)
-- [ ] Installer community plugins (Git, Dataview)
+- [ ] Install Obsidian
+- [ ] Open existing vault
+- [ ] Enable core plugins (Graph, Backlinks, Templates)
+- [ ] Install community plugins (Git, Dataview)
 
 ### Configuration
-- [ ] Configurer Git plugin (auto-commit)
-- [ ] Configurer Templates folder
-- [ ] Configurer Graph view groups
-- [ ] Tester recherche et navigation
+- [ ] Configure Git plugin (auto-commit)
+- [ ] Configure Templates folder
+- [ ] Configure Graph view groups
+- [ ] Test search and navigation
 
 ### Validation
-- [ ] Graph view affiche connexions
-- [ ] Git auto-commit fonctionne
-- [ ] Templates disponibles
-- [ ] Recherche fonctionne rapidement
+- [ ] Graph view displays connections
+- [ ] Git auto-commit works
+- [ ] Templates available
+- [ ] Search works quickly
 
 ---
 

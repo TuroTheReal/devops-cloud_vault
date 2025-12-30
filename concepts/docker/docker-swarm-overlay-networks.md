@@ -398,21 +398,6 @@ sudo ufw allow 4789/udp   # Overlay network traffic (VXLAN)
 
 ---
 
-## 📊 Stats
-
-```yaml
-Total time: 12h (50% assisted / 50% autonomous)
-Status: ✅ Mastered
-Used in: [[2025-12-glasck-deployment/learnings]]
-```
-
----
-
-**Validation date**: 2025-12-23
-**Total time**: 13h30
-
----
-
 ## 🧠 Retrieval Practice
 
 Test your understanding without looking back:
@@ -440,6 +425,15 @@ Test your understanding without looking back:
 
 **Answer**: By default only Swarm services can connect to overlay networks. `attachable: true` allows standalone containers (docker run) to also join. Useful for mixed environments (services + standalone containers) and debugging - you can spin up temporary container on network to test connectivity.
 </details>
+
+---
+
+## 📊 Stats
+
+```yaml
+Total time: 12h (50% assisted / 50% autonomous)
+Used in: [[2025-12-glasck-deployment/learnings]]
+```
 
 ---
 

@@ -12,6 +12,23 @@ updated: 2025-12-26
 
 ---
 
+## 📚 Table of Contents
+
+1. [Files & Directories](#-files--directories)
+2. [Search & Find](#-search--find)
+3. [Text Processing](#-text-processing)
+4. [Pipes & Redirection](#-pipes--redirection)
+5. [Process Management](#️-process-management)
+6. [Network](#-network)
+7. [Permissions](#-permissions)
+8. [Archives & Compression](#-archives--compression)
+9. [Disk & Storage](#-disk--storage)
+10. [System Info](#-system-info)
+11. [Quick Reference](#-quick-reference)
+12. [Daily Workflow Examples](#-daily-workflow-examples)
+
+---
+
 ## 📂 Files & Directories
 
 ### Navigation

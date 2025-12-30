@@ -36,7 +36,7 @@ time-to-master: 1h
 
 ---
 
-## 📚 ccc
+## 📚 Key Concepts
 
 ### 1. Container Filesystem is Ephemeral
 
@@ -358,7 +358,6 @@ Test your understanding without looking back:
 
 ```yaml
 Total time: 1h (30% assisted / 70% autonomous)
-Status: 🟡 Learning
 Used in: [[2025-12-glasck-deployment/learnings]]
 ```
 

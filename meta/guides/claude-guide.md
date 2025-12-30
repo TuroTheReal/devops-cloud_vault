@@ -1,228 +1,228 @@
-# Passer au Top 1% avec Claude (Focus Autonomie)
+# Reaching the Top 1% with Claude (Autonomy Focus)
 
-## 🎯 Principe Fondamental
+## 🎯 Core Principle
 
-**Claude = Accélérateur d'apprentissage, PAS béquille**
+**Claude = Learning accelerator, NOT a crutch**
 
 ```
-Top 50% : "Claude, fais-le pour moi" → Dépendance
-Top 10% : Utilise workflow structuré → Efficace avec IA
-Top 1%  : Système anti-dépendance → Autonome ET rapide
+Top 50% : "Claude, do it for me" → Dependency
+Top 10% : Uses structured workflow → Effective with AI
+Top 1%  : Anti-dependency system → Autonomous AND fast
 ```
 
-**Objectif** : Sans Claude = Compétent (baseline)
-**Avec Claude** : 3-5x plus rapide
+**Goal** : Without Claude = Competent (baseline)
+**With Claude** : 3-5x faster
 
 ---
 
-## 📊 Auto-Évaluation Rapide
+## 📊 Quick Self-Assessment
 
-### Niveau actuel ?
+### Current level?
 
-**Niveau 0-50% : Dépendant**
+**Level 0-50%: Dependent**
 ```
-❌ Copy-paste sans comprendre
-❌ Bloqué sans Claude
-❌ Pas de documentation
-→ Portfolio vide de sens
-```
-
-**Niveau 50-80% : Compétent**
-```
-⚠️ Demande explications
-⚠️ Teste le code
-⚠️ Comprend 70% de son code
-→ Efficace avec Claude, galère sans
+❌ Copy-paste without understanding
+❌ Blocked without Claude
+❌ No documentation
+→ Empty portfolio
 ```
 
-**Niveau 80-95% : Avancé (Top 10%)**
+**Level 50-80%: Competent**
 ```
-✅ Workflow structuré
+⚠️ Asks for explanations
+⚠️ Tests the code
+⚠️ Understands 70% of their code
+→ Effective with Claude, struggles without
+```
+
+**Level 80-95%: Advanced (Top 10%)**
+```
+✅ Structured workflow
 ✅ Obsidian + Projects
-✅ Comprend 90%+ de son code
-→ Autonome mais plus lent sans IA
+✅ Understands 90%+ of their code
+→ Autonomous but slower without AI
 ```
 
-**Niveau 95-100% : Top 1%**
+**Level 95-100%: Top 1%**
 ```
-🏆 Système complet anti-dépendance
-🏆 Portfolio vraiment maîtrisé
-🏆 Peut enseigner aux autres
-🏆 Autonome ET rapide (IA = multiplicateur)
-→ Senior en 18 mois vs 3-5 ans
+🏆 Complete anti-dependency system
+🏆 Truly mastered portfolio
+🏆 Can teach others
+🏆 Autonomous AND fast (AI = multiplier)
+→ Senior in 18 months vs 3-5 years
 ```
 
 ---
 
-## 🎓 PHASE 1 : Fondation Anti-Dépendance (Semaines 1-4)
+## 🎓 PHASE 1: Anti-Dependency Foundation (Weeks 1-4)
 
-### Règle des 70/30 (STRICTE)
+### The 70/30 Rule (STRICT)
 
 ```
-Pour CHAQUE concept :
+For EACH concept:
 
-30% avec Claude
+30% with Claude
 ├─ Discovery (15%)
 ├─ Review (10%)
 └─ Feedback (5%)
 
-70% sans Claude
-├─ Docs officielles (20%)
-├─ Practice autonome (30%)
+70% without Claude
+├─ Official docs (20%)
+├─ Autonomous practice (30%)
 ├─ Tests (15%)
 └─ Documentation (5%)
 ```
 
-**Tracking dans Obsidian :**
+**Tracking in Obsidian:**
 ```markdown
 ## Time Tracking - [Concept]
 
-Avec Claude : 1h (25%) ✅
-Sans Claude : 3h (75%) ✅
-Ratio OK : <30%
+With Claude: 1h (25%) ✅
+Without Claude: 3h (75%) ✅
+Ratio OK: <30%
 ```
 
 ---
 
-### Checklist Maîtrise (OBLIGATOIRE)
+### Mastery Checklist (MANDATORY)
 
-**Avant de passer au concept suivant, 100% de :**
+**Before moving to the next concept, 100% of:**
 
 ```markdown
-## Maîtrise : [Concept]
+## Mastery: [Concept]
 
-### Compréhension (sans notes, oral)
-- [ ] Expliquer en 2 min
-- [ ] 3 cas d'usage concrets
-- [ ] 2 pièges courants
-- [ ] Comparer avec alternative
+### Understanding (without notes, verbal)
+- [ ] Explain in 2 min
+- [ ] 3 concrete use cases
+- [ ] 2 common pitfalls
+- [ ] Compare with alternative
 
-### Application (code de mémoire)
-- [ ] Exemple fonctionnel (20 min max)
-- [ ] Débugger problème artificiel
-- [ ] Adapter à nouveau use case
-- [ ] Expliquer chaque ligne
+### Application (code from memory)
+- [ ] Working example (20 min max)
+- [ ] Debug artificial problem
+- [ ] Adapt to new use case
+- [ ] Explain every line
 
 ### Solidification
-- [ ] Note Obsidian complète
-- [ ] Cheatsheet créé
-- [ ] Lab perso utilisant concept
-- [ ] Test rétention J+7 : ✅
+- [ ] Complete Obsidian note
+- [ ] Cheatsheet created
+- [ ] Personal lab using concept
+- [ ] Retention test Day+7: ✅
 
-SI <100% → 1 semaine supplémentaire sur concept
+IF <100% → 1 additional week on concept
 ```
 
 ---
 
-### "No Claude Day" Hebdomadaire
+### Weekly "No Claude Day"
 
 ```
-Chaque semaine : 1 jour SANS Claude
+Every week: 1 day WITHOUT Claude
 
-Objectif : Feature complète autonome
+Goal: Complete feature autonomously
 
-Autorisé :
-✅ Docs officielles
-✅ Vos notes Obsidian
-✅ Stack Overflow (lecture)
+Allowed:
+✅ Official docs
+✅ Your Obsidian notes
+✅ Stack Overflow (reading)
 
-Interdit :
-❌ Claude (.ai ou Code)
-❌ ChatGPT, autres LLM
-❌ Copy-paste code externe
+Forbidden:
+❌ Claude (.ai or Code)
+❌ ChatGPT, other LLMs
+❌ Copy-paste external code
 
-Validation :
-✅ Feature fonctionnelle en 4-6h
+Validation:
+✅ Working feature in 4-6h
 ✅ Production-ready
-✅ Documentée
+✅ Documented
 
-Template dans Obsidian :
+Template in Obsidian:
 ```markdown
 # No Claude Day - 2025-12-23
 
-## Objectif
-[Feature à implémenter]
+## Goal
+[Feature to implement]
 
 ## Timeline
-09:00-10:00 : Planning
-10:00-12:00 : Implementation
-**BLOQUÉ** : [issue] (1h)
-13:00-15:00 : Résolu + finition
+09:00-10:00: Planning
+10:00-12:00: Implementation
+**BLOCKED**: [issue] (1h)
+13:00-15:00: Resolved + finalization
 
-## Résultat
+## Result
 ✅ Feature OK
-✅ Temps : 4h
-✅ Autonome
+✅ Time: 4h
+✅ Autonomous
 
 ## Learnings
-[Ce que j'ai appris]
+[What I learned]
 
-## Review Claude (après)
-[Demander review le lendemain]
+## Claude Review (after)
+[Ask for review the next day]
 ```
 
 ---
 
-## 🎓 PHASE 2 : Workflow Optimisé (Semaines 5-12)
+## 🎓 PHASE 2: Optimized Workflow (Weeks 5-12)
 
-### Template de Prompt Anti-Dépendance
+### Anti-Dependency Prompt Template
 
 ```markdown
-CONTEXTE
-Niveau : [débutant/intermédiaire sur ce sujet]
-Prérequis maîtrisés : [[concept-1]], [[concept-2]]
-Objectif : Comprendre et maîtriser [CONCEPT]
+CONTEXT
+Level: [beginner/intermediate on this topic]
+Prerequisites mastered: [[concept-1]], [[concept-2]]
+Goal: Understand and master [CONCEPT]
 
-APPROCHE
-1. Explique le concept et le "pourquoi"
-2. 2-3 cas d'usage concrets
-3. Exemple simple puis avancé
-4. 3 pièges courants
-5. Compare avec [ALTERNATIVE]
+APPROACH
+1. Explain the concept and the "why"
+2. 2-3 concrete use cases
+3. Simple then advanced example
+4. 3 common pitfalls
+5. Compare with [ALTERNATIVE]
 
 FORMAT
-- Explication conceptuelle (pas juste syntaxe)
-- Code commenté (FR pour logique)
-- Ressources officielles
+- Conceptual explanation (not just syntax)
+- Commented code (FR for logic)
+- Official resources
 
-APRÈS TA RÉPONSE
-Je vais :
-- Lire doc officielle (30-60 min)
-- Reproduire sans ton code (30 min)
-- Lab pratique (1-2h)
-- Revenir pour review de MON code
+AFTER YOUR RESPONSE
+I will:
+- Read official docs (30-60 min)
+- Reproduce without your code (30 min)
+- Practical lab (1-2h)
+- Come back for review of MY code
 
-❌ Ne me facilite PAS trop
-✅ Challenge-moi avec exercice pratique
+❌ Don't make it TOO easy for me
+✅ Challenge me with practical exercise
 ```
 
 ---
 
-### Batch de Questions
+### Batch Questions
 
-**❌ Inefficace** :
+**❌ Inefficient**:
 ```
-Q1 : "C'est quoi K8s Ingress ?" (10 min)
-Q2 : "Comment TLS ?" (10 min)
-Q3 : "nginx-ingress vs traefik ?" (10 min)
-Total : 30 min, 3 messages
+Q1: "What is K8s Ingress?" (10 min)
+Q2: "How TLS?" (10 min)
+Q3: "nginx-ingress vs traefik?" (10 min)
+Total: 30 min, 3 messages
 ```
 
-**✅ Optimal** :
+**✅ Optimal**:
 ```
-"Questions K8s Ingress pour projet :
+"K8s Ingress questions for project:
 
-1. CONCEPT : Ingress vs Service LoadBalancer
-2. IMPLÉMENTATION : Ingress nginx + TLS
-3. ALTERNATIVES : nginx vs traefik vs ALB
-4. PRODUCTION : Best practices
+1. CONCEPT: Ingress vs Service LoadBalancer
+2. IMPLEMENTATION: Ingress nginx + TLS
+3. ALTERNATIVES: nginx vs traefik vs ALB
+4. PRODUCTION: Best practices
 
-Contexte : 3 microservices, routing par path.
+Context: 3 microservices, routing by path.
 
-Pour chaque : réponse concise + exemple + doc officielle.
-Ensuite je pratique et reviens."
+For each: concise answer + example + official docs.
+Then I'll practice and come back."
 
-Total : 15 min, 1 message, réponse cohérente
+Total: 15 min, 1 message, coherent response
 ```
 
 ---
@@ -232,294 +232,294 @@ Total : 15 min, 1 message, réponse cohérente
 ```markdown
 # metrics/monthly-review.md
 
-## Décembre 2025
+## December 2025
 
-| Concept | Heures | Avec Claude | Ratio |
+| Concept | Hours | With Claude | Ratio |
 |---------|--------|-------------|-------|
 | K8s Ingress | 4h | 1h (25%) | ✅ |
 | Terraform | 5h | 1.5h (30%) | ✅ |
 | AWS EKS | 6h | 3h (50%) | ⚠️ |
 
-**Mois : 18h total, 5.5h Claude (30%)** ✅
+**Month: 18h total, 5.5h Claude (30%)** ✅
 
 ### No Claude Days
-- Semaine 1 : ✅ Success
-- Semaine 2 : ⚠️ Struggled
-- Semaine 3 : ✅ Success
-- Semaine 4 : ✅ Success
+- Week 1: ✅ Success
+- Week 2: ⚠️ Struggled
+- Week 3: ✅ Success
+- Week 4: ✅ Success
 
-**Success rate : 75%** ✅
+**Success rate: 75%** ✅
 
-### Vitesse (avec IA vs sans)
-| Tâche | Sans IA | Avec IA | Gain |
+### Speed (with AI vs without)
+| Task | Without AI | With AI | Gain |
 |-------|---------|---------|------|
 | Feature | 3h | 1h | 3x |
 | Debug | 2h | 30min | 4x |
-| Architecture | 1j | 3h | 2.6x |
+| Architecture | 1d | 3h | 2.6x |
 
-**Target : 3-5x sur toutes tâches**
+**Target: 3-5x on all tasks**
 ```
 
 ---
 
-## 🎓 PHASE 3 : Contribution (Semaines 13-24)
+## 🎓 PHASE 3: Contribution (Weeks 13-24)
 
 ### 1. Rubber Duck Teaching
 
 ```
-Chaque concept maîtrisé → Expliquer à quelqu'un
+Each mastered concept → Explain to someone
 
-Format : 10 min sans notes
+Format: 10 min without notes
 
-Si blocage → Concept PAS maîtrisé → Retour Phase 1
+If blocked → Concept NOT mastered → Back to Phase 1
 ```
 
-**Documenter** :
+**Document**:
 ```markdown
 # teaching-log.md
 
-## 2025-12-23 : K8s Ingress
+## 2025-12-23: K8s Ingress
 
-Enseigné à : Pierre
-Durée : 15 min
-Support : Tableau blanc
+Taught to: Pierre
+Duration: 15 min
+Support: Whiteboard
 
-✅ Bien marché : Analogie réceptionniste
-❌ Bloqué sur : Ingress Controller watches API
-→ Revoir [[k8s-controllers]]
+✅ Worked well: Receptionist analogy
+❌ Blocked on: Ingress Controller watches API
+→ Review [[k8s-controllers]]
 
-Feedback : "Clair, merci !"
+Feedback: "Clear, thanks!"
 ```
 
 ---
 
-### 2. Open Source (1+ contribution/mois)
+### 2. Open Source (1+ contribution/month)
 
 ```markdown
 # open-source.md
 
-## Objectif : 1 contribution/mois
+## Goal: 1 contribution/month
 
 ### Process
-1. Choisir issue "good first issue"
-2. Comprendre contexte (1-2 jours)
-3. Implémenter SANS Claude
-4. Review Claude optionnel
+1. Choose "good first issue" issue
+2. Understand context (1-2 days)
+3. Implement WITHOUT Claude
+4. Claude review optional
 5. Submit PR
-6. Itérer feedback
+6. Iterate feedback
 
-### Décembre 2025
-- terraform-provider-aws : Typo docs → ✅ Merged
-- prometheus-exporter : Add metric → 🔄 In review
+### December 2025
+- terraform-provider-aws: Typo docs → ✅ Merged
+- prometheus-exporter: Add metric → 🔄 In review
 ```
 
 ---
 
-### 3. Blog (1 article/mois)
+### 3. Blog (1 article/month)
 
 ```markdown
 # writing/blog.md
 
-## Objectif : 1 article/mois
+## Goal: 1 article/month
 
 ### Process
-1. Concept maîtrisé (checklist 100%)
+1. Mastered concept (100% checklist)
 2. Outline (20 min)
-3. Draft (2-3h) SANS Claude
-4. Review Claude (30 min)
+3. Draft (2-3h) WITHOUT Claude
+4. Claude review (30 min)
 5. Publish (Dev.to, Medium)
 6. Promote (LinkedIn, Twitter)
 
 ### Backlog
-- "K8s Ingress expliqué simplement"
-- "Terraform Remote State : Guide complet"
-- "10 erreurs K8s à éviter"
+- "K8s Ingress explained simply"
+- "Terraform Remote State: Complete guide"
+- "10 K8s mistakes to avoid"
 ```
 
 ---
 
-## 🎓 PHASE 4 : Top 1% Validation
+## 🎓 PHASE 4: Top 1% Validation
 
-### Test 1 : No Claude Week
+### Test 1: No Claude Week
 
 ```
-1 semaine SANS Claude
+1 week WITHOUT Claude
 
-Projet : Microservices app (3+ services)
-Stack : Terraform + K8s + CI/CD
+Project: Microservices app (3+ services)
+Stack: Terraform + K8s + CI/CD
 
-Autorisé :
-✅ Docs officielles
-✅ Vos notes Obsidian
+Allowed:
+✅ Official docs
+✅ Your Obsidian notes
 
-Validation :
-✅ Projet fonctionnel end-to-end
+Validation:
+✅ Working end-to-end project
 ✅ Production-ready
-✅ <40h travail
-✅ Qualité 8/10+
+✅ <40h work
+✅ Quality 8/10+
 
-SI SUCCESS → ✅ Autonomie validée
+IF SUCCESS → ✅ Autonomy validated
 ```
 
 ---
 
-### Test 2 : Coding Interview
+### Test 2: Coding Interview
 
 ```
-Interview DevOps simulé (60 min)
+Simulated DevOps interview (60 min)
 
-Sans notes, sans Claude
+Without notes, without Claude
 
-Questions :
+Questions:
 1. Architecture (20 min)
 2. Troubleshooting (15 min)
-3. Concepts techniques (15 min)
+3. Technical concepts (15 min)
 4. Scenario (10 min)
 
-Validation :
-✅ Réponses claires
-✅ Process logique
-✅ Communication technique
+Validation:
+✅ Clear answers
+✅ Logical process
+✅ Technical communication
 
-SI SUCCESS → ✅ Communication validée
+IF SUCCESS → ✅ Communication validated
 ```
 
 ---
 
-### Test 3 : Architecture Challenge
+### Test 3: Architecture Challenge
 
 ```
-Design système complexe (4h)
+Design complex system (4h)
 
-Sans Claude pendant design
+Without Claude during design
 
-Deliverables :
+Deliverables:
 - Architecture diagram
 - ADR
 - Cost breakdown
 - Security analysis
 - DR plan
 
-Validation :
+Validation:
 ✅ Functional
 ✅ Scalable
 ✅ Secure
 ✅ Cost-effective
 
-SI SUCCESS → ✅ Architecture validée
+IF SUCCESS → ✅ Architecture validated
 ```
 
 ---
 
-## ✅ Checklist Complète Top 1%
+## ✅ Complete Top 1% Checklist
 
-### Phase 1 : Fondation (Sem 1-4)
-- [ ] Règle 70/30 respectée
-- [ ] Checklist maîtrise 100% tous concepts
-- [ ] 4 No Claude Days réussis
-- [ ] Tests rétention validés
+### Phase 1: Foundation (Week 1-4)
+- [ ] 70/30 rule respected
+- [ ] 100% mastery checklist all concepts
+- [ ] 4 successful No Claude Days
+- [ ] Retention tests validated
 
-### Phase 2 : Optimisation (Sem 5-12)
-- [ ] Templates prompts créés
-- [ ] Batch systématique
-- [ ] Metrics tracking actif
-- [ ] Ratio Claude <30%
+### Phase 2: Optimization (Week 5-12)
+- [ ] Prompt templates created
+- [ ] Systematic batching
+- [ ] Active metrics tracking
+- [ ] Claude ratio <30%
 
-### Phase 3 : Contribution (Sem 13-24)
-- [ ] 5+ concepts enseignés
-- [ ] 2+ OSS contributions mergées
-- [ ] 3+ articles blog publiés
-- [ ] Portfolio GitHub pro
+### Phase 3: Contribution (Week 13-24)
+- [ ] 5+ concepts taught
+- [ ] 2+ merged OSS contributions
+- [ ] 3+ published blog articles
+- [ ] Professional GitHub portfolio
 
-### Phase 4 : Validation
-- [ ] No Claude Week : SUCCESS
-- [ ] Interview simulé : SUCCESS
-- [ ] Architecture challenge : SUCCESS
+### Phase 4: Validation
+- [ ] No Claude Week: SUCCESS
+- [ ] Simulated interview: SUCCESS
+- [ ] Architecture challenge: SUCCESS
 
 ---
 
-## 📊 Score Auto-Évaluation
+## 📊 Self-Assessment Score
 
-**4 catégories, 10 points chacune :**
+**4 categories, 10 points each:**
 
-### Apprentissage (/10)
-- [ ] Ratio Claude <30%
-- [ ] Checklist 100% tous concepts
-- [ ] Tests rétention >90%
+### Learning (/10)
+- [ ] Claude ratio <30%
+- [ ] 100% checklist all concepts
+- [ ] Retention tests >90%
 - [ ] No Claude Day 100% success
-- [ ] Notes Obsidian complètes
-- [ ] Workflow documenté
-- [ ] Temps trackés
+- [ ] Complete Obsidian notes
+- [ ] Documented workflow
+- [ ] Tracked time
 - [ ] Questions backlog <5
-- [ ] Révisions à jour
-- [ ] Zéro concept status/learning >2 semaines
+- [ ] Reviews up to date
+- [ ] Zero concept status/learning >2 weeks
 
 ### Production (/10)
-- [ ] 3+ projets prod-ready
-- [ ] 0 secrets exposés
+- [ ] 3+ prod-ready projects
+- [ ] 0 exposed secrets
 - [ ] Tests >70% coverage
-- [ ] CI/CD automatisé
-- [ ] Monitoring configuré
-- [ ] Docs complètes
-- [ ] Code review systématique
-- [ ] Git workflow propre
+- [ ] Automated CI/CD
+- [ ] Configured monitoring
+- [ ] Complete docs
+- [ ] Systematic code review
+- [ ] Clean Git workflow
 - [ ] MTTR <2h
-- [ ] Backup testée
+- [ ] Tested backup
 
 ### Contribution (/10)
-- [ ] 2+ OSS mergées
+- [ ] 2+ merged OSS
 - [ ] 3+ articles (>500 views)
-- [ ] 5+ concepts enseignés
-- [ ] GitHub profile pro
-- [ ] LinkedIn actif
-- [ ] Portfolio visible
-- [ ] 1+ meetup présenté
+- [ ] 5+ concepts taught
+- [ ] Professional GitHub profile
+- [ ] Active LinkedIn
+- [ ] Visible portfolio
+- [ ] 1+ meetup presented
 - [ ] Stack Overflow >100 rep
-- [ ] Mentor 1+ personne
+- [ ] Mentor 1+ person
 - [ ] 3+ LinkedIn recommendations
 
-### Autonomie (/10)
-- [ ] No Claude Week validé
-- [ ] Interview simulé réussi
-- [ ] Architecture challenge validé
-- [ ] Peut expliquer tout son code
-- [ ] Débugger autonome (90%)
-- [ ] Résolution incidents
-- [ ] Veille techno structurée
-- [ ] Apprend sans tutorial
-- [ ] Contribue OSS sans guide
-- [ ] Donne tech advice
+### Autonomy (/10)
+- [ ] No Claude Week validated
+- [ ] Successful simulated interview
+- [ ] Architecture challenge validated
+- [ ] Can explain all their code
+- [ ] Autonomous debugger (90%)
+- [ ] Incident resolution
+- [ ] Structured tech watch
+- [ ] Learns without tutorial
+- [ ] Contributes OSS without guide
+- [ ] Gives tech advice
 
-### Score Total : __/40
+### Total Score: __/40
 
 ```
-0-10  : Débutant (normal si <3 mois)
-11-20 : Intermédiaire (Top 50%)
-21-30 : Avancé (Top 10%)
+0-10  : Beginner (normal if <3 months)
+11-20 : Intermediate (Top 50%)
+21-30 : Advanced (Top 10%)
 31-35 : Expert (Top 5%)
 36-40 : Master (Top 1%)
 ```
 
 ---
 
-## 🎯 Actions selon Score
+## 🎯 Actions by Score
 
-### Si <20 (Débutant)
-→ Focus Phase 1 : Règle 70/30 + Checklist maîtrise
-→ 1 concept/semaine vraiment maîtrisé
-→ Autonomie avant vitesse
+### If <20 (Beginner)
+→ Focus Phase 1: 70/30 Rule + Mastery checklist
+→ 1 concept/week truly mastered
+→ Autonomy before speed
 
-### Si 20-30 (Avancé)
-→ Focus Phase 3 : Contribution + Portfolio
+### If 20-30 (Advanced)
+→ Focus Phase 3: Contribution + Portfolio
 → Blog + OSS + Teaching
-→ Préparer validation top 1%
+→ Prepare top 1% validation
 
-### Si 30+ (Expert/Master)
-→ Maintenance continue
-→ Mentoring autres
+### If 30+ (Expert/Master)
+→ Continuous maintenance
+→ Mentoring others
 → Freelance/Senior positions
 
 ---
 
-**Temps investissement Top 1% : ~50h en setup + discipline continue**
-**ROI : Senior en 18 mois au lieu de 3-5 ans**
+**Time investment Top 1%: ~50h in setup + continuous discipline**
+**ROI: Senior in 18 months instead of 3-5 years**

@@ -3,7 +3,7 @@
 ## 📋 Metadata
 
 ```yaml
-tags: [concept, [tech], status/learning]
+tags: [concept, [tech], status/learning/learned/mastered]
 created: YYYY-MM-DD
 difficulty: ⭐⭐ (2/5)
 time-to-master: 4h
@@ -110,7 +110,9 @@ time-to-master: 4h
 
 ---
 
+<!--
 ## 🧠 Retrieval Practice
+ONLY INCLUDE THIS SECTION IF status/learning
 
 Test your understanding without looking back:
 
@@ -134,13 +136,14 @@ Test your understanding without looking back:
 
 <!-- Add Q4 only if necessary - keep it SHORT (3-4 questions max) -->
 
+-->
+
 ---
 
 ## 📊 Stats
 
 ```yaml
 Total time: Xh (X% assisted / X% autonomous)
-Status: 🟡 Learning / ✅ Mastered
 Used in: [[project-1]], [[project-2]]
 ```
 

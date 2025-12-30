@@ -449,7 +449,6 @@ Test your understanding without looking back:
 
 ```yaml
 Total time: 45min (45% assisted / 55% autonomous)
-Status: 🟡 Learning
 Used in: [[2025-12-vps-hetzner-init-setup/learnings]]
 ```
 

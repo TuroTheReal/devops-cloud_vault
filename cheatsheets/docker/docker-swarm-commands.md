@@ -12,6 +12,24 @@ updated: 2025-12-23
 
 ---
 
+## 📚 Table of Contents
+
+1. [Quick Start](#-quick-start)
+2. [Stack Management](#-stack-management)
+3. [Network Management](#-network-management)
+4. [Common Deploy Labels (Traefik)](#️-common-deploy-labels-traefik)
+5. [Deployment Strategies](#-deployment-strategies)
+6. [Healthchecks](#-healthchecks)
+7. [Placement & Constraints](#-placement--constraints)
+8. [Resource Limits](#-resource-limits)
+9. [Debugging & Inspection](#-debugging--inspection)
+10. [Node Management](#-node-management)
+11. [Monitoring](#-monitoring)
+12. [Common Issues & Solutions](#-common-issues--solutions)
+13. [Best Practices](#-best-practices)
+
+---
+
 ## 🚀 Quick Start
 
 ```bash

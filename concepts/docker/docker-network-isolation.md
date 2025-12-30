@@ -592,21 +592,6 @@ docker network ls --filter name=${STACK_NAME}_ -q | xargs -r docker network rm
 
 ---
 
-## 📊 Stats
-
-```yaml
-Total time: 8h (40% assisted / 60% autonomous)
-Status: ✅ Mastered
-Used in: [[2025-12-glasck-deployment/learnings]]
-```
-
----
-
-**Validation date**: 2025-12-23
-**Total time**: 8h
-
----
-
 ## 🧠 Retrieval Practice
 
 Test your understanding without looking back:
@@ -634,6 +619,15 @@ Test your understanding without looking back:
 
 **Answer**: Service on two networks but missing `traefik.docker.network` label. Traefik doesn't know which network to use for backend routing, may choose wrong one (private network where Traefik isn't connected). Always set `traefik.docker.network=stackname_public-facing` label to explicitly specify routing network.
 </details>
+
+---
+
+## 📊 Stats
+
+```yaml
+Total time: 8h (40% assisted / 60% autonomous)
+Used in: [[2025-12-glasck-deployment/learnings]]
+```
 
 ---
 

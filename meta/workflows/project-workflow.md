@@ -1,23 +1,23 @@
-# Workflow Projet : Claude + Obsidian + Git
+# Project Workflow: Claude + Obsidian + Git
 
-## 🎯 Vue d'ensemble
+## 🎯 Overview
 
 ```
-Design (Claude.ai) → Implémentation (Claude Code) → Doc (Obsidian) → Git
+Design (Claude.ai) → Implementation (Claude Code) → Docs (Obsidian) → Git
 ```
 
 ---
 
-## 📋 PHASE 1 : Préparation (15 min)
+## 📋 PHASE 1: Preparation (15 min)
 
-### Questions clés
+### Key questions
 ```
-- Objectif ? [Lab / Portfolio / Production]
-- Stack ? [AWS/Azure, K8s/ECS, Terraform, etc.]
-- Contraintes ? [Budget, timeline, complexité]
+- Goal? [Lab / Portfolio / Production]
+- Stack? [AWS/Azure, K8s/ECS, Terraform, etc.]
+- Constraints? [Budget, timeline, complexity]
 ```
 
-### Structure locale
+### Local structure
 ```bash
 mkdir -p ~/projects/[project-name]/{infra,k8s,apps,docs,scripts}
 cd ~/projects/[project-name]
@@ -26,136 +26,136 @@ git init
 
 ---
 
-## 📋 PHASE 2 : Design (Claude.ai, 30-60 min)
+## 📋 PHASE 2: Design (Claude.ai, 30-60 min)
 
-### 1. Créer Project Claude
+### 1. Create Claude Project
 ```
 Project → Create
-Nom : "Infrastructure - [Project]"
-Custom Instructions : Voir template ci-dessous
+Name: "Infrastructure - [Project]"
+Custom Instructions: See template below
 ```
 
 ### 2. Custom Instructions
 ```markdown
-CONTEXTE
-Projet : [Nom]
-Type : [Lab/Portfolio/Prod]
-Stack : [Technologies]
-Contraintes : Budget [X€/mois], Timeline [X semaines]
+CONTEXT
+Project: [Name]
+Type: [Lab/Portfolio/Prod]
+Stack: [Technologies]
+Constraints: Budget [X€/month], Timeline [X weeks]
 
 MODE
-Assume bases DevOps/Cloud (post-42).
-Focus : production-ready, sécurité, coûts.
+Assume DevOps/Cloud basics (post-42).
+Focus: production-ready, security, costs.
 
 REVIEW
-- Sécurité (secrets, SG, permissions)
-- Performance (ressources, caching)
-- Coûts (estimation mensuelle)
-- Maintenabilité (DRY, docs)
+- Security (secrets, SG, permissions)
+- Performance (resources, caching)
+- Costs (monthly estimate)
+- Maintainability (DRY, docs)
 ```
 
 ### 3. Upload Knowledge Base
 ```
-À uploader :
-✅ docs/architecture.md (template vide OK)
-✅ docs/conventions.md (vos standards)
-❌ Pas de code au début
+To upload:
+✅ docs/architecture.md (empty template OK)
+✅ docs/conventions.md (your standards)
+❌ No code at start
 ```
 
-### 4. Session Design
+### 4. Design Session
 ```markdown
-Prompt :
+Prompt:
 
-"Projet : [NOM]
+"Project: [NAME]
 
-OBJECTIF
-[Description claire]
+GOAL
+[Clear description]
 
-CONTRAINTES
-- Budget : [X€/mois]
-- Timeline : [X semaines]
+CONSTRAINTS
+- Budget: [X€/month]
+- Timeline: [X weeks]
 
 STACK
-- Cloud : AWS
-- Compute : [ECS/EKS/EC2]
-- Database : [RDS/DynamoDB]
+- Cloud: AWS
+- Compute: [ECS/EKS/EC2]
+- Database: [RDS/DynamoDB]
 
-BESOIN
-1. Propose architecture avec alternatives
-2. Estime coûts mensuels par option
-3. Identifie risques
-4. Recommande MVP
+NEED
+1. Propose architecture with alternatives
+2. Estimate monthly costs per option
+3. Identify risks
+4. Recommend MVP
 
-Ne génère PAS de code, validons l'approche d'abord."
+Don't generate code, let's validate the approach first."
 ```
 
-### 5. Documenter décisions (Obsidian)
+### 5. Document decisions (Obsidian)
 ```markdown
 # projects/[project]/decisions.md
 
-## ADR-001: Choix compute (2025-12-23)
+## ADR-001: Compute choice (2025-12-23)
 
 **Options**
-1. ECS Fargate : ~100€/mois, simple
-2. EKS : ~150€/mois, flexible
-3. EC2 : ~50€/mois, complexe
+1. ECS Fargate: ~100€/month, simple
+2. EKS: ~150€/month, flexible
+3. EC2: ~50€/month, complex
 
-**Décision** : ECS Fargate
+**Decision**: ECS Fargate
 
 **Rationale**
-- Lab/Portfolio, focus app pas infra
+- Lab/Portfolio, focus app not infra
 - Budget OK
-- Démarrage rapide
+- Quick start
 
 **Trade-offs**
-+ Simplicité
-- Lock-in AWS
++ Simplicity
+- AWS lock-in
 ```
 
 ---
 
-## 📋 PHASE 3 : Implémentation (Claude Code, 1-3h)
+## 📋 PHASE 3: Implementation (Claude Code, 1-3h)
 
-### 1. Créer architecture.md (Obsidian)
+### 1. Create architecture.md (Obsidian)
 ```markdown
 # [Project] - Architecture
 
-## Diagram ASCII
-[Diagramme simple]
+## ASCII Diagram
+[Simple diagram]
 
-## Composants
-- Frontend : S3 + CloudFront (~5€/mois)
-- Backend : ECS Fargate (~80€/mois)
-- Database : RDS (~25€/mois)
-- Total : ~110€/mois
+## Components
+- Frontend: S3 + CloudFront (~5€/month)
+- Backend: ECS Fargate (~80€/month)
+- Database: RDS (~25€/month)
+- Total: ~110€/month
 
 ## Security Groups
-[Rules principales]
+[Main rules]
 
 ## Phases
-- [ ] Phase 1 : Infrastructure (Semaine 1)
-- [ ] Phase 2 : Application (Semaine 2)
-- [ ] Phase 3 : CI/CD (Semaine 3)
+- [ ] Phase 1: Infrastructure (Week 1)
+- [ ] Phase 2: Application (Week 2)
+- [ ] Phase 3: CI/CD (Week 3)
 ```
 
-### 2. Implémenter (Claude Code)
+### 2. Implement (Claude Code)
 ```bash
 cd ~/projects/[project]/infra/terraform/
 
-claude "Init Terraform pour architecture dans docs/architecture.md.
+claude "Init Terraform for architecture in docs/architecture.md.
 
-Structure :
+Structure:
 - main.tf, network.tf, compute.tf, database.tf
 - Remote state S3 + DynamoDB
 - Variables, outputs
-- Tags standardisés
+- Standardized tags
 
-Production-ready, commenté FR."
+Production-ready, commented FR."
 ```
 
-### 3. Review files générés
+### 3. Review generated files
 ```bash
-# Review chaque fichier
+# Review each file
 cat network.tf
 
 # Test syntax
@@ -163,23 +163,23 @@ terraform init
 terraform validate
 terraform plan
 
-# Corrections si besoin avec Claude Code
-claude "Ajoute second NAT Gateway pour HA"
+# Corrections if needed with Claude Code
+claude "Add second NAT Gateway for HA"
 ```
 
-### 4. Review avec Claude.ai
+### 4. Review with Claude.ai
 ```markdown
-"Review ce Terraform :
+"Review this Terraform:
 
-[Coller fichiers principaux]
+[Paste main files]
 
-Checklist :
-- Sécurité (SG, encryption, secrets)
-- Best practices Terraform
-- Coûts optimisés
+Checklist:
+- Security (SG, encryption, secrets)
+- Terraform best practices
+- Optimized costs
 - Naming conventions
 
-Pointe bien ET mal."
+Point out good AND bad."
 ```
 
 ### 5. Commit
@@ -196,7 +196,7 @@ git push
 
 ---
 
-## 📋 PHASE 4 : Documentation (Obsidian, 45-60 min avec templates simplifiés)
+## 📋 PHASE 4: Documentation (Obsidian, 45-60 min with simplified templates)
 
 ### projects/[project]/README.md
 ```markdown
@@ -213,8 +213,8 @@ terraform apply
 ```
 
 ## Monitoring
-- Dashboard : [URL]
-- App : [URL]
+- Dashboard: [URL]
+- App: [URL]
 
 ## Troubleshooting
 See [[troubleshooting/[project]-issues]]
@@ -225,7 +225,7 @@ See [[troubleshooting/[project]-issues]]
 # Conventions
 
 ## Naming
-Format : [project]-[env]-[resource]-[name]
+Format: [project]-[env]-[resource]-[name]
 Ex: myapp-prod-vpc-main
 
 ## Git Commits
@@ -233,138 +233,138 @@ feat(scope): description
 fix(scope): description
 
 ## Terraform
-- Variables obligatoires
-- Tags standards
-- Commentaires FR pour logique
+- Required variables
+- Standard tags
+- FR comments for logic
 ```
 
-### Upload dans Claude KB
+### Upload to Claude KB
 ```
-Re-upload dans Project :
+Re-upload to Project:
 - architecture.md (updated)
 - conventions.md
 ```
 
 ---
 
-## 📋 PHASE 5 : Workflow Quotidien
+## 📋 PHASE 5: Daily Workflow
 
-### Pour chaque feature
+### For each feature
 
 ```
 1. DESIGN (Claude.ai, 15 min)
-   "Feature [X], propose approche"
+   "Feature [X], propose approach"
 
 2. CODE (Claude Code, 1-2h)
-   Implémenter + tests locaux
+   Implement + local tests
 
 3. REVIEW (Claude.ai, 15 min)
-   Review code, checklist sécurité
+   Review code, security checklist
 
 4. DOC (Obsidian, 15 min)
    Update architecture.md
-   Learnings documentés
+   Document learnings
 
 5. COMMIT (Git, 5 min)
-   Message clair, push
+   Clear message, push
 ```
 
-### Si bloqué >30 min
+### If blocked >30 min
 ```
-1. Créer troubleshooting/[date]-[issue].md
-2. Demander Claude (contexte détaillé)
-3. Appliquer solution
+1. Create troubleshooting/[date]-[issue].md
+2. Ask Claude (detailed context)
+3. Apply solution
 4. Update troubleshooting note
 ```
 
 ---
 
-## 📋 PHASE 6 : Clôture (Retrospective)
+## 📋 PHASE 6: Closure (Retrospective)
 
 ### projects/[project]/retrospective.md
 ```markdown
 # Retrospective
 
-Date : 2026-01-23
-Durée : 4 semaines
-Heures : ~80h
+Date: 2026-01-23
+Duration: 4 weeks
+Hours: ~80h
 
-## Objectifs vs Réalisé
-- [x] App déployée AWS
-- [x] CI/CD automatisé
-- [ ] Multi-région (dépriorisé)
+## Goals vs Achieved
+- [x] App deployed AWS
+- [x] Automated CI/CD
+- [ ] Multi-region (deprioritized)
 
-## Ce qui a bien marché
-✅ Workflow Claude + Obsidian
+## What worked well
+✅ Claude + Obsidian workflow
 ✅ ECS Fargate = simple
-✅ Documentation au fil de l'eau
+✅ Documentation as we go
 
-## Ce qui a mal tourné
-❌ Underestimation networking (2 jours perdus)
-❌ Budget dépassé : 130€ vs 110€ prévu
+## What went wrong
+❌ Underestimated networking (2 days lost)
+❌ Budget exceeded: 130€ vs 110€ planned
 
-## Learnings techniques
-- [[aws-vpc-advanced]] vraiment maîtrisé
-- [[terraform-modules]] réutilisables
+## Technical learnings
+- [[aws-vpc-advanced]] truly mastered
+- [[terraform-modules]] reusable
 
-## Concepts à approfondir
-- [ ] [[eks-basics]] pour prochain projet
+## Concepts to deepen
+- [ ] [[eks-basics]] for next project
 - [ ] [[aws-cost-optimization]]
 
-## Réutilisable
-- Modules Terraform → ~/terraform-modules/
+## Reusable
+- Terraform modules → ~/terraform-modules/
 - Scripts → ~/scripts-library/
 - CI template → ~/ci-templates/
 
 ## Next Steps
-- [ ] Multi-région setup
+- [ ] Multi-region setup
 - [ ] Auto-scaling
-- [ ] CDN pour assets
+- [ ] CDN for assets
 ```
 
 ---
 
-## ✅ Checklist Complète
+## ✅ Complete Checklist
 
 ### Setup
-- [ ] Définir scope & contraintes
-- [ ] Structure filesystem + Git
-- [ ] Project Claude.ai créé
-- [ ] Custom Instructions configurées
-- [ ] KB initiale uploadée
+- [ ] Define scope & constraints
+- [ ] Filesystem structure + Git
+- [ ] Claude.ai Project created
+- [ ] Custom Instructions configured
+- [ ] Initial KB uploaded
 
 ### Design
-- [ ] Session design avec Claude
-- [ ] Décisions documentées (ADR)
-- [ ] Architecture.md créée
-- [ ] Coûts validés
+- [ ] Design session with Claude
+- [ ] Documented decisions (ADR)
+- [ ] architecture.md created
+- [ ] Costs validated
 
-### Implémentation
-- [ ] Code avec Claude Code
-- [ ] Tests locaux OK
-- [ ] Review Claude.ai
-- [ ] Commit avec message clair
+### Implementation
+- [ ] Code with Claude Code
+- [ ] Local tests OK
+- [ ] Claude.ai review
+- [ ] Commit with clear message
 
-### Documentation (templates simplifiés = gain temps 65%)
-- [ ] Project learnings.md rempli (45-60 min avec project-template)
-- [ ] Concepts extraits (30-40 min/concept avec concept-template)
-- [ ] Cheatsheet mis à jour optionnel (20-30 min avec cheatsheet-template)
-- [ ] Architecture.md synchronized
-- [ ] KB Claude à jour
+### Documentation (simplified templates = 65% time saved)
+- [ ] Project learnings.md filled (45-60 min with project-template)
+- [ ] Concepts extracted (30-40 min/concept with concept-template)
+- [ ] Optional cheatsheet updated (20-30 min with cheatsheet-template)
+- [ ] architecture.md synchronized
+- [ ] Claude KB up to date
 
-### Clôture
-- [ ] Code réutilisable extrait
-- [ ] Portfolio mis à jour
-- [ ] Projet archivé
+### Closure
+- [ ] Reusable code extracted
+- [ ] Portfolio updated
+- [ ] Project archived
 
 ---
 
-**Temps moyen projet simple : 40-60h sur 2-3 semaines**
-**Temps moyen projet complexe : 80-120h sur 4-6 semaines**
+**Average time simple project: 40-60h over 2-3 weeks**
+**Average time complex project: 80-120h over 4-6 weeks**
 
-**Documentation post-projet** :
-- **Avant** : 7h30 (templates complexes)
-- **Après** : 1h30 (templates simplifiés)
-- **Gain** : 80% temps économisé ✅
+**Post-project documentation**:
+- **Before**: 7h30 (complex templates)
+- **After**: 1h30 (simplified templates)
+- **Gain**: 80% time saved ✅
 
-**Voir** : [[../guides/templates-usage-guide]] pour référence rapide
+**See**: [[../guides/templates-usage-guide]] for quick reference

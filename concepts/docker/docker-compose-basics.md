@@ -463,7 +463,6 @@ Test your understanding without looking back:
 
 ```yaml
 Total time: 1h30 (35% assisted / 65% autonomous)
-Status: 🟡 Learning
 Used in: [[2025-12-glasck-deployment/learnings]]
 ```
 
