@@ -57,10 +57,10 @@ In the rapidly evolving DevOps landscape, having organized, searchable, and acti
 ```
 devops-cloud_vault/
 │
-├── 📖 cheatsheets/           # Quick reference guides
-│   ├── docker/               # Docker, Compose, Swarm commands
+├── 📖 cheatsheets/           # Quick reference cheatsheets/guides
+│   ├── docker/               # Docker, Compose, Swarm
 │   ├── linux/                # Linux basics & security
-│   ├── github/               # Git & GitHub workflows
+│   ├── github/               # Git & GitHub
 │   ├── traefik/              # Reverse proxy
 │   └── taskfile/             # Task automation
 │
@@ -331,7 +331,7 @@ Track your progress in each document:
 ### Status Indicators
 ```
 ⏳ Learning      - Active study phase
-✅ Learned    - Hands-on application
+✅ Learned       - Hands-on application
 🎓 Mastered      - Can teach and apply
 ```
 
@@ -359,7 +359,6 @@ This vault supports preparation for:
 - **MOCs**: 3 learning paths (Docker Production, Linux Security, Networking)
 - **Troubleshooting**: Planned for future
 - **Last Updated**: 2025-12-30
-- **Completion**: ~35% (foundation solidly established + version control mastered)
 
 ## Resources
 
