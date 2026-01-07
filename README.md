@@ -4,7 +4,7 @@
   <img src="https://img.shields.io/badge/DevOps-Learning-blue.svg"/>
   <img src="https://img.shields.io/badge/Cloud-AWS%20%7C%20Azure%20%7C%20GCP-orange.svg"/>
   <img src="https://img.shields.io/badge/Status-Active-success.svg"/>
-  <img src="https://img.shields.io/badge/License-MIT-yellow.svg"/>
+  <img src="https://img.shields.io/badge/License-CC%20BY%204.0-yellow.svg"/>
 </p>
 
 <p align="center">
@@ -33,6 +33,8 @@
 ## About
 
 **DevOps Cloud Vault** is a personal knowledge base for mastering DevOps and Cloud technologies. This repository serves as a structured learning environment combining theory, practice, and real-world problem-solving.
+
+> **Note**: This is a personal learning vault - some notes are polished, some are drafts. Feel free to use it as inspiration for your own knowledge base. Projects referenced are personal and may not be public.
 
 ### Why This Vault?
 
@@ -401,7 +403,7 @@ This vault supports preparation for:
 
 ---
 
-**License**: MIT
+**License**: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) - Free to use and adapt with attribution
 **Version**: 2.1
 **Last Updated**: 2025-12-30
 **Philosophy**: Learn by doing, document everything, share knowledge

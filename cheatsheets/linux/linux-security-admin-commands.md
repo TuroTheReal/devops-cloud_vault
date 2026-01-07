@@ -76,8 +76,8 @@ nano ~/.ssh/config
 
 # Example config
 Host myserver
-    HostName 91.99.92.50
-    User arthur
+    HostName myIPserver
+    User myname
     Port 2222
     IdentityFile ~/.ssh/id_ed25519_hetzner
 
