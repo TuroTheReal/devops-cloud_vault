@@ -7,7 +7,7 @@ tags: [project, docker, docker-compose, traefik, production, automation, 2025-12
 started: 2025-12-01
 completed: 2025-12-20
 duration: ~40h total (15h infrastructure, 10h debugging, 10h automation, 5h optimization)
-real-repo: https://github.com/Glasck-int (private)
+real-repo: private
 status: production
 ```
 
@@ -226,8 +226,8 @@ deploy:
 ```yaml
 vars:
   SERVICES: |
-    front-website:git@github.com:Glasck-int/front.git
-    api-fastify:git@github.com:Glasck-int/api.git
+    front-website:git@github.com:your-org/frontend.git
+    api-backend:git@github.com:your-org/api.git
 
 tasks:
   setup-l:
@@ -441,13 +441,12 @@ docker service ps glasck_front-website --filter "desired-state=running"
 ## 🔗 Links & Resources
 
 ### Project Repository
-- **Main repo**: GitHub Glasck-int (private)
-- **Infrastructure code**: [deployment/](https://github.com/Glasck-int/deployment)
+- **Main repo**: Private repository
 - **Source files**:
-  - [stack.vps.yml](/home/artberna/abGitHub/Glasck/deployment/docker/stack.vps.yml)
-  - [stack.dev.yml](/home/artberna/abGitHub/Glasck/deployment/docker/stack.dev.yml)
-  - [Taskfile.yml](/home/artberna/abGitHub/Glasck/deployment/Taskfile.yml)
-  - [traefik.yml](/home/artberna/abGitHub/Glasck/deployment/config/traefik/traefik.yml)
+  - `docker/docker-compose.vps.yml` - Infrastructure stack
+  - `docker/docker-compose.prod.yml` - Application stack
+  - `Taskfile.yml` - Automation tasks
+  - `config/traefik/traefik.yml` - Reverse proxy config
 
 ### Related Projects
 - [[projects/2024-XX-transcendence-monitoring]] - Monitoring stack (ELK, Prometheus, Grafana)
