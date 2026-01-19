@@ -115,6 +115,20 @@ After completing this path, you'll be ready for:
 
 ---
 
+## 🔧 Troubleshooting
+
+**Common issues and solutions**:
+
+1. **[[troubleshooting/docker/restart-config-not-applied]]** ⭐⭐
+   - Container config not applied after VPS reboot
+   - `docker restart` ≠ `docker-compose up -d`
+
+2. **[[troubleshooting/docker/disk-full-logs]]** ⭐⭐
+   - Disk full from container logs
+   - Log rotation and limits
+
+---
+
 ## 📖 Quick Reference
 
 **Core concepts to remember**:
@@ -132,8 +146,9 @@ After completing this path, you'll be ready for:
 - Forgetting to use overlay networks in Swarm (services on different nodes can't communicate without overlay)
 - Publishing same port multiple times (Swarm routing mesh handles this - trust it!)
 - Assuming containers are mini-VMs (containers run processes, not operating systems - process exits = container exits)
+- Using `docker restart` instead of `docker-compose up -d` (restart uses frozen config, up applies current compose)
 
 ---
 
 **Created**: 2025-12-26
-**Last updated**: 2025-12-26
+**Last updated**: 2026-01-19

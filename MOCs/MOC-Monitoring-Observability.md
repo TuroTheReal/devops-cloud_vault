@@ -58,14 +58,15 @@ Master the 3 pillars of observability (Metrics, Logs, Traces) with focus on Prom
 
 | Stack | Components | Complexity | Best for |
 |-------|------------|------------|----------|
-| **PLG** (Recommended) | Promtail + Loki + Grafana | ⭐⭐ Light | Small/medium, already using Grafana |
+| **Loki** (Recommended) | Alloy + Loki + Grafana | ⭐⭐ Light | Small/medium, already using Grafana |
 | **ELK** | Elasticsearch + Logstash + Kibana | ⭐⭐⭐⭐ Heavy | Large scale, full-text search, analytics |
 
-#### Option A: PLG Stack (Recommended for starters, or small budget/space)
+#### Option A: Loki + Alloy Stack (Recommended for starters, or small budget/space)
 
-5a. **[[concepts/monitoring/plg-stack-basics]]** ⭐⭐ (4h) *(coming soon)*
-   - **Why PLG**: Same visualizer as metrics (Grafana), lighter than ELK, label-based like Prometheus
-   - **You'll learn**: Promtail agent, Loki storage, LogQL queries
+5a. **[[concepts/monitoring/loki-alloy-basics]]** ⭐⭐⭐ (6h)
+   - **Why Loki**: Same visualizer as metrics (Grafana), lighter than ELK, label-based like Prometheus
+   - **You'll learn**: Alloy collector, Loki storage, LogQL queries
+   - **Cheatsheet**: [[cheatsheets/loki/logql-commands]]
 
 **PLG vs ELK comparison**:
 ```
@@ -99,6 +100,10 @@ PLG (Promtail + Loki + Grafana)          ELK (Elasticsearch + Logstash + Kibana)
 7. **[[troubleshooting/docker/disk-full-logs]]** ⭐⭐ (1h)
    - **Why now**: Logs can fill disk and crash the whole monitoring stack
    - **You'll learn**: Log rotation, Docker limits, cleanup
+
+8. **[[troubleshooting/docker/restart-config-not-applied]]** ⭐⭐ (30min)
+   - **Why now**: Docker restart ≠ config reload - monitoring targets go "down" after VPS reboot
+   - **You'll learn**: Container lifecycle, docker-compose up vs restart, network reconnection
 
 **✅ Checkpoint**: You can diagnose and solve common monitoring stack problems.
 
@@ -151,4 +156,4 @@ After completing this path:
 ---
 
 **Created**: 2025-01-07
-**Last updated**: 2025-01-07
+**Last updated**: 2026-01-19
