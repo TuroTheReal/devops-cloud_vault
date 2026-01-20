@@ -182,7 +182,7 @@ full_backup_2026-01-15_monthly.tar.gz
 └── User uploads / generated files
 ```
 
-**Note**: Versioning (Semantic Versioning like v1.2.3) is a Git/release management topic → see [[git-versioning]] (concept to create).
+**Note**: Versioning (Semantic Versioning like v1.2.3) is a Git/release management topic → see [[git-semantic-versioning]].
 
 ---
 

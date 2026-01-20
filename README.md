@@ -70,7 +70,7 @@ devops-cloud_vault/
 │   ├── docker/               # 11 concepts (containers, networks, swarm, backup)
 │   ├── networking/           # Fundamentals, OSI Model, ICMP
 │   ├── linux/                # Security, firewall (5 concepts)
-│   ├── git/                  # Version control fundamentals
+│   ├── git/                  # 2 concepts (fundamentals, semantic versioning)
 │   ├── traefik/              # Reverse proxy concepts
 │   └── monitoring/           # Observability basics (2 concepts)
 │
@@ -356,7 +356,7 @@ This vault supports preparation for:
 
 - **Total Documents**: 52 active documents
 - **Cheatsheets**: 8 (Docker × 3, Linux × 2, Git/GitHub, Traefik, Taskfile)
-- **Concepts**: 22 (Docker ecosystem, Networking, Linux security, Git/GitHub)
+- **Concepts**: 23 (Docker ecosystem, Networking, Linux security, Git/GitHub)
 - **Projects**: 4 real-world learning reports (~300h documented)
 - **MOCs**: 3 learning paths (Docker Production, Linux Security, Networking)
 - **Troubleshooting**: Planned for future
