@@ -67,7 +67,7 @@ devops-cloud_vault/
 │   └── taskfile/             # Task automation
 │
 ├── 💡 concepts/              # Deep dives and theory
-│   ├── docker/               # 10 concepts (containers, networks, swarm)
+│   ├── docker/               # 11 concepts (containers, networks, swarm, backup)
 │   ├── networking/           # Fundamentals, OSI Model, ICMP
 │   ├── linux/                # Security, firewall (5 concepts)
 │   ├── git/                  # Version control fundamentals
@@ -155,7 +155,7 @@ cat concepts/docker/docker-why-containers.md  # (coming soon)
 - Overlay networks, service discovery, rolling updates
 - Traefik reverse proxy with automatic SSL
 
-**Time Invested**: ~50h
+**Time Invested**: ~68h
 **Projects**: [Glasck Deployment](projects/2025-12-glasck-deployment/), [Docker concepts](concepts/docker/)
 **MOC**: [MOC-Docker-Production](MOCs/MOC-Docker-Production.md)
 
@@ -356,11 +356,11 @@ This vault supports preparation for:
 
 - **Total Documents**: 52 active documents
 - **Cheatsheets**: 8 (Docker × 3, Linux × 2, Git/GitHub, Traefik, Taskfile)
-- **Concepts**: 21 (Docker ecosystem, Networking, Linux security, Git/GitHub)
+- **Concepts**: 22 (Docker ecosystem, Networking, Linux security, Git/GitHub)
 - **Projects**: 4 real-world learning reports (~300h documented)
 - **MOCs**: 3 learning paths (Docker Production, Linux Security, Networking)
 - **Troubleshooting**: Planned for future
-- **Last Updated**: 2025-12-30
+- **Last Updated**: 2026-01-20
 
 ## Resources
 
@@ -404,7 +404,5 @@ This vault supports preparation for:
 ---
 
 **License**: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) - Free to use and adapt with attribution
-**Version**: 2.1
-**Last Updated**: 2025-12-30
-**Philosophy**: Learn by doing, document everything, share knowledge
-**Progress**: 3 learning paths completed, ~300h documented, foundation established + version control mastered
+**Version**: 2.2
+**Last Updated**: 2026-01-20
