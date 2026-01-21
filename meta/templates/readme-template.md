@@ -19,6 +19,7 @@
 ## Table of Contents
 - [About](#about)
 - [Content Structure](#content-structure)
+- [Infrastructure Diagram (Optional)](#infrastructure-diagram-optional)
 - [Quick Start](#quick-start)
 - [Categories](#categories)
 - [Usage Guide](#usage-guide)
@@ -61,6 +62,53 @@ This section helps with:
 - **[Category 1]**: [What it contains]
 - **[Category 2]**: [What it contains]
 - **[Category 3]**: [What it contains]
+
+## Infrastructure Diagram (Optional)
+
+> **Note**: Include this section only when documenting infrastructure, architecture, or system design.
+
+### Architecture Overview
+
+<!-- Example using graph TB - choose the appropriate Mermaid type based on your content -->
+```mermaid
+graph TB
+    subgraph "Example Architecture"
+        A[Component 1] --> B[Component 2]
+        B --> C[Component 3]
+    end
+```
+
+### Mermaid Diagram Types
+
+Choose the diagram type based on your content:
+
+| Type | Syntax | Best For |
+|------|--------|----------|
+| `graph TB/LR` | `graph TB` | Architecture, component relationships, infrastructure |
+| `flowchart` | `flowchart LR` | Workflows, CI/CD pipelines, decision trees |
+| `sequenceDiagram` | `sequenceDiagram` | API calls, service interactions, request flows |
+| `stateDiagram` | `stateDiagram-v2` | State machines, lifecycle, status transitions |
+| `classDiagram` | `classDiagram` | Class relationships, data models |
+| `erDiagram` | `erDiagram` | Database schemas, entity relationships |
+
+**Live editor**: [mermaid.live](https://mermaid.live)
+
+### Diagram Guidelines
+
+- **Format**: Prefer Mermaid (native GitHub/GitLab rendering) or PNG/SVG for complex diagrams
+- **Tools**: [draw.io](https://draw.io), [Excalidraw](https://excalidraw.com), [Lucidchart](https://lucidchart.com)
+- **Naming**: Store images in `assets/` or `diagrams/` folder
+- **Alt text**: Always include description for accessibility
+
+### When to Include
+
+- Multi-component architectures
+- Cloud infrastructure (AWS, GCP, Azure)
+- Kubernetes deployments
+- CI/CD pipelines
+- Network topologies
+
+---
 
 ## Quick Start
 
