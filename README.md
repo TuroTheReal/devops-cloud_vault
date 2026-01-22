@@ -203,7 +203,7 @@ cat concepts/docker/docker-why-containers.md  # (coming soon)
 
 ---
 
-### ☁️ Path 4: Cloud AWS (started)
+### ☁️ Path 4: Cloud AWS (will dive deeper soon)
 
 **Goal**: Master AWS core services for production workloads
 
@@ -217,7 +217,7 @@ cat concepts/docker/docker-why-containers.md  # (coming soon)
 
 ---
 
-### 🏗️ Path 5: Infrastructure as Code (started)
+### 🏗️ Path 5: Infrastructure as Code (will dive deeper soon)
 
 **Goal**: Automate infrastructure provisioning and configuration
 
@@ -330,7 +330,7 @@ cat concepts/docker/docker-why-containers.md  # (coming soon)
 
 ## Learning Philosophy
 
-### 70-30 Rule Target
+### Targeting 70-30 Rule
 - **70% Hands-On**: Building, breaking, fixing
 - **30% Assisted**: Claude, docs, tutorials
 
@@ -375,19 +375,16 @@ Track your progress in each document:
 ```
 
 ### Certification Prep
-This vault supports preparation for:
+This vault will support preparation for:
 - **AWS Certified Solutions Architect**
 - **Certified Kubernetes Administrator (CKA)**
-- **Terraform Associate**
-- **Docker Certified Associate**
+- **Terraform Hashicorp Associate**
 
 ## Coming Next
 
-- [ ] Add troubleshooting guides for Docker/networking issues
 - [ ] Create Kubernetes learning path MOC
 - [ ] Start AWS VPC networking concepts
 - [ ] Add CI/CD concepts (GitHub Actions)
-- [ ] Monitoring basics (Prometheus/Grafana concepts)
 
 ## Statistics
 
@@ -396,7 +393,7 @@ This vault supports preparation for:
 - **Concepts**: 23 (Docker ecosystem, Networking, Linux security, Git/GitHub)
 - **Projects**: 4 real-world learning reports (~300h documented)
 - **MOCs**: 3 learning paths (Docker Production, Linux Security, Networking)
-- **Troubleshooting**: Planned for future
+- **Troubleshooting**: 3 Personal experiences
 - **Last Updated**: 2026-01-20
 
 ## Resources
@@ -431,11 +428,11 @@ This vault supports preparation for:
 </p>
 
 <p align="center">
-  <i>Built with 🧠 for continuous learning and 💪 for career growth</i>
+  <i>Built for continuous learning and career skills</i>
 </p>
 
 <p align="center">
-  Made with focus by <a href="https://github.com/TuroTheReal">Arthur Bernard</a>
+  Made by <a href="https://github.com/TuroTheReal">Arthur Bernard</a>
 </p>
 
 ---
