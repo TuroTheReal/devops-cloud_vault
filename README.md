@@ -388,13 +388,13 @@ This vault will support preparation for:
 
 ## Statistics
 
-- **Total Documents**: 52 active documents
-- **Cheatsheets**: 8 (Docker × 3, Linux × 2, Git/GitHub, Traefik, Taskfile)
-- **Concepts**: 23 (Docker ecosystem, Networking, Linux security, Git/GitHub)
-- **Projects**: 4 real-world learning reports (~300h documented)
-- **MOCs**: 3 learning paths (Docker Production, Linux Security, Networking)
+- **Total Documents**: 62 active documents
+- **Cheatsheets**: 11 (Docker × 3, Linux × 2, Git/GitHub, Traefik, Taskfile, AWS, Terraform, Ansible)
+- **Concepts**: 26 (Docker, Networking, Linux, Git, AWS, Terraform, Ansible)
+- **Projects**: 5 real-world learning reports (~340h documented)
+- **MOCs**: 5 learning paths (Docker, Linux Security, Networking, Cloud AWS, IaC)
 - **Troubleshooting**: 3 Personal experiences
-- **Last Updated**: 2026-01-20
+- **Last Updated**: 2025-01-22
 
 ## Resources
 
@@ -438,5 +438,5 @@ This vault will support preparation for:
 ---
 
 **License**: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) - Free to use and adapt with attribution
-**Version**: 2.2
-**Last Updated**: 2026-01-20
+**Version**: 2.3
+**Last Updated**: 2025-01-22
