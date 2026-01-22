@@ -154,7 +154,7 @@ cp ~/projects/my-project/scripts/deploy.sh ~/devops-cloud_tools/scripts/terrafor
 
 # 4. Update knowledge base
 # - Add pitfalls to concepts/terraform/state-management.md
-# - Add commands to cheatsheets/terraform/terraform.md
+# - Add commands to cheatsheets/terraform/terraform-commands.md
 # - Create troubleshooting/terraform/new-error.md if needed
 
 # 5. Commit everything

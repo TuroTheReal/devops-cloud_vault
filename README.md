@@ -64,7 +64,10 @@ devops-cloud_vault/
 │   ├── linux/                # Linux basics & security
 │   ├── github/               # Git & GitHub
 │   ├── traefik/              # Reverse proxy
-│   └── taskfile/             # Task automation
+│   ├── taskfile/             # Task automation
+│   ├── aws/                  # AWS CLI commands
+│   ├── terraform/            # Terraform commands
+│   └── ansible/              # Ansible commands
 │
 ├── 💡 concepts/              # Deep dives and theory
 │   ├── docker/               # 11 concepts (containers, networks, swarm, backup)
@@ -72,18 +75,24 @@ devops-cloud_vault/
 │   ├── linux/                # Security, firewall (5 concepts)
 │   ├── git/                  # 2 concepts (fundamentals, semantic versioning)
 │   ├── traefik/              # Reverse proxy concepts
-│   └── monitoring/           # Observability basics (2 concepts)
+│   ├── monitoring/           # Observability basics (2 concepts)
+│   ├── aws/                  # AWS fundamentals (EC2, IAM, SG)
+│   ├── terraform/            # IaC provisioning
+│   └── ansible/              # Configuration management
 │
 ├── 🚀 projects/              # Real-world learning reports
 │   ├── 2024-11-ft-ping-traceroute/      # Network programming (C, ICMP)
 │   ├── 2024-XX-transcendence-monitoring/# Observability (ELK, Prometheus, Grafana)
 │   ├── 2025-12-glasck-deployment/       # Docker Swarm production deployment
-│   └── 2025-12-vps-hetzner-init-setup/  # VPS setup & hardening
+│   ├── 2025-12-vps-hetzner-init-setup/  # VPS setup & hardening
+│   └── 2025-01-aws-terraform-ansible/   # IaC WordPress deployment on AWS
 │
 ├── 🗺️ MOCs/                   # Maps of Content (learning paths)
 │   ├── MOC-Docker-Production.md         # Container orchestration
 │   ├── MOC-Linux-Security.md            # System hardening
-│   └── MOC-Networking-Fundamentals.md   # OSI, ICMP, Docker networks
+│   ├── MOC-Networking-Fundamentals.md   # OSI, ICMP, Docker networks
+│   ├── MOC-Cloud-AWS.md                 # AWS cloud services
+│   └── MOC-Infrastructure-as-Code.md    # Terraform & Ansible
 │
 ├── 🔧 troubleshooting/       # Debug guides (planned)
 │
@@ -194,6 +203,34 @@ cat concepts/docker/docker-why-containers.md  # (coming soon)
 
 ---
 
+### ☁️ Path 4: Cloud AWS (started)
+
+**Goal**: Master AWS core services for production workloads
+
+**Completed learnings**:
+- AWS fundamentals (EC2, IAM, Security Groups)
+- Basic service overview (S3, VPC, RDS, ECS, Lambda)
+
+**Time Invested**: ~10h
+**Projects**: [AWS-Terraform-Ansible](projects/2025-01-aws-terraform-ansible/)
+**MOC**: [MOC-Cloud-AWS](MOCs/MOC-Cloud-AWS.md)
+
+---
+
+### 🏗️ Path 5: Infrastructure as Code (started)
+
+**Goal**: Automate infrastructure provisioning and configuration
+
+**Completed learnings**:
+- Terraform workflow (init/plan/apply, tfstate, providers)
+- Ansible basics (playbooks, inventory, idempotence, modules)
+
+**Time Invested**: ~27h
+**Projects**: [AWS-Terraform-Ansible](projects/2025-01-aws-terraform-ansible/)
+**MOC**: [MOC-Infrastructure-as-Code](MOCs/MOC-Infrastructure-as-Code.md)
+
+---
+
 ### 📋 Planned Paths (Not Yet Started)
 
 **☸️ Kubernetes** (planned):
@@ -201,16 +238,7 @@ cat concepts/docker/docker-why-containers.md  # (coming soon)
 - StatefulSets, ConfigMaps, Secrets
 - Helm charts, operators
 
-**☁️ Cloud Platforms** (AWS focus):
-- VPC, EC2, S3, RDS
-- ECS, EKS (container orchestration)
-- IAM, CloudFormation
-
-**🏗️ Infrastructure as Code**:
-- Terraform (state management, modules)
-- Ansible (playbooks, roles)
-
-**🔄 CI/CD & GitOps**:
+**🔄 CI/CD & GitOps** (planned):
 - GitHub Actions
 - ArgoCD for GitOps
 
@@ -244,15 +272,24 @@ cat concepts/docker/docker-why-containers.md  # (coming soon)
 - **Traefik**: Automatic SSL (Let's Encrypt), service discovery, path-based routing
 - **Layer 7 routing**: HTTP load balancing across containers
 
+### ☁️ Cloud AWS (started)
+- **EC2**: Instance types, AMIs, key pairs
+- **IAM**: Users, Groups, Roles, Policies (least privilege)
+- **Security Groups**: Instance-level firewall (ingress/egress)
+- **Services Overview**: S3, VPC, RDS, ECS, Lambda basics
+
+### 🏗️ Infrastructure as Code (started)
+- **Terraform**: init/plan/apply workflow, tfstate, providers, resources
+- **Ansible**: Playbooks, inventory, idempotence, modules, handlers
+- **Best Practices**: Separation of concerns (Terraform provisions, Ansible configures)
+
 ### 📝 Learning & Documentation ✅
 - **MOCs**: Structured learning paths for complex topics
 - **Project Learnings**: Real-world experience extraction
 - **Templates**: Reusable documentation patterns
 
 ### 📋 Planned (Not Yet Started)
-- ☁️ **Cloud Platforms**: AWS VPC, EC2, S3 (planned)
 - ☸️ **Kubernetes**: Pod networking, Services, Ingress (planned)
-- 🏗️ **IaC**: Terraform, Ansible (planned)
 - 🔄 **CI/CD**: GitHub Actions, GitOps (planned)
 - 📊 **Observability**: Prometheus, Grafana (planned)
 
@@ -273,7 +310,7 @@ cat concepts/docker/docker-why-containers.md  # (coming soon)
 → concepts/terraform/infrastructure-as-code.md
 
 # Then quick reference for HOW
-→ cheatsheets/terraform/terraform.md
+→ cheatsheets/terraform/terraform-commands.md
 
 # Finally practice with project
 → projects/intermediate/terraform-aws/
