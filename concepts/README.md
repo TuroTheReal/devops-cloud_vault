@@ -57,7 +57,7 @@ concepts/
 ├── ansible/          # 1 concept
 ├── terraform/        # 1 concept
 ├── traefik/          # 1 concept
-├── aws/              # 1 concept
+├── aws/              # 2 concepts
 └── README.md
 ```
 
@@ -174,6 +174,7 @@ graph LR
 | Document | Description | Status |
 |----------|-------------|--------|
 | [[aws-fundamentals]] | AWS basics | ✅ |
+| [[aws-cloud-practitioner-clf-c02]] | CLF-C02 key concepts cheat sheet | ✅ |
 | [[terraform-fundamentals]] | IaC workflow | ✅ |
 | [[ansible-fundamentals]] | Configuration mgmt | ✅ |
 
@@ -261,7 +262,7 @@ graph LR
 
 ## 📊 Stats
 
-- **Documents**: 28
+- **Documents**: 29
 - **Categories**: 9
 - **Last Updated**: 2025-01-22
 - **Completion**: 100%

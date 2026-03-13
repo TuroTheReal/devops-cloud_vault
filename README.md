@@ -34,7 +34,7 @@
 
 **DevOps Cloud Vault** is a personal knowledge base for mastering DevOps and Cloud technologies. This repository serves as a structured learning environment combining theory, practice, and real-world problem-solving.
 
-> **Note**: This is a personal learning vault - some notes are polished, some are drafts. Feel free to use it as inspiration for your own knowledge base. Projects referenced are personal and may not be public.
+> **Note**: Personal learning notes written in my own words — for my own understanding and skill traceability, not as a tutorial for others. Public for transparency. Feel free to reuse or adapt, but don't expect polished pedagogy: it's how *I* understood things, not necessarily the canonical way to explain them.
 
 ### Why This Vault?
 
@@ -76,7 +76,7 @@ devops-cloud_vault/
 │   ├── git/                  # 2 concepts (fundamentals, semantic versioning)
 │   ├── traefik/              # Reverse proxy concepts
 │   ├── monitoring/           # Observability basics (2 concepts)
-│   ├── aws/                  # AWS fundamentals (EC2, IAM, SG)
+│   ├── aws/                  # AWS fundamentals + Cloud Practitioner CLF-C02
 │   ├── terraform/            # IaC provisioning
 │   └── ansible/              # Configuration management
 │
@@ -277,6 +277,7 @@ cat concepts/docker/docker-why-containers.md  # (coming soon)
 - **IAM**: Users, Groups, Roles, Policies (least privilege)
 - **Security Groups**: Instance-level firewall (ingress/egress)
 - **Services Overview**: S3, VPC, RDS, ECS, Lambda basics
+- **Cloud Practitioner CLF-C02**: [Key concepts cheat sheet](concepts/aws/aws-cloud-practitioner-clf-c02.md)
 
 ### 🏗️ Infrastructure as Code (started)
 - **Terraform**: init/plan/apply workflow, tfstate, providers, resources
@@ -376,6 +377,7 @@ Track your progress in each document:
 
 ### Certification Prep
 This vault will support preparation for:
+- **AWS Certified Cloud Practitioner (CLF-C02)** — [cheat sheet available](concepts/aws/aws-cloud-practitioner-clf-c02.md)
 - **AWS Certified Solutions Architect**
 - **Certified Kubernetes Administrator (CKA)**
 - **Terraform Hashicorp Associate**
@@ -390,7 +392,7 @@ This vault will support preparation for:
 
 - **Total Documents**: 62 active documents
 - **Cheatsheets**: 11 (Docker × 3, Linux × 2, Git/GitHub, Traefik, Taskfile, AWS, Terraform, Ansible)
-- **Concepts**: 26 (Docker, Networking, Linux, Git, AWS, Terraform, Ansible)
+- **Concepts**: 27 (Docker, Networking, Linux, Git, AWS, Terraform, Ansible)
 - **Projects**: 5 real-world learning reports (~340h documented)
 - **MOCs**: 5 learning paths (Docker, Linux Security, Networking, Cloud AWS, IaC)
 - **Troubleshooting**: 3 Personal experiences

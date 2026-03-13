@@ -106,6 +106,10 @@ Prerequisites: [[MOCs/MOC-Networking-Fundamentals]], [[MOCs/MOC-Linux-Security]]
 After completing this path, you'll be ready for:
 - **AWS Certifications**: Solutions Architect Associate
 
+## 📝 Certification Notes
+
+- **[[concepts/aws/aws-cloud-practitioner-clf-c02]]** — CLF-C02 key concepts overview (cheat sheet)
+
 ---
 
 ## 📖 Quick Reference

@@ -10,7 +10,7 @@ time-to-master: 20h
 ```
 
 **Prerequisites**: [[concepts/networking/networking-fundamentals]]
-**Related to**: [[concepts/terraform/terraform-fundamentals]]
+**Related to**: [[concepts/terraform/terraform-fundamentals]] | [[concepts/aws/aws-cloud-practitioner-clf-c02]]
 **Official docs**: [AWS Docs](https://docs.aws.amazon.com/) | [AWS CLI Reference](https://docs.aws.amazon.com/cli/)
 
 ---
