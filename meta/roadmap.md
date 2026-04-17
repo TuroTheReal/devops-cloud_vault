@@ -4,19 +4,19 @@
 
 **Starting point**: 42 student, common core validated
 **Destination**: Cloud Architect Freelance (18-24 months)
-**Motivation**: Remote, independence, 70-120k€+/year
+**Motivation**: Remote, independence
 
 ---
 
 ## 📅 Timeline & Goals
 
-| Phase | Duration | Goal | Potential salary |
-|-------|-------|----------|-------------------|
-| **Phase 1** | Months 1-3 (300h) | Solid fundamentals | - |
-| **Phase 2** | Months 4-6 (300h) | DevOps Intermediate | 40-50k€ Junior |
-| **Phase 3** | Months 7-9 (250h) | SRE Ready | 50-65k€ |
-| **Phase 4** | Months 10-12 (200h) | Cloud Engineer | 65-80k€ + AWS SA Associate |
-| **Phase 5** | Months 13-18 (300h) | Cloud Architect | 90-120k€ + Viable freelance |
+| Phase | Duration | Goal |
+|-------|-------|----------|
+| **Phase 1** | Months 1-3 (300h) | Solid fundamentals |
+| **Phase 2** | Months 4-6 (300h) | DevOps Intermediate |
+| **Phase 3** | Months 7-9 (250h) | SRE Ready |
+| **Phase 4** | Months 10-12 (200h) | Cloud Engineer + AWS SA Associate |
+| **Phase 5** | Months 13-18 (300h) | Cloud Architect + Viable freelance |
 
 **Total: ~1350h over 18 months** (≈20h/week)
 
@@ -290,20 +290,6 @@ First freelance contract or Senior CDI
 
 ---
 
-## 💰 Salary Projection France
-
-| Level | XP | CDI | Freelance (TJM) |
-|--------|-----|-----|-----------------|
-| Junior DevOps | 0-2 years | 38-50k€ | 350-450€ |
-| DevOps Engineer | 2-4 years | 50-70k€ | 450-600€ |
-| Senior DevOps | 4-6 years | 70-90k€ | 600-800€ |
-| Cloud Architect | 6+ years | 90-120k€ | 800-1200€ |
-
-**Remote**: Possible from Junior
-**Viable freelance**: From 2 years XP (Months 12-18 of this roadmap)
-
----
-
 ## 📋 Key Milestones
 
 ### ✅ Month 3: Fundamentals
@@ -375,8 +361,6 @@ First freelance contract or Senior CDI
 - Certifications: ~$850
 - AWS labs: ~$100
 **Total: ~$1500** over 18 months
-
-**ROI**: First DevOps salary = 40k€+
 
 ---
 
