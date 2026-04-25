@@ -26,8 +26,10 @@
 - [How to Use This Vault](#how-to-use-this-vault)
 - [Learning Philosophy](#learning-philosophy)
 - [Progress Tracking](#progress-tracking)
-- [Contributing](#contributing)
-- [Roadmap](#roadmap)
+- [Coming Next](#coming-next)
+- [Statistics](#statistics)
+- [Resources](#resources)
+- [📝 Related Articles](#-related-articles)
 - [Contact](#contact)
 
 ## About
@@ -60,32 +62,34 @@ In the rapidly evolving DevOps landscape, having organized, searchable, and acti
 devops-cloud_vault/
 │
 ├── 📖 cheatsheets/           # Quick reference cheatsheets/guides
-│   ├── docker/               # Docker, Compose, Swarm
-│   ├── linux/                # Linux basics & security
-│   ├── github/               # Git & GitHub
-│   ├── traefik/              # Reverse proxy
-│   ├── taskfile/             # Task automation
+│   ├── ansible/              # Ansible commands
 │   ├── aws/                  # AWS CLI commands
+│   ├── docker/               # Docker, Compose, Swarm
+│   ├── github/               # Git & GitHub
+│   ├── linux/                # Linux basics & security
+│   ├── loki/                 # Loki log aggregation
+│   ├── prometheus/           # Prometheus metrics
+│   ├── taskfile/             # Task automation
 │   ├── terraform/            # Terraform commands
-│   └── ansible/              # Ansible commands
+│   └── traefik/              # Reverse proxy
 │
 ├── 💡 concepts/              # Deep dives and theory
-│   ├── docker/               # 11 concepts (containers, networks, swarm, backup)
-│   ├── networking/           # Fundamentals, OSI Model, ICMP
-│   ├── linux/                # Security, firewall (5 concepts)
-│   ├── git/                  # 2 concepts (fundamentals, semantic versioning)
-│   ├── traefik/              # Reverse proxy concepts
-│   ├── monitoring/           # Observability basics (2 concepts)
+│   ├── ansible/              # Configuration management
 │   ├── aws/                  # AWS fundamentals + Cloud Practitioner CLF-C02
+│   ├── docker/               # 11 concepts (containers, networks, swarm, backup)
+│   ├── git/                  # 2 concepts (fundamentals, semantic versioning)
+│   ├── linux/                # Security, firewall (5 concepts)
+│   ├── monitoring/           # Observability basics (2 concepts)
+│   ├── networking/           # Fundamentals, OSI Model, ICMP
 │   ├── terraform/            # IaC provisioning
-│   └── ansible/              # Configuration management
+│   └── traefik/              # Reverse proxy concepts
 │
 ├── 🚀 projects/              # Real-world learning reports
 │   ├── 2024-11-ft-ping-traceroute/      # Network programming (C, ICMP)
 │   ├── 2024-XX-transcendence-monitoring/# Observability (ELK, Prometheus, Grafana)
+│   ├── 2025-01-aws-terraform-ansible/   # IaC WordPress deployment on AWS
 │   ├── 2025-12-glasck-deployment/       # Docker Swarm production deployment
-│   ├── 2025-12-vps-hetzner-init-setup/  # VPS setup & hardening
-│   └── 2025-01-aws-terraform-ansible/   # IaC WordPress deployment on AWS
+│   └── 2025-12-vps-hetzner-init-setup/  # VPS setup & hardening
 │
 ├── 🗺️ MOCs/                   # Maps of Content (learning paths)
 │   ├── MOC-Docker-Production.md         # Container orchestration
@@ -94,11 +98,13 @@ devops-cloud_vault/
 │   ├── MOC-Cloud-AWS.md                 # AWS cloud services
 │   └── MOC-Infrastructure-as-Code.md    # Terraform & Ansible
 │
-├── 🔧 troubleshooting/       # Debug guides (planned)
+├── 🔧 troubleshooting/       # Debug guides
+│   ├── docker/               # Docker issues & resolutions
+│   └── monitoring/           # Observability debug notes
 │
 └── 📋 meta/                  # Templates and guides
-    ├── templates/            # Document templates
     ├── guides/               # Usage guides
+    ├── templates/            # Document templates
     └── workflows/            # Learning workflows
 ```
 
@@ -123,11 +129,11 @@ Then explore: concepts/docker/ + cheatsheets/docker/
 
 # Want to understand networking?
 Start with: MOCs/MOC-Networking-Fundamentals.md
-Then explore: concepts/networking/ + projects/ft-ping-traceroute/
+Then explore: concepts/networking/ + projects/2024-11-ft-ping-traceroute/
 
 # Setting up a VPS / Linux hardening?
 Start with: MOCs/MOC-Linux-Security.md
-Then explore: concepts/linux/ + projects/vps-hetzner-init/
+Then explore: concepts/linux/ + projects/2025-12-vps-hetzner-init-setup/
 
 # Learning from real projects?
 Browse: projects/ folder for real-world learning reports
@@ -148,7 +154,7 @@ tree -L 2  # if tree is installed
 cat cheatsheets/docker/docker-commands.md
 
 # Read a concept
-cat concepts/docker/docker-why-containers.md  # (coming soon)
+cat concepts/docker/docker-why-containers.md
 ```
 
 ## Learning Paths
@@ -247,7 +253,7 @@ cat concepts/docker/docker-why-containers.md  # (coming soon)
 ### 🐳 Containerization & Orchestration
 - **Docker**: Container lifecycle, images, layers, volumes, networks
 - **Docker Compose**: Multi-container apps, healthchecks
-- **Docker Swarm**: Discovering : clustering, overlay networks, rolling updates, secrets
+- **Docker Swarm**: Clustering, overlay networks, rolling updates, secrets
 - **Best Practices**: Security, optimization, multi-stage builds
 
 ### 🌐 Networking
@@ -284,6 +290,10 @@ cat concepts/docker/docker-why-containers.md  # (coming soon)
 - **Ansible**: Playbooks, inventory, idempotence, modules, handlers
 - **Best Practices**: Separation of concerns (Terraform provisions, Ansible configures)
 
+### 📊 Observability (started)
+- **Prometheus**: Metrics collection, exporters — [cheatsheet](cheatsheets/prometheus/)
+- **Loki**: Log aggregation, LogQL — [cheatsheet](cheatsheets/loki/)
+
 ### 📝 Learning & Documentation ✅
 - **MOCs**: Structured learning paths for complex topics
 - **Project Learnings**: Real-world experience extraction
@@ -292,41 +302,41 @@ cat concepts/docker/docker-why-containers.md  # (coming soon)
 ### 📋 Planned (Not Yet Started)
 - ☸️ **Kubernetes**: Pod networking, Services, Ingress (planned)
 - 🔄 **CI/CD**: GitHub Actions, GitOps (planned)
-- 📊 **Observability**: Prometheus, Grafana (planned)
+- 📊 **Advanced Observability**: Grafana dashboards, distributed tracing (planned)
 
 ## How to Use This Vault
 
 ### 1. Quick Command Lookup
 ```bash
 # Need a Docker command fast?
-→ cheatsheets/docker/docker.md
+→ cheatsheets/docker/
 
-# Kubernetes syntax?
-→ cheatsheets/kubernetes/kubectl.md
+# Terraform syntax?
+→ cheatsheets/terraform/
 ```
 
 ### 2. Learning New Technology
 ```bash
 # Start with concept to understand WHY
-→ concepts/terraform/infrastructure-as-code.md
+→ concepts/terraform/
 
 # Then quick reference for HOW
-→ cheatsheets/terraform/terraform-commands.md
+→ cheatsheets/terraform/
 
 # Finally practice with project
-→ projects/intermediate/terraform-aws/
+→ projects/2025-01-aws-terraform-ansible/
 ```
 
 ### 3. Debugging Issues
 ```bash
 # Search for error in troubleshooting
-→ troubleshooting/kubernetes/pod-failures.md
+→ troubleshooting/docker/
 
 # Understand root cause in concepts
-→ concepts/kubernetes/pod-lifecycle.md
+→ concepts/docker/
 
 # Verify fix with cheatsheet commands
-→ cheatsheets/kubernetes/kubectl.md
+→ cheatsheets/docker/
 ```
 
 ## Learning Philosophy
@@ -390,13 +400,13 @@ This vault will support preparation for:
 
 ## Statistics
 
-- **Total Documents**: 62 active documents
-- **Cheatsheets**: 11 (Docker × 3, Linux × 2, Git/GitHub, Traefik, Taskfile, AWS, Terraform, Ansible)
-- **Concepts**: 27 (Docker, Networking, Linux, Git, AWS, Terraform, Ansible)
+- **Total Documents**: 62+ active documents
+- **Cheatsheets**: 10 folders (ansible, aws, docker, github, linux, loki, prometheus, taskfile, terraform, traefik)
+- **Concepts**: 9 folders (ansible, aws, docker, git, linux, monitoring, networking, terraform, traefik)
 - **Projects**: 5 real-world learning reports (~340h documented)
 - **MOCs**: 5 learning paths (Docker, Linux Security, Networking, Cloud AWS, IaC)
-- **Troubleshooting**: 3 Personal experiences
-- **Last Updated**: 2025-01-22
+- **Troubleshooting**: 2 topics (docker, monitoring)
+- **Last Updated**: 2026-04
 
 ## Resources
 
@@ -424,7 +434,6 @@ Blog posts documenting the learning process and context behind this project:
 - 📝 [Building a Learning System with Obsidian + Claude](https://arthur-portfolio.com/en/blog/obsidian-claude-learning-system) — How I structure my DevOps/Cloud knowledge vault using Obsidian and Claude AI
 - 📝 [My DevOps/Cloud Engineer Roadmap](https://arthur-portfolio.com/en/blog/devops-roadmap) — 6-month learning plan from 42 common core to DevOps/Cloud Engineer
 
----
 ## Contact
 
 - **GitHub**: [@TuroTheReal](https://github.com/TuroTheReal)
@@ -449,4 +458,4 @@ Blog posts documenting the learning process and context behind this project:
 
 **License**: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) - Free to use and adapt with attribution
 **Version**: 2.3
-**Last Updated**: 2025-01-22
+**Last Updated**: 2026-04
