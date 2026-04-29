@@ -374,7 +374,6 @@ Every document includes:
 Track your progress in each document:
 - **Time Invested**: Total hours spent
 - **Claude Ratio**: Assisted vs independent time
-- **Retention Score**: Self-assessment after 7/30 days
 - **Projects Built**: Practical applications
 - **Errors Fixed**: Troubleshooting experience
 
