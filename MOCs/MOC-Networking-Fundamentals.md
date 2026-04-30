@@ -47,7 +47,7 @@ Master network fundamentals from Layer 3 protocols (IP, ICMP) to cloud networkin
      traceroute google.com      # Discover network path (TTL trick)
      ping -c 5 -i 0.5 1.1.1.1  # Advanced ping options
      ```
-   - **Reference projects**: [[ft-ping-traceroute-learnings]] (42 School implementation)
+   - **Reference projects**: [[2024-11-ft-ping-traceroute]] (42 School implementation)
 
 ---
 
@@ -153,4 +153,4 @@ curl -v http://<host>
 
 **Created**: 2025-12-29
 **Last updated**: 2025-12-29
-**Projects using this knowledge**: [[ft-ping-traceroute-learnings]], Docker Swarm deployments, K8s clusters
+**Projects using this knowledge**: [[2024-11-ft-ping-traceroute]], Docker Swarm deployments, K8s clusters

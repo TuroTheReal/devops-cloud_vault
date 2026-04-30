@@ -11,7 +11,7 @@ time-to-master: 10h
 ```
 
 **Prerequisites**: None (foundational)
-**Related to**: [[docker-swarm-overlay-networks]], [[linux-firewall-ufw]], [[ft-ping-traceroute-learnings]]
+**Related to**: [[docker-swarm-overlay-networks]], [[linux-firewall-ufw]], [[2024-11-ft-ping-traceroute]]
 **Learned from**: ft_ping, ft_traceroute (42 School projects)
 
 ---
@@ -216,7 +216,7 @@ Test your understanding without looking back:
 
 ```yaml
 Total time: 10h (40% assisted / 60% autonomous)
-Used in: [[2025-12-vps-hetzner-init-setup/learnings]], [[2024-11-ft-ping-traceroute/learnings]]
+Used in: [[2025-12-vps-hetzner-init-setup]], [[2024-11-ft-ping-traceroute]]
 ```
 
 ---

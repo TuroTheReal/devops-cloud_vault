@@ -173,7 +173,7 @@ Test your understanding without looking back:
 
 ```yaml
 Total time: 2h (30% assisted / 70% autonomous)
-Used in: [[2025-12-vps-hetzner-init-setup/learnings]]
+Used in: [[2025-12-vps-hetzner-init-setup]]
 ```
 
 ---

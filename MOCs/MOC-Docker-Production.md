@@ -102,7 +102,7 @@ Master Docker from fundamentals to production orchestration. You'll understand w
 
 ## 🛠️ Practice Project
 
-**Apply your knowledge**: [[2025-12-glasck-deployment/learnings]]
+**Apply your knowledge**: [[2025-12-glasck-deployment]]
 
 **What you'll build**: Deploy a full-stack application with Docker orchestration, featuring Traefik reverse proxy, Redis caching, automated health checks, rolling updates, and zero-downtime deployments.
 

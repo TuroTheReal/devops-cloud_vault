@@ -212,10 +212,10 @@ graph LR
 
 ### Internal
 
-- [[concepts]] - Where concept-template is applied
-- [[cheatsheets]] - Where cheatsheet-template is applied
-- [[projects]] - Where project-template is applied
-- [[troubleshooting]] - Where troubleshooting-template is applied
+- [[CONCEPTS]] - Where concept-template is applied
+- [[CHEATSHEETS]] - Where cheatsheet-template is applied
+- [[PROJECTS]] - Where project-template is applied
+- [[TROUBLESHOOTING]] - Where troubleshooting-template is applied
 - [[MOCS]] - Where moc-template is applied
 
 ### External

@@ -61,15 +61,15 @@ This folder only contains:
 ```
 projects/
 ├── 2024-11-ft-ping-traceroute/
-│   └── learnings.md
+│   └── 2024-11-ft-ping-traceroute.md
 ├── 2024-XX-transcendence-monitoring/
-│   └── learnings.md
+│   └── 2024-XX-transcendence-monitoring.md
 ├── 2025-01-aws-terraform-ansible/
-│   └── learnings.md
+│   └── 2025-01-aws-terraform-ansible.md
 ├── 2025-12-glasck-deployment/
-│   └── learnings.md
+│   └── 2025-12-glasck-deployment.md
 ├── 2025-12-vps-hetzner-init-setup/
-│   └── learnings.md
+│   └── 2025-12-vps-hetzner-init-setup.md
 └── README.md
 ```
 
@@ -78,7 +78,7 @@ projects/
 | Folder | Contains |
 |--------|----------|
 | `YYYY-MM-name/` | Project learning report |
-| `learnings.md` | Main document per project |
+| `YYYY-MM-name.md` | Main document per project (same name as folder) |
 
 ### Naming Convention
 
@@ -104,7 +104,7 @@ graph LR
 mkdir projects/YYYY-MM-project-name/
 
 # 2. Copy template
-cp meta/templates/project.md projects/YYYY-MM-project-name/learnings.md
+cp meta/templates/project.md projects/YYYY-MM-project-name/YYYY-MM-project-name.md
 
 # 3. Fill in learnings
 # 4. Extract reusable scripts to devops-cloud_tools/
@@ -186,12 +186,12 @@ cp meta/templates/project.md projects/YYYY-MM-project-name/learnings.md
 | Type | Format | Example |
 |------|--------|---------|
 | Folders | `YYYY-MM-name/` | `2025-01-aws-terraform-ansible/` |
-| Files | `learnings.md` | Main document |
+| Files | `YYYY-MM-name.md` | Main document |
 | Links | `[[folder-name]]` | `[[2025-01-aws-terraform-ansible]]` |
 
 ### Report Structure
 
-Each `learnings.md` includes:
+Each project file (`YYYY-MM-name.md`) includes:
 - **Project Context**: Problem solved
 - **What I Learned**: New skills acquired
 - **Challenges**: Problems encountered
@@ -231,7 +231,7 @@ Each `learnings.md` includes:
 After each project, update:
 
 ```
-□ Projects: Create learnings.md
+□ Projects: Create YYYY-MM-name.md
 □ Concepts: Add real examples
 □ Cheatsheets: Add useful commands
 □ Troubleshooting: Document errors solved
@@ -254,10 +254,10 @@ After each project, update:
 
 ### Internal
 
-- [[concepts]] - Add real examples from projects
-- [[cheatsheets]] - Add commands discovered
-- [[troubleshooting]] - Document errors solved
-- [[meta/templates/project]] - Template for new projects
+- [[CONCEPTS]] - Add real examples from projects
+- [[CHEATSHEETS]] - Add commands discovered
+- [[TROUBLESHOOTING]] - Document errors solved
+- [[meta/templates/project-template]] - Template for new projects
 
 ### External
 

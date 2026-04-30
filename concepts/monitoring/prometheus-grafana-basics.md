@@ -138,7 +138,7 @@ curl http://localhost:9093/api/v2/status
 
 ```yaml
 Total time: 12h (60% assisted / 40% autonomous)
-Used in: [[2024-XX-transcendence-monitoring/learnings]]
+Used in: [[2024-XX-transcendence-monitoring]]
 ```
 
 ---

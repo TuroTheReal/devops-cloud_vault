@@ -346,7 +346,7 @@ Hours: ~80h
 - [ ] Commit with clear message
 
 ### Documentation (simplified templates = 65% time saved)
-- [ ] Project learnings.md filled (45-60 min with project-template)
+- [ ] Project file (YYYY-MM-name.md) filled (45-60 min with project-template)
 - [ ] Concepts extracted (30-40 min/concept with concept-template)
 - [ ] Optional cheatsheet updated (20-30 min with cheatsheet-template)
 - [ ] architecture.md synchronized

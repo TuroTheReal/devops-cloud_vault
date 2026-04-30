@@ -216,10 +216,10 @@ graph LR
 
 ### Internal
 
-- [[concepts]] - Deep theory per topic
-- [[cheatsheets]] - Quick command reference
-- [[projects]] - Hands-on application
-- [[troubleshooting]] - Debug when stuck
+- [[CONCEPTS]] - Deep theory per topic
+- [[CHEATSHEETS]] - Quick command reference
+- [[PROJECTS]] - Hands-on application
+- [[TROUBLESHOOTING]] - Debug when stuck
 
 ### External
 

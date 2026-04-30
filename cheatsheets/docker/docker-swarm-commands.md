@@ -8,7 +8,7 @@ created: 2025-12-23
 updated: 2025-12-23
 ```
 
-**Related**: [[concepts/docker/docker-swarm-*]], [[docker-compose-basics]]
+**Related concepts**: [[docker-swarm-basics]], [[docker-swarm-overlay-networks]], [[docker-swarm-deployment-strategies]], [[docker-compose-basics]]
 
 ---
 

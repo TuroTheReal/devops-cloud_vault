@@ -287,7 +287,7 @@ git checkout -b recovered <commit-hash>
 
 ```yaml
 Total time: 6h (30% assisted / 70% autonomous)
-Used in: [[project-vps-setup]], [[project-glasck-deployment]]
+Used in: [[2025-12-vps-hetzner-init-setup]], [[2025-12-glasck-deployment]]
 ```
 
 ---

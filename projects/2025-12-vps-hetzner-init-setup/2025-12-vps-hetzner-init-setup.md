@@ -369,7 +369,7 @@ Note problem + solution as soon as resolved. Waiting until project end = forgott
 - [ ] Extract [[concepts/linux/linux-fail2ban]] (20 min)
   - Intrusion prevention, jail configuration, monitoring
 
-- [ ] Update [[cheatsheets/linux/security-admin-commands]] (15 min)
+- [ ] Update [[cheatsheets/linux/linux-security-admin-commands]] (15 min)
   - Add SSH hardening commands, UFW, Fail2Ban
 
 **Total extraction time**: ~2h (5 concepts + 1 cheatsheet)

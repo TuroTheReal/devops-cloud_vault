@@ -254,7 +254,7 @@ resource "null_resource" "run_ansible" {
 
 ```yaml
 Total time: 15h (60% assisted / 40% autonomous)
-Used in: [[projects/2025-01-aws-terraform-ansible/learnings]]
+Used in: [[2025-01-aws-terraform-ansible]]
 ```
 
 ---

@@ -213,9 +213,9 @@ graph LR
 
 ### Internal
 
-- [[concepts]] - Understand the theory
-- [[projects]] - Apply in practice
-- [[troubleshooting]] - Debug issues
+- [[CONCEPTS]] - Understand the theory
+- [[PROJECTS]] - Apply in practice
+- [[TROUBLESHOOTING]] - Debug issues
 
 ### External
 

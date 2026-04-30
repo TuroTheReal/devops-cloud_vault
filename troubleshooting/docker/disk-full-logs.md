@@ -10,7 +10,7 @@ severity: 🔴 Critical
 time-to-fix: 2h
 ```
 
-**Related concept**: [[concepts/docker/docker-compose-basics]], [[concepts/docker/docker-logging]]
+**Related concept**: [[concepts/docker/docker-compose-basics]]
 **Affected versions**: Docker 20.x+, all versions without log rotation config
 
 ---
@@ -161,23 +161,13 @@ docker inspect <container_name> --format '{{.HostConfig.LogConfig}}'
 
 ---
 
-## 🔗 Related Issues
-
-- [[troubleshooting/docker/build-cache-full]] - Docker build cache consuming space
-- [[troubleshooting/docker/image-cleanup]] - Unused images filling disk
-- [[troubleshooting/system/disk-monitoring]] - Proactive disk monitoring setup
-
-**For deep understanding**: See [[concepts/docker/docker-logging-drivers]]
-
----
-
 ## 📊 Stats
 
 ```yaml
 Encountered: 1 time
 Last occurrence: 2026-01-05
 Typical fix time: 2min (emergency) / 10min (permanent)
-Projects affected: [[projects/glasck-deployment]]
+Projects affected: [[2025-12-glasck-deployment]]
 ```
 
 ---

@@ -138,7 +138,7 @@ Obsidian transforms your vault into **Personal Knowledge Management (PKM)** with
 ```
 1. Create structure
    projects/YYYY-MM-project-name/
-   └── learnings.md (project.md template)
+   └── YYYY-MM-project-name.md (project.md template)
 
 2. Document in real-time
    ├─ Challenges encountered
@@ -295,7 +295,7 @@ Obsidian transforms your vault into **Personal Knowledge Management (PKM)** with
 ```markdown
 See also:
 - [[cheatsheet-docker-swarm]] for quick commands
-- [[project-glasck-deployment]] for real example
+- [[2025-12-glasck-deployment]] for real example
 ```
 
 **Usage**: Quick navigation to practical resources
@@ -421,7 +421,7 @@ If your vault exceeds 50+ notes, create MOCs (index by technology).
 
 ## Projects Using Docker
 - [[project-transcendence]] (monitoring focus)
-- [[project-glasck-deployment]] (swarm focus)
+- [[2025-12-glasck-deployment]] (swarm focus)
 
 ## Cheatsheets
 - [[cheatsheet-docker]]

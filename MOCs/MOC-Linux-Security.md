@@ -62,7 +62,7 @@ Master the essential security practices to harden a Linux server from scratch. Y
 
 ## 🛠️ Practice Project
 
-**Apply your knowledge**: [[2025-12-vps-hetzner-init-setup/learnings]]
+**Apply your knowledge**: [[2025-12-vps-hetzner-init-setup]]
 
 **What you'll build**: Deploy a production-ready VPS from scratch with SSH hardening, UFW firewall, Fail2Ban intrusion prevention, and systemd socket activation for web services.
 

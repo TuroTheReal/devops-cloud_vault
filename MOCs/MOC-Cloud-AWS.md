@@ -76,7 +76,7 @@ Master AWS core services to provision, secure, and manage cloud infrastructure. 
 
 ## 🛠️ Practice Project
 
-**Apply your knowledge**: [[projects/2025-01-aws-terraform-ansible/learnings]]
+**Apply your knowledge**: [[2025-01-aws-terraform-ansible]]
 
 **What you'll build**: WordPress infrastructure on EC2 with Terraform provisioning and Ansible configuration.
 

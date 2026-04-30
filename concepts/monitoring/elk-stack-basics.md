@@ -178,7 +178,7 @@ Test your understanding without looking back:
 
 ```yaml
 Total time: 10h (55% assisted / 45% autonomous)
-Used in: [[2024-XX-transcendence-monitoring/learnings]]
+Used in: [[2024-XX-transcendence-monitoring]]
 ```
 
 ---

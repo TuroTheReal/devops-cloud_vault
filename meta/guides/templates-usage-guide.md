@@ -72,7 +72,7 @@ Always use: [meta/templates/cheatsheet-template.md](../templates/cheatsheet-temp
 
 ```
 1. Fill project learnings (45 min)
-   projects/2025-12-vps-hetzner/learnings.md
+   projects/2025-12-vps-hetzner-init-setup/2025-12-vps-hetzner-init-setup.md
 
 2. Extract concepts (3 × 15 min = 45 min)
    concepts/linux/linux-ssh-hardening.md
@@ -158,7 +158,7 @@ After lab:
 - `[[docker-containers-lifecycle]]`
 - `[[concepts/docker/docker-networking]]`
 - `[[cheatsheets/docker/docker-commands]]`
-- `[[projects/2025-12-vps-hetzner-init-setup/learnings]]`
+- `[[2025-12-vps-hetzner-init-setup]]`
 
 **Benefits**:
 - Graph view visualizes connections

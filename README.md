@@ -79,7 +79,7 @@ devops-cloud_vault/
 │   ├── docker/               # 11 concepts (containers, networks, swarm, backup)
 │   ├── git/                  # 2 concepts (fundamentals, semantic versioning)
 │   ├── linux/                # Security, firewall (5 concepts)
-│   ├── monitoring/           # Observability basics (2 concepts)
+│   ├── monitoring/           # Observability (5 concepts: Prometheus, Grafana, Loki, ELK, golden signals)
 │   ├── networking/           # Fundamentals, OSI Model, ICMP
 │   ├── terraform/            # IaC provisioning
 │   └── traefik/              # Reverse proxy concepts
@@ -98,7 +98,7 @@ devops-cloud_vault/
 │   ├── MOC-Cloud-AWS.md                 # AWS cloud services
 │   └── MOC-Infrastructure-as-Code.md    # Terraform & Ansible
 │
-├── 🔧 troubleshooting/       # Debug guides
+├── 🔧 troubleshooting/       # Debug guides (3 entries)
 │   ├── docker/               # Docker issues & resolutions
 │   └── monitoring/           # Observability debug notes
 │
@@ -171,7 +171,7 @@ cat concepts/docker/docker-why-containers.md
 - Traefik reverse proxy with automatic SSL
 
 **Time Invested**: ~68h
-**Projects**: [Glasck Deployment](projects/2025-12-glasck-deployment/), [Docker concepts](concepts/docker/)
+**Projects**: [Glasck Deployment](projects/2025-12-glasck-deployment/2025-12-glasck-deployment.md), [Docker concepts](concepts/docker/)
 **MOC**: [MOC-Docker-Production](MOCs/MOC-Docker-Production.md)
 
 ---
@@ -187,7 +187,7 @@ cat concepts/docker/docker-why-containers.md
 - Docker networking (bridge, overlay, service mesh)
 
 **Time Invested**: ~90h
-**Projects**: [ft_ping & ft_traceroute](projects/2024-11-ft-ping-traceroute/)
+**Projects**: [ft_ping & ft_traceroute](projects/2024-11-ft-ping-traceroute/2024-11-ft-ping-traceroute.md)
 **MOC**: [MOC-Networking-Fundamentals](MOCs/MOC-Networking-Fundamentals.md)
 
 ---
@@ -204,7 +204,7 @@ cat concepts/docker/docker-why-containers.md
 - VPS initial setup (Hetzner)
 
 **Time Invested**: ~15h
-**Projects**: [VPS Hetzner Init Setup](projects/2025-12-vps-hetzner-init-setup/)
+**Projects**: [VPS Hetzner Init Setup](projects/2025-12-vps-hetzner-init-setup/2025-12-vps-hetzner-init-setup.md)
 **MOC**: [MOC-Linux-Security](MOCs/MOC-Linux-Security.md)
 
 ---
@@ -218,7 +218,7 @@ cat concepts/docker/docker-why-containers.md
 - Basic service overview (S3, VPC, RDS, ECS, Lambda)
 
 **Time Invested**: ~10h
-**Projects**: [AWS-Terraform-Ansible](projects/2025-01-aws-terraform-ansible/)
+**Projects**: [AWS-Terraform-Ansible](projects/2025-01-aws-terraform-ansible/2025-01-aws-terraform-ansible.md)
 **MOC**: [MOC-Cloud-AWS](MOCs/MOC-Cloud-AWS.md)
 
 ---
@@ -232,7 +232,7 @@ cat concepts/docker/docker-why-containers.md
 - Ansible basics (playbooks, inventory, idempotence, modules)
 
 **Time Invested**: ~27h
-**Projects**: [AWS-Terraform-Ansible](projects/2025-01-aws-terraform-ansible/)
+**Projects**: [AWS-Terraform-Ansible](projects/2025-01-aws-terraform-ansible/2025-01-aws-terraform-ansible.md)
 **MOC**: [MOC-Infrastructure-as-Code](MOCs/MOC-Infrastructure-as-Code.md)
 
 ---
@@ -305,6 +305,8 @@ cat concepts/docker/docker-why-containers.md
 - 📊 **Advanced Observability**: Grafana dashboards, distributed tracing (planned)
 
 ## How to Use This Vault
+
+> *Note: paths below are illustrative — refer to the [Repository Structure](#repository-structure) section for actual file locations.*
 
 ### 1. Quick Command Lookup
 ```bash
@@ -399,13 +401,13 @@ This vault will support preparation for:
 
 ## Statistics
 
-- **Total Documents**: 62+ active documents
-- **Cheatsheets**: 10 folders (ansible, aws, docker, github, linux, loki, prometheus, taskfile, terraform, traefik)
-- **Concepts**: 9 folders (ansible, aws, docker, git, linux, monitoring, networking, terraform, traefik)
+- **Total Documents**: 62 active documents (excluding meta/templates)
+- **Cheatsheets**: 13 files across 10 folders (ansible, aws, docker × 3, github, linux × 2, loki, prometheus, taskfile, terraform, traefik)
+- **Concepts**: 29 files across 9 folders (ansible, aws, docker × 11, git, linux, monitoring, networking, terraform, traefik)
 - **Projects**: 5 real-world learning reports (~340h documented)
-- **MOCs**: 5 learning paths (Docker, Linux Security, Networking, Cloud AWS, IaC)
-- **Troubleshooting**: 2 topics (docker, monitoring)
-- **Last Updated**: 2026-04
+- **MOCs**: 6 learning paths (Docker, Linux Security, Networking, Cloud AWS, IaC, Monitoring)
+- **Troubleshooting**: 3 entries (docker × 2, monitoring × 1)
+- **Last Updated**: 2026-05-01
 
 ## Resources
 
@@ -457,4 +459,4 @@ Blog posts documenting the learning process and context behind this project:
 
 **License**: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) - Free to use and adapt with attribution
 **Version**: 2.3
-**Last Updated**: 2026-04
+**Last Updated**: 2026-05-01

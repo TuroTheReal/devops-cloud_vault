@@ -216,9 +216,9 @@ Each troubleshooting guide includes:
 
 ### Internal
 
-- [[concepts]] - Understand underlying technology
-- [[cheatsheets]] - Quick command reference
-- [[projects]] - Practice scenarios
+- [[CONCEPTS]] - Understand underlying technology
+- [[CHEATSHEETS]] - Quick command reference
+- [[PROJECTS]] - Practice scenarios
 
 ### External
 

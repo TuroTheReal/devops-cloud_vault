@@ -248,9 +248,9 @@ graph LR
 
 ### Internal
 
-- [[cheatsheets]] - Quick command reference
-- [[projects]] - Apply concepts in practice
-- [[troubleshooting]] - Debug with understanding
+- [[CHEATSHEETS]] - Quick command reference
+- [[PROJECTS]] - Apply concepts in practice
+- [[TROUBLESHOOTING]] - Debug with understanding
 
 ### External
 

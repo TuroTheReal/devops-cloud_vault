@@ -23,7 +23,7 @@ devops-cloud_vault/
 │
 ├── projects/              # Experience (what you did)
 │   └── YYYY-MM-project-name/
-│       └── learnings.md
+│       └── YYYY-MM-project-name.md
 │
 ├── troubleshooting/       # Problems & solutions
 │

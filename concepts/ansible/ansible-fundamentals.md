@@ -264,7 +264,7 @@ Install Docker and deploy a container on a server.
 
 ```yaml
 Total time: 12h (55% assisted / 45% autonomous)
-Used in: [[projects/2025-01-aws-terraform-ansible/learnings]]
+Used in: [[2025-01-aws-terraform-ansible]]
 ```
 
 ---

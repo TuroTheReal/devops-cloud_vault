@@ -66,7 +66,7 @@ Master Infrastructure as Code to provision cloud resources (Terraform) and confi
 
 ## 🛠️ Practice Project
 
-**Apply your knowledge**: [[projects/2025-01-aws-terraform-ansible/learnings]]
+**Apply your knowledge**: [[2025-01-aws-terraform-ansible]]
 
 **What you'll build**: WordPress on AWS EC2 - Terraform provisions, Ansible configures.
 

@@ -148,7 +148,6 @@ curl "http://prometheus:9090/api/v1/query?query=metric_name" | jq '.data.result[
 
 ## 🔗 Related Issues
 
-- [[troubleshooting/monitoring/prometheus-target-down]] - Target not being scraped
 - [[troubleshooting/docker/disk-full-logs]] - If Prometheus runs out of disk space
 
 **For deep understanding**: See [[concepts/monitoring/prometheus-grafana-basics]]

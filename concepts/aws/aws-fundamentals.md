@@ -346,7 +346,7 @@ egress {
 
 ```yaml
 Total time: 10h (50% assisted / 50% autonomous)
-Used in: [[projects/2025-01-aws-terraform-ansible/learnings]]
+Used in: [[2025-01-aws-terraform-ansible]]
 ```
 
 ---

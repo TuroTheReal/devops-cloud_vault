@@ -10,7 +10,7 @@ time-to-master: 10h
 ```
 
 **Prerequisites**: [[docker-volumes-persistence]], [[docker-images-layers]]
-**Related to**: [[docker-swarm-basics]], [[git-basics]] (code backup)
+**Related to**: [[docker-swarm-basics]], [[git-github-fundamentals]] (code backup)
 
 ---
 
@@ -33,7 +33,7 @@ time-to-master: 10h
 - **Easily regenerable data** → rebuild instead of backup (node_modules, cache)
 - **Public images** → re-pull from registry, no backup needed
 - **Large logs** → use rotation/archiving, not classic backup (see [[MOC-Monitoring-Observability]])
-- **Source code** → use Git, not file backup (see [[git-basics]])
+- **Source code** → use Git, not file backup (see [[git-github-fundamentals]])
 
 ---
 
@@ -388,7 +388,7 @@ Test your understanding without looking back:
 
 ```yaml
 Total time: 2h (50% assisted / 50% autonomous)
-Used in: [[2025-12-glasck-deployment/learnings]]
+Used in: [[2025-12-glasck-deployment]]
 ```
 
 ---
