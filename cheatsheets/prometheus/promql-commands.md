@@ -1,11 +1,14 @@
-# PromQL - Cheatsheet
-
-## 📋 Metadata
-
-```yaml
-tags: [cheatsheet, prometheus, promql, monitoring, status/documented]
+---
+tags:
+  - cheatsheet
+  - prometheus
+  - promql
+  - monitoring
+  - status/documented
 created: 2025-01-07
-```
+---
+
+# PromQL - Cheatsheet
 
 **Related concepts**: [[concepts/monitoring/prometheus-grafana-basics]], [[concepts/monitoring/golden-signals-slo]]
 

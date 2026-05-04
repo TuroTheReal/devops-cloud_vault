@@ -1,12 +1,13 @@
-# Terraform - Cheatsheet
-
-## 📋 Metadata
-
-```yaml
-tags: [cheatsheet, terraform, iac]
+---
+tags:
+  - cheatsheet
+  - terraform
+  - iac
 created: 2025-01-21
 version: 1.x
-```
+---
+
+# Terraform - Cheatsheet
 
 **Official docs**: [terraform.io/docs](https://developer.hashicorp.com/terraform/docs)
 **Related concepts**: [[concepts/terraform/terraform-fundamentals]]

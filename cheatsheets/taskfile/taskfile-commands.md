@@ -1,12 +1,14 @@
-# Taskfile - Cheatsheet
-
-## 📋 Metadata
-
-```yaml
-tags: [cheatsheet, taskfile, automation, task-runner]
+---
+tags:
+  - cheatsheet
+  - taskfile
+  - automation
+  - task-runner
 created: 2025-12-23
 updated: 2025-12-23
-```
+---
+
+# Taskfile - Cheatsheet
 
 **Related**: [[makefile]], [[automation-tools]]
 

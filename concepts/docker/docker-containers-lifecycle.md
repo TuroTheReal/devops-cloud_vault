@@ -1,14 +1,18 @@
-# Docker Containers - Lifecycle & Runtime
-
-## 📋 Metadata
-
-```yaml
-tags: [concept, docker, containers, lifecycle, runtime, status/learned]
+---
+tags:
+  - concept
+  - docker
+  - containers
+  - lifecycle
+  - runtime
+  - status/learned
 created: 2025-12-23
 updated: 2025-12-23
-difficulty: ⭐⭐ (2/5)
+difficulty: 2
 time-to-master: 3h
-```
+---
+
+# Docker Containers - Lifecycle & Runtime
 
 **Prerequisites**: [[docker-images-layers]]
 **Related to**: None

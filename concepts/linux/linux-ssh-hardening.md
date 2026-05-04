@@ -1,14 +1,18 @@
-# SSH Hardening - Production Security
-
-## 📋 Metadata
-
-```yaml
-tags: [concept, linux, security, ssh, hardening, status/learned]
+---
+tags:
+  - concept
+  - linux
+  - security
+  - ssh
+  - hardening
+  - status/learned
 created: 2025-12-26
 updated: 2025-12-26
-difficulty: ⭐⭐⭐ (3/5)
+difficulty: 3
 time-to-master: 1h30
-```
+---
+
+# SSH Hardening - Production Security
 
 **Prerequisites**: [[linux-basics]], [[networking-fundamentals]]
 **Related to**: [[linux-firewall-ufw]], [[linux-fail2ban]], [[linux-systemd-socket]]

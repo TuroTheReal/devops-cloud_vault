@@ -1,12 +1,13 @@
-# AWS CLI - Cheatsheet
-
-## 📋 Metadata
-
-```yaml
-tags: [cheatsheet, aws, cli]
+---
+tags:
+  - cheatsheet
+  - aws
+  - cli
 created: 2025-01-21
 version: 2.x
-```
+---
+
+# AWS CLI - Cheatsheet
 
 **Official docs**: [docs.aws.amazon.com/cli](https://docs.aws.amazon.com/cli/)
 **Related concepts**: [[concepts/aws/aws-fundamentals]]

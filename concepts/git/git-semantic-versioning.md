@@ -1,13 +1,17 @@
-# Semantic Versioning - Git
-
-## 📋 Metadata
-
-```yaml
-tags: [concept, git, versioning, release, semver, status/learning]
+---
+tags:
+  - concept
+  - git
+  - versioning
+  - release
+  - semver
+  - status/learning
 created: 2026-01-20
-difficulty: ⭐⭐ (2/5)
+difficulty: 2
 time-to-master: 2h
-```
+---
+
+# Semantic Versioning - Git
 
 **Prerequisites**: [[git-github-fundamentals]]
 **Related to**: [[ci-cd-basics]] (coming soon), [[docker-backup-strategies]]

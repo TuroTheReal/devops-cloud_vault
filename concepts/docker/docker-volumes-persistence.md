@@ -1,13 +1,17 @@
-# Docker Volumes & Data Persistence
-
-## 📋 Metadata
-
-```yaml
-tags: [concept, docker, volumes, persistence, bind-mounts, status/learned]
+---
+tags:
+  - concept
+  - docker
+  - volumes
+  - persistence
+  - bind-mounts
+  - status/learned
 created: 2025-12-26
-difficulty: ⭐⭐ (2/5)
+difficulty: 2
 time-to-master: 1h
-```
+---
+
+# Docker Volumes & Data Persistence
 
 **Prerequisites**: [[docker-containers-lifecycle]], [[docker-why-containers]]
 **Related to**: [[docker-compose-healthchecks]]

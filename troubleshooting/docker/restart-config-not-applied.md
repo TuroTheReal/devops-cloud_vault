@@ -1,14 +1,19 @@
-# Docker Restart - Config Not Applied (Network Missing)
-
-## 📋 Metadata
-
-```yaml
-tags: [troubleshooting, docker, docker-compose, network, prometheus, monitoring, status/documented]
+---
+tags:
+  - troubleshooting
+  - docker
+  - docker-compose
+  - network
+  - prometheus
+  - monitoring
+  - status/documented
 created: 2026-01-19
 updated: 2026-01-19
-severity: 🟠 High
+severity: "🟠 High"
 time-to-fix: 1h
-```
+---
+
+# Docker Restart - Config Not Applied (Network Missing)
 
 **Related concept**: [[concepts/docker/docker-compose-basics]]
 **Affected versions**: Docker 20.x+, Docker Compose v2+

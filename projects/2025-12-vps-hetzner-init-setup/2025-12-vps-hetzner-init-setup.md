@@ -1,14 +1,19 @@
-# VPS Production Hardening - Hetzner CX43
-
-## 📋 Metadata
-
-```yaml
-tags: [project, linux, security, vps, hetzner, ssh-hardening, 2025-12]
+---
+tags:
+  - project
+  - linux
+  - security
+  - vps
+  - hetzner
+  - ssh-hardening
+  - 2025-12
 started: 2025-12-26
 completed: 2025-12-26
 duration: 2h30
 status: completed
-```
+---
+
+# VPS Production Hardening - Hetzner CX43
 
 **Technologies**: Ubuntu 24.04 LTS, UFW, Fail2Ban, SSH, Docker, Unattended-upgrades
 

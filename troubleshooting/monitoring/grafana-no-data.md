@@ -1,14 +1,17 @@
-# Grafana "No Data" - Quick Fix
-
-## 📋 Metadata
-
-```yaml
-tags: [troubleshooting, grafana, prometheus, monitoring, status/documented]
+---
+tags:
+  - troubleshooting
+  - grafana
+  - prometheus
+  - monitoring
+  - status/documented
 created: 2025-01-07
 updated: 2025-01-07
-severity: 🟠 High
+severity: "🟠 High"
 time-to-fix: 10min
-```
+---
+
+# Grafana "No Data" - Quick Fix
 
 **Related concept**: [[concepts/monitoring/prometheus-grafana-basics]]
 **Affected versions**: Grafana 9.x+, Prometheus 2.x+

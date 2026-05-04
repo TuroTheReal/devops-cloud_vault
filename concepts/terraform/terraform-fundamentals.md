@@ -1,13 +1,16 @@
-# Terraform Fundamentals - Infrastructure as Code
-
-## 📋 Metadata
-
-```yaml
-tags: [concept, terraform, iac, aws, status/learned]
+---
+tags:
+  - concept
+  - terraform
+  - iac
+  - aws
+  - status/learned
 created: 2025-01-21
-difficulty: ⭐⭐⭐⭐ (4/5)
+difficulty: 4
 time-to-master: 15h
-```
+---
+
+# Terraform Fundamentals - Infrastructure as Code
 
 **Prerequisites**: [[concepts/linux/linux-basics]]
 **Related to**: [[concepts/ansible/ansible-fundamentals]], [[concepts/aws/aws-fundamentals]]

@@ -1,3 +1,13 @@
+---
+tags:
+  - moc
+  - aws
+  - cloud
+created: 2025-01-22
+updated: 2025-01-22
+status: active
+---
+
 # MOC - Cloud AWS
 
 > **What**: Learning path for AWS cloud services - from basics to production workloads.

@@ -4,7 +4,7 @@
 
 Daily workflow to maximize retention and organization with Obsidian.
 
-**Prerequisites**: [[obsidian-setup]] completed
+**Prerequisites**: Obsidian installed and vault initialized
 
 ---
 
@@ -100,7 +100,7 @@ Obsidian transforms your vault into **Personal Knowledge Management (PKM)** with
    └─ Time wasted + Lesson learned
 
 3. Create bidirectional links
-   ├─ In concept: "Used in [[project-glasck]]"
+   ├─ In concept: "Used in [[2025-12-glasck-deployment]]"
    └─ In project: "Uses [[docker-swarm-overlay-networks]]"
 ```
 
@@ -243,7 +243,7 @@ Obsidian transforms your vault into **Personal Knowledge Management (PKM)** with
 
 ```
 1. Ctrl+O → "swarm cheat"
-2. [[cheatsheet-docker-swarm]]
+2. [[docker-swarm-commands]]
 3. Ctrl+F → "logs"
 4. docker service logs myapp
 5. ✅ Command copied
@@ -294,7 +294,7 @@ Obsidian transforms your vault into **Personal Knowledge Management (PKM)** with
 
 ```markdown
 See also:
-- [[cheatsheet-docker-swarm]] for quick commands
+- [[docker-swarm-commands]] for quick commands
 - [[2025-12-glasck-deployment]] for real example
 ```
 
@@ -424,9 +424,9 @@ If your vault exceeds 50+ notes, create MOCs (index by technology).
 - [[2025-12-glasck-deployment]] (swarm focus)
 
 ## Cheatsheets
-- [[cheatsheet-docker]]
-- [[cheatsheet-docker-compose]]
-- [[cheatsheet-docker-swarm]]
+- [[docker-commands]]
+- [[docker-compose-commands]]
+- [[docker-swarm-commands]]
 
 ## Common Troubleshooting
 - MTU fragmentation → [[docker-swarm-overlay-networks#pitfall-1]]
@@ -637,7 +637,7 @@ docker/
 
 **ROI**: Knowledge capitalized for life, retrieval <30s
 
-**Next**: Start with templates in [[obsidian-setup]]
+**Next**: Explore templates in `meta/templates/`
 
 ---
 

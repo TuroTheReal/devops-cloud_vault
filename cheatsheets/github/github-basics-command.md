@@ -1,12 +1,13 @@
-# Git/GitHub - Commands Cheatsheet
-
-## 📋 Metadata
-
-```yaml
-tags: [cheatsheet, git, github]
+---
+tags:
+  - cheatsheet
+  - git
+  - github
 created: 2025-12-30
 version: 2.43.0
-```
+---
+
+# Git/GitHub - Commands Cheatsheet
 
 **Official docs**: [Git Documentation](https://git-scm.com/doc) | [GitHub Docs](https://docs.github.com)
 **Related concepts**: [[git-github-fundamentals]]

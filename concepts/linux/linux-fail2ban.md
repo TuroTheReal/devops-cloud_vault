@@ -1,14 +1,19 @@
-# Fail2Ban - Intrusion Prevention System
-
-## 📋 Metadata
-
-```yaml
-tags: [concept, linux, security, fail2ban, intrusion-prevention, ips, status/learning]
+---
+tags:
+  - concept
+  - linux
+  - security
+  - fail2ban
+  - intrusion-prevention
+  - ips
+  - status/learning
 created: 2025-12-26
 updated: 2025-12-26
-difficulty: ⭐⭐ (2/5)
+difficulty: 2
 time-to-master: 1h
-```
+---
+
+# Fail2Ban - Intrusion Prevention System
 
 **Prerequisites**: [[linux-basics]], [[linux-firewall-ufw]]
 **Related to**: [[linux-ssh-hardening]]

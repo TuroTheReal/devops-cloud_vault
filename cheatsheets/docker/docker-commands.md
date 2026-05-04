@@ -1,12 +1,14 @@
-# Docker - Cheatsheet
-
-## 📋 Metadata
-
-```yaml
-tags: [cheatsheet, docker, containers, images]
+---
+tags:
+  - cheatsheet
+  - docker
+  - containers
+  - images
 created: 2025-12-23
 updated: 2025-12-23
-```
+---
+
+# Docker - Cheatsheet
 
 **Related concepts**: [[docker-why-containers]], [[docker-containers-lifecycle]], [[docker-images-layers]], [[docker-volumes-persistence]], [[docker-network-isolation]], [[docker-compose-basics]], [[docker-compose-healthchecks]], [[docker-swarm-basics]], [[docker-swarm-overlay-networks]], [[docker-swarm-deployment-strategies]], [[docker-backup-strategies]]
 

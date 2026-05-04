@@ -1,13 +1,16 @@
-# Git/GitHub Fundamentals
-
-## 📋 Metadata
-
-```yaml
-tags: [concept, git, github, version-control, status/learned]
+---
+tags:
+  - concept
+  - git
+  - github
+  - version-control
+  - status/learned
 created: 2025-12-30
-difficulty: ⭐⭐ (2/5)
+difficulty: 2
 time-to-master: 6h
-```
+---
+
+# Git/GitHub Fundamentals
 
 **Prerequisites**: [[linux-basics]]
 **Related to**: [[ci-cd-basics]]

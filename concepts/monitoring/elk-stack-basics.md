@@ -1,14 +1,20 @@
-# ELK Stack - Elasticsearch, Logstash, Kibana
-
-## 📋 Metadata
-
-```yaml
-tags: [concept, monitoring, elk, elasticsearch, logstash, kibana, logs, status/learned]
+---
+tags:
+  - concept
+  - monitoring
+  - elk
+  - elasticsearch
+  - logstash
+  - kibana
+  - logs
+  - status/learned
 created: 2025-12-23
 updated: 2025-12-23
-difficulty: ⭐⭐⭐⭐ (4/5)
+difficulty: 4
 time-to-master: 10h
-```
+---
+
+# ELK Stack - Elasticsearch, Logstash, Kibana
 
 **Prerequisites**: None
 **Related to**: [[prometheus-grafana-basics]]

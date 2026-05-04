@@ -1,12 +1,16 @@
-# AWS-Terraform-Ansible - Learning Report
-
-## 📋 Metadata
-
-```yaml
-tags: [project, aws, terraform, ansible, docker, 2025-01]
+---
+tags:
+  - project
+  - aws
+  - terraform
+  - ansible
+  - docker
+  - 2025-01
 duration: 40h
 status: completed
-```
+---
+
+# AWS-Terraform-Ansible - Learning Report
 
 **Technologies**: AWS EC2, Terraform, Ansible, Docker, Docker Compose, Nginx, WordPress, MariaDB
 **Goal**: Automatically deploy a WordPress infrastructure on AWS via IaC

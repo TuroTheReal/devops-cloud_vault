@@ -1,14 +1,18 @@
-# Prometheus & Grafana - Metrics Monitoring
-
-## 📋 Metadata
-
-```yaml
-tags: [concept, monitoring, prometheus, grafana, metrics, status/learned]
+---
+tags:
+  - concept
+  - monitoring
+  - prometheus
+  - grafana
+  - metrics
+  - status/learned
 created: 2025-12-23
 updated: 2025-01-07
-difficulty: ⭐⭐⭐ (3/5)
+difficulty: 3
 time-to-master: 6h
-```
+---
+
+# Prometheus & Grafana - Metrics Monitoring
 
 **Prerequisites**: None
 **Related to**: [[elk-stack-basics]], [[golden-signals-slo]], [[alerting-best-practices]]

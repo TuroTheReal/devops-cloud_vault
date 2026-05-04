@@ -56,8 +56,8 @@ meta/
 │   ├── moc-template.md
 │   ├── project-template.md
 │   ├── troubleshooting-template.md
-│   ├── readme-project-template.md
-│   └── readme-vault-template.md
+│   ├── github-project-readme-template.md
+│   └── vault-index-template.md
 ├── guides/                 # 3 guides
 │   ├── claude-guide.md
 │   ├── obsidian-guide.md
@@ -114,8 +114,8 @@ graph LR
 | [[moc-template]] | Map of Content structure | ✅ |
 | [[project-template]] | Project learning report | ✅ |
 | [[troubleshooting-template]] | Debug guide format | ✅ |
-| [[readme-project-template]] | Project repo README | ✅ |
-| [[readme-vault-template]] | Vault section README | ✅ |
+| [[github-project-readme-template]] | Project repo README | ✅ |
+| [[vault-index-template]] | Vault section README | ✅ |
 
 ---
 

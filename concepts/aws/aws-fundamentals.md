@@ -1,13 +1,15 @@
-# AWS Fundamentals - Cloud Services Overview
-
-## 📋 Metadata
-
-```yaml
-tags: [concept, aws, cloud, status/learning]
+---
+tags:
+  - concept
+  - aws
+  - cloud
+  - status/learning
 created: 2025-01-21
-difficulty: ⭐⭐⭐ (3/5)
+difficulty: 3
 time-to-master: 20h
-```
+---
+
+# AWS Fundamentals - Cloud Services Overview
 
 **Prerequisites**: [[concepts/networking/networking-fundamentals]]
 **Related to**: [[concepts/terraform/terraform-fundamentals]] | [[concepts/aws/aws-cloud-practitioner-clf-c02]]

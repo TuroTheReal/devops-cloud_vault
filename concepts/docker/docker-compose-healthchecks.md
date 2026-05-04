@@ -1,14 +1,17 @@
-# Docker Compose - Healthchecks
-
-## 📋 Metadata
-
-```yaml
-tags: [concept, docker, docker-compose, healthcheck, status/learned]
+---
+tags:
+  - concept
+  - docker
+  - docker-compose
+  - healthcheck
+  - status/learned
 created: 2025-12-23
 updated: 2025-12-23
-difficulty: ⭐⭐ (2/5)
+difficulty: 2
 time-to-master: 2h
-```
+---
+
+# Docker Compose - Healthchecks
 
 **Prerequisites**: [[docker-containers-lifecycle]], [[docker-images-layers]]
 **Related to**: [[docker-swarm-healthchecks]], [[container-orchestration]]

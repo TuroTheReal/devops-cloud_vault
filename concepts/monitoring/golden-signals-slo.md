@@ -1,13 +1,16 @@
-# Golden Signals & SLO/SLI/SLA - Monitoring
-
-## 📋 Metadata
-
-```yaml
-tags: [concept, monitoring, sre, observability, status/learned]
+---
+tags:
+  - concept
+  - monitoring
+  - sre
+  - observability
+  - status/learned
 created: 2025-01-07
-difficulty: ⭐⭐⭐ (3/5)
+difficulty: 3
 time-to-master: 6h
-```
+---
+
+# Golden Signals & SLO/SLI/SLA - Monitoring
 
 **Prerequisites**: [[prometheus-grafana-basics]]
 **Related to**: [[alerting-best-practices]], [[elk-stack-basics]]

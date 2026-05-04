@@ -1,13 +1,14 @@
-# [Concept] - [Technology]
-
-## 📋 Metadata
-
-```yaml
-tags: [concept, [tech], status/learning/learned/mastered]
+---
+tags:
+  - concept
+  - tech-placeholder
+  - status/learning
 created: YYYY-MM-DD
-difficulty: ⭐⭐ (2/5)
+difficulty: 2
 time-to-master: 4h
-```
+---
+
+# [Concept] - [Technology]
 
 **Prerequisites**: [[concept-1]], [[concept-2]]
 **Related to**: [[concept-3]]

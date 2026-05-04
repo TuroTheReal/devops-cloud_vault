@@ -1,14 +1,19 @@
-# UFW - Uncomplicated Firewall
-
-## 📋 Metadata
-
-```yaml
-tags: [concept, linux, security, firewall, ufw, iptables, status/learned]
+---
+tags:
+  - concept
+  - linux
+  - security
+  - firewall
+  - ufw
+  - iptables
+  - status/learned
 created: 2025-12-26
 updated: 2025-12-26
-difficulty: ⭐⭐ (2/5)
+difficulty: 2
 time-to-master: 1h
-```
+---
+
+# UFW - Uncomplicated Firewall
 
 **Prerequisites**: [[linux-basics]], [[networking-fundamentals]]
 **Related to**: [[linux-ssh-hardening]], [[linux-fail2ban]]

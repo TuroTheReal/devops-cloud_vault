@@ -1,13 +1,16 @@
-# Alerting Best Practices - Monitoring
-
-## 📋 Metadata
-
-```yaml
-tags: [concept, monitoring, alerting, sre, status/learned]
+---
+tags:
+  - concept
+  - monitoring
+  - alerting
+  - sre
+  - status/learned
 created: 2025-01-07
-difficulty: ⭐⭐⭐ (3/5)
+difficulty: 3
 time-to-master: 4h
-```
+---
+
+# Alerting Best Practices - Monitoring
 
 **Prerequisites**: [[golden-signals-slo]], [[prometheus-grafana-basics]]
 **Related to**: [[elk-stack-basics]]

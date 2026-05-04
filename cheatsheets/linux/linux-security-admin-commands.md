@@ -1,12 +1,16 @@
-# Linux Security & Admin - Cheatsheet
-
-## 📋 Metadata
-
-```yaml
-tags: [cheatsheet, linux, security, hardening, admin, sysadmin]
+---
+tags:
+  - cheatsheet
+  - linux
+  - security
+  - hardening
+  - admin
+  - sysadmin
 created: 2025-12-26
 updated: 2025-12-26
-```
+---
+
+# Linux Security & Admin - Cheatsheet
 
 **Related**: [[linux-ssh-hardening]], [[linux-firewall-ufw]], [[linux-fail2ban]]
 

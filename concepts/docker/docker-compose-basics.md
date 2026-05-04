@@ -1,13 +1,17 @@
-# Docker Compose Basics
-
-## 📋 Metadata
-
-```yaml
-tags: [concept, docker, docker-compose, multi-container, orchestration, status/learned]
+---
+tags:
+  - concept
+  - docker
+  - docker-compose
+  - multi-container
+  - orchestration
+  - status/learned
 created: 2025-12-26
-difficulty: ⭐⭐ (2/5)
+difficulty: 2
 time-to-master: 1h30
-```
+---
+
+# Docker Compose Basics
 
 **Prerequisites**: [[docker-containers-lifecycle]], [[docker-volumes-persistence]]
 **Related to**: [[docker-compose-healthchecks]], [[docker-network-isolation]]

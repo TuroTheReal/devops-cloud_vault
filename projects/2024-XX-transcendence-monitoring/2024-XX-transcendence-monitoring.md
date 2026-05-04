@@ -1,15 +1,21 @@
-# Transcendence - Monitoring & Observability Stack
-
-## 📋 Metadata
-
-```yaml
-tags: [project, monitoring, observability, elk-stack, prometheus, grafana, docker-compose, 2024]
+---
+tags:
+  - project
+  - monitoring
+  - observability
+  - elk-stack
+  - prometheus
+  - grafana
+  - docker-compose
+  - 2024
 started: 2024-XX-XX
 completed: 2024-XX-XX
-duration: ~25h total (10h ELK, 8h Prometheus/Grafana, 5h integration, 2h debugging)
+duration: "~25h total (10h ELK, 8h Prometheus/Grafana, 5h integration, 2h debugging)"
 real-repo: Transcendence (42 School project - private)
 status: completed
-```
+---
+
+# Transcendence - Monitoring & Observability Stack
 
 **Technologies used**: Elasticsearch, Logstash, Kibana (ELK Stack), Prometheus, Grafana, Docker Compose
 **Goal**: Implement comprehensive monitoring and observability for full-stack web application with centralized logging and metrics visualization

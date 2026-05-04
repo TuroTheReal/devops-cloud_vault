@@ -1,14 +1,16 @@
-# [Error/Issue Name] - Quick Fix
-
-## 📋 Metadata
-
-```yaml
-tags: [troubleshooting, technology, error-type, status/documented]
+---
+tags:
+  - troubleshooting
+  - technology-placeholder
+  - error-type-placeholder
+  - status/documented
 created: YYYY-MM-DD
 updated: YYYY-MM-DD
-severity: 🔴 Critical / 🟠 High / 🟡 Medium / 🟢 Low
+severity: "🔴 Critical"
 time-to-fix: Xmin
-```
+---
+
+# [Error/Issue Name] - Quick Fix
 
 **Related concept**: [[concepts/technology/related-concept]]
 **Affected versions**: Technology vX.X+

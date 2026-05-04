@@ -1,14 +1,18 @@
-# Docker Images - Layers & Optimization
-
-## 📋 Metadata
-
-```yaml
-tags: [concept, docker, images, layers, optimization, status/learned]
+---
+tags:
+  - concept
+  - docker
+  - images
+  - layers
+  - optimization
+  - status/learned
 created: 2025-12-23
 updated: 2025-12-23
-difficulty: ⭐⭐⭐ (3/5)
+difficulty: 3
 time-to-master: 4h
-```
+---
+
+# Docker Images - Layers & Optimization
 
 **Prerequisites**: None (foundational Docker concept)
 **Related to**: None

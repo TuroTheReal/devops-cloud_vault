@@ -1,13 +1,16 @@
-# Why Containers? - Docker
-
-## 📋 Metadata
-
-```yaml
-tags: [concept, docker, containers, virtualization, status/learned]
+---
+tags:
+  - concept
+  - docker
+  - containers
+  - virtualization
+  - status/learned
 created: 2025-12-26
-difficulty: ⭐⭐ (2/5)
+difficulty: 2
 time-to-master: 30min
-```
+---
+
+# Why Containers? - Docker
 
 **Prerequisites**: None (foundational)
 **Related to**: [[docker-containers-lifecycle]], [[docker-images-layers]]

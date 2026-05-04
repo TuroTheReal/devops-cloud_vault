@@ -1,14 +1,18 @@
-# systemd Socket Activation
-
-## 📋 Metadata
-
-```yaml
-tags: [concept, linux, systemd, socket-activation, ssh, status/learning]
+---
+tags:
+  - concept
+  - linux
+  - systemd
+  - socket-activation
+  - ssh
+  - status/learning
 created: 2025-12-26
 updated: 2025-12-26
-difficulty: ⭐⭐⭐ (3/5)
+difficulty: 3
 time-to-master: 1h
-```
+---
+
+# systemd Socket Activation
 
 **Prerequisites**: [[linux-basics]]
 **Related to**: [[linux-ssh-hardening]]

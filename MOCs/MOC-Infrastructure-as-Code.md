@@ -1,3 +1,14 @@
+---
+tags:
+  - moc
+  - terraform
+  - ansible
+  - iac
+created: 2025-01-22
+updated: 2025-01-22
+status: active
+---
+
 # MOC - Infrastructure as Code
 
 > **What**: Learning path for IaC tools - provisioning and configuration management.

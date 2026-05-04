@@ -1,14 +1,18 @@
-# Docker Swarm - Overlay Networks
-
-## 📋 Metadata
-
-```yaml
-tags: [concept, docker, swarm, networking, overlay, status/learning]
+---
+tags:
+  - concept
+  - docker
+  - swarm
+  - networking
+  - overlay
+  - status/learning
 created: 2025-12-23
 updated: 2025-12-23
-difficulty: ⭐⭐⭐⭐ (4/5)
+difficulty: 4
 time-to-master: 6h
-```
+---
+
+# Docker Swarm - Overlay Networks
 
 **Prerequisites**: [[docker-containers-lifecycle]]
 **Related to**: [[traefik-integration]]

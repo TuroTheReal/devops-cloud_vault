@@ -1,12 +1,14 @@
-# Traefik - Cheatsheet
-
-## 📋 Metadata
-
-```yaml
-tags: [cheatsheet, traefik, reverse-proxy, swarm]
+---
+tags:
+  - cheatsheet
+  - traefik
+  - reverse-proxy
+  - swarm
 created: 2025-12-23
 updated: 2025-12-23
-```
+---
+
+# Traefik - Cheatsheet
 
 **Related**: [[concepts/traefik/traefik-integration]], [[docker-swarm-basics]]
 

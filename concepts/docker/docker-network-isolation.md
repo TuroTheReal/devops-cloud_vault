@@ -1,14 +1,19 @@
-# Docker Network Isolation - Zero-Trust Architecture
-
-## 📋 Metadata
-
-```yaml
-tags: [concept, docker, network, security, isolation, zero-trust, status/learned]
+---
+tags:
+  - concept
+  - docker
+  - network
+  - security
+  - isolation
+  - zero-trust
+  - status/learned
 created: 2025-12-23
 updated: 2025-12-23
-difficulty: ⭐⭐⭐ (3/5)
+difficulty: 3
 time-to-master: 3h
-```
+---
+
+# Docker Network Isolation - Zero-Trust Architecture
 
 **Prerequisites**: [[docker-containers-lifecycle]]
 **Related to**: [[docker-swarm-overlay-networks]]

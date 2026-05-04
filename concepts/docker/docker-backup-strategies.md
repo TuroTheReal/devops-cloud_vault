@@ -1,13 +1,16 @@
-# Docker Backup Strategies - Docker
-
-## 📋 Metadata
-
-```yaml
-tags: [concept, docker, backup, disaster-recovery, status/learning]
+---
+tags:
+  - concept
+  - docker
+  - backup
+  - disaster-recovery
+  - status/learning
 created: 2026-01-20
-difficulty: ⭐⭐⭐ (3/5)
+difficulty: 3
 time-to-master: 10h
-```
+---
+
+# Docker Backup Strategies - Docker
 
 **Prerequisites**: [[docker-volumes-persistence]], [[docker-images-layers]]
 **Related to**: [[docker-swarm-basics]], [[git-github-fundamentals]] (code backup)

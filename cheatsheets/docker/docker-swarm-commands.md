@@ -1,12 +1,14 @@
-# Docker Swarm - Cheatsheet
-
-## 📋 Metadata
-
-```yaml
-tags: [cheatsheet, docker, swarm, orchestration]
+---
+tags:
+  - cheatsheet
+  - docker
+  - swarm
+  - orchestration
 created: 2025-12-23
 updated: 2025-12-23
-```
+---
+
+# Docker Swarm - Cheatsheet
 
 **Related concepts**: [[docker-swarm-basics]], [[docker-swarm-overlay-networks]], [[docker-swarm-deployment-strategies]], [[docker-compose-basics]]
 

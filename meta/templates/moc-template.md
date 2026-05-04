@@ -1,3 +1,11 @@
+---
+tags:
+  - moc
+  - topic-placeholder
+created: YYYY-MM-DD
+status: active
+---
+
 # MOC - [Topic Name]
 
 > **What**: [1 sentence - what this learning path covers]

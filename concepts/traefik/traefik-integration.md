@@ -1,14 +1,18 @@
-# Traefik - Docker Swarm Integration & Dynamic Routing
-
-## 📋 Metadata
-
-```yaml
-tags: [concept, traefik, reverse-proxy, docker-swarm, dynamic-routing, status/learned]
+---
+tags:
+  - concept
+  - traefik
+  - reverse-proxy
+  - docker-swarm
+  - dynamic-routing
+  - status/learned
 created: 2025-12-23
 updated: 2025-12-23
-difficulty: ⭐⭐⭐⭐ (4/5)
+difficulty: 4
 time-to-master: 8h
-```
+---
+
+# Traefik - Docker Swarm Integration & Dynamic Routing
 
 **Prerequisites**: [[docker-swarm-overlay-networks]]
 **Related to**: None

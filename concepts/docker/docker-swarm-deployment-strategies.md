@@ -1,14 +1,18 @@
-# Docker Swarm - Deployment Strategies (Update & Rollback)
-
-## 📋 Metadata
-
-```yaml
-tags: [concept, docker, swarm, deployment, zero-downtime, status/learning]
+---
+tags:
+  - concept
+  - docker
+  - swarm
+  - deployment
+  - zero-downtime
+  - status/learning
 created: 2025-12-23
 updated: 2025-12-23
-difficulty: ⭐⭐⭐ (3/5)
+difficulty: 3
 time-to-master: 4h
-```
+---
+
+# Docker Swarm - Deployment Strategies (Update & Rollback)
 
 **Prerequisites**: [[docker-swarm-overlay-networks]], [[docker-compose-healthchecks]]
 **Related to**: None

@@ -1,12 +1,12 @@
-# [Tool] - Cheatsheet
-
-## 📋 Metadata
-
-```yaml
-tags: [cheatsheet, [tech]]
+---
+tags:
+  - cheatsheet
+  - tech-placeholder
 created: YYYY-MM-DD
 version: X.Y.Z
-```
+---
+
+# [Tool] - Cheatsheet
 
 **Official docs**: [URL]
 **Related concepts**: [[concept-1]], [[concept-2]]

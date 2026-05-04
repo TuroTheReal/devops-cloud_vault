@@ -1,14 +1,18 @@
-# Docker Disk Full - Container Logs
-
-## 📋 Metadata
-
-```yaml
-tags: [troubleshooting, docker, storage, logs, disk-space, status/documented]
+---
+tags:
+  - troubleshooting
+  - docker
+  - storage
+  - logs
+  - disk-space
+  - status/documented
 created: 2026-01-05
 updated: 2026-01-05
-severity: 🔴 Critical
+severity: "🔴 Critical"
 time-to-fix: 2h
-```
+---
+
+# Docker Disk Full - Container Logs
 
 **Related concept**: [[concepts/docker/docker-compose-basics]]
 **Affected versions**: Docker 20.x+, all versions without log rotation config

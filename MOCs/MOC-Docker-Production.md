@@ -1,3 +1,14 @@
+---
+tags:
+  - moc
+  - docker
+  - containers
+  - production
+created: 2025-12-26
+updated: 2026-01-20
+status: active
+---
+
 # MOC - Docker for Production Deployments
 
 > **What**: From containers basics to production-ready orchestration with Docker Swarm

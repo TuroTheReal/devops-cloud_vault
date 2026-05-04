@@ -1,12 +1,13 @@
-# Docker Compose - Cheatsheet
-
-## 📋 Metadata
-
-```yaml
-tags: [cheatsheet, docker-compose, orchestration]
+---
+tags:
+  - cheatsheet
+  - docker-compose
+  - orchestration
 created: 2025-12-23
 updated: 2025-12-23
-```
+---
+
+# Docker Compose - Cheatsheet
 
 **Related**: [[docker-commands]], [[docker-swarm-basics]], [[concepts/docker/docker-compose-healthchecks]]
 

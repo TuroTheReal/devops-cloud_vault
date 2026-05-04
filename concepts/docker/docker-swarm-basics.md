@@ -1,13 +1,17 @@
-# Docker Swarm Basics
-
-## 📋 Metadata
-
-```yaml
-tags: [concept, docker, swarm, orchestration, clustering, status/learning]
+---
+tags:
+  - concept
+  - docker
+  - swarm
+  - orchestration
+  - clustering
+  - status/learning
 created: 2025-12-26
-difficulty: ⭐⭐⭐ (3/5)
+difficulty: 3
 time-to-master: 2h
-```
+---
+
+# Docker Swarm Basics
 
 **Prerequisites**: [[docker-compose-basics]], [[docker-containers-lifecycle]]
 **Related to**: [[docker-swarm-overlay-networks]], [[docker-swarm-deployment-strategies]]

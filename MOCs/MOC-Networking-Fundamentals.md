@@ -1,3 +1,14 @@
+---
+tags:
+  - moc
+  - networking
+  - osi-model
+  - icmp
+created: 2025-12-29
+updated: 2025-12-29
+status: active
+---
+
 # MOC - Networking Fundamentals
 
 > **What**: From OSI layers to cloud networking - essential network knowledge for DevOps

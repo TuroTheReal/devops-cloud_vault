@@ -1,3 +1,13 @@
+---
+tags:
+  - moc
+  - linux
+  - security
+created: 2025-12-26
+updated: 2025-12-26
+status: active
+---
+
 # MOC - Linux Security Hardening
 
 > **What**: Secure a Linux server from initial setup to production-ready state

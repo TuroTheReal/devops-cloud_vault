@@ -1,12 +1,14 @@
-# Linux Basics Commands - Cheatsheet
-
-## 📋 Metadata
-
-```yaml
-tags: [cheatsheet, linux, cli, daily-use]
+---
+tags:
+  - cheatsheet
+  - linux
+  - cli
+  - daily-use
 created: 2025-12-26
 updated: 2025-12-26
-```
+---
+
+# Linux Basics Commands - Cheatsheet
 
 **Related**: [[linux-security]], [[bash-scripting]]
 

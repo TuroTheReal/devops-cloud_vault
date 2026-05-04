@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "1ffeb474672a8337",
+        "id": "70554982999372e4",
         "type": "tabs",
         "children": [
           {
-            "id": "f765de0a65bc70f2",
+            "id": "f832b4af910562f8",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Vue graphique"
+              "type": "markdown",
+              "state": {
+                "file": "meta/workflows/project-workflow.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "project-workflow"
             }
           }
         ]
@@ -49,8 +53,8 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
-                "matchingCase": false,
+                "query": "mastered",
+                "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
@@ -70,11 +74,12 @@
               "title": "Signets"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "right": {
     "id": "24977c699ea65b23",
@@ -90,7 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "concepts/CONCEPTS.md",
+                "file": "meta/workflows/project-workflow.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +105,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Rétrolien pour CONCEPTS"
+              "title": "Rétrolien pour project-workflow"
             }
           },
           {
@@ -109,12 +114,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "concepts/CONCEPTS.md",
+                "file": "meta/workflows/project-workflow.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Liens sortants de CONCEPTS"
+              "title": "Liens sortants de project-workflow"
             }
           },
           {
@@ -152,21 +157,21 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "concepts/CONCEPTS.md",
+                "file": "meta/workflows/project-workflow.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Plan de CONCEPTS"
+              "title": "Plan de project-workflow"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -179,24 +184,34 @@
       "bases:Créer une nouvelle base": false
     }
   },
-  "active": "f765de0a65bc70f2",
+  "active": "f832b4af910562f8",
   "lastOpenFiles": [
-    "concept-1.md",
-    "related-section-2.md",
-    "URL.md",
-    "README.md",
-    "meta/templates/project.md",
-    "projects/PROJECTS.md",
-    "meta/META.md",
-    "concepts/tech/concept-1.md",
-    "concepts/tech",
-    "projects/2024-11-ft-ping-traceroute/2024-11-ft-ping-traceroute.md",
-    "concepts/CONCEPTS.md",
-    "concepts/aws/aws-cloud-practitioner-clf-c02.md",
-    "projects/2025-01-aws-terraform-ansible/learnings.md",
+    "meta/workflows/obsidian-workflow.md",
+    "meta/guides/obsidian-guide.md",
+    "meta/guides/claude-guide.md",
     "concepts/aws/aws-fundamentals.md",
+    "projects/2025-12-vps-hetzner-init-setup/2025-12-vps-hetzner-init-setup.md",
+    "meta/META.md",
+    "MOCs/MOC-Docker-Production.md",
+    "troubleshooting/docker/disk-full-logs.md",
+    "projects/2025-12-glasck-deployment/2025-12-glasck-deployment.md",
+    "cheatsheets/docker/docker-commands.md",
+    "concepts/docker/docker-why-containers.md",
+    "meta/templates/vault-index-template.md",
+    "meta/templates/github-project-readme-template.md",
+    "meta/templates/moc-template.md",
+    "meta/templates/troubleshooting-template.md",
+    "meta/templates/project-template.md",
+    "meta/templates/cheatsheet-template.md",
+    "meta/templates/concept-template.md",
+    "concepts/aws/aws-cloud-practitioner-clf-c02.md",
+    "concepts/ansible/ansible-fundamentals.md",
+    "meta/templates/readme-project-template.md",
+    "projects/2024-11-ft-ping-traceroute/2024-11-ft-ping-traceroute.md",
+    "MOCs/MOC-Networking-Fundamentals.md",
+    "MOCs/MOC-Linux-Security.md",
     "MOCs/MOC-Cloud-AWS.md",
-    "concepts/aws/aws-vpc.md",
-    "cheatsheets/docker/docker-commands.md"
+    "meta/tests/test-option-b-inline.md",
+    "concepts/tech"
   ]
 }

@@ -1,12 +1,17 @@
-# ft_ping & ft_traceroute - Learning Report
-
-## 📋 Metadata
-
-```yaml
-tags: [project, networking, c, icmp, layer3, raw-sockets, 2024-11]
-duration: ~90h (estimated across both projects)
+---
+tags:
+  - project
+  - networking
+  - c
+  - icmp
+  - layer3
+  - raw-sockets
+  - 2024-11
+duration: "~90h (estimated across both projects)"
 status: completed
-```
+---
+
+# ft_ping & ft_traceroute - Learning Report
 
 **Technologies**: C, Raw Sockets, ICMP Protocol, Linux Networking
 **Goal**: Implement ping and traceroute from scratch to deeply understand Layer 3 networking

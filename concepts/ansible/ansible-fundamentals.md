@@ -1,13 +1,15 @@
-# Ansible Fundamentals - Configuration Management
-
-## 📋 Metadata
-
-```yaml
-tags: [concept, ansible, automation, status/learned]
+---
+tags:
+  - concept
+  - ansible
+  - automation
+  - status/learned
 created: 2025-01-21
-difficulty: ⭐⭐⭐ (3/5)
+difficulty: 3
 time-to-master: 12h
-```
+---
+
+# Ansible Fundamentals - Configuration Management
 
 **Prerequisites**: [[concepts/linux/linux-basics]], [[concepts/linux/linux-ssh-hardening]]
 **Related to**: [[concepts/terraform/terraform-fundamentals]]

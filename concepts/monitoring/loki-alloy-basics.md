@@ -1,13 +1,18 @@
-# Loki & Alloy - Lightweight Logs for Grafana
-
-## 📋 Metadata
-
-```yaml
-tags: [concept, monitoring, loki, alloy, grafana, logs, status/learning]
+---
+tags:
+  - concept
+  - monitoring
+  - loki
+  - alloy
+  - grafana
+  - logs
+  - status/learning
 created: 2026-01-19
-difficulty: ⭐⭐⭐ (3/5)
+difficulty: 3
 time-to-master: 6h
-```
+---
+
+# Loki & Alloy - Lightweight Logs for Grafana
 
 **Prerequisites**: [[prometheus-grafana-basics]], [[concepts/docker/docker-compose-basics]]
 **Related to**: [[elk-stack-basics]], [[alerting-best-practices]]

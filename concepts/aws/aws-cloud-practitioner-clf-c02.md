@@ -1,13 +1,17 @@
-# AWS Cloud Practitioner CLF-C02 — Key Concepts Overview
-
-## 📋 Metadata
-
-```yaml
-tags: [concept, aws, cloud, certification, clf-c02, status/learning]
+---
+tags:
+  - concept
+  - aws
+  - cloud
+  - certification
+  - clf-c02
+  - status/learning
 created: 2026-03-13
-difficulty: ⭐⭐ (2/5)
+difficulty: 2
 source: https://www.udemy.com/course/aws-certified-cloud-practitioner-new/
-```
+---
+
+# AWS Cloud Practitioner CLF-C02 — Key Concepts Overview
 
 **Related to**: [[concepts/aws/aws-fundamentals]]
 **Official docs**: [AWS Docs](https://docs.aws.amazon.com/) | [AWS Certification](https://aws.amazon.com/certification/certified-cloud-practitioner/)

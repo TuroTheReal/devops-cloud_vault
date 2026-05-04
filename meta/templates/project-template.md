@@ -1,12 +1,13 @@
-# [Project Name] - Learning Report
-
-## 📋 Metadata
-
-```yaml
-tags: [project, [tech-stack], YYYY-MM]
+---
+tags:
+  - project
+  - tech-stack-placeholder
+  - YYYY-MM
 duration: Xh
 status: completed
-```
+---
+
+# [Project Name] - Learning Report
 
 **Technologies**: [Docker, AWS, Terraform, etc.]
 **Goal**: [What the project aimed to achieve in 1 sentence]

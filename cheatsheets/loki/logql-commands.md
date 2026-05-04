@@ -1,14 +1,15 @@
-# LogQL Commands Cheatsheet
-
-## 📋 Metadata
-
-```yaml
-tags: [cheatsheet, loki, logql, grafana, monitoring]
+---
+tags:
+  - cheatsheet
+  - loki
+  - logql
+  - grafana
+  - monitoring
 created: 2026-01-19
 related: [[concepts/monitoring/loki-alloy-basics]]
-```
-
 ---
+
+# LogQL Commands Cheatsheet
 
 ## 🎯 Quick Reference
 

@@ -4,19 +4,55 @@
   "showTags": false,
   "showAttachments": false,
   "hideUnresolved": true,
-  "showOrphans": false,
-  "collapse-color-groups": true,
-  "colorGroups": [],
+  "showOrphans": true,
+  "collapse-color-groups": false,
+  "colorGroups": [
+    {
+      "query": "tag:#moc  ",
+      "color": {
+        "a": 1,
+        "rgb": 7096747
+      }
+    },
+    {
+      "query": "tag:#concept  ",
+      "color": {
+        "a": 1,
+        "rgb": 4215733
+      }
+    },
+    {
+      "query": "tag:#cheatsheet  ",
+      "color": {
+        "a": 1,
+        "rgb": 16766566
+      }
+    },
+    {
+      "query": "tag:#project  ",
+      "color": {
+        "a": 1,
+        "rgb": 10403583
+      }
+    },
+    {
+      "query": "tag:#troubleshooting  ",
+      "color": {
+        "a": 1,
+        "rgb": 16747888
+      }
+    }
+  ],
   "collapse-display": true,
   "showArrow": false,
-  "textFadeMultiplier": -0.2,
-  "nodeSizeMultiplier": 0.9976953125,
-  "lineSizeMultiplier": 1.00386284722222,
-  "collapse-forces": false,
-  "centerStrength": 0.394227430555556,
-  "repelStrength": 9.99913194444444,
+  "textFadeMultiplier": 0,
+  "nodeSizeMultiplier": 1,
+  "lineSizeMultiplier": 1,
+  "collapse-forces": true,
+  "centerStrength": 0.518713248970312,
+  "repelStrength": 10,
   "linkStrength": 1,
-  "linkDistance": 300,
-  "scale": 0.7413011417625652,
-  "close": true
+  "linkDistance": 250,
+  "scale": 0.8572234378977615,
+  "close": false
 }

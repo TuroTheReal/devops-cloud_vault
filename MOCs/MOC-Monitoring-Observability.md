@@ -1,3 +1,15 @@
+---
+tags:
+  - moc
+  - monitoring
+  - observability
+  - prometheus
+  - grafana
+created: 2025-01-07
+updated: 2026-01-19
+status: active
+---
+
 # MOC - Monitoring & Observability
 
 > **What**: Complete monitoring path from basic metrics to production SLOs.

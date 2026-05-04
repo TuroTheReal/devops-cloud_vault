@@ -1,15 +1,20 @@
-# Glasck - Production Docker Deployment
-
-## 📋 Metadata
-
-```yaml
-tags: [project, docker, docker-compose, traefik, production, automation, 2025-12]
+---
+tags:
+  - project
+  - docker
+  - docker-compose
+  - traefik
+  - production
+  - automation
+  - 2025-12
 started: 2025-12-01
 completed: 2025-12-20
-duration: ~40h total (15h infrastructure, 10h debugging, 10h automation, 5h optimization)
+duration: ~55h total (15h framing, 15h infrastructure, 10h debugging, 10h automation, 5h optimization)
 real-repo: private
 status: production
-```
+---
+
+# Glasck - Production Docker Deployment
 
 **Technologies used**: Docker Compose, Traefik v3, Redis, Taskfile
 **Learning**: Docker Compose production setup + Docker Swarm discovery (learning only, not in production)

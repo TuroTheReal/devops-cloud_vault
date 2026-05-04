@@ -1,14 +1,20 @@
-# Networking Fundamentals
-
-## 📋 Metadata
-
-```yaml
-tags: [concept, networking, fundamentals, tcp-ip, ports, osi-model, icmp, status/learned]
+---
+tags:
+  - concept
+  - networking
+  - fundamentals
+  - tcp-ip
+  - ports
+  - osi-model
+  - icmp
+  - status/learned
 created: 2025-12-26
 updated: 2025-12-29
-difficulty: ⭐⭐⭐ (3/5)
+difficulty: 3
 time-to-master: 10h
-```
+---
+
+# Networking Fundamentals
 
 **Prerequisites**: None (foundational)
 **Related to**: [[docker-swarm-overlay-networks]], [[linux-firewall-ufw]], [[2024-11-ft-ping-traceroute]]

@@ -1,12 +1,13 @@
-# Ansible - Cheatsheet
-
-## 📋 Metadata
-
-```yaml
-tags: [cheatsheet, ansible, automation]
+---
+tags:
+  - cheatsheet
+  - ansible
+  - automation
 created: 2025-01-21
 version: 2.9+
-```
+---
+
+# Ansible - Cheatsheet
 
 **Official docs**: [docs.ansible.com](https://docs.ansible.com/)
 **Related concepts**: [[concepts/ansible/ansible-fundamentals]]
