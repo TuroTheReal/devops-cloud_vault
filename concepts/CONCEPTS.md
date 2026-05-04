@@ -1,3 +1,8 @@
+---
+tags:
+  - index
+---
+
 # CONCEPTS
 
 <p align="center">

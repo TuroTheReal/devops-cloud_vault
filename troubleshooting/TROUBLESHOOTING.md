@@ -1,3 +1,8 @@
+---
+tags:
+  - index
+---
+
 # TROUBLESHOOTING
 
 <p align="center">

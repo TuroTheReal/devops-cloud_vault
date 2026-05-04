@@ -1,3 +1,8 @@
+---
+tags:
+  - index
+---
+
 # MOCS
 
 <p align="center">

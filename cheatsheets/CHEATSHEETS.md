@@ -1,3 +1,8 @@
+---
+tags:
+  - index
+---
+
 # CHEATSHEETS
 
 <p align="center">

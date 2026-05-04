@@ -1,3 +1,8 @@
+---
+tags:
+  - readme
+---
+
 # DEVOPS CLOUD VAULT
 
 <p align="center">

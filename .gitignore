@@ -1,1 +1,8 @@
+# User notes (private)
 noteanepasoublierpourplustard.md
+
+# Obsidian volatile state (changes every session)
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache
+.obsidian/.DS_Store

@@ -1,3 +1,8 @@
+---
+tags:
+  - index
+---
+
 # META
 
 <p align="center">

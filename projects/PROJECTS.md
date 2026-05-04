@@ -1,3 +1,8 @@
+---
+tags:
+  - index
+---
+
 # PROJECTS
 
 <p align="center">
