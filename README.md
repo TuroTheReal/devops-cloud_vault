@@ -437,8 +437,8 @@ This vault will support preparation for:
 
 Blog posts documenting the learning process and context behind this project:
 
-- 📝 [Building a Learning System with Obsidian + Claude](https://arthur-portfolio.com/en/blog/obsidian-claude-learning-system) — How I structure my DevOps/Cloud knowledge vault using Obsidian and Claude AI
-- 📝 [My DevOps/Cloud Engineer Roadmap](https://arthur-portfolio.com/en/blog/devops-roadmap) — 6-month learning plan from 42 common core to DevOps/Cloud Engineer
+- 📝 [Building a Learning System with Obsidian + Claude](https://arthurbernard.dev/en/blog/obsidian-claude-learning-system) — How I structure my DevOps/Cloud knowledge vault using Obsidian and Claude AI
+- 📝 [My DevOps/Cloud Engineer Roadmap](https://arthurbernard.dev/en/blog/devops-roadmap) — 6-month learning plan from 42 common core to DevOps/Cloud Engineer
 
 ## Contact
 
