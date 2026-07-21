@@ -8,7 +8,7 @@ tags:
 <p align="center">
   <img src="https://img.shields.io/badge/Status-Active-brightgreen.svg"/>
   <img src="https://img.shields.io/badge/Updated-2025--01-blue.svg"/>
-  <img src="https://img.shields.io/badge/Documents-28-purple.svg"/>
+  <img src="https://img.shields.io/badge/Documents-39-purple.svg"/>
 </p>
 
 <p align="center">
@@ -55,14 +55,16 @@ tags:
 ```
 concepts/
 ├── docker/           # 11 concepts
+├── cloudflare/       # 5 concepts
+├── cloud/            # 2 concepts
 ├── linux/            # 5 concepts
 ├── monitoring/       # 5 concepts
+├── terraform/        # 3 concepts
+├── networking/       # 2 concepts
 ├── git/              # 2 concepts
-├── networking/       # 1 concept
-├── ansible/          # 1 concept
-├── terraform/        # 1 concept
-├── traefik/          # 1 concept
 ├── aws/              # 2 concepts
+├── ansible/          # 1 concept
+├── traefik/          # 1 concept
 └── README.md
 ```
 
@@ -162,13 +164,14 @@ graph LR
 
 ---
 
-### 🌐 Networking (1)
+### 🌐 Networking (2)
 
 **Focus**: Network fundamentals
 
 | Document | Description | Status |
 |----------|-------------|--------|
 | [[networking-fundamentals]] | TCP/IP, DNS, OSI | ✅ |
+| [[first-party-tagging-edge-gateway]] | First-party tagging via edge rewrite | 🚧 |
 
 ---
 
@@ -181,6 +184,8 @@ graph LR
 | [[aws-fundamentals]] | AWS basics | ✅ |
 | [[aws-cloud-practitioner-clf-c02]] | CLF-C02 key concepts cheat sheet | ✅ |
 | [[terraform-fundamentals]] | IaC workflow | ✅ |
+| [[terraform-ignore-changes-partial-ownership]] | Partial resource ownership | 🚧 |
+| [[terraform-reconcile-manual-drift]] | Cutover → align → decommission | 🚧 |
 | [[ansible-fundamentals]] | Configuration mgmt | ✅ |
 
 ---
@@ -192,6 +197,31 @@ graph LR
 | Document | Description | Status |
 |----------|-------------|--------|
 | [[traefik-integration]] | Traefik setup | ✅ |
+
+---
+
+### ☁️ Cloud (2)
+
+**Focus**: Cloud service models and edge compute fundamentals (provider-agnostic)
+
+| Document | Description | Status |
+|----------|-------------|--------|
+| [[cloud-fundamentals]] | Compute/storage, IaaS/PaaS/SaaS | 🚧 |
+| [[edge-computing-fundamentals]] | Edge vs origin, CDN, serverless edge | 🚧 |
+
+---
+
+### 🌩️ Cloudflare (5)
+
+**Focus**: Edge compute, Workers routing, DNS
+
+| Document | Description | Status |
+|----------|-------------|--------|
+| [[cloudflare-custom-domain-vs-route]] | Custom Domain vs Route (Worker as origin) | 🚧 |
+| [[cloudflare-origin-rules]] | Origin rewrites per path | 🚧 |
+| [[cloudflare-dns-proxied-records-and-placeholders]] | Proxied records, placeholders | 🚧 |
+| [[cloudflare-request-traffic-sequence]] | Product order of operations | 🚧 |
+| [[cloudflare-workers-vs-pages]] | Edge compute models | 🚧 |
 
 ---
 
@@ -267,9 +297,9 @@ graph LR
 
 ## 📊 Stats
 
-- **Documents**: 29
-- **Categories**: 9
-- **Last Updated**: 2025-01-22
+- **Documents**: 39
+- **Categories**: 11
+- **Last Updated**: 2026-07-22
 - **Completion**: 100%
 
 ---

@@ -8,7 +8,7 @@ tags:
 <p align="center">
   <img src="https://img.shields.io/badge/Status-Active-brightgreen.svg"/>
   <img src="https://img.shields.io/badge/Updated-2025--01-blue.svg"/>
-  <img src="https://img.shields.io/badge/Documents-11-purple.svg"/>
+  <img src="https://img.shields.io/badge/Documents-12-purple.svg"/>
 </p>
 
 <p align="center">
@@ -63,9 +63,10 @@ meta/
 │   ├── troubleshooting-template.md
 │   ├── github-project-readme-template.md
 │   └── vault-index-template.md
-├── guides/                 # 3 guides
+├── guides/                 # 4 guides
 │   ├── claude-guide.md
 │   ├── obsidian-guide.md
+│   ├── safe-production-changes.md
 │   └── templates-usage-guide.md
 ├── workflows/              # 2 workflows
 │   ├── obsidian-workflow.md
@@ -124,7 +125,7 @@ graph LR
 
 ---
 
-### 📖 Guides (3)
+### 📖 Guides (4)
 
 **Focus**: How-to references
 
@@ -132,6 +133,7 @@ graph LR
 |----------|-------------|--------|
 | [[claude-guide]] | Using Claude with the vault | ✅ |
 | [[obsidian-guide]] | Obsidian setup & usage | ✅ |
+| [[safe-production-changes]] | Rollback-first prod change discipline | ✅ |
 | [[templates-usage-guide]] | How to apply templates | ✅ |
 
 ---
@@ -233,9 +235,9 @@ graph LR
 
 ## 📊 Stats
 
-- **Documents**: 11
+- **Documents**: 12
 - **Categories**: 4 (Templates, Guides, Workflows, Roadmap)
-- **Last Updated**: 2025-01-22
+- **Last Updated**: 2026-07-21
 - **Completion**: 100%
 
 ---

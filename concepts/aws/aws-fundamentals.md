@@ -12,7 +12,7 @@ time-to-master: 20h
 # AWS Fundamentals - Cloud Services Overview
 
 **Prerequisites**: [[concepts/networking/networking-fundamentals]]
-**Related to**: [[concepts/terraform/terraform-fundamentals]] | [[concepts/aws/aws-cloud-practitioner-clf-c02]]
+**Related to**: [[concepts/terraform/terraform-fundamentals]] | [[concepts/aws/aws-cloud-practitioner-clf-c02]] | [[concepts/cloud/cloud-fundamentals]]
 **Official docs**: [AWS Docs](https://docs.aws.amazon.com/) | [AWS CLI Reference](https://docs.aws.amazon.com/cli/)
 
 ---

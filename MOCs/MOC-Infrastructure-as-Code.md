@@ -125,7 +125,9 @@ After completing this path, you'll be ready for:
 
 **Cheatsheets**: [[cheatsheets/terraform/terraform-commands]] | [[cheatsheets/ansible/ansible-commands]]
 
+**Related MOC**: [[MOCs/MOC-Cloudflare-Edge]] — Terraform ownership & drift reconcile applied in a real migration ([[concepts/terraform/terraform-ignore-changes-partial-ownership]], [[concepts/terraform/terraform-reconcile-manual-drift]])
+
 ---
 
 **Created**: 2025-01-22
-**Last updated**: 2025-01-22
+**Last updated**: 2026-07-21

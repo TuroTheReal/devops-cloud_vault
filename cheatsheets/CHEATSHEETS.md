@@ -8,7 +8,7 @@ tags:
 <p align="center">
   <img src="https://img.shields.io/badge/Status-Active-brightgreen.svg"/>
   <img src="https://img.shields.io/badge/Updated-2025--01-blue.svg"/>
-  <img src="https://img.shields.io/badge/Documents-13-purple.svg"/>
+  <img src="https://img.shields.io/badge/Documents-14-purple.svg"/>
 </p>
 
 <p align="center">
@@ -60,6 +60,7 @@ cheatsheets/
 ├── ansible/          # 1 cheatsheet
 ├── terraform/        # 1 cheatsheet
 ├── aws/              # 1 cheatsheet
+├── cloudflare/       # 1 cheatsheet
 ├── traefik/          # 1 cheatsheet
 ├── taskfile/         # 1 cheatsheet
 ├── github/           # 1 cheatsheet
@@ -161,6 +162,16 @@ graph LR
 
 ---
 
+### 🌩️ Cloudflare (1)
+
+**Focus**: Cloudflare API operations (Workers, routes, DNS)
+
+| Document | Description | Status |
+|----------|-------------|--------|
+| [[cloudflare-api-cheatsheet]] | curl/jq for domains, routes, DNS records | ✅ |
+
+---
+
 ## 📖 Usage Guide
 
 ### Navigation
@@ -232,9 +243,9 @@ graph LR
 
 ## 📊 Stats
 
-- **Documents**: 13
-- **Categories**: 10
-- **Last Updated**: 2025-01-22
+- **Documents**: 14
+- **Categories**: 11
+- **Last Updated**: 2026-07-21
 - **Completion**: 100%
 
 ---
