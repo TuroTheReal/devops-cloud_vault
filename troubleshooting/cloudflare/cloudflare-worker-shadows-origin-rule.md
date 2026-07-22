@@ -22,7 +22,8 @@ time-to-fix: 15min
 
 > After putting a hostname (e.g. an apex) behind a Worker, specific paths handled by an
 > Origin Rule (e.g. a first-party tag gateway's loader paths, rewritten to a vendor) stop
-> returning the vendor's content. A third-party app breaks.
+> returning the vendor's content. The apps/sites that depended on that origin behaviour
+> went **down** until the swap, not just the tag gateway itself.
 
 ```bash
 # The bypass paths no longer return the vendor JS (they return the Worker's response)
@@ -48,6 +49,7 @@ for p in loaderA loaderB; do curl -s -o /dev/null -w "$p -> %{content_type}\n" "
 ## ✅ Quick Fix (no downtime)
 
 ### Solution (recommended)
+
 ```bash
 # 1. Save the state BEFORE (audit + rollback)
 curl -s "$API/accounts/$ACCT/workers/domains/$CD_ID" -H "$AUTH" | jq '.result' | tee /tmp/cd.json

@@ -8,7 +8,7 @@ tags:
 <p align="center">
   <img src="https://img.shields.io/badge/Status-Active-brightgreen.svg"/>
   <img src="https://img.shields.io/badge/Updated-2025--01-blue.svg"/>
-  <img src="https://img.shields.io/badge/Documents-39-purple.svg"/>
+  <img src="https://img.shields.io/badge/Documents-42-purple.svg"/>
 </p>
 
 <p align="center">
@@ -60,11 +60,14 @@ concepts/
 ├── linux/            # 5 concepts
 ├── monitoring/       # 5 concepts
 ├── terraform/        # 3 concepts
+├── terramate/        # 1 concept
 ├── networking/       # 2 concepts
 ├── git/              # 2 concepts
 ├── aws/              # 2 concepts
 ├── ansible/          # 1 concept
 ├── traefik/          # 1 concept
+├── deployment/       # 1 concept
+├── ci-cd/            # 1 concept
 └── README.md
 ```
 
@@ -190,6 +193,16 @@ graph LR
 
 ---
 
+### 🧩 Terramate (1)
+
+**Focus**: Terraform stack orchestration
+
+| Document | Description | Status |
+|----------|-------------|--------|
+| [[terramate]] | Stacks, code-gen, change detection | 🚧 |
+
+---
+
 ### 🔄 Traefik (1)
 
 **Focus**: Reverse proxy
@@ -222,6 +235,26 @@ graph LR
 | [[cloudflare-dns-proxied-records-and-placeholders]] | Proxied records, placeholders | 🚧 |
 | [[cloudflare-request-traffic-sequence]] | Product order of operations | 🚧 |
 | [[cloudflare-workers-vs-pages]] | Edge compute models | 🚧 |
+
+---
+
+### 🚀 Deployment (1)
+
+**Focus**: Release / cutover strategies
+
+| Document | Description | Status |
+|----------|-------------|--------|
+| [[deployment-strategies]] | Big-bang, rolling, blue-green, canary | 🚧 |
+
+---
+
+### 🔁 CI/CD (1)
+
+**Focus**: Build/test/deploy automation
+
+| Document | Description | Status |
+|----------|-------------|--------|
+| [[ci-cd-basics]] | CI vs CD, pipeline stages, gates | 🚧 |
 
 ---
 
@@ -297,8 +330,8 @@ graph LR
 
 ## 📊 Stats
 
-- **Documents**: 39
-- **Categories**: 11
+- **Documents**: 42
+- **Categories**: 14
 - **Last Updated**: 2026-07-22
 - **Completion**: 100%
 

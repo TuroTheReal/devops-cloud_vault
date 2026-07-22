@@ -88,8 +88,11 @@ devops-cloud_vault/
 │   ├── git/                  # 2 concepts (fundamentals, semantic versioning)
 │   ├── linux/                # Security, firewall (5 concepts)
 │   ├── monitoring/           # Observability (5 concepts: Prometheus, Grafana, Loki, ELK, golden signals)
+│   ├── ci-cd/                # CI/CD basics (build/test/deploy)
+│   ├── deployment/           # release / cutover strategies (blue-green, canary)
 │   ├── networking/           # Fundamentals, OSI, ICMP + first-party edge tagging (2 concepts)
 │   ├── terraform/            # IaC provisioning, ignore_changes, drift reconcile (3 concepts)
+│   ├── terramate/            # Terraform stack orchestration (1 concept)
 │   └── traefik/              # Reverse proxy concepts
 │
 ├── 🚀 projects/              # Real-world learning reports
@@ -419,9 +422,9 @@ This vault will support preparation for:
 
 ## Statistics
 
-- **Total Documents**: 76 active documents (excluding meta/templates)
+- **Total Documents**: 79 active documents (excluding meta/templates)
 - **Cheatsheets**: 14 files across 11 folders (ansible, aws, cloudflare, docker × 3, github, linux × 2, loki, prometheus, taskfile, terraform, traefik)
-- **Concepts**: 39 files across 11 folders (ansible, aws, cloud × 2, cloudflare × 5, docker × 11, git, linux, monitoring, networking × 2, terraform × 3, traefik)
+- **Concepts**: 42 files across 14 folders (ansible, aws, ci-cd, cloud × 2, cloudflare × 5, deployment, docker × 11, git, linux, monitoring, networking × 2, terraform × 3, terramate, traefik)
 - **Projects**: 6 real-world learning reports (~340h documented)
 - **MOCs**: 7 learning paths (Docker, Linux Security, Networking, Cloud AWS, IaC, Monitoring, Cloudflare Edge)
 - **Troubleshooting**: 4 entries (docker × 2, monitoring × 1, cloudflare × 1)
