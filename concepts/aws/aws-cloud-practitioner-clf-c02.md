@@ -33,6 +33,17 @@ AWS Cloud Practitioner = entry-level certification proving you understand **what
 
 ---
 
+## 🤔 When to Use?
+
+### ✅ Good for
+- **CLF-C02 exam prep**: a fast, blueprint-aligned recap of what each service does and when to reach for it.
+- **Cloud vocabulary**: mapping AWS service names to concepts when reading docs or talking to a team.
+
+### ❌ Bad for
+- **Hands-on depth / configuration** → see [[concepts/aws/aws-fundamentals]] and the official docs.
+
+---
+
 ## 📚 Table of Contents
 
 1. [Cloud Fundamentals](#1--cloud-fundamentals)
@@ -1046,6 +1057,15 @@ Match resources to actual needs — bigger is NOT always better. Scale up/down i
 - **re:Post**: community forum (not for urgent issues)
 - **Knowledge Center**: FAQ, troubleshooting, best practices
 - **AMS** (Managed Services): AWS experts manage your infra 24/365
+
+---
+
+## 📊 Stats
+
+```yaml
+Total time: ~20h (exam prep)
+Used in: CLF-C02 study; [[concepts/aws/aws-fundamentals]]
+```
 
 ---
 

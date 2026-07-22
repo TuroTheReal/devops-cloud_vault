@@ -27,6 +27,18 @@ Prometheus collects numeric metrics (CPU, memory, request counts) from targets v
 
 ---
 
+## 🤔 When to Use?
+
+### ✅ Good for
+- **Numeric metrics over time**: CPU, memory, request rates, latencies (time-series).
+- **Alerting on thresholds/trends**: paired with Alertmanager + Grafana dashboards.
+
+### ❌ Bad for
+- **Log search / full-text**: use the ELK stack instead → [[elk-stack-basics]].
+- **High-cardinality data** (per-user IDs, unbounded labels): it explodes the series count.
+
+---
+
 ## 📚 Prometheus Metric Types
 
 | Type | Description | Example | Operation |

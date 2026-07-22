@@ -170,7 +170,7 @@ docker ps  # Should show "(healthy)" if healthcheck defined
 Encountered: 1 times
 Last occurrence: 2026-01-19
 Typical fix time: 5min
-Projects affected: [[projects/2025-12-glasck-deployment]]
+Projects affected: [[2025-12-glasck-deployment]]
 ```
 
 ---

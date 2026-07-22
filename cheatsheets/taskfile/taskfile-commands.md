@@ -10,7 +10,7 @@ updated: 2025-12-23
 
 # Taskfile - Cheatsheet
 
-**Related**: [[makefile]], [[automation-tools]]
+**Related**: [[makefile]]
 
 ---
 

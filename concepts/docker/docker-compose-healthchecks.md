@@ -14,7 +14,7 @@ time-to-master: 2h
 # Docker Compose - Healthchecks
 
 **Prerequisites**: [[docker-containers-lifecycle]], [[docker-images-layers]]
-**Related to**: [[docker-swarm-healthchecks]], [[container-orchestration]]
+**Related to**: [[docker-swarm-healthchecks]]
 
 ---
 

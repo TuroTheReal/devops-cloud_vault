@@ -32,6 +32,31 @@ ELK Stack is a log aggregation and analysis platform:
 
 ---
 
+## 🤔 When to Use?
+
+### ✅ Good for
+- **Centralized logging**: aggregate logs from many services into one searchable place.
+- **Full-text log search + dashboards**: investigate incidents via Kibana.
+
+### ❌ Bad for
+- **Numeric metrics / time-series alerting**: use Prometheus + Grafana → [[prometheus-grafana-basics]].
+- **Small single-service setups**: ELK is heavy (JVM, indexing) for little gain.
+
+---
+
+## 📚 Key Concepts
+
+### 1. Elasticsearch — store + index
+The searchable database: stores logs as JSON documents and indexes them for fast full-text queries.
+
+### 2. Logstash — collect + transform
+The pipeline: ingests logs, parses/enriches them (grok, filters), then forwards to Elasticsearch. Lighter alternatives exist (Beats, Fluentd).
+
+### 3. Kibana — visualize + search
+The UI on top of Elasticsearch: dashboards, search, and log exploration.
+
+---
+
 ## 💻 Key Implementation from Transcendence
 
 ```yaml
