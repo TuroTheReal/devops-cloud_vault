@@ -12,8 +12,6 @@ version: v4
 **Official docs**: https://developers.cloudflare.com/api/
 **Related concepts**: [[cloudflare-custom-domain-vs-route]], [[cloudflare-dns-proxied-records-and-placeholders]]
 
-> [!note] Stub — real curl/jq patterns, IDs passed via env. `TODO(you)` = your additions.
-
 ---
 
 ## 🚀 Quick Start
@@ -30,6 +28,7 @@ ACCT=<account_id>   ZONE=<zone_id>
 ## 📚 Commands by Operation
 
 ### Worker Custom Domains
+
 ```bash
 # List / find by hostname
 curl -s "$API/accounts/$ACCT/workers/domains?hostname=example.com" -H "$AUTH" \
@@ -47,12 +46,14 @@ curl -s -X DELETE "$API/accounts/$ACCT/workers/domains/$CD_ID" -H "$AUTH"
 ```
 
 ### Worker Routes
+
 ```bash
 curl -s -X POST "$API/zones/$ZONE/workers/routes" -H "$AUTH" \
   -d '{"pattern":"example.com/*","script":"my-worker"}'
 ```
 
 ### DNS Records
+
 ```bash
 # Find
 curl -s "$API/zones/$ZONE/dns_records?name=example.com&type=AAAA" -H "$AUTH" | jq -r '.result[].id'
@@ -81,7 +82,11 @@ for try in 1 2 3 4 5; do OUT=$(curl ...); [ "$(echo "$OUT"|jq -r .success)" = tr
 
 - Save the mutated object BEFORE deleting (`| tee /tmp/x.json`) → audit + rollback.
 - Token via env var, never committed. Minimal scope (Workers Routes / DNS Edit on the zone).
-> TODO(you): your mistakes + fixes.
+
+**Mistakes made**:
+- **Delete-then-create on the same hostname without a retry**: CF still considers the hostname "in use" for ~1-2s, so the create fails and the host briefly 404s. → create-then-delete, or wrap the swap in a retry loop.
+- **Deleting without saving state first** → no clean rollback. Always `tee` the object before the delete.
+- **Too-broad API token** → scope to exactly Workers Routes + DNS Edit on the one zone.
 
 ---
 
