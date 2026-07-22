@@ -8,7 +8,7 @@ tags:
 <p align="center">
   <img src="https://img.shields.io/badge/Status-Active-brightgreen.svg"/>
   <img src="https://img.shields.io/badge/Updated-2025--01-blue.svg"/>
-  <img src="https://img.shields.io/badge/Documents-6-purple.svg"/>
+  <img src="https://img.shields.io/badge/Documents-7-purple.svg"/>
 </p>
 
 <p align="center">
@@ -61,6 +61,7 @@ MOCs/
 ├── MOC-Monitoring-Observability.md   # Prometheus, Grafana, Loki
 ├── MOC-Cloud-AWS.md                  # AWS services
 ├── MOC-Infrastructure-as-Code.md     # Terraform, Ansible
+├── MOC-Cloudflare-Edge.md            # Workers, DNS, cutover
 └── MOCS.md
 ```
 
@@ -74,6 +75,7 @@ MOCs/
 | `MOC-Monitoring-Observability.md` | Metrics, logs, alerting path |
 | `MOC-Cloud-AWS.md` | EC2, IAM, VPC, S3 path |
 | `MOC-Infrastructure-as-Code.md` | Terraform + Ansible workflow path |
+| `MOC-Cloudflare-Edge.md` | Workers routing, Origin Rules, DNS, cutover path |
 
 ---
 
@@ -162,6 +164,16 @@ graph LR
 
 ---
 
+### 🌩️ Cloudflare / Edge (1)
+
+**Focus**: Edge compute routing, DNS, and safe production cutover
+
+| Document | Description | Status |
+|----------|-------------|--------|
+| [[MOC-Cloudflare-Edge]] | Workers vs Pages, Custom Domain vs Route, Origin Rules, cutover | 🚧 |
+
+---
+
 ## 📖 Usage Guide
 
 ### Navigation
@@ -235,9 +247,9 @@ graph LR
 
 ## 📊 Stats
 
-- **Documents**: 6
-- **Categories**: 6
-- **Last Updated**: 2025-01-22
+- **Documents**: 7
+- **Categories**: 7
+- **Last Updated**: 2026-07-21
 - **Completion**: 100%
 
 ---

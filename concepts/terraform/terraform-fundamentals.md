@@ -13,7 +13,7 @@ time-to-master: 15h
 # Terraform Fundamentals - Infrastructure as Code
 
 **Prerequisites**: [[concepts/linux/linux-basics]]
-**Related to**: [[concepts/ansible/ansible-fundamentals]], [[concepts/aws/aws-fundamentals]]
+**Related to**: [[concepts/ansible/ansible-fundamentals]], [[concepts/aws/aws-fundamentals]], [[concepts/terraform/terraform-ignore-changes-partial-ownership]], [[concepts/terraform/terraform-reconcile-manual-drift]]
 **Official docs**: [Terraform Docs](https://developer.hashicorp.com/terraform/docs) | [Registry (Providers/Modules)](https://registry.terraform.io/)
 
 ---

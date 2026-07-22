@@ -8,7 +8,7 @@ tags:
 <p align="center">
   <img src="https://img.shields.io/badge/Status-Active-brightgreen.svg"/>
   <img src="https://img.shields.io/badge/Updated-2025--01-blue.svg"/>
-  <img src="https://img.shields.io/badge/Documents-3-purple.svg"/>
+  <img src="https://img.shields.io/badge/Documents-4-purple.svg"/>
 </p>
 
 <p align="center">
@@ -59,6 +59,8 @@ troubleshooting/
 │   └── disk-full-logs.md
 ├── monitoring/
 │   └── grafana-no-data.md
+├── cloudflare/
+│   └── cloudflare-worker-shadows-origin-rule.md
 └── README.md
 ```
 
@@ -126,6 +128,22 @@ docker inspect <container>       # Details
 ```bash
 curl localhost:9090/api/v1/targets  # Prometheus targets
 docker logs grafana                  # Grafana logs
+```
+
+---
+
+### 🌩️ Cloudflare (1)
+
+**Focus**: Workers / DNS routing issues
+
+| Document | Description | Status |
+|----------|-------------|--------|
+| [[cloudflare-worker-shadows-origin-rule]] | Worker Custom Domain shadows an Origin Rule | ✅ |
+
+**Quick Diagnostic**:
+```bash
+curl -sI https://example.com/ | head -1                 # expect 200
+curl -s -o /dev/null -w '%{content_type}\n' "https://example.com/<origin-rule-path>"
 ```
 
 ---
@@ -235,9 +253,9 @@ Each troubleshooting guide includes:
 
 ## 📊 Stats
 
-- **Documents**: 3
-- **Categories**: 2
-- **Last Updated**: 2025-01-22
+- **Documents**: 4
+- **Categories**: 3
+- **Last Updated**: 2026-07-21
 - **Completion**: 10%
 
 ---

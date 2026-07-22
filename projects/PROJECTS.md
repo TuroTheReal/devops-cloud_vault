@@ -8,7 +8,7 @@ tags:
 <p align="center">
   <img src="https://img.shields.io/badge/Status-Active-brightgreen.svg"/>
   <img src="https://img.shields.io/badge/Updated-2025--01-blue.svg"/>
-  <img src="https://img.shields.io/badge/Documents-5-purple.svg"/>
+  <img src="https://img.shields.io/badge/Documents-6-purple.svg"/>
 </p>
 
 <p align="center">
@@ -75,6 +75,8 @@ projects/
 │   └── 2025-12-glasck-deployment.md
 ├── 2025-12-vps-hetzner-init-setup/
 │   └── 2025-12-vps-hetzner-init-setup.md
+├── 2026-07-cloudflare-pages-to-workers-migration/
+│   └── 2026-07-cloudflare-pages-to-workers-migration.md
 └── README.md
 ```
 
@@ -178,6 +180,16 @@ cp meta/templates/project.md projects/YYYY-MM-project-name/YYYY-MM-project-name.
 
 ---
 
+### 🌩️ Cloudflare / Edge (1)
+
+**Focus**: Edge platform migration
+
+| Document | Description | Duration | Status |
+|----------|-------------|----------|--------|
+| [[2026-07-cloudflare-pages-to-workers-migration]] | Pages→Workers cutover, Origin Rules, Terraform | ongoing | 🚧 |
+
+---
+
 ## 📖 Usage Guide
 
 ### Navigation
@@ -273,9 +285,9 @@ After each project, update:
 
 ## 📊 Stats
 
-- **Documents**: 5
-- **Categories**: 5
-- **Last Updated**: 2025-01-22
+- **Documents**: 6
+- **Categories**: 6
+- **Last Updated**: 2026-07-21
 - **Completion**: 100%
 
 ---

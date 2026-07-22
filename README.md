@@ -69,6 +69,7 @@ devops-cloud_vault/
 ├── 📖 cheatsheets/           # Quick reference cheatsheets/guides
 │   ├── ansible/              # Ansible commands
 │   ├── aws/                  # AWS CLI commands
+│   ├── cloudflare/           # Cloudflare API (Workers, routes, DNS)
 │   ├── docker/               # Docker, Compose, Swarm
 │   ├── github/               # Git & GitHub
 │   ├── linux/                # Linux basics & security
@@ -81,12 +82,14 @@ devops-cloud_vault/
 ├── 💡 concepts/              # Deep dives and theory
 │   ├── ansible/              # Configuration management
 │   ├── aws/                  # AWS fundamentals + Cloud Practitioner CLF-C02
+│   ├── cloud/                # Cloud + edge computing fundamentals (2 concepts)
+│   ├── cloudflare/           # Workers vs Pages, Custom Domain vs Route, Origin Rules, DNS (5 concepts)
 │   ├── docker/               # 11 concepts (containers, networks, swarm, backup)
 │   ├── git/                  # 2 concepts (fundamentals, semantic versioning)
 │   ├── linux/                # Security, firewall (5 concepts)
 │   ├── monitoring/           # Observability (5 concepts: Prometheus, Grafana, Loki, ELK, golden signals)
-│   ├── networking/           # Fundamentals, OSI Model, ICMP
-│   ├── terraform/            # IaC provisioning
+│   ├── networking/           # Fundamentals, OSI, ICMP + first-party edge tagging (2 concepts)
+│   ├── terraform/            # IaC provisioning, ignore_changes, drift reconcile (3 concepts)
 │   └── traefik/              # Reverse proxy concepts
 │
 ├── 🚀 projects/              # Real-world learning reports
@@ -94,18 +97,22 @@ devops-cloud_vault/
 │   ├── 2024-XX-transcendence-monitoring/# Observability (ELK, Prometheus, Grafana)
 │   ├── 2025-01-aws-terraform-ansible/   # IaC WordPress deployment on AWS
 │   ├── 2025-12-glasck-deployment/       # Docker Swarm production deployment
-│   └── 2025-12-vps-hetzner-init-setup/  # VPS setup & hardening
+│   ├── 2025-12-vps-hetzner-init-setup/  # VPS setup & hardening
+│   └── 2026-07-cloudflare-pages-to-workers-migration/  # Pages→Workers edge migration
 │
 ├── 🗺️ MOCs/                   # Maps of Content (learning paths)
 │   ├── MOC-Docker-Production.md         # Container orchestration
 │   ├── MOC-Linux-Security.md            # System hardening
 │   ├── MOC-Networking-Fundamentals.md   # OSI, ICMP, Docker networks
+│   ├── MOC-Monitoring-Observability.md  # Prometheus, Grafana, Loki
 │   ├── MOC-Cloud-AWS.md                 # AWS cloud services
-│   └── MOC-Infrastructure-as-Code.md    # Terraform & Ansible
+│   ├── MOC-Infrastructure-as-Code.md    # Terraform & Ansible
+│   └── MOC-Cloudflare-Edge.md           # Workers, DNS, Origin Rules, cutover
 │
-├── 🔧 troubleshooting/       # Debug guides (3 entries)
+├── 🔧 troubleshooting/       # Debug guides (4 entries)
 │   ├── docker/               # Docker issues & resolutions
-│   └── monitoring/           # Observability debug notes
+│   ├── monitoring/           # Observability debug notes
+│   └── cloudflare/           # Workers/DNS routing incident
 │
 └── 📋 meta/                  # Templates and guides
     ├── guides/               # Usage guides
@@ -295,6 +302,12 @@ cat concepts/docker/docker-why-containers.md
 - **Ansible**: Playbooks, inventory, idempotence, modules, handlers
 - **Best Practices**: Separation of concerns (Terraform provisions, Ansible configures)
 
+### 🌩️ Cloudflare Edge (started)
+- **Workers**: edge functions, static assets, Custom Domain vs Route (Worker as origin)
+- **Routing**: Origin Rules (per-path origin rewrite), request traffic sequence
+- **DNS**: proxied vs DNS-only, placeholder records, CNAME flattening
+- **Ops**: Pages→Workers migration, blue-green cutover with pre-written rollback
+
 ### 📊 Observability (started)
 - **Prometheus**: Metrics collection, exporters — [cheatsheet](cheatsheets/prometheus/)
 - **Loki**: Log aggregation, LogQL — [cheatsheet](cheatsheets/loki/)
@@ -406,13 +419,13 @@ This vault will support preparation for:
 
 ## Statistics
 
-- **Total Documents**: 62 active documents (excluding meta/templates)
-- **Cheatsheets**: 13 files across 10 folders (ansible, aws, docker × 3, github, linux × 2, loki, prometheus, taskfile, terraform, traefik)
-- **Concepts**: 29 files across 9 folders (ansible, aws, docker × 11, git, linux, monitoring, networking, terraform, traefik)
-- **Projects**: 5 real-world learning reports (~340h documented)
-- **MOCs**: 6 learning paths (Docker, Linux Security, Networking, Cloud AWS, IaC, Monitoring)
-- **Troubleshooting**: 3 entries (docker × 2, monitoring × 1)
-- **Last Updated**: 2026-05-01
+- **Total Documents**: 76 active documents (excluding meta/templates)
+- **Cheatsheets**: 14 files across 11 folders (ansible, aws, cloudflare, docker × 3, github, linux × 2, loki, prometheus, taskfile, terraform, traefik)
+- **Concepts**: 39 files across 11 folders (ansible, aws, cloud × 2, cloudflare × 5, docker × 11, git, linux, monitoring, networking × 2, terraform × 3, traefik)
+- **Projects**: 6 real-world learning reports (~340h documented)
+- **MOCs**: 7 learning paths (Docker, Linux Security, Networking, Cloud AWS, IaC, Monitoring, Cloudflare Edge)
+- **Troubleshooting**: 4 entries (docker × 2, monitoring × 1, cloudflare × 1)
+- **Last Updated**: 2026-07-21
 
 ## Resources
 
