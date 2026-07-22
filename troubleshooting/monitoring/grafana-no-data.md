@@ -163,7 +163,7 @@ curl "http://prometheus:9090/api/v1/query?query=metric_name" | jq '.data.result[
 Encountered: 5+ times
 Last occurrence: 2025-01-07
 Typical fix time: 5-10min
-Projects affected: [[projects/2025-12-glasck-deployment]]
+Projects affected: [[2025-12-glasck-deployment]]
 ```
 
 ---

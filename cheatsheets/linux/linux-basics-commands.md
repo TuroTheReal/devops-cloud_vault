@@ -10,7 +10,7 @@ updated: 2025-12-26
 
 # Linux Basics Commands - Cheatsheet
 
-**Related**: [[linux-security]], [[bash-scripting]]
+**Related**: [[linux-security]]
 
 ---
 

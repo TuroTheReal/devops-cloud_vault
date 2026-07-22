@@ -328,7 +328,7 @@ Simple string match catches everything containing "error" - including normal log
 
 ```yaml
 Total time: 6h (40% assisted / 60% autonomous)
-Used in: [[projects/2025-12-glasck-deployment]]
+Used in: [[2025-12-glasck-deployment]]
 ```
 
 ---
