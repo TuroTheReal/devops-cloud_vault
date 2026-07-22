@@ -104,7 +104,7 @@ Prerequisites: [[MOCs/MOC-Linux-Security]], [[MOCs/MOC-Cloud-AWS]]
 ## 🔄 Next Steps
 
 After completing this path, you'll be ready for:
-- **[[MOCs/MOC-Kubernetes]]**: Deploy K8s with Terraform, configure with Helm
+- **[[MOCs/MOC-Kubernetes-Fundamentals]]**: Deploy K8s with Terraform, configure with Helm
 - **GitOps**: ArgoCD, Flux for continuous delivery
 
 ---
